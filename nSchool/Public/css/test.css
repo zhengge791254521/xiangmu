@@ -1,0 +1,33 @@
+.test-detail-box{
+	background-color: #fff;
+	padding: 15px;
+}
+.test-detail-box img{
+	max-width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	border:1px solid #999;
+}
+.test-list-box .test-list-tt{
+	font-size: 16px;
+	line-height: 1.6em;
+	color:#333;
+	margin-bottom: 5px;
+}
+.test-list-box .test-time{
+	float: right;
+	color:#666;
+}
+.test-list-box h4.ui-nowrap{
+	font-size: 14px;
+}
+.test-list-box .test-time i{
+	display: inline-block;
+	background:url(../images/icon/clock.png) no-repeat;
+	width: 12px;
+	height: 12px;
+	background-size: 12px;
+}
+.test-paixu{
+	right: 5px;
+}
