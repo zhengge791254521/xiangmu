@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>1+N校园</title>
+    <link rel="stylesheet" href="Public/frozenui/css/frozen.css">
+    <!-- public公共样式,个人整合一些常用样式 建议保留public 和style 其余的按模块区分-->
+    <link rel="stylesheet" href="Public/css/public.css">
+    <link rel="stylesheet" href="Public/css/style.css">
+
+</head>
+<body ontouchstart>
+<header class="ui-header ui-header-positive ui-border-b sch-header" id="">
+	<!-- 点击的时候尽量用自己设置的class或者id ,这里的向下图标在头部有样式问题,原因尚未找到,在css做了单独处理 -->
+    <div class="sch-select-group" id="school-sel">
+    	电子科技大学成都学院
+        <!-- <div class="ui-select">
+            <select id="school" style="color:#fff;" onchange="selectschool(this)">
+                <option value="0">校园选择</option>
+                <option value="1">电子科技大学成都学院</option>
+            </select>
+        </div> -->
+    </div>
+    <h1>1+N校园</h1>
+    <i class="opn-header-btn-msg btn" data-href="{:U('/User/message')}">
+        <!-- <if condition="$usermsgcount neq 0"> -->
+        <div class="ui-badge" style="position: absolute;top: 2px;right: 2px">&nbsp;</div>
+        <!-- </if> -->
+    </i>
+</header>
+
+<!-- 选择盒子,尽量不修改样式,如果出发点在头部就把盒子放在 header后面 在style 里面有一些处理 -->
+<div class="sch-mask-box" data-id="school-sel">
+	<div class="sch-mask"></div>
+	<div class="sch-mask-cont">
+		<ul class="ui-list ui-list-text ui-list-active ui-border-tb">
+        <li class="ui-border-t">
+            <p>电子科技大学成都学员</p>
+        </li>
+        <li class="ui-border-t">
+            <p>犀浦大夜市</p>
+        </li>
+    </ul>
+	</div>
+</div>
+<footer class="ui-footer sch-footer">
+    <ul class="ui-tiled">
+        <li data-href="{:U('/Index/index')}"><div class="foot-icon foot-index"></div><p>主页</p></li>
+        <li data-href="{:U('/Food/fooda')}" class="active"><div class="foot-icon foot-order"></div><p>订单</p></li>
+        <li data-href="{:U('/Together/together')}"><div class="foot-icon foot-find"></div><p>一起约吧</p></li>
+        <li data-href="{:U('/User/my')}"><div class="foot-icon foot-me"></div><p>我的</p></li>
+    </ul>
+</footer>
+
+<div id="index-content" class="ui-container content-box">
+		<div class="sch-banner-box">
+		  <div class="ui-slider">
+		      <ul class="ui-slider-content" style="width: 300%">
+		          <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+		          <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+		          <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+		      </ul>
+		  </div>
+		</div>
+    
+    <div class="bangdai-box">
+        <div class="ui-row-flex ui-row-flex-hor">
+            <div data-href="{:U('/Food/fooda')}" class="ui-center bangdai-left">
+                <div class="opn-block-index-lg">
+                    <div class="ui-avatar-lg">
+                        <span style="background-image:url(Public/images/icon/index_food.png)"></span>
+                    </div>
+                    <p class="mg-t-15">我来帮带</p>
+                </div>
+            </div>
+            <div class="ui-col ui-center">
+                <div class="pd-10 ui-row-flex ui-flex-align-start">
+                    <div class="bangdai-title">我要求带</div>
+
+                </div>
+                <div class="ui-row-flex ui-row-flex-hor">
+                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
+                        <div class="opn-block-index-lg">
+                            <div class="ui-avatar-s">
+                                <span style="background-image:url(Public/images/icon/index_addfood.png)"></span>
+                            </div>
+                            <p class="mg-t-10">食物</p>
+                        </div>
+                    </div>
+                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
+                        <div class="opn-block-index-lg">
+                            <div class="ui-avatar-s">
+                                <span style="background-image:url(Public/images/icon/index_express.png)"></span>
+                            </div>
+                            <p class="mg-t-10">快递</p>
+                        </div>
+                    </div>
+                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
+                        <div class="opn-block-index-lg">
+                            <div class="ui-avatar-s">
+                                <span style="background-image:url(Public/images/icon/index_goods.png)"></span>
+                            </div>
+                            <p class="mg-t-10">物品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bangdai-box">
+        <div class="ui-row-flex ui-row-flex-hor">
+            <div class="ui-col">
+                <div class="pd-10 ui-row-flex ui-flex-align-start">
+                    <div class="bangdai-title">校园圈</div>
+
+                </div>
+                <div class="ui-row-flex ui-row-flex-hor">
+                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
+                        <div class="opn-block-index-lg">
+                            <div class="ui-avatar-lg">
+                                <span style="background-image:url(Public/images/icon/index_together.png)"></span>
+                            </div>
+                            <p class="mg-t-15">一起约吧</p>
+                        </div>
+                    </div>
+                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
+                        <div class="opn-block-index-lg">
+                            <div class="ui-avatar-lg">
+                                <span style="background-image:url(Public/images/icon/index_master.png)"></span>
+                            </div>
+                            <p class="mg-t-15">学校达人</p>
+                        </div>
+                    </div>
+                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
+                        <div class="opn-block-index-lg">
+                            <div class="ui-avatar-lg">
+                                <span style="background-image:url(Public/images/icon/index_question.png)"></span>
+                            </div>
+                            <p class="mg-t-15">历届考题</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src='Public/frozenui/lib/zepto.min.js'></script>
+<script src='Public/frozenui/js/frozen.js'></script>
+<script src="Public/js/jquery-1.11.1.min.js"></script>
+<!-- <script src="Public/js/jquery.cookie.js"></script> -->
+<script type="text/javascript">
+(function($){
+    var slider = new fz.Scroll('.ui-slider', {
+        role: 'slider',
+        indicator: true,
+        autoplay: true,
+        interval: 3000
+    });
+
+    slider.on('beforeScrollStart', function(fromIndex, toIndex) {
+        console.log(fromIndex,toIndex)
+    });
+
+    slider.on('scrollEnd', function(cruPage) {
+        console.log(cruPage)
+    });
+
+    //列表弹出和关闭
+    $('.sch-select-group').tap(function(){
+    	var $this = $(this),
+    			id = $this.attr('id');
+    			$this.toggleClass('show');
+    			$('[data-id="'+id+'"]').toggleClass('show');
+    });
+    $('.sch-mask-box .sch-mask').tap(function(){
+    	var $box = $(this).closest('.sch-mask-box'),
+    			id = $box.attr('data-id');
+    			$box.toggleClass('show');
+    			$('#'+id).toggleClass('show');
+    })
+})(Zepto);
+
+
+</script>
+</html>
