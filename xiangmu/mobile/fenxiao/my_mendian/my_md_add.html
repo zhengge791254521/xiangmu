@@ -1,0 +1,321 @@
+<!-- 创建店铺 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>群飞商贸</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/md/md.css" />
+
+	<link rel="stylesheet" type="text/css" href="../skin/mui/css/feedback-page.css" />
+	<link rel="stylesheet" href="../skin/mui/css/mui.picker.min.css"/>
+	<link rel="stylesheet" href="../skin/css/setting.css">
+</head>
+<style type="text/css">
+	.su-time{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius:4px;
+	height: 40px;
+	padding: 5px 15px;
+	margin-bottom: 15px;
+}
+.feedback .image-list{
+	height: auto!important;
+	background-color: #fff;
+}
+</style>
+	<body class="mui-fullscreen others">
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">
+			<div class="mui-view">
+				<div class="mui-navbar">
+				</div>
+				<div class="mui-pages">
+				</div>
+			</div>
+		</div>
+		<!--页面主结构结束-->
+		<!--单页面开始-->
+			<div id="setting" class="mui-page">
+			<!--页面标题栏开始-->
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<a onclick="history.go(-1);" class="mui-left mui-action-back mui-btn-link mui-btn-nav mui-pull-left">
+					<span class="mui-icon mui-icon-left-nav"></span>
+				</a>
+				<h1 class="mui-center mui-title">店铺添加</h1>
+			</div>
+			<!--页面标题栏结束-->
+			<!--页面主内容区开始-->
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+<!-- <div id="segmentedControl" class="mui-segmented-control">
+	<a class="mui-control-item mui-active" href="#item1">
+		基础设置
+	</a>
+	<a class="mui-control-item" href="#item2">
+		店员设置
+	</a>
+	</a>
+</div> -->
+<div class="pd-10">
+<form class="">
+	<div class="mui-input-row">
+		<input type="text" name="title" class="mui-input-clear" placeholder="店铺名称">
+	</div>
+
+	<div class="mui-input-row">
+		<input type="text" name="tel" class="mui-input-clear" placeholder="店铺电话">
+	</div>
+	<div class="mui-input-row">
+		<div class="mg-t-10 mg-b-5 tx-3">店铺地址</div>
+		<a href="#adress" class="pd-tb-15 z-img bg-f bd" id="address_href"></a>
+		<input type="hidden" class="add_name" name="address">
+		<input type="hidden" class="add_lat" name="baidumap[lat]">
+		<input type="hidden" class="add_lng" name="baidumap[lng]">
+	</div>
+	<div class="mui-input-row">
+		<div class="mg-t-10 mg-b-5 tx-3">店铺类型</div>
+		<select name="area" id="">
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</select>	
+	</div>
+	<div class="mui-input-row">
+		<div class="mg-b-5 tx-3">配送时间</div>
+		<div data-options='{"type":"time","endTime":"14:30"}' class="su-time">25:12</div>
+		<input type="hidden" name="distribution" class="su-time-input" placeholder="配送时间" value="25:12">
+	</div>
+
+	<div class="mui-input-row">
+		<div class="mg-b-5 tx-3">营业时间</div>
+		<div class="">
+			<div class="flt-l mui-col-xs-6 bg-e">
+				<div data-options='{"type":"time","endTime":"14:30"}' class="su-time mg-r-10">25:12</div>
+				<input type="hidden" name="begintime" class="su-time-input" placeholder="配送时间" value="25:12">
+			</div>
+			<div class="flt-l mui-col-xs-6 bg-e">
+				<div data-options='{"type":"time","endTime":"14:30"}' class="su-time mg-l-10">25:12</div>
+				<input type="hidden" name="endtime" class="su-time-input" placeholder="配送时间" value="25:12">
+			</div>
+		</div>
+		<div data-options='{"type":"time","endTime":"14:30"}' class="su-time">25:12</div>
+		<input type="hidden" name="distribution" class="su-time-input" placeholder="配送时间" value="25:12">
+	</div>
+	<div class="mui-input-row feedback">
+		<div class="mg-t-10 mg-b-5 tx-3">店铺LOGO图</div>
+		<div class="image-list">
+			<div class="image-item space"><div class="image-close">X</div><input type="file" accept="image/*" id="image-1"></div>
+			<div class="image-item" style="background-image:url(../skin/images/gds01.jpg)">
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row bd-0 mg-t-10">
+		<div class="mg-t-md mg-b-5 tx-3">店铺介绍</div>
+		<textarea id="textarea" class="pd-5" name="details" rows="4" placeholder="店铺描述"></textarea>
+	</div>
+	<div class="mui-input-row bd-0 mg-t-10">
+		<div class="mg-t-md mg-b-5 tx-3">店铺公告</div>
+		<textarea id="textarea" class="pd-5" rows="4" placeholder="店铺公告" name="announce"></textarea>
+	</div>
+	<div class="mg-t-10">
+		<div class="mui-input-row fanwei-radio">
+			<div class=" mg-b-5 tx-3">
+				<div class="mg-b-10">启用店铺</div>
+				<div class="bg-f">
+					<span class="mui-radio" >
+						<label>是</label>
+						<input name="type" type="radio" name="is_show">
+					</span>
+					<span class="mui-radio">
+						<label>否</label>
+						<input name="type" type="radio" name="is_show">
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mg-t-10">
+		<div class="mui-input-row fanwei-radio">
+			<div class=" mg-b-5 tx-3">
+				<div class="mg-b-10">是否推荐</div>
+				<div class="bg-f">
+					<span class="mui-radio" >
+						<label>是</label>
+						<input name="type" type="radio" name="is_hot">
+					</span>
+					<span class="mui-radio">
+						<label>否</label>
+						<input name="type" type="radio" name="is_hot">
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pd-tb-10">
+		<button type="button" class="mui-btn mui-btn-danger mui-btn-block">确定</button>
+	</div>
+</form>
+</div>
+					</div>
+				</div>
+			</div>
+			<!--页面主内容区结束-->
+		</div>
+		<!--单页面结束-->
+		
+<div id="adress" class="mui-page su-scroll">
+	<div class="mui-navbar-inner mui-bar mui-bar-nav">
+		<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+			<span class="mui-icon mui-icon-left-nav"></span>返回
+		</button>
+		<button id="add_true" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right" style="color:#fff;">完成</button>
+		<h1 class="mui-center mui-title">店铺地址</h1>
+	</div>
+	<div class="mui-page-content">
+		<div class="pg-tb-10 su-scroll-title">
+			<div class="su-search-box pd-tb-5">
+				<button class="mui-icon mui-icon-search flt-r bd-0 mg-r-10" id="ce-side"></button>
+				<div class="overhid su-sear-body">
+					<div class="mui-input-row mui-search">
+						<input type="search" class="mui-input-clear" id="search_input" placeholder="搜索地方" >
+					</div>
+				</div>
+			</div>
+			<div class="txtAreaCode pd-10" id="txtAreaCode"></div>
+		</div>
+		<div class="su-scroll-body" id="l-map">
+		</div>
+	</div>
+</div>		
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+
+<script src="../skin/mui/js/mui.view.js"></script>
+<script src="../skin/mui/js/mui.picker.min.js"></script>
+<!-- 百度地图 -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HsPYuiBGrmDG0SbqhKPgXSwH"></script>
+	<script>
+		mui.init();
+		//初始化单页view
+		var viewApi = mui('#app').view({
+			defaultPage: '#setting'
+		});
+		//初始化单页的区域滚动
+		mui('.mui-scroll-wrapper').scroll();
+
+
+		var view = viewApi.view;
+		(function($) {
+			//处理view的后退与webview后退
+			var oldBack = $.back;
+			$.back = function() {
+				if (viewApi.canBack()) { //如果view可以后退，则执行view的后退
+					viewApi.back();
+				} else {
+				//执行webview后退
+					oldBack();
+				}
+			};
+
+	// 百度地图API功能
+	var map = new BMap.Map("l-map");
+	var point = new BMap.Point(104.072221,30.663546);
+	var zuobiao = point,
+			address;
+
+	map.centerAndZoom(point, 16);
+	var marker = new BMap.Marker(point);// 创建标注
+	map.addOverlay(marker);             // 将标注添加到地图中
+	marker.enableDragging();           // 可拖拽
+	markDragend(marker);
+	geocodeSearch(point);
+
+	map.addEventListener("click",function(e){
+		map.clearOverlays();
+		point = new BMap.Point(e.point.lng,e.point.lat);
+		marker = new BMap.Marker(point);// 创建标注
+		geocodeSearch(point);
+		map.addOverlay(marker);
+		marker.enableDragging(); 
+		markDragend(marker);
+	});
+	function geocodeSearch(pt) {
+			zuobiao = pt;
+      var myGeo = new BMap.Geocoder();
+      myGeo.getLocation(pt, function (rs) {
+      var addComp = rs.addressComponents;
+      address = addComp;
+      console.log(addComp);
+      jQuery("#txtAreaCode").html(addComp.province + ", " + addComp.city + ", " + addComp.district+", " + addComp.street);
+      });
+  }
+  function markDragend(marker){
+		marker.addEventListener("dragend", function(e){
+			var o_Point =  marker.getPosition();
+			var pointMarker = new BMap.Point(o_Point.lng, o_Point.lat);
+      geocodeSearch(pointMarker);
+		});
+  }
+  document.getElementById("ce-side").onclick = function (){
+        // 创建地址解析器实例
+        var searchTxt = document.getElementById("search_input").value;
+        var myGeo = new BMap.Geocoder();
+        // 将地址解析结果显示在地图上,并调整地图视野
+        myGeo.getPoint(searchTxt, function(point){
+            map.clearOverlays();
+            if (point) {
+                map.centerAndZoom(point, 16);
+                marker = new BMap.Marker(point);
+                map.addOverlay(marker);
+                marker.enableDragging(); 
+                var pointMarker = new BMap.Point(point.lng, point.lat);
+                geocodeSearch(pointMarker);
+                markDragend(marker);
+            }else{
+                alert("您选择地址没有解析到结果!");
+            }
+        }, "成都市");
+    }
+
+  $('body').on('tap','#add_true',function(){
+  	console.log(zuobiao.lat)
+  	var add_a = jQuery('#address_href');
+  	 
+  	add_a.html(address.city + ", " + address.district+", " + address.street);
+  	add_a.siblings('input.add_name').val(address.province + ", " + address.city + ", " + address.district+", " + address.street);
+  	add_a.siblings('input.add_lat').val(zuobiao.lat);
+  	add_a.siblings('input.add_lng').val(zuobiao.lng);
+
+  	viewApi.back();
+  })
+
+  $('.su-time').each(function(i, el) {
+		el.addEventListener('tap', function() {
+			var self = jQuery(this);
+			var optionsJson = this.getAttribute('data-options') || '{}';
+			var options = JSON.parse(optionsJson);
+			var input = self.siblings('input:hidden');
+
+			var picker = new $.DtPicker(options);
+			picker.show(function(rs) {
+				input.val(rs.text);
+				self.text(rs.text);
+				picker.dispose();
+			});
+		}, false);
+	});
+ })(mui);
+	</script>
+
+</html>

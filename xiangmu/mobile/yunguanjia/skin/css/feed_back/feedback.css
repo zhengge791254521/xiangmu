@@ -1,0 +1,287 @@
+/*市场反馈*/
+.container-fluid{
+	background-color:#FFF;	
+}
+body{
+	background-color:#FFF;
+}
+.wx-head{
+	margin-top:-1px;	
+}
+h4{
+	color:#FFF;
+	font-family:"微软雅黑";	
+	margin:0;
+	padding:0;
+	font-weight:600;
+	line-height:50px;
+}
+h5{
+	color:#000;
+	font-family:"微软雅黑";	
+	font-weight:600;
+	padding:20px 0;
+}
+h6{
+	color:#4c4c4d;
+	font-family:"微软雅黑";
+}
+.jia_box{
+	background:#ebecee;
+	position:fixed;	
+	bottom:-105px;
+	left:0;
+	width:100%;
+	z-index:2;
+}
+.jia_box_up{
+	background:#ebecee;
+	position:fixed;	
+	bottom:0;	
+	left:0;
+	width:100%;
+}
+.jia{
+	height:60px;
+	border-top:1px solid #cacccc;
+	border-bottom:1px solid #cacccc;	
+}
+.input_box_01{ 
+	margin-top:12px;
+}
+.fa-times-circle{
+	margin-top:12px;
+	color:#999999;
+	font-size:2.5em;
+	cursor:pointer;
+	-moz-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);	
+}
+.my_btn{
+	margin-top:12px;
+	border-color:#b3b3b3;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#737373;
+}
+.btn_pic_box{
+	text-align:center;	
+}
+.xiaoxiao{
+	width:100%;	
+	}
+.btn_pic_box h6{
+	padding:15px 0;	
+}
+.btn_pic{
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	border-radius:6px;	
+	display:block;
+	border:1px solid #bfbfbf;
+}
+.btn_pic i{
+	line-height:50px;	
+}
+.pic_box{
+	margin-top:24px;	
+}
+.area{
+	width:100%;
+	resize:none;
+	height:120px;
+	border-radius:4px;
+	border:1px solid #cccccc;
+}
+.fa-plus{
+	color:#c2c2c2;	
+}
+.btn_up{
+	width:100%;	
+	background-color:#00a0e9;
+	border:0 none;
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-size:18px;
+	font-weight:200;
+}
+.btn_up:hover{
+	background-color:#008ac9;
+	color:#FFF;
+}
+.btn_up_box{
+	margin-top:70px;
+	width:100%;
+}
+.title_box{
+	border-bottom:#ddddde 1px solid;
+}
+.title_box h4{
+	line-height:18px;
+	padding:13px 0 10px 0;	
+}
+.title_box h6{
+	line-height:14px;	
+}
+.fa-angle-right{
+	color:#8a8889;
+	line-height:68px;
+}
+.title_title{
+	color:#333;
+	font-weight:500;
+}
+
+/*留言*/
+.message_box{
+	width:100%;
+	padding:15px;	
+	overflow:hidden;
+}
+.message_box time{
+	font-size:0.9em;	
+	opacity:0.8;
+}
+.message_img_right{
+	float:right;	
+}
+.message_right{
+	float:right;
+	background-color:#8ec31e;
+	color:#FFF;
+	margin-right:20px;
+}
+.message_img img{
+	width:inherit;
+	height:inherit;	
+}
+.message_right:before{
+	content:"";
+	display:block;
+	position:absolute;
+	background:url(../../images/feed_back/message_01.svg) center center no-repeat;
+	width:30px;
+	height:30px;
+	right:-20px;
+	top:0;
+}
+.message_img_left{
+	float:left;	
+}
+.message_left{
+	float:left;
+	background-color:#1991f0;
+	color:#FFF;	
+	margin-left:20px;
+}
+.message_left:before{
+	content:"";
+	display:block;
+	position:absolute;
+	background:url(../../images/feed_back/message_02.svg) center center no-repeat;
+	width:30px;
+	height:30px;
+	left:-20px;
+	top:0;
+}
+@media (max-width: 768px) {
+.message{
+	max-width:200px;
+	border-radius:8px;
+	padding:8px 6px 8px 6px;
+	position:relative;
+	word-break:break-all;
+	margin-top:10px;
+}
+.message_img{
+	width:44px;
+	height:44px;
+	border-radius:8px;
+	text-align:center;	
+	overflow:hidden;
+}
+.fankui_img{
+	border-radius:6px;
+}
+.fankui_img{
+	border-radius:6px;
+	width:160px;
+	overflow:hidden;
+}
+.fankui_img img{
+	width:inherit;
+}
+.img_box{
+		padding:0;	
+	}
+.img_list{
+		width:100%;	
+		border:2px #fafafa solid;
+	}
+}
+@media (min-width: 768px) {
+.message{ 
+	max-width:500px;
+	border-radius:8px;
+	padding:8px 6px 8px 6px;
+	position:relative;
+	word-break:break-all;
+	margin-top:10px;
+}
+.message_img{
+	width:54px;
+	height:54px;
+	border-radius:8px;
+	text-align:center;	
+	overflow:hidden;
+}
+.fankui_img{
+	border-radius:6px;
+	width:240px;
+	overflow:hidden;
+}
+.fankui_img img{
+	width:inherit;
+}
+.img_box{
+		padding:0;	
+	}
+.img_list{
+		width:100%;	
+		border:4px #fafafa solid;
+	}
+}
+.foot_box{
+	width:100%;	
+	height:65px;
+}
+.zhezhao{
+	opacity:0;	
+	z-index:1;
+}
+.img_big{
+	padding:0 15px;	
+	margin-top:10px;
+	overflow:hidden;
+}
+
+/*-------------------------------*/
+.icon{
+	font-size:2.2em;	
+}
+.delete_box{
+	overflow:hidden;	
+}
+/********************************************************************/
+.text_box{
+	padding:5px;
+	width:100%;
+	overflow:hidden;
+	background-color:#FFF;
+	border-radius:4px;
+	border:1px solid #cccccc;	
+}

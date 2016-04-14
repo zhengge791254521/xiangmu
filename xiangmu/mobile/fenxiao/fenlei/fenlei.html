@@ -1,0 +1,222 @@
+<!-- 分类页面 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>三级分销</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../skin/fonts/style.css"/>
+	<link rel="stylesheet" href="../skin/css/public.css" />
+	<link rel="stylesheet" href="../skin/css/style.css" />
+</head>
+<style type="text/css">
+.su-buy-select-box .mui-segmented-control .mui-control-item{
+	padding: 16px 5px;
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+  <a class="mui-icon mui-pull-right icon-iconfont-search"></a>
+	<div class="mui-title">分类</div>
+</header>
+<!-- <nav class="mui-bar mui-bar-tab">
+	<a id="defaultTab" class="mui-tab-item" href="tab-webview-subpage-about.html">
+		<span class="mui-icon icon-iconfont-home"></span>
+		<span class="mui-tab-label">首页</span>
+	</a>
+	<a class="mui-tab-item" href="tab-webview-subpage-chat.html">
+		<span class="mui-icon icon-iconfont-shop"></span>
+		<span class="mui-tab-label">店铺</span>
+	</a>
+	<a class="mui-tab-item mui-active" href="tab-webview-subpage-contact.html">
+		<span class="mui-icon icon-iconfont-sort"></span>
+		<span class="mui-tab-label">分类</span>
+	</a>
+	<a class="mui-tab-item" href="tab-webview-subpage-setting.html">
+		<span class="mui-icon icon-iconfont-cart"><span class="mui-badge">9</span></span>
+		<span class="mui-tab-label">购物车</span>
+	</a>
+	<a class="mui-tab-item" href="tab-webview-subpage-setting.html">
+		<span class="mui-icon icon-iconfont-my"></span>
+		<span class="mui-tab-label">我的</span>
+	</a>
+</nav> -->
+<div class="mui-content su-scroll">
+<div class="su-scroll-body">
+	<!-- <div id="pullrefresh" class="mui-scroll-wrapper"> -->
+    <!-- <div class="mui-scroll"> -->
+    	<div class="mui-row mui-fullscreen su-buy-select-box">
+				<div class="mui-col-xs-3 pst-r">
+					<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+							<a class="mui-control-item mui-active" href="#content1">男装
+								<!-- 设置id是为了判断加入购物车的时候货物的类型 class加show　表示显示 -->
+								<span class="sel-num" id="cebian_1" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content2">数码
+								<span class="sel-num" id="cebian_2" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content3">女装
+								<span class="sel-num" id="cebian_3" data-num="0">0</span>
+							</a>
+					</div>
+				</div>
+				<div id="su-buy-control-body" class="mui-col-xs-9 a-href">
+					<div id="content1" class="mui-control-content mui-active">
+						<div class="mui-scroll">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+						</ul>		
+					</div>
+				</div>
+				<div id="content2" class="mui-control-content">
+					<div class="mui-scroll">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="content3" class="mui-control-content">
+					<div class="mui-scroll">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-6">
+								<a href="../mendian/md_shangpin.html">
+									<img class="mui-media-object" src="../skin/images/yifu.jpg">
+									<div class="ft-14 mui-ellipsis">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/mui/js/mui.lazyload.js"></script>
+<script src="../skin/mui/js/mui.lazyload.img.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+
+<script src="../skin/js/public/super.js"></script>
+<script type="text/javascript">
+
+;(function($){
+var value = [];
+
+	$('.mui-control-content').scroll();
+	
+	$('#su-buy-control-body').on('tap','.mui-table-view-cell a',function(e) {
+    	console.log(jQuery(e.target).hasClass('su-buybtn-box'))
+    	var tar = jQuery(e.target);
+    	if(tar.hasClass('su-buybtn-box') || tar.hasClass('su-buy-add') || tar.hasClass('su-buy-del') || tar.hasClass('su-buy-body')){
+    		return false;
+    	}
+    	//alert('链接');
+    	// var self = jQuery(this);
+    	// alert(self.attr('href'))
+    });
+    
+   
+
+
+
+	
+
+	$('body').on('tap','#su-buy-true',function(){
+		// jQuery.ajax({
+		// 	url: '/path/to/file',
+		// 	type: 'post',
+		// 	dataType: 'json',
+		// 	data: {value:value},
+		// 	success:function(){
+		// 		下单成功，跳转
+		// 	}
+		// });
+	})
+
+	$('#su-buy-control-body').imageLazyload({
+		placeholder: '../skin/images/42x42.gif'
+	});
+ })(mui);
+</script>
+</html>
+

@@ -1,0 +1,324 @@
+body{background:#fff;}
+a,a:hover{
+	text-decoration: none;
+}
+.index-top{
+	height: 50px;
+	width: 100%;
+	background:#efefef;
+	padding: 5px 15px;
+	position: fixed;
+
+}
+.top-img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	float: left;
+}
+.user-name{
+	height: 40px;
+	/*line-height: 50px;*/
+	float: left;
+	padding:0 10px;
+}
+.user-name div{
+	font-weight: 400;
+	font-size: 16px;
+}
+.user-name span{
+	font-size: 12px;
+}
+.uesr-tianjia{
+	display: inline-block;
+	float: right;
+	color:#0069b7;
+	padding-top: 5px;
+}
+.index-content{
+	width: 100%;
+	margin: 0;
+	padding: 50px 0 0;
+	/*background: #000;*/
+}
+.cont-kuai{
+	display: inline-block;
+	height: 50%;
+	line-height: 50%;
+	border-bottom:1px solid #ccc;
+	padding:0 10px;
+	color:#0069b7;
+	text-decoration: none!important;
+}
+
+.cont-kuai p{
+	width: 70px;
+	border-radius: 35px;
+	height: 70px;
+	border: 1px solid #0069b7;
+	line-height: 80px;
+	/*text-align: center;*/
+	margin: 0 auto;
+}
+.cont-kuai p i{
+	font-size: 45px;
+	color:#0069b7;
+}
+.cont-kuai span{
+	line-height: 2em; 
+	font-size: 14px;
+}
+.ico_yuan {
+	margin: 0 auto;
+    border: 1px solid #0068b7;
+    border-radius: 100%;
+    color: #0068b7;
+    height: 86px;
+    line-height: 86px;
+    width: 86px;
+}
+.ico_yuan:hover{
+	background: #0068b7;
+	color:#fff;
+}
+.ico_yuan i{
+	font-size: 40px;
+}
+.index-bottom{
+	height: 160px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	border-top:1px solid #ccc;
+}
+
+.yuanbox{
+	height:60px;
+	width:60px;
+	line-height:60px;
+	border-radius:100%;
+	border:1px solid #0068b7;
+	color:#0068b7;
+	margin: 0 auto;
+	text-align:center;	
+	}
+.yuanbox:hover{
+	background:#0068b7;
+	color:#fff;	
+	}
+.yuanbox i{
+	font-size: 30px;
+}
+.icotwobox{
+	width:100%;
+	background:#fff;
+	padding:10px 0;
+	}
+.icotwobox span{
+	line-height: 2em;
+}
+.foot{
+	background:#fafafa;
+	padding:5px 0;
+	height:55px;
+	width:100%;
+	}
+.foot>.row>div{
+	cursor: pointer;
+}
+.foot a .footer_ico{
+	color:#0068b7;
+}
+.footer_ico i{
+	font-size: 20px;
+}
+
+.yingyong{
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	left: 0;
+	background: #000;
+    opacity: 0.3;
+    top: 0;
+    z-index: 998;
+}
+#yingyong{
+	background: #efefef;
+    border-left: 1px solid #ccc;
+    left: 100%;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    display: inline-block;
+    height: 100%;
+    z-index: 999;
+    padding: 10px 0 80px;
+}
+.ying-box{
+	height: 
+}
+.ying-box ul{
+	width: 100%;
+	border-top: 1px solid #ccc;
+}
+.ying-box ul li{
+	width: 100%;
+	background: #fff;
+	border-bottom:1px solid #ccc;
+	height: 40px;
+	line-height: 35px;
+	padding-left: 10px;
+	font-size: 14px;
+	position: relative;
+}
+.ying-box ul li i{
+	color:#0068b7;
+	position: absolute;
+	left: 10px;
+	z-index: 11;
+}
+.ying-box ul li>a{
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	padding-left: 35px;
+	z-index: 10;
+}
+.ying-box ul li>a:hover{
+	background: #ccc;
+}
+.ying-box ul li .ying-box-checkbox{
+	position: absolute;
+	right: 15px;
+	top:10px;
+	z-index: 12;
+}
+.add_wai_box{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+	z-index: 1;
+}
+/*.add_module{
+	position: relative;
+}
+.add_mo_none{
+	opacity: 1!important;
+	bottom: 65px;
+	top: none;
+}
+.add_mo_none .arrow{
+	bottom:-15px;
+}*/
+.add_module_ul{
+	z-index: 2;
+	position: relative;
+}
+.add_module_ul li{
+	width: 4em;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	/*width: 3em;*/
+}
+.add_module_ul li a{
+	padding: 5px 0;
+	width: 100%;
+	display: inline-block;
+}
+
+
+/*复选框按钮*/
+.input_switchery {
+	width:60px;
+	height: 40px;
+	border-radius: 40px;
+	position: relative;
+}
+.input_switchery input[type=checkbox]{
+	display: none;
+}
+.input_switchery.md{
+	width: 45px;
+	height: 30px;
+	border-radius: 30px;
+}
+.input_switchery.sx{
+	width: 30px;
+	height: 20px;
+	border-radius: 20px;
+}
+
+.input_switchery .label_2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+	border-radius: 40px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .5s ease;
+}
+.input_switchery.md .label_2{
+	border-radius: 30px;
+}
+.input_switchery.sx .label_2{
+	border-radius: 20px;
+}
+
+.input_switchery .label_1 {
+	display: block;
+	width: 64%;
+	height: 94%;
+	border-radius: 100%;
+ 	top:;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	left: 2%;
+	top:3%;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.input_switchery input[type=checkbox]:checked + .label_1 {
+	left: 33%;
+}
+.input_switchery input[type=checkbox]:checked ~ .label_2{
+	background: #0068b7 ;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+	.ico_yuan {
+    height: 150px;
+    line-height: 150px;
+    width: 150px;
+}
+	.ico_yuan i{
+		font-size: 80px!important;
+	}
+	.cont-kuai span{
+	line-height: 3em;
+	font-size: 18px;
+}
+
+}

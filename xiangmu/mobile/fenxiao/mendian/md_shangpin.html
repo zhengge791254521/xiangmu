@@ -1,0 +1,452 @@
+<!-- 商品详情页面 加入购物车和购买 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../skin/css/md/md.css"/>
+</head>
+<style type="text/css">
+.su-ser-score>i{
+	/*font-size: 20px;*/
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</div>
+</header>
+
+<nav class="mui-bar mui-bar-tab sp-bar-tab">
+	<a class="mui-tab-item mui-active bd-r tab-collect" data-status="no">
+		<span class="mui-icon mui-icon-star tx-f"></span>
+		<span class="mui-tab-label tx-f">收藏</span>
+	</a>
+	<a class="mui-tab-item" href="tab-webview-subpage-setting.html">
+		<span class="mui-icon icon-iconfont-cart tx-f"><span id="num" class="mui-badge">5</span></span>
+		<span class="mui-tab-label tx-f">购物车</span>
+	</a>
+	<a class="mui-tab-item bg-green" id="buy_car">
+		<span class="mui-tab-label ft-14 tx-f">加入购物车</span>
+	</a>
+	<a class="mui-tab-item bg-f30" id="buy">
+		<span class="mui-tab-label ft-14 tx-f">立即购买</span>
+	</a>
+</nav>
+<div class="mui-content">	
+<div id="slider" class="mui-slider tiele-slider" >
+		<div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="../skin/images/yuantiao.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="../skin/images/shuijiao.jpg">
+				</a>
+			</div>
+			<!-- 第二张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="../skin/images/muwu.jpg">
+				</a>
+			</div>
+			<!-- 第三张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="../skin/images/cbd.jpg">
+				</a>
+			</div>
+			<!-- 第四张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="../skin/images/yuantiao.jpg">
+				</a>
+			</div>
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="../skin/images/shuijiao.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+		</div>
+	</div>
+
+<div id="segmentedControl" class="mui-segmented-control a-href">
+	<a class="mui-control-item mui-active" href="md_shangpin.html">
+		商品详情
+	</a>
+	<a class="mui-control-item" href="md_shangpin_pingjia.html">
+		评价
+	</a>
+</div>
+<div class="pd-l-10 bg-f mg-t-10">
+	<div class="pd-tb-5 pd-r-10 ft-14 tx-9 detail">
+		<div class="mui-col-xs-8 bd-r flt-l pd-r-5">
+			<p class="mui-ellipsis-2">SHAN家 2016早春重磅加长双面穿绑带长毛水貂绒加厚外套女</p>
+			<p class="mg-b-5">
+			<div class="tx-f30 ft-16 fw-6 fr-l">￥71000.00 <span class="flt-r ft-12 mg-r-5 tx-9">批发价:￥20000</span></div>
+			</p>
+		</div>
+		<div class="mui-col-xs-4 flt-l" align="center">
+			<button type="button" class="mui-btn pd-lr-5 pd-tb-5 mui-btn-danger">￥推荐购买</button>
+			<p class="mg-b-0 ft-12" style="width: 80px;">库存:1110件</p>
+			<p class="mg-b-0 ft-12" style="width: 80px;">销量:2513件</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div class="pd-l-10 bg-f mg-t-10">
+	<div class="pd-r-10 ft-14 tx-9" id="pingjia">
+		<div class="pd-tb-5 pst-r">
+			<p>工艺/流行</p>
+			<p>细分风格:商务休闲</p>
+			<p>图案：纯色</p>
+			<p>关键信息</p>
+			<p>上市年份季节：2015年</p>
+			<p>材质成分：羊毛60%</p>
+			<p>货号：ansuisgod123456</p>
+			<p>面料分类：毛大衣咯</p>
+			<p>基础风格：商务绅士</p>
+			<p>其他</p>
+			<p>使用场景:休闲娱乐</p>
+			<p>适用对象：老年人</p>
+			<p>版型款式</p>
+			<p>服务版型：修身</p> 
+			<p>材质成分：羊毛60%</p>
+			<p>货号：ansuisgod123456</p>
+			<p>面料分类：毛大衣咯</p>
+			<p>基础风格：商务绅士</p>
+			<button id="sale" class="sale mui-btn mui-btn-red mui-btn-outlined pd-xs">我要卖</button>
+		</div>
+	</div>
+</div>
+<div class="bg-f mg-t-10">
+	<ul class="mui-table-view">
+	  <li class="mui-table-view-cell">
+	    <a class="mui-navigate-right store">
+	      <span class="icon-iconfont-home tx-f70"></span> 安xx店铺
+	      <p class="pd-l-5 pd-t-5">全部商品1252个</p>
+	    </a>
+	  </li>
+	</ul>
+	<div class="pd-tb-15 pd-lr-10 a-href">
+	<!-- 此处data-id 表示店铺拥有者Id 申请的时候 会给拥有者发信息 -->
+		<button type="button" data-id="u_1" id="shanghu" class="mui-btn mui-btn-red mui-btn-outlined pd-lr-10">申请成为经销商</button>
+		<a href="md_cont_list.html" class="mui-btn mui-btn-red mui-btn-outlined pd-lr-10 flt-r">进店逛逛</a>
+	</div>
+</div>
+</div>
+
+
+<div class="md-buy-box">
+	<div class="md-mask"></div>
+	<div class="md-buy-group">
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell mui-media">
+				<img class="img-60 flt-l mg-r-5" src="../skin/images/shuijiao.jpg">
+				<div class="mui-media-body">
+					<div class="mui-ellipsis">幸福小笼包</div>
+					<p class="tx-3"><span class="tx-f30">￥25.00</span> /个</p>
+					<p class="mui-ellipsis">库存200个 售出100个</p>
+				</div>
+			</li>
+		</ul>
+		<div class="pd-10 bd-b">
+			<div class="pd-b-5 ft-14">规格</div>
+			<div class="sp-radio">
+				<span class="mui-radio">
+					<input name="radio2" checked="" type="radio" id="1">
+					<label><span class="mui-btn">秋季装</span></label>
+				</span>
+				<span class="mui-radio">
+					<input name="radio2" type="radio" id="2">
+					<label><span class="mui-btn">冬季装</span></label>
+				</span>
+				<span class="mui-radio">
+					<input name="radio2" type="radio" id="3">
+					<label><span class="mui-btn">夏季装</span></label>
+				</span>
+			</div>
+		</div>
+		<div class="pd-10 bd-b">
+			<div class="pd-b-5 ft-14">颜色</div>
+			<div class="sp-radio">
+				<span class="mui-radio">
+					<input name="radio3" checked="" type="radio" id="1">
+					<label><span class="mui-btn">红色</span></label>
+				</span>
+				<span class="mui-radio">
+					<input name="radio3" type="radio" id="2">
+					<label><span class="mui-btn">蓝色</span></label>
+				</span>
+				<span class="mui-radio">
+					<input name="radio3" type="radio" id="3">
+					<label><span class="mui-btn">黄色</span></label>
+				</span>
+			</div>
+		</div>
+		<div>
+			<div class="su-buybtn-box flt-r" data-uid="shang_15" data-type="cebian_3" data-money="20">
+				<span class="mui-icon mui-icon-minus su-buy-del"></span>
+				<span class="su-buy-body" data-num="0">0</span>
+				<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+			</div>
+			<div class="overhid pd-10">
+				合计 ￥<span id="buyCar-num" data-num="0" class="su-buy-num tx-f30">0</span>
+			</div>
+		</div>
+		<div class="pd-10">
+			<button type="button" class="mui-btn mui-btn-danger mui-btn-block mg-t-15">去结算</button>
+		</div>
+	</div>
+</div>
+</body>
+
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+
+<script src="../skin/js/plug/layer.m/layer.m.js"></script>
+<script type="text/javascript">
+;(function($){
+	var slider = mui("#slider");
+	slider.slider({
+		interval: 5000
+	});
+	
+
+	$('body').on('tap','#shanghu',function(){
+		var self = jQuery(this),
+				id = self.attr('data-id');
+		layer.open({
+			title: [
+        '我是标题',
+        'background-color:#8DCE16; color:#fff;margin:0;'
+    	],
+	    content: '<textarea name="" id="jingxiao_sq" class="pd-10" id="" cols="20" rows="6" placeholder="输入申请信息"></textarea>',
+	    btn: ['确认', '取消'],
+	    shadeClose: false,
+	    yes: function(){
+	    		var text = jQuery('#jingxiao_sq').val();
+	    		layer.closeAll();
+	    		// jQuery.ajax({
+	    		// 	url: '/path/to/file',
+	    		// 	type: 'post',
+	    		// 	dataType: 'json',
+	    		// 	data: {id: id,value: text},
+	    		// 	success:function(data){
+			    			layer.open({
+				          content: '您已申请，请等待店主回复',
+				          style: 'background-color:rgba(0,0,0,0.6); color:#fff; border:none;text-align: center;',
+				          time:2
+				      	})
+	    		// 	}
+	    		// });
+	    		
+	    }, no: function(){
+	        layer.closeAll();
+	    }
+		});
+	});
+	$('body').on('tap','.tab-collect',function(){
+  	var self = jQuery(this),
+  			sel = self.attr('data-status'),
+  			icon = self.find('.mui-icon');
+  			stastus = false,
+  			cont='',
+  			color = self.find('.mui-icon');
+  			if(sel == 'yes'){
+  				cont = '已取消收藏';
+  				self.attr('data-status','no');
+  				icon.removeClass('mui-icon-star-filled').addClass('mui-icon-star');
+  				status = false;
+  			}else{
+					cont = '已成功收藏';
+					self.attr('data-status','yes');
+					icon.removeClass('mui-icon-star').addClass('mui-icon-star-filled');
+  				status = true;
+  			}
+  		// jQuery.ajax({
+  		// 	url: '/path/to/file',
+  		// 	type: 'post',
+  		// 	dataType: 'json',
+  		// 	data: {status: status},
+  		// 	success:function(data){
+  					// if(data){
+  					// 	self.attr('data-status','no');
+  					// 	color.removeClass('tx-f70').addClass('tx-6');
+  					// }else{
+  					// 	self.attr('data-status','yes');
+  					// 	color.removeClass('tx-6').addClass('tx-f70');
+  					// }
+  		// 	}
+  		// });
+  			layer.open({
+          content: cont,
+          style: 'background-color:rgba(0,0,0,0.6); color:#fff; border:none;text-align: center;',
+          time:2
+      	})
+
+  })
+
+	$('body').on('tap','#buy_car',function(){
+		jQuery('.md-buy-box').addClass('active')
+	})
+	
+	$('body').on('tap','.md-mask',function(){
+		jQuery('.md-buy-box').removeClass('active')
+	})
+
+
+	var value = [];
+
+	$('body').on('tap','.su-buy-add',function(event){
+		var self = jQuery(this);
+		buyAdd(self,true);
+	});
+	$('body').on('tap','.su-buy-del',function(e) {
+		var self = jQuery(this);
+		buyAdd(self,false);
+  });
+	function buyAdd(self,opt){
+		// 购物车的盒子
+		var buyBox = jQuery('#buyCar-num'),
+				dataNum = buyBox.attr('data-num'),
+				moneyBox = jQuery('#buyCar-money'),
+				moneyNum = moneyBox.attr('data-num'),
+
+
+		// 点击的商品类型		
+				btnBox = self.closest('.su-buybtn-box'),
+				type = btnBox.attr('data-type'),
+				money = btnBox.attr('data-money'),
+				uid = btnBox.attr('data-uid'),
+
+		// 加减按钮中间的数量
+				selBox = self.siblings('.su-buy-body'),
+				selNum = selBox.attr('data-num'),
+				delBox = self.hasClass('su-buy-del') ? self : self.siblings('.su-buy-del'),
+
+				addBuy = function(box,num){
+					!box.is(':hidden') || box.addClass('show');
+					
+					num = !isNaN(parseInt(num)) ? parseInt(num) + 1 :0;
+					box.text(num).attr('data-num',num);
+
+					return num;
+				},
+
+				subBuy = function(box,num){
+					num = !isNaN(parseInt(num)) ? parseInt(num) - 1 :0;
+					box.text(num).attr('data-num',num);
+					num == 0 && box.removeClass('show');
+
+					return num;
+				},
+
+				eachNum = function(id,num,opt){
+					//用关联数组的方式 将对象的键名 用变量改变
+					var aa = id,
+							thisValue = {};
+							thisValue[aa] = num,
+
+							yan = false,
+							inx = 0;
+							thisValue[id] = num;
+					
+					jQuery.each(value,function(index, el) {
+						jQuery.each(el,function(i,item){
+							if(i == id){
+								yan = true;
+								inx = index;
+								return false;
+							}
+						});
+						if(yan){
+							return false
+						}
+					});
+					// console.log(thisValue,yan,inx)
+					if(opt){
+						if(yan){
+							value.splice(inx,1,thisValue);
+						}else{
+							value.push(thisValue)
+						}
+					}else{
+						num != 0 ? value.splice(inx,1,thisValue) : value.splice(inx,1);
+						
+					}
+				}
+		
+
+
+
+		money = !isNaN(Number(money)) ? Number(money):0;
+		moneyNum = !isNaN(Number(moneyNum)) ? Number(moneyNum):0;
+
+		//accAdd 自定义的js 加法 主要用于 小数点计算 
+		
+		if(opt){
+			// 购物车的数量
+			dataNum = addBuy(buyBox,dataNum);
+			// 侧边的分类 购买数量
+			// typeNum = addBuy(typeBox,typeNum);
+			// 加减按钮中间的数量
+			selNum = addBuy(selBox,selNum);
+
+			delBox.hasClass('show') || delBox.addClass('show');
+			selBox.hasClass('show') || selBox.addClass('show');
+
+			eachNum(uid,selNum,true);
+			moneyNum = moneyNum.accAdd(money);
+		}else if(selNum > 0){
+			// 购物车的数量
+			dataNum = subBuy(buyBox,dataNum);
+			// 侧边的分类 购买数量
+			// typeNum = subBuy(typeBox,typeNum);
+			// 加减按钮中间的数量
+			selNum = subBuy(selBox,selNum);
+
+			if(selNum == 0){
+				delBox.removeClass('show');
+				selBox.removeClass('show');
+			}
+
+			eachNum(uid,selNum,false);
+			moneyNum = moneyNum.accSub(money);
+		}
+		console.log(selNum)
+		// jQuery.ajax({
+		// 	url: '/path/to/file',
+		// 	type: 'post',
+		// 	dataType: 'json',
+		// 	data: {id:uid,num:selNum},
+		// 	success:function(){
+		// 	}
+		// });
+		
+		console.log(value)
+		moneyBox.text(moneyNum).attr('data-num',moneyNum);
+
+	}
+
+
+ })(mui);
+</script>
+</html>

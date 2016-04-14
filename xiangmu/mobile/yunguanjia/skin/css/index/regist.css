@@ -1,0 +1,87 @@
+/*用户注册*/
+body{
+	background: #0168b7;
+}
+.background-blue .wx-footer{
+	color:#fff;
+}
+
+.regist-top{
+	width: 100%;
+	padding: 15px 0;
+	margin:0;
+}
+.regist-top-logo{
+	padding:0;
+	float: right;
+	max-height:400px; 
+}
+.regist-content{
+	width: 100%;
+	padding: 10px 4%;
+}
+.regist-content .regist-cont{
+	width: 100%;
+	padding: 10px 0;
+}
+.regist-cont .wx-sel-btn{
+	font-size: 1.5em;
+	line-height: 2.3em;
+	padding-right: 12%; 
+}
+.regist-cont .wx-sel-btn .caret{
+	top:1.5em;
+}
+.regist-cont .input-group input,.regist-cont g.input-group span{
+	font-size: 1.5em;
+	height: 2.6em;
+	color: #fff;
+	/*border-color:#588ec7;*/
+	background-color:#0168B7;
+}
+.regist-cont.row{
+	margin: 0;
+}
+.regist-cont .regist-submit{
+	margin: 10px 0;
+	font-size: 1.5em;
+	height: 2.8em;
+	width:50%; 
+}
+.regist-cont [disabled="disabled"]{
+	background:#5bc0de!important;
+	color: #fff;
+	opacity: 1;
+}
+.regist-cont .valida_p{
+	line-height: 2em;
+	font-size: 1.5em;
+	color:#fff;
+}
+.regist-cont .valida_btn{
+	line-height: 2em;
+	font-size: 1.5em;
+	color:#0168B7;
+}
+@media (max-width: 480px) {
+	.regist-valida .valida_p,.regist-valida .valida_btn {
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+	.regist-cont.row button{
+		font-size: 1em;
+	}
+	.regist-valida .valida_p{
+		padding: 5px;
+	}
+	.regist-valida .valida_input{
+		padding: 5px 10px;
+		font-size: 1em!important;
+		line-height: 1.5em!important;
+	}
+	.regist-people .regist-submit{
+		font-size: 1.2em;
+		/*line-height: 1.2em;
+		height: 2em;*/
+	}
+}

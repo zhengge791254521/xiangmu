@@ -1,0 +1,161 @@
+<!-- 用户模块列表 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/user/user.css" />
+</head>
+<style type="text/css">
+</style>
+<body>
+<!-- <header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+  <a class="mui-icon iconfont mui-pull-right">&#xe609;</a>
+	<div class="mui-title">个人中心</div>
+</header> -->
+<nav class="mui-bar mui-bar-tab a-href">
+	<a id="defaultTab" class="mui-tab-item" href="../shouye.html">
+		<span class="mui-icon icon-iconfont-home"></span>
+		<span class="mui-tab-label">首页</span>
+	</a>
+	<a class="mui-tab-item" href="../mendian/md_list.html">
+		<span class="mui-icon icon-iconfont-shop"><span class="mui-badge">9</span></span>
+		<span class="mui-tab-label">店铺</span>
+	</a>
+	<a class="mui-tab-item" href="../fenlei/fenlei.html">
+		<span class="mui-icon icon-iconfont-similar"></span>
+		<span class="mui-tab-label">分类</span>
+	</a>
+	<a class="mui-tab-item" href="../buycar/buy_list.html">
+		<span class="mui-icon icon-iconfont-cart"></span>
+		<span class="mui-tab-label">购物车</span>
+	</a>
+	<a class="mui-tab-item mui-active" href="../user/user.html">
+		<span class="mui-icon icon-iconfont-people"></span>
+		<span class="mui-tab-label">我的</span>
+	</a>
+</nav>
+<div class="mui-content">
+<ul class="mui-table-view" style="margin-top:0;">
+	<li class="mui-table-view-cell user-href a-href">
+		<a class="mui-navigate-right" href="user_massage.html">
+			<div class="su-user-img">
+				<img class="" src="../skin/images/tou.png">
+			</div>
+			
+			<div class="mui-media-body">
+				<div class="mui-ellipsis tx-f">李哥超市</div>
+				<p class="tx-f">普通用户</p>
+				<p class="tx-f"><i class="icon-iconfont-mobile mg-r-xs"></i>15656565656</p>
+			</div>
+		</a>
+	</li>
+</ul>
+<section class="su-index-tab bg-f a-href">
+	<a class="su-tab-list" href="money_yue.html">
+		<h3 class="tx-f90">0.00<span class="ft-16">元</span></h3>
+		<p>我的余额</p>
+	</a>
+	<a class="su-tab-list">
+		<h3 class="tx-f30">6<span class="ft-16">个</span></h3>
+		<p>我的代金卷</p>
+	</a>
+	<a class="su-tab-list" href="money_jifen.html">
+		<h3 class="tx-green">881<span class="ft-16">分</span></h3>
+		<p>我的积分</p>
+	</a>
+</section>
+<section class="user-setting-list a-href">
+	<ul class="mui-table-view mg-t-10">
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right" href="user_fabu.html">
+				<i class="icon-iconfont-text tx-f70"></i>个人发布
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right" href="../my_mendian/my_md_list.html">
+				<i class="icon-iconfont-shop tx-green"></i>我的店铺
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right" href="user_tuiguang.html">
+				<i class="icon-iconfont-redpacket tx-f30"></i>我的分销
+				<span class="mui-badge bg-f30 tx-f">1</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right" href="user_ruzhu.html">
+				<i class="icon-iconfont-pulldown tx-blue"></i>商家入驻
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right" href="message.html">
+				<i class="icon-iconfont-comment tx-f70"></i>消息中心
+			</a>
+		</li>
+	</ul>
+	<ul class="mui-table-view mg-t-10">
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right" href="../order/order_list.html">
+				<i class="icon-iconfont-tag tx-f70"></i>我的订单
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right">
+				<i class="icon-iconfont-like tx-green"></i>我的收藏
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right">
+				<i class="icon-iconfont-present tx-f30"></i>我的兑换
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right">
+				<i class="icon-iconfont-favor tx-blue"></i>我的关注
+			</a>
+		</li>
+	</ul>
+	<ul class="mui-table-view mg-t-10">
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right">
+				<i class="icon-iconfont-vipcard tx-f70"></i>我的卡卷
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right">
+				<i class="icon-iconfont-forward tx-green"></i>我要分享
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right" href="../my_mendian/my_md_dealers.html">
+				<i class="icon-iconfont-group tx-f30"></i>经销管理
+			</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a class="mui-navigate-right"  href="../my_mendian/my_help.html"/>
+				<i class="icon-iconfont-question tx-blue"></i>帮助中心
+			</a>
+		</li>
+	</ul>
+</section>
+</div>
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+<script type="text/javascript">
+;(function($){
+
+
+ })(mui);
+</script>
+</html>

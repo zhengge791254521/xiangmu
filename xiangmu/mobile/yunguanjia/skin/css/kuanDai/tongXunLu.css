@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* 通讯录 */
+/* 通讯录详情 */
+.personal-photo{
+	background: #008cd6;
+	padding-bottom: 15px;
+}
+.per-photo-img{
+	padding: 25px 0 0;
+	text-align: center;
+}
+.per-photo-img img{
+	margin: 0 auto;
+	width: 30%;
+	border: 3px solid #fff;
+}
+.per-photo-name,.per-photo-cont{
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+.per-photo-name h3,.per-photo-cont h4{
+	line-height: 1.5em;
+	color: #fff;
+}
+.personal-content .persona-li,.txl-content .persona-li{
+	width: 100%;
+	padding: 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #c9cacb;
+}
+.personal-content .persona-li a{
+	width: 100%;
+	border-radius:0;
+	border:0;
+	position: relative;
+}
+.personal-content .persona-li>a p{
+	display: inline-block;
+	float: left;
+	padding-left: 5%;
+	font-size:1.2em;
+	line-height: 2.4em;
+	margin: 0;
+}
+.personal-content .persona-li>a i{
+	position: absolute;
+	color:#c8c8c8;
+	right:5%;
+	font-size:1.2em;
+	padding: 0;
+	line-height: 2.4em;
+}
+
+.txl-content .persona-li{
+	padding-left: 5%;
+	font-size:1.4em;
+	line-height: 2.6em;
+	position: relative;
+}
+.txl-content .persona-li>a{
+	position: absolute;
+	/*color:#c8c8c8;*/
+	right:5%;
+	padding: 5px 0 0;
+	/*color: #00a1e9;*/
+}
+.txl-content .persona-li .switch{
+	display: inline-block;
+	position: absolute;
+	right:3%;
+}
+.txl-content .persona-li .switch span{
+	padding:5px;
+	font-size: 12px;
+	width: 30px;
+}
+
+/* 通讯录列表 */
+.communica-cont ul{
+	margin:0;
+	width: 100%;
+}
+table {
+	width: 97%;
+	margin: 6px auto;
+}
+
+

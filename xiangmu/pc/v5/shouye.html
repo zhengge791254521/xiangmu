@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>三思德OA管理系统</title>
+	
+	<link rel="stylesheet" href="skin/css/public/amazeui.min.css">
+	<link rel="stylesheet" href="skin/Font-Awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="skin/css/public/public.css">
+	<link rel="stylesheet" href="skin/css/public/style.css">
+	
+<style type="text/css">
+#vld-tooltip {
+    position: absolute;
+    z-index: 1000;
+    padding: 5px 10px;
+    background: #F37B1D;
+    min-width: 150px;
+    color: #fff;
+    transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+    display: none;
+  }
+
+  #vld-tooltip:before {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -8px;
+    content: "";
+    border-width: 0 8px 8px;
+    border-color: transparent transparent #F37B1D;
+    border-style: none inset solid;
+  }
+</style>
+</head>
+<body ontouchstart>
+<!-- class命名 带有oa前缀的皆为自定义 其余都是 UI组件样式 -->
+<!-- 头部start -->
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top">	<div class="oa-middle-div">
+  <div class="am-topbar-brand">
+    <a href="#"><img src="skin/images/logo-dibu.png" alt=""></a>
+  </div>
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+  	<div class="am-topbar-right">
+  	<!-- 未登录 -->
+      <button class="am-btn am-btn-primary am-radius oa-login">登录</button>
+      <button class="am-btn am-btn-primary am-radius oa-login">注册</button>
+    </div>
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right">
+      <li class="am-active">
+      	<a href="#">首 页</a>
+      </li>
+      <li><a href="#">产品中心</a>
+      </li>
+      <li><a href="#">新闻中心</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">个人中心</a>
+        <ul class="oa-munu-pop">
+          <li>
+            <div class="munu-u-box">
+              <img src="../skin/images/tou.png" alt="" />
+              <div class="">
+                <p >zhenggge791254521</p>
+                <span class="munu-u"><a href="">个人账户</a></span> 
+                <!-- <span class="munu-m"><a href="">消息</a><b class="am-badge am-badge-warning am-round">5</b></span> -->
+              </div>
+            </div>
+            <div class="am-g munu-exit">
+              <a class="am-u-sm-6" href="#">我的订单</a>
+              <a class='am-u-sm-6 ao-exit' href=""> 安全退出</a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</header>
+<section class="oa-index-lunbo top-jul">
+	<ul class="lunbo-tu">
+		<li style="display:block; background:url(skin/images/a1.jpg) 50%;"></li>
+		<li style="background:url(skin/images/a2.jpg) 50%;"></li>
+		<li style="background:url(skin/images/a3.jpg) 50%;"></li>
+		<li style="background:url(skin/images/a4.jpg) 50%;"></li>
+	</ul>
+	<div class="lunbo-yuan">
+			<p class="active"></p>
+			<p></p>
+			<p></p>
+			<p></p>
+	</div>
+</section>
+<section class="oa-middle-div oa-index-trait">
+	<ul class="am-avg-md-3">
+		<li class="">
+			<i class="fa fa-cloud"></i>
+			<h1 class="">全面云端化</h1>
+			<p>满足客户即用，快速部署，随时扩容的云架构设计</p>
+		</li>
+		<li class="">
+			<i class="fa fa-desktop"></i>
+			<h1 class="">全面平台化</h1>
+			<p>前台轻量化、后台全面引擎化、灵活适用组织需求变化</p>
+		</li>
+		<li class="">
+			<i class="fa fa-comment"></i>
+			<h1 class="">全面社交化</h1>
+			<p>让组织变得更加扁平，更加柔性，让员工成为中心</p>
+			<button></button>
+		</li>
+	</ul>
+</section>
+<section class="oa-image-fuzzy" id="oa-image-fuzzy">
+	<div class="oa-middle-div">
+		<div class="oa-mokuai">
+			<h1  data-am-scrollspy="{animation: 'slide-top', delay: 300}">10大模块让您畅游办公乐趣</h1>
+			<p  data-am-scrollspy="{animation: 'scale-up', delay: 600}">前台轻量化、后台全面引擎化、灵活适用组织需求变化,前台轻量化、后台全面引擎化、灵活适用组织需求变化,前台轻量化、后台全面引擎化、灵活适用组织需求变化</p>
+			<a href="product/gongneng.html" class="am-btn am-btn-xl am-radius"  data-am-scrollspy="{animation: 'slide-bottom', delay: 1000}">查看功能模块</a>
+		</div>
+		
+	</div>
+</section>
+<section class="oa-cont-year">
+	<div class="oa-middle-div">
+		<div class="am-g">
+			<div class="am-u-md-3" data-am-scrollspy="{animation: 'fade', delay: 500, repeat: false}">
+				<div class="oa-year-cont am-panel am-panel-primary">
+          <div class="am-panel-hd">
+              ￥750元/年
+          </div>
+          <div class="am-panel-bd oa-project-list">
+          	<p>互联网+时代，组织中越来越多的内部业务环节外包化、社会化，因而形成基于生态圈的多触角互动沟通，组织需要有提升组织效率、高效运营，协同创新，及可扩展应用的“互联网+”战略工具</p>
+          </div>
+        </div>
+			</div>
+			<div class="am-u-md-3" data-am-scrollspy="{animation: 'fade', delay: 900, repeat: false}">
+				<div class="oa-year-cont am-panel am-panel-success">
+          <div class="am-panel-hd">
+              ￥750元/年
+          </div>
+          <div class="am-panel-bd oa-project-list">
+          	<p>互联网+时代，组织中越来越多的内部业务环节外包化、社会化，因而形成基于生态圈的多触角互动沟通，组织需要有提升组织效率、高效运营，协同创新，及可扩展应用的“互联网+”战略工具</p>
+          </div>
+        </div>
+			</div>
+			<div class="am-u-md-3" data-am-scrollspy="{animation: 'fade', delay: 1400, repeat: false}">
+				<div class="oa-year-cont am-panel am-panel-warning">
+          <div class="am-panel-hd">
+              ￥750元/年
+          </div>
+          <div class="am-panel-bd oa-project-list">
+          	<p>互联网+时代，组织中越来越多的内部业务环节外包化、社会化，因而形成基于生态圈的多触角互动沟通，组织需要有提升组织效率、高效运营，协同创新，及可扩展应用的“互联网+”战略工具</p>
+          </div>
+        </div>
+			</div>
+			<div class="am-u-md-3" data-am-scrollspy="{animation: 'fade', delay: 1700, repeat: false}">
+				<div class="oa-year-cont am-panel am-panel-secondary">
+          <div class="am-panel-hd">
+              ￥750元/年
+          </div>
+          <div class="am-panel-bd oa-project-list">
+          	<p>互联网+时代，组织中越来越多的内部业务环节外包化、社会化，因而形成基于生态圈的多触角互动沟通，组织需要有提升组织效率、高效运营，协同创新，及可扩展应用的“互联网+”战略工具</p>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="oa-lianxi oa-image-fuzzy" id="oa-lianxi">
+	<div class="oa-middle-div">
+		<div class="lianxi-cont am-panel">
+      <div class="am-panel-hd bg_blue" data-am-scrollspy="{animation: 'fade', delay: 300, repeat: false}">
+          申请试用登记，我们将在24小时内为您免费开通和介绍产品
+      </div>
+      <div class="am-panel-bd project-list" data-am-scrollspy="{animation: 'scale-down', delay: 600, repeat: false}">
+    	<form class="am-form am-form-horizontal" >
+				<div class="am-form-group">
+				    <label for="userming" class="am-form-label am-u-md-4">联系人：</label>
+				    <div class="am-u-md-8">
+				    	<input type="text" class="am-radius" id="userming" placeholder="请输入联系人名称" required data-foolish-msg="请填写您的名称">
+				    </div>
+				</div>
+				<div class="am-form-group">
+				    <label for="tel" class="am-form-label am-u-md-4">联系电话：</label>
+				    <div class="am-u-md-8">
+				    	<input type="text" class="am-radius" id="tel" placeholder="请留下您的联系方式" pattern="^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$" required data-foolish-msg="请填写正确的电话号码">
+				    </div>
+				</div>
+				<div class="am-form-group">
+			    <label for="tel" class="am-form-label am-u-md-4">所在地区：</label>
+			    <div class="am-u-md-8">
+			    	<div class="am-g">
+							<div class="sel1 am-u-md-6 am-padding-left-0">
+								<div class="am-form-group am-form-select">
+							    <select class=" am-radius" >
+							      <option value="">四川省</option>
+							      <option value="">重庆市</option>
+							    </select>
+							  </div>
+							</div>
+							<div class="sel2 am-u-md-6 am-padding-right-0">
+								<select class="am-radius" name="account">
+									<option>成都市</option>
+									<option>南充市</option>
+									<option>德阳市</option>
+								</select>
+							</div>
+						</div>
+			    </div>
+				</div>
+				<div class="am-form-group">
+				    <label for="tel" class="am-form-label am-u-md-4"></label>
+				    <div class="am-u-md-8">
+				    	<button type="submit" class="am-btn am-btn-default am-btn-block am-radius">登录</button>
+				    </div>
+				</div>
+			</form>
+      </div>
+  	</div>
+	</div>
+</section>
+<footer class="box-container ssd-foot">
+  <div class="oa-middle-div">
+    <div class="box-inb-ww pd-tb-10">
+      <div class="am-u-sm-6 pd-l-0">
+        <div class="ssd-wx-sao box-container">
+          <div class="wx-img">
+            <img class="img-auto" src="skin/images/wx.png" alt="">
+          </div>
+          <div class="pd-tb-10">
+            <i class="fa fa-mobile fa-4x"></i>
+            <p class="ft-16">微信公众号</p>
+            <p class="ft-16">请用手机扫描关注</p>
+          </div>
+        </div>
+      </div>
+      <div class="am-u-sm-6">
+        <div class="box-container pd-tb-15 ssd-contact">
+          <p class="ft-16 lh-2"><i class="fa fa-map-marker"></i>Add:成都市高新区天益街38号理想中心2栋12楼1212-1215</p>
+          <p class="ft-16 lh-2"><i class="fa fa-phone"></i>Tel：028-85177375</p>
+          <p class="ft-16 lh-2"><i class="fa fa-envelope-o"></i>E-mail：service@sanside.net</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="pd-tb-15 oa-beianhao">
+  Copyright ©2013-2015 sanside.net All Rights Reserved. 蜀ICP备13015392号
+</div>
+</footer>
+<script src="skin/js/jquery-2.1.1.min.js"></script>
+<script src="skin/js/public/amazeui.min.js"></script>
+<script src="skin/js/public/public.js"></script>
+<script type="text/javascript">
+$(function(){
+	var c = 0;
+	var li =$('.oa-index-lunbo .lunbo-tu li');
+	var p = $('.lunbo-yuan p');
+	var li_num = li.length;
+	function autoRun(){
+		c++;
+		c = (c == li_num)?0:c;
+		li.eq(c).fadeIn(1000).siblings('li').fadeOut(1000);
+
+		p.eq(c).addClass('active').siblings('p').removeClass('active');
+	}
+	tt = setInterval(autoRun,4000);
+	$('.oa-index-lunbo').mouseover(function(){
+		// alert(1);
+		clearInterval(tt);
+	});
+	p.click(function(){
+		c = $(this).index();
+		li.eq(c).fadeIn(1000).siblings('li').fadeOut(1000);
+
+		p.eq(c).addClass('active').siblings('p').removeClass('active');
+	});
+	$('.oa-index-lunbo').mouseout(function() {
+		tt = setInterval(autoRun,4000);
+	});
+
+})
+
+</script>
+
+
+<script type="text/javascript">
+	;(function( $ ){
+	var $window = $(window);
+	var windowHeight = $window.height();
+
+	$window.resize(function () {
+		windowHeight = $window.height();
+	});
+
+	$.fn.parallax = function(xpos, speedFactor, outerHeight) {
+		var $this = $(this);
+		var getHeight;
+		var firstTop;
+		var paddingTop = 0;
+		
+		//获得每个元素有视差的起始位置	
+		$this.each(function(){
+		    firstTop = $this.offset().top;
+		});
+
+		if (outerHeight) {
+			getHeight = function(jqo) {
+				return jqo.outerHeight(true);
+			};
+		} else {
+			getHeight = function(jqo) {
+				return jqo.height();
+			};
+		}
+			
+		// 如果arguments默认值没有指定
+		if (arguments.length < 1 || xpos === null) xpos = "50%";
+		if (arguments.length < 2 || speedFactor === null) speedFactor = 0.1;
+		if (arguments.length < 3 || outerHeight === null) outerHeight = true;
+		
+		// 每当窗口滚动或调整时重新计算
+		function update(){
+			var pos = $window.scrollTop();				
+
+			$this.each(function(){
+				var $element = $(this);
+				var top = $element.offset().top;
+				var height = getHeight($element);
+
+				// 检查是否完全完全高于或低于视窗
+				if (top + height < pos || top > pos + windowHeight) {
+					return;
+				}
+
+				$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - pos) * speedFactor) + "px");
+			});
+		}		
+
+		$window.bind('scroll', update).resize(update);
+		update();
+	};
+})(jQuery);
+
+</script>
+
+<script type="text/javascript">
+	$(function(){
+		$('#oa-image-fuzzy').parallax("50%", 0.4);
+		$('#oa-lianxi').parallax("50%", 0.3);
+		
+
+	})
+$(function(){
+	var t=$("#oa-lianxi form"),
+			o=$('<div id="vld-tooltip">提示信息！</div>');
+
+	o.appendTo(document.body),
+	t.validator({
+		onValid:function(){
+			o.hide()}
+		}),
+		t.on("focusin focusout",".am-form-error input",function(i){
+			if("focusin"===i.type){
+				var a=$(this),
+						e=a.offset(),
+						d=a.data("foolishMsg")||t.validator("getValidationMessage",a.data("validity"));
+				o.text(d).show().css({left:e.left+10,top:e.top+$(this).outerHeight()+10})
+			}else o.hide()
+		})
+});
+
+</script>
+</body>
+</html>

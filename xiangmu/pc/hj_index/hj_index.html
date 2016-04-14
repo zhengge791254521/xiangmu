@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+
+    
+
+    <link rel="shortcut icon" type="image/x-ico" href="skin/images/title.png">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link href="skin/icon/icon.css" rel="stylesheet" type="text/css">
+
+    <link href="skin/css/public.css" rel="stylesheet" type="text/css">
+    
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+    <link rel="stylesheet" href="skin/css/plug/swiper/swiper.min.css" type="text/css"/>
+<!--<![endif]-->
+
+    <link href="skin/css/style.css" rel="stylesheet" type="text/css">
+    <link href="skin/css/style_md.css" rel="stylesheet" type="text/css">
+	<title>弘金金融</title>
+</head>
+ <!--[if lt IE 9]>
+ <script type="text/javascript">
+$(function(){
+    // document.getElementsByTagName("body")[0].appendChild
+    $('body').html('<div style="position:fixed;width:100%;height:100%;background:#fff;z-index:99999;text-align:center;padding-top:50px;font-size:20px;">您使用的浏览器版本比较低，建议使用 <a href="http://se.360.cn">新版360浏览器</a><br>或者使用以下浏览器<br><a href="http://www.firefox.com.cn">火狐浏览器</a> 、 <a href="http://rj.baidu.com/soft/detail/14744.html?ald">谷歌浏览器</a> 、 <a href="http://www.opera.com/zh-cn">opera浏览器</a></div>');
+})
+</script>
+<![endif]-->
+<style type="text/css">
+    .swiper-wrapper .swiper-slide{padding: 0;}
+    .swiper-slide .hj-slide-box{margin: 0 10px;}
+</style>
+<body>
+<!-- <div style="position:fixed;width:100%;height:100%;background:#fff;z-index:99999;text-align:center;padding-top:50px;font-size:20px;">
+    您使用的浏览器版本比较低，建议使用 <a href="http://se.360.cn">新版360浏览器</a><br>
+    或者使用以下浏览器<br>
+    <a href="http://www.firefox.com.cn">火狐浏览器</a> 、 <a href="http://rj.baidu.com/soft/detail/14744.html?ald">谷歌浏览器</a> 、 <a href="http://www.opera.com/zh-cn">opera浏览器</a>
+</div> -->
+<nav class="navbar navbar-default navbar-fixed-top bg-white">
+<div style="width:100%;height:30px;background:#000;display:inline-block;margin-top:0;line-height:30px;">
+<div style="width:1210px;margin:0 auto;">
+    <span class="font-white">热线电话：028-69908911</span>
+    <span class="font-white pull-right">新浪微博：<a href="http://weibo.com/p/1006065387872031/home?from=page_100606&mod=TAB#place" class="font-azure">弘金金融</a></span>
+</div>
+    
+</div>
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand pad-all" href="#"><img src="skin/images/logo.png" alt=""></a>
+    </div>
+
+    <div class="collapse navbar-collapse bg-white text-center" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav hj-nav-content">
+        <li><a href=""><p style="font-size:1.8em;">首页</p></a></li>
+        <li>
+            <a href="#"><p class="">银行服务</p><span class="">账户及信用卡</span></a>
+            <div class="doormatmenu">
+                <div class="row">
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">存款</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览存款账户</a>
+                            </li>
+                            <li>
+                                <a href="">活期储蓄账户</a>
+                            </li>
+                            <li>
+                                <a href="">定期存款</a>
+                            </li>
+                            <li>
+                                <a href="">往来账户</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">信用卡</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览信用卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金卓越理财信用卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金运筹理财白金Visa卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金Visa卡</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">人民币服务</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览人民币</a>
+                            </li>
+                            <li>
+                                <a href="">人民币存款</a>
+                            </li>
+                            <li>
+                                <a href="">人民币兑换服务</a>
+                            </li>
+                            <li>
+                                <a href="">人民币证券</a>
+                            </li>
+                            <li>
+                                <a href="">人民币债券</a>
+                            </li>
+                            <li>
+                                <a href="">人民币单位信托基金</a>
+                            </li>
+                            <li>
+                                <a href="">人民币保本投资贷款-货比挂钩</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">转账及缴费</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">本地及海外转账</a>
+                            </li>
+                            <li>
+                                <a href="">缴费服务、自动转账、常行指示</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">弘金卓越理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">您的个人经济</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金运筹理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">弘金运筹理财概览</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金综合理财账户</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览个人综合理财账户</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">多样化的理财方法</a>
+                            </li>
+                            <li>
+                                <a href="">个人网上理财</a>
+                            </li>
+                            <li>
+                                <a href="">弘金流动理财</a>
+                            </li>
+                            <li>
+                                <a href="">分行理财</a>
+                            </li>
+                            <li>
+                                <a href="">理财易中心</a>
+                            </li>
+                            <li>
+                                <a href="">电话理财</a>
+                            </li>
+                            <li>
+                                <a href="">电子结单及电子通知书</a>
+                            </li>
+                            <li>
+                                <a href="">分行理财易中心位置</a>
+                            </li>
+                            <li>
+                                <a href="">重要通告</a>
+                            </li>
+                            <li>
+                                <a href="">表格及文件下载</a>
+                            </li>
+                            <li>
+                                <a href="">服务费用</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="#"><p>借贷</p><span class="">账户及信用卡</span></a>
+            <div class="doormatmenu">
+                <div class="row">
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">信用卡</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">弘金卓越理财信用卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金运筹理财白金Visa卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金Visa卡</a>
+                            </li>
+                            <li>
+                                <a href="">活期储蓄账户</a>
+                            </li>
+                            <li>
+                                <a href="">定期存款</a>
+                            </li>
+                            <li>
+                                <a href="">往来账户</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">透支服务</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览投资服务</a>
+                            </li>
+                            <li>
+                                <a href="">有抵押信贷服务</a>
+                            </li>
+                            <li>
+                                <a href="">弘金卓越理财无抵押信贷服务</a>
+                            </li>
+                            <li>
+                                <a href="">弘金运筹理财无抵押信贷服务</a>
+                            </li>
+                            <li>
+                                <a href="">个人综合理财户口无抵押信贷服务</a>
+                            </li>
+                            <li>
+                                <a href="">人民币单位信托基金</a>
+                            </li>
+                            <li>
+                                <a href="">人民币保本投资贷款-货比挂钩</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">转账及缴费</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">本地及海外转账</a>
+                            </li>
+                            <li>
+                                <a href="">缴费服务、自动转账、常行指示</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">弘金卓越理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">您的个人经济</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金运筹理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">弘金运筹理财概览</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金综合理财账户</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览个人综合理财账户</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">多样化的理财方法</a>
+                            </li>
+                            <li>
+                                <a href="">个人网上理财</a>
+                            </li>
+                            <li>
+                                <a href="">弘金流动理财</a>
+                            </li>
+                            <li>
+                                <a href="">分行理财</a>
+                            </li>
+                            <li>
+                                <a href="">理财易中心</a>
+                            </li>
+                            <li>
+                                <a href="">电话理财</a>
+                            </li>
+                            <li>
+                                <a href="">电子结单及电子通知书</a>
+                            </li>
+                            <li>
+                                <a href="">分行理财易中心位置</a>
+                            </li>
+                            <li>
+                                <a href="">重要通告</a>
+                            </li>
+                            <li>
+                                <a href="">表格及文件下载</a>
+                            </li>
+                            <li>
+                                <a href="">服务费用</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="#"><p>投资</p><span class="">账户及信用卡</span></a>
+            <div class="doormatmenu">
+                <div class="row">
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">投资</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览投资服务</a>
+                            </li>
+                            <li>
+                                <a href="">股票</a>
+                            </li>
+                            <li>
+                                <a href="">IPO</a>
+                            </li>
+                            <li>
+                                <a href="">外币兑换及买卖服务</a>
+                            </li>
+                            <li>
+                                <a href="">外汇</a>
+                            </li>
+                            <li>
+                                <a href="">结构投资产品</a>
+                            </li>
+                            <li>
+                                <a href="">单位信托基金</a>
+                            </li>
+                            <li>
+                                <a href="">债券/存款证</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">市场信息</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">成都市场信息</a>
+                            </li>
+                            <li>
+                                <a href="">国外市场信息</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">财富管理</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览财富管理</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">外汇聚焦</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">每日外汇焦点</a>
+                            </li>
+                        </ul>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">每日外汇评论</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">财富管理聚焦</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">每天窝轮更新</a>
+                            </li>
+                            <li>
+                                <a href="">弘金投资评论</a>
+                            </li>
+                            <li>
+                                <a href="">弘金投资分析</a>
+                            </li>
+                            <li>
+                                <a href="">您的投资专讯</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">弘金卓越理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">您的个人经济</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金运筹理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">弘金运筹理财概览</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金综合理财账户</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览个人综合理财账户</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">最新优惠</a>
+                            </li>
+                            <li>
+                                <a href="">风险取向问卷</a>
+                            </li>
+                            <li>
+                                <a href="">开立投资账户</a>
+                            </li>
+                            <li>
+                                <a href="">表格及文件下载</a>
+                            </li>
+                            <li>
+                                <a href="">服务费用</a>
+                            </li>
+                            <li>
+                                <a href="">重要通告</a>
+                            </li>
+                            <li>
+                                <a href="">电子结单及电子通知书</a>
+                            </li>
+                            <li>
+                                <a href="">分行理财易中心位置</a>
+                            </li>
+                            <li>
+                                <a href="">重要通告</a>
+                            </li>
+                            <li>
+                                <a href="">表格及文件下载</a>
+                            </li>
+                            <li>
+                                <a href="">服务费用</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="#"><p>互联网金融产品</p><span class="">账户及信用卡</span></a>
+            <div class="doormatmenu">
+                <div class="row">
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">信用卡</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">弘金卓越理财信用卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金运筹理财白金Visa卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金Visa卡</a>
+                            </li>
+                            <li>
+                                <a href="">活期储蓄账户</a>
+                            </li>
+                            <li>
+                                <a href="">定期存款</a>
+                            </li>
+                            <li>
+                                <a href="">往来账户</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">透支服务</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览投资服务</a>
+                            </li>
+                            <li>
+                                <a href="">有抵押信贷服务</a>
+                            </li>
+                            <li>
+                                <a href="">弘金卓越理财无抵押信贷服务</a>
+                            </li>
+                            <li>
+                                <a href="">弘金运筹理财无抵押信贷服务</a>
+                            </li>
+                            <li>
+                                <a href="">个人综合理财户口无抵押信贷服务</a>
+                            </li>
+                            <li>
+                                <a href="">人民币单位信托基金</a>
+                            </li>
+                            <li>
+                                <a href="">人民币保本投资贷款-货比挂钩</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">转账及缴费</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">本地及海外转账</a>
+                            </li>
+                            <li>
+                                <a href="">缴费服务、自动转账、常行指示</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">弘金卓越理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">您的个人经济</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金运筹理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">弘金运筹理财概览</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金综合理财账户</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览个人综合理财账户</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">最新优惠</a>
+                            </li>
+                            <li>
+                                <a href="">风险取向问卷</a>
+                            </li>
+                            <li>
+                                <a href="">开立投资账户</a>
+                            </li>
+                            <li>
+                                <a href="">表格及文件下载</a>
+                            </li>
+                            <li>
+                                <a href="">服务费用</a>
+                            </li>
+                            <li>
+                                <a href="">重要通告</a>
+                            </li>
+                            <li>
+                                <a href="">电子结单及电子通知书</a>
+                            </li>
+                            <li>
+                                <a href="">分行理财易中心位置</a>
+                            </li>
+                            <li>
+                                <a href="">重要通告</a>
+                            </li>
+                            <li>
+                                <a href="">表格及文件下载</a>
+                            </li>
+                            <li>
+                                <a href="">服务费用</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="#"><p>产品顾问专区</p><span class="">账户及信用卡</span></a>
+            <div class="doormatmenu">
+                <div class="row">
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">存款</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览存款账户</a>
+                            </li>
+                            <li>
+                                <a href="">活期储蓄账户</a>
+                            </li>
+                            <li>
+                                <a href="">定期存款</a>
+                            </li>
+                            <li>
+                                <a href="">往来账户</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">信用卡</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览信用卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金卓越理财信用卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金运筹理财白金Visa卡</a>
+                            </li>
+                            <li>
+                                <a href="">弘金Visa卡</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">人民币服务</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览人民币</a>
+                            </li>
+                            <li>
+                                <a href="">人民币存款</a>
+                            </li>
+                            <li>
+                                <a href="">人民币兑换服务</a>
+                            </li>
+                            <li>
+                                <a href="">人民币证券</a>
+                            </li>
+                            <li>
+                                <a href="">人民币债券</a>
+                            </li>
+                            <li>
+                                <a href="">人民币单位信托基金</a>
+                            </li>
+                            <li>
+                                <a href="">人民币保本投资贷款-货比挂钩</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">转账及缴费</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">本地及海外转账</a>
+                            </li>
+                            <li>
+                                <a href="">缴费服务、自动转账、常行指示</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <p class="doormat-head">弘金卓越理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">您的个人经济</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金运筹理财</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">弘金运筹理财概览</a>
+                            </li>
+                        </ul>
+                        <p class="doormat-head">弘金综合理财账户</p>
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">浏览个人综合理财账户</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 columns">
+                        <ul class="doormat-links">
+                            <li>
+                                <a href="">多样化的理财方法</a>
+                            </li>
+                            <li>
+                                <a href="">个人网上理财</a>
+                            </li>
+                            <li>
+                                <a href="">弘金流动理财</a>
+                            </li>
+                            <li>
+                                <a href="">分行理财</a>
+                            </li>
+                            <li>
+                                <a href="">理财易中心</a>
+                            </li>
+                            <li>
+                                <a href="">电话理财</a>
+                            </li>
+                            <li>
+                                <a href="">电子结单及电子通知书</a>
+                            </li>
+                            <li>
+                                <a href="">分行理财易中心位置</a>
+                            </li>
+                            <li>
+                                <a href="">重要通告</a>
+                            </li>
+                            <li>
+                                <a href="">表格及文件下载</a>
+                            </li>
+                            <li>
+                                <a href="">服务费用</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li class="hj-nav-dropdown pad-all m-t font-white">
+            马上扫<span><i class="lnr lnr-chevron-down"></i></span>
+            <p><img src="skin/images/code.png" alt=""></p>
+        </li> -->
+        <li class="dropdown hj-nav-dropdown pad-all m-t font-white hidden-xs hidden-sm">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">马上扫 <i class="lnr lnr-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><img src="skin/images/code.png" alt=""></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid hj-content-box">
+    <div class="hj-bg-img" style="background:url(skin/images/bgg.jpg) 50%;"></div>
+    <!-- 内容区域 -->
+    <div class="hj-content m-t">
+        <!-- 首页轮播 -->
+        <div id="hj-slider">
+            <div  class="swiper-container slider">
+            <div class="swiper-wrapper row">
+                <div class="col-sm-4 col-md-4 swiper-slide">
+                    <div class="hj-slide-box bg-white">
+                        <div class="hj-slide-top">
+                            <img src="skin/images/slider/01.jpg" class="swiper-lazy">
+                            <!-- <div class="swiper-lazy-preloader"></div> -->
+                        </div>
+                        <div class="hj-slide-middle">
+                            <a href="" class="font-black"><span>最红打折日</span><i class="lnr lnr-chevron-right"></i></a>
+
+                            <p class="m-t-30">兑换指定外币并开立1个月定期存款享高达3%年利率优惠兑换指定外币并开立1个月定期存款享高达3%年利率优惠</p>
+                        </div>
+                        <div class="hj-slide-foot pad-all">
+                            弘金金融
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 swiper-slide">
+                    <div class="hj-slide-box bg-white">
+                        <div class="hj-slide-top">
+                            <img src="skin/images/slider/02.jpg" class="swiper-lazy">
+                            <!-- <div class="swiper-lazy-preloader"></div> -->
+                        </div>
+                        <div class="hj-slide-middle">
+                            <a href="" class="font-black"><span>股票服务</span><i class="lnr lnr-chevron-right"></i></a>
+
+                            <p class="m-t-30">兑换指定外币并开立1个月定期存款享高达3%年利率优惠兑换指定外币并开立1个月定期存款享高达3%年利率优惠</p>
+                        </div>
+                        <div class="hj-slide-foot pad-all">
+                            弘金金融
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 swiper-slide">
+                    <div class="hj-slide-box bg-white">
+                        <div class="hj-slide-top">
+                            <img src="skin/images/slider/03.jpg" class="swiper-lazy">
+                            <!-- <div class="swiper-lazy-preloader"></div> -->
+                        </div>
+                        <div class="hj-slide-middle">
+                            <a href="" class="font-black"><span>弘金信用卡</span><i class="lnr lnr-chevron-right"></i></a> 
+
+                            <p class="m-t-30">兑换指定外币并开立1个月定期存款享高达3%年利率优惠兑换指定外币并开立1个月定期存款享高达3%年利率优惠</p>
+                        </div>
+                        <div class="hj-slide-foot pad-all">
+                            弘金金融
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 swiper-slide">
+                    <div class="hj-slide-box bg-white">
+                        <div class="hj-slide-top">
+                            <img src="skin/images/slider/04.jpg" class="swiper-lazy">
+                            <!-- <div class="swiper-lazy-preloader"></div> -->
+                        </div>
+                        <div class="hj-slide-middle">
+                            <a href="" class="font-black"><span>关于弘金金融</span><i class="lnr lnr-chevron-right"></i></a> 
+
+                            <p class="m-t-30">兑换指定外币并开立1个月定期存款享高达3%年利率优惠兑换指定外币并开立1个月定期存款享高达3%年利率优惠</p>
+                        </div>
+                        <div class="hj-slide-foot pad-all">
+                            弘金金融
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 swiper-slide">
+                    <div class="hj-slide-box bg-white">
+                        <div class="hj-slide-top">
+                            <img src="skin/images/slider/05.jpg" class="swiper-lazy">
+                            <!-- <div class="swiper-lazy-preloader"></div> -->
+                        </div>
+                        <div class="hj-slide-middle">
+                            <a href="" class="font-black"><span>晋升弘金卓越理财客户</span><i class="lnr lnr-chevron-right"></i></a> 
+
+                            <p class="m-t-30">兑换指定外币并开立1个月定期存款享高达3%年利率优惠兑换指定外币并开立1个月定期存款享高达3%年利率优惠</p>
+                        </div>
+                        <div class="hj-slide-foot pad-all">
+                            弘金金融
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 swiper-slide">
+                    <div class="hj-slide-box bg-white">
+                        <div class="hj-slide-top">
+                            <img src="skin/images/slider/06.jpg" class="swiper-lazy">
+                            <!-- <div class="swiper-lazy-preloader"></div> -->
+                        </div>
+                        <div class="hj-slide-middle">
+                            <a href="" class="font-black"><span>最红饮食优惠</span><i class="lnr lnr-chevron-right"></i></a> 
+
+                            <p class="m-t-30">兑换指定外币并开立1个月定期存款享高达3%年利率优惠兑换指定外币并开立1个月定期存款享高达3%年利率优惠</p>
+                        </div>
+                        <div class="hj-slide-foot pad-all">
+                            弘金金融
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination swiper-pagination-clickable">
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+            </div>
+            <div class="swiper-prev prev"><i class="lnr lnr-chevron-left"></i></div>
+            <div class="swiper-next next"><i class="lnr lnr-chevron-right"></i></div>
+        </div>
+        <div class="contentwrapper m-t-30 bg-white pad-all">
+            <div class="content-list-box" id="hj-list-box">
+                <div class="list-box-left">
+                    <div class="hj-list-group active" data-href="group1">
+                        <span>风控体系</span>
+                        <p></p>
+                    </div>
+                    <div class="hj-list-group" data-href="group2">
+                        <span>关于弘金</span>
+                        <p></p>
+                    </div>
+                    <div class="hj-list-group" data-href="group3">
+                        <span>新闻中心</span>
+                        <p></p>
+                    </div>
+                    <div class="hj-list-group" data-href="group4">
+                        <span>招贤纳士</span>
+                        <p></p>
+                    </div>
+                    <div class="hj-list-group" data-href="group5">
+                        <span>联系我们</span>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="list-box-right" >
+                    <div id="group1" class="list-right-content active">
+                        <div class="col-xs-12 col-sm-6 list-right-cont">
+                            <br>
+                            <h2>原则上</h2>
+                            <br>
+                            <p>打造一支高素质队伍</p>
+                            <br>
+                            <p>建立一个规范的法人治理结构与决策程序</p>
+                            <br>
+                            <p>每笔债券融资业务风险控制措施</p>
+                            <br>
+                            <p>打造一支高素质队伍</p>
+                            <br>
+                            <p>建立一个规范的法人治理结构与决策程序</p>
+                            <br>
+                            <p>每笔债券融资业务风险控制措施</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 list-right-cont" style="text-indent:6em;background:#3e505e;color:#fff">
+                            <br>
+                            <h2>一致性</h2>
+                            <br>
+                            <p>全面性</p>
+                            <br>
+                            <p>系统性</p>
+                            <br>
+                            <p>独立性</p>
+                            <br>
+                            <p>权威性</p>
+                            <br>
+                            <p>互通性</p>
+                            <br>
+                            <p>分散与集中相统一</p>
+                            <br>
+                            <p>独立性</p>
+                            <br>
+                            <p>权威性</p>
+                        </div>
+                    </div>
+                    <div id="group2" class="list-right-content">
+                        <div class="col-xs-12 col-sm-6 list-right-cont">
+                            <br>
+                            <h2>原则上</h2>
+                            <br>
+                            <p>打造一支高素质队伍</p>
+                            <br>
+                            <p>建立一个规范的法人治理结构与决策程序</p>
+                            <br>
+                            <p>每笔债券融资业务风险控制措施</p>
+                            <br>
+                            <p>打造一支高素质队伍</p>
+                            <br>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 list-right-cont" style="text-indent:6em;background:#3e505e;color:#fff">
+                            <br>
+                            <h2>一致性</h2>
+                            <p>独立性</p>
+                            <br>
+                            <p>权威性</p>
+                            <br>
+                            <p>互通性</p>
+                            <br>
+                            <p>分散与集中相统一</p>
+                            <br>
+                            <p>独立性</p>
+                            <br>
+                            <p>权威性</p>
+                        </div>
+                    </div>
+                    <div id="group3" class="list-right-content">
+                        <ul class="lists-text">
+                            <li>
+                                <span class="date">[2015-07-23]</span>
+                                <a target="_blank" href="">弘金金融已登录四川省中小企业协会官网首页展示</a>
+                            </li>
+                            <li>
+                            <span class="date">[2015-07-23]</span>
+                            <a target="_blank" href="">中科智信产业居间店客户 亮相央视荧屏</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="group4" class="list-right-content">
+                        <div class="col-xs-12 col-sm-6 list-right-cont">
+                            <br>
+                            <h2>原则上</h2>
+                            <br>
+                            <p>打造一支高素质队伍</p>
+                            <br>
+                            <p>建立一个规范的法人治理结构与决策程序</p>
+                            <br>
+                            <p>每笔债券融资业务风险控制措施</p>
+                            <br>
+                            <p>打造一支高素质队伍</p>
+                            <br>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 list-right-cont" style="text-indent:6em;background:#3e505e;color:#fff">
+                            <br>
+                            <h2>一致性</h2>
+                            <br>
+                            <p>全面性</p>
+                            <br>
+                            <p>系统性</p>
+                            <br>
+                            <p>互通性</p>
+                            <br>
+                            <p>分散与集中相统一</p>
+                            <br>
+                            <p>独立性</p>
+                            <br>
+                            <p>权威性</p>
+                        </div>
+                    </div>
+                    <div id="group5" class="list-right-content">
+                        <div class="col-xs-12 col-sm-6 list-right-cont">
+                            <br>
+                            <h2>原则上</h2>
+                            <br>
+                            <p>打造一支高素质队伍</p>
+                            <br>
+                            <p>建立一个规范的法人治理结构与决策程序</p>
+                            <br>
+                            <p>每笔债券融资业务风险控制措施</p>
+                            <br>
+                            <p>建立一个规范的法人治理结构与决策程序</p>
+                            <br>
+                            <p>每笔债券融资业务风险控制措施</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 list-right-cont" style="text-indent:6em;background:#3e505e;color:#fff">
+                            <br>
+                            <h2>一致性</h2>
+                            <br>
+                            <p>全面性</p>
+                            <br>
+                            <p>系统性</p>
+                            <br>
+                            <p>独立性</p>
+                            <br>
+                            <p>权威性</p>
+                            <br>
+                            <p>互通性</p>
+                            <br>
+                            <p>分散与集中相统一</p>
+                            <br>
+                            <p>独立性</p>
+                            <br>
+                            <p>权威性</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hj-list-information">
+                <div class="list-infor-box">
+                    <div class="col-md-4 col-sm-6 list-infor-content">
+                        <a href="" class="font-black"><span>弘金卓越理财</span><i class="lnr lnr-chevron-right"></i></a> 
+                        <p class="m-t-30">世界级的财富管理服务，全面覆盖生活上财务需要的没一个环节</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 list-infor-content">
+                        <a href="" class="font-black"><span>弘金运筹理财</span><i class="lnr lnr-chevron-right"></i></a> 
+                        <p class="m-t-30">按您所想，量身定制，为您全面筹划</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 list-infor-content">
+                        <a href="" class="font-black"><span>重要通告</span><i class="lnr lnr-chevron-right"></i></a> 
+                        <p class="m-t-30">了解更多关于<span class="font-pink">条款细则</span>变动，银行服务费用变动及其他重要更新。<br>
+                        谨防诈骗提示<br>
+                        关于<span class="font-pink">国际金融</span>重要通告
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 list-infor-content">
+                        <a href="" class="font-black"><span>柜位电子服务</span><i class="lnr lnr-chevron-right"></i></a> 
+                        <p class="m-t-30">弘金卓越理财客户可于到达弘金卓越理财中心钱预先浏览柜位的轮候情况，取票及预约柜位服务</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 list-infor-content">
+                        <a href="" class="font-black"><span>服务专讯</span><i class="lnr lnr-chevron-right"></i></a> 
+                        <p class="m-t-30">我们重视对客户的响应，以及您对本公司客户服务的意见</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 list-infor-content">
+                        <a href="" class="font-black"><span>保安及诈骗资讯中心</span><i class="lnr lnr-chevron-right"></i></a> 
+                        <p class="m-t-30">如何确保您的金融资料及身份安全</p>
+                    </div>
+                </div>
+                <div class="list-infor-box">
+                    <div class="col-sm-6 list-infor-href">
+                        <a href="" class=" font-black"><span>弘金金融服务</span><i class="lnr lnr-chevron-right"></i></a>
+                        <p></p>
+                    </div>
+                    <div class="col-sm-6 list-infor-href">
+                        <a href="" class=" font-black"><span>监管披露</span><i class="lnr lnr-chevron-right"></i></a>
+                        <p></p>
+                    </div>
+                    <div class="col-sm-6 list-infor-href">
+                        <a href="" class=" font-black"><span>客户投诉及意见</span><i class="lnr lnr-chevron-right"></i></a>
+                        <p></p> 
+                    </div>
+                    <div class="col-sm-6 list-infor-href">
+                        <a href="" class=" font-black"><span>国际服务</span><i class="lnr lnr-chevron-right"></i></a>
+                        <p></p>
+                    </div>
+                    <div class="col-sm-6 list-infor-href">
+                        <a href="" class=" font-black"><span>慈善捐款</span><i class="lnr lnr-chevron-right"></i></a>
+                        <p></p>
+                    </div>
+                    <div class="col-sm-6 list-infor-href">
+                        <a href="" class=" font-black"><span>企业可持续发展</span><i class="lnr lnr-chevron-right"></i></a>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="list-infor-box text-center">
+                    <ul class="list-infor-ul pad-all">
+                        <li class="list-infor-li"><a href="">弘金金融</a></li>
+                        <li class="list-infor-li"><a href="">国际金融</a></li>
+                        <li class="list-infor-li"><a href="">银行业务</a></li>
+                        <li class="list-infor-li"><a href="">环球银行及资本市场</a></li>
+                        <li class="list-infor-li"><a href="">弘金商系</a></li>
+                        <li class="list-infor-li"><a href="">金融展望</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hj-footer-box text-center">
+    <ul class="hj-footer-ul">
+        <li class="col-sm-3 hj-footer-li font-white">
+            <div class="foot-li-cont">
+                <i class="lnr lnr-phone-handset"></i>
+                <h4>联系弘金</h4>
+                <a href="">
+                    <span>致函、致电或留言给我们</span>
+                    <em class="glyphicon glyphicon-menu-right"></em>
+                </a>
+            </div>
+        </li>
+        <li class="col-sm-3 hj-footer-li font-white">
+            <div class="foot-li-cont">
+                <i class="lnr lnr-map-marker"></i>
+                <h4>寻找弘金</h4>
+                <a href="">
+                    <span>及附近的理财中心位置</span>
+                    <em class="glyphicon glyphicon-menu-right"></em>
+                </a>
+            </div>
+        </li>
+        <li class="col-sm-3 hj-footer-li font-white">
+            <div class="foot-li-cont">
+                <i class="lnr lnr-question-circle"></i>
+                <h4>常见问题</h4>
+                <a href="">
+                    <span>查看产品及服务的常见问题</span>
+                    <em class="glyphicon glyphicon-menu-right"></em>
+                </a>
+            </div>
+        </li>
+        <li class="col-sm-3 hj-footer-li font-white">
+            <div class="foot-li-cont">
+                <i class="lnr lnr-dice"></i>
+                <h4>弘金简介</h4>
+                <a href="">
+                    <span>工作机会、传媒、投资者及公司信息</span>
+                    <em class="glyphicon glyphicon-menu-right"></em>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="fixedBox">
+    <ul class="fixedBoxList">
+        <li class="fixeBoxLi Service startWork">
+            <span class="fixeBoxSpan">
+            <img width="40" height="33" src="skin/images/server_qq.png">
+            </span>
+            <strong>在线客服</strong>
+            <div class="ServiceBox">
+                <dl>
+                    <dd>
+                        <strong>在线客服</strong>
+                        <a target="_blank" href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=4006668585" title="点击这里给我发消息">
+                        <img src="skin/images/qq.png">
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+        <li class="fixeBoxLi Home">
+            <a href="http://www.hjjr168.com/" style="">
+            <span class="fixeBoxSpan">
+                <i style="color:#fff;font-size:36px;" class="lnr lnr-envelope"></i>
+            <!-- <img width="33" height="27" src="skin/images/server_home.png"> -->
+            </span>
+            <strong>弘金邮箱</strong>
+            </a>
+        </li>
+        <li class="fixeBoxLi Home">
+            <a href="http://www.hjjr168.com/" style="">
+            <span class="fixeBoxSpan">
+            <img width="33" height="27" src="skin/images/server_home.png">
+            </span>
+            <strong>返回首页</strong>
+            </a>
+        </li>
+        <li class="fixeBoxLi BackToTop">
+            <a onclick="pageScroll()">
+            <span class="fixeBoxSpan">
+            <img width="25" height="30" src="skin/images/server_top.png">
+            </span>
+            </a>
+
+        </li>
+    </ul>
+</div>
+
+</body>
+
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="skin/js/plug/swiper/swiper.jquery.min.js"></script>
+
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container',{
+        // lazyLoading : true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        // paginationBulletRender: function (index, className) {
+        //       return '<span class="' + className + '"></span>';
+        // },
+        // centeredSlides: true,
+        slidesPerView : 3,
+        slidesPerGroup : 3,
+        prevButton:'.swiper-prev',
+        nextButton:'.swiper-next',
+        autoplay: 4000,
+        autoplayDisableOnInteraction: false,
+        loop : true,
+        speed:1000,
+        observer:true,
+        observeParents:true
+    });
+    $('.swiper-container').hover(function(){
+        mySwiper.stopAutoplay();
+    },function(){
+        mySwiper.startAutoplay();
+    })
+
+</script>
+<!--<![endif]-->
+
+<!--[if IE 9]>
+<script type="text/javascript" src="skin/js/plug/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+
+    $("#hj-slider").slide({titCell:".swiper-pagination",mainCell:".swiper-wrapper",autoPage:'<span class="swiper-pagination-bullet"></span>',effect:"left",autoPlay:true,interTime:4000,scroll:3,vis:3,trigger:"click"});
+</script>
+<![endif]-->
+<script src="skin/js/public.js"></script>
+</html>

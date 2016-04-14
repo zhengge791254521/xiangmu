@@ -1,0 +1,32 @@
+/*warninglist样式表*/
+body{
+	background-color:#e6e6e6;	
+}
+.word{
+	background:#e6e6e6;
+	min-width:350px;
+	height:auto;
+	font-family:"微软雅黑";
+	font-size:24px;
+	color:#000;
+	line-height:48px;
+	
+	margin-top:10px;}
+.word1{
+	height:auto;
+	line-height:30px;
+	/*margin-left:15px;*/}
+.word2{
+	margin-left:10px;}
+.word3{
+	margin-left:10px;}
+.biaotiPic{
+	margin-top:20px;
+	margin-bottom:10px;}
+.text{
+	margin-top:10px;}
+.yiku{
+	font-size:16px;	
+	line-height:26px;
+	}
+

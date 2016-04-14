@@ -1,0 +1,131 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+		margin: 0;
+		padding: 0;
+	}
+	article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+		display: block;
+	}
+	ol, ul {
+    	list-style: none;
+	}
+	img {
+		border: 0 none;
+		vertical-align: middle;
+	}
+	.clearfix:after{
+		height: 0;
+		overflow: hidden;
+		visibility: hidden;
+		content: ".";
+		clear: both;
+		display: block;
+	}
+	.clearfix{
+		zoom: 1;
+	}
+
+
+.z-infor-listbox .z-infor-name{
+	display: inline-block;
+	clear: both;
+	width: 100%;
+}
+.z-infor-listbox .z-infor-name h4{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2em;
+	overflow: hidden;
+	margin: 0;
+}
+.z-infor-listbox .z-infor-name>span{
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	border-radius: 100%;
+	margin-left: 6px;
+	margin-bottom: 4px;
+	background-color: #ff3030;
+}
+.z-infor-eye{
+	font-size: 10px;
+}
+/*.z-infor-listbox .mui-table-view-cell a{
+	padding-right: 30px;
+	padding-bottom: 5px;
+	display: block;
+}
+*/
+.z-check .mui-table-view-cell.mui-checkbox a{
+	padding-left: 50px;
+	padding-right: 15px;
+
+}
+.z-infor-listbox .mui-table-view-cell.mui-checkbox a input{
+	left: 15px;
+	top: 50%;
+	margin-top: -13px;
+	display: none;
+}
+.z-check .mui-table-view-cell.mui-checkbox a input{
+	display: inline-block;
+}
+.z-check .mui-table-view-cell.mui-checkbox a:after{
+	visibility: hidden;
+}
+
+
+
+.z-caozuo-nav{
+	top:-50px;
+	z-index: 11;
+	transition: 0.3s ease-out;
+  	-ms-transition: 0.3s ease-out;
+  	-webkit-transition: 0.3s ease-out;
+  	-moz-transition: 0.3s ease-out;
+  	-o-transition: 0.3s ease-out;
+}
+.z-caozuo-nav.active{
+	top:0;
+}
+.z-caozuo-tab{
+	bottom:-50px;
+	background-color: #454545;
+	transition: 0.3s ease-out;
+  	-ms-transition: 0.3s ease-out;
+  	-webkit-transition: 0.3s ease-out;
+  	-moz-transition: 0.3s ease-out;
+  	-o-transition: 0.3s ease-out;
+}
+.z-caozuo-tab.active{
+	bottom: 0;
+}
+.z-caozuo-tab >a.mui-tab-item{
+	color:#eee;
+}
+.z-caozuo-tab >a.mui-tab-item.mui-active{
+	color:#01a7eb;
+}
+.z-caozuo-tab >a.disabled{
+	color:#a8a8a8!important;
+}
+
+.log-list-user{
+	padding-right:15px; 
+}
+.log-list-user >h2{
+	font-size: 28px;
+	color: #007aff;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+
+/*共享列表*/
+.mui-content>.mui-table-view:first-child {
+     margin-top: 0px !important; 
+}
+.rizhi-tou{
+	width: 40px; 
+	height: 40px; 
+	border-radius: 40px;
+}

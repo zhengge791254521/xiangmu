@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>三思德OA管理系统</title>
+	<link rel="stylesheet" href="../skin/css/public/amazeui.min.css">
+  <link rel="stylesheet" href="../skin/Font-Awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../skin/icon/iconfont.css">
+	<link rel="stylesheet" href="../skin/css/public/public.css">
+	<link rel="stylesheet" href="../skin/css/public/style.css">
+	<link rel="stylesheet" href="../skin/css/yonghu/yonghu_style.css">
+  <link rel="stylesheet" href="../skin/css/yonghu/yonghu_renyuan.css">
+<style type="text/css">
+
+</style>
+</head>
+<body ontouchstart>
+<!-- class命名 带有oa前缀的皆为自定义 其余都是 UI组件样式 -->
+<!-- 头部start -->
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top">	<div class="oa-middle-div">
+  <div class="am-topbar-brand">
+    <a href="#"><img src="../skin/images/logo-dibu.png" alt=""></a>
+  </div>
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-xs am-btn-success am-show-xs-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+  	<div class="am-topbar-right">
+  	<!-- 未登录 -->
+      <button class="am-btn am-btn-primary am-radius oa-login">登录</button>
+      <button class="am-btn am-btn-primary am-radius oa-login">注册</button>
+    </div>
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right">
+      <li class="am-active">
+      	<a href="#">首 页</a>
+      </li>
+      <li><a href="#">产品中心</a>
+      </li>
+      <li><a href="#">新闻中心</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">个人中心</a>
+        <ul class="oa-munu-pop">
+          <li>
+            <div class="munu-u-box">
+              <img src="../skin/images/tou.png" alt="" />
+              <div class="">
+                <p >zhenggge791254521</p>
+                <span class="munu-u"><a href="">个人账户</a></span> 
+                <!-- <span class="munu-m"><a href="">消息</a><b class="am-badge am-badge-warning am-round">5</b></span> -->
+              </div>
+            </div>
+            <div class="am-g munu-exit">
+              <a class="am-u-sm-6" href="#">我的订单</a>
+              <a class='am-u-sm-6 ao-exit' href=""> 安全退出</a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</header>
+<section class="user-container">
+	<div class="oa-middle-div user-cont-box">
+		<!-- 左侧侧边栏 -->
+		<div class="user-sidebar">
+			 <div data-am-widget="accordion" class="am-accordion am-accordion-gapped" data-am-accordion='{  }'>
+		      <dl class="am-accordion-item">
+		        <dt class="am-accordion-title user-sidebar-title">
+		          <i class="iconfont">&#xe620;</i>用户中心
+		        </dt>
+		        <dd class="am-accordion-bd am-collapse">
+		          <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+		          <div class="am-accordion-content">
+		            <div class="user-sidebar-group">
+                    <a class="user-sidebar-list">功能模块安装</a>
+                    <a class="user-sidebar-list active">功能模块卸载</a>
+                </div>
+		          </div>
+		        </dd>
+		      </dl>
+		      <dl class="am-accordion-item">
+		        <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe651;</i>绑定资料
+		        </dt>
+		        <dd class="am-accordion-bd am-collapse ">
+		          <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+		          <div class="am-accordion-content">
+		            <div class="user-sidebar-group">
+                    <a class="user-sidebar-list">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                </div>
+		          </div>
+		        </dd>
+		      </dl>
+		      <dl class="am-accordion-item">
+		        <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe657;</i>产品购买
+		        </dt>
+		        <dd class="am-accordion-bd am-collapse ">
+		          <div class="am-accordion-content">
+		            <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                </div>
+		          </div>
+		        </dd>
+		      </dl>
+          <dl class="am-accordion-item am-active">
+            <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe632;</i>人员管理
+            </dt>
+            <dd class="am-accordion-bd am-collapse  am-in">
+              <div class="am-accordion-content">
+                <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">企业管理员</a>
+                    <a class="user-sidebar-list">通讯录</a>
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl class="am-accordion-item">
+            <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe63d;</i>功能模块
+            </dt>
+            <dd class="am-accordion-bd am-collapse ">
+              <div class="am-accordion-content">
+                <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl class="am-accordion-item">
+            <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe656;</i>财务管理
+            </dt>
+            <dd class="am-accordion-bd am-collapse ">
+              <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+              <div class="am-accordion-content">
+                <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                </div>
+              </div>
+            </dd>
+          </dl>
+		</div>
+
+		</div>
+
+		<!-- 右边内容区域 -->
+		<div class="user-content">
+			<div class="oa-panel">
+        <div class="oa-panel-hd">
+          <i class="iconfont">&#xe655;</i> 企业管理员
+        </div>
+        <div class="oa-panel-bd">
+          <div class="am-padding-vertical">
+            <button type="button" class="am-btn am-btn-secondary am-radius am-btn-sm">添加新人员</button>
+            <div class="am-input-group ry-list-search am-input-group-sm">
+              <input type="text" class="am-form-field">
+              <span class="am-input-group-btn">
+                <button class="am-btn am-btn-default" type="button"><span class="am-icon-search"></span> </button>
+              </span>
+            </div>
+          </div>
+          <table style="border-bottom: 1px solid #ddd;" class="am-table am-table-striped am-text-middle am-table-centered oa-ry-list-tb">
+            <thead>
+              <tr>
+                <th></th>
+                <th>ID</th>
+                <th>昵称</th>
+                <th>登录次数</th>
+                <th>最后登录时间</th>
+                <th>状态</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-uid="1">
+                <td>
+                    <input type="checkbox" class="oa-sel-check" name="" value="">
+                </td>
+                <td>1</td>
+                <td>郑哥哥</td>
+                <td>14</td>
+                <td>2015-11-04 18:58</td>
+                <td class="oa-enable">启用</td>
+                <td>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-editor am-radius" href="javascript:;" title="编辑">编辑</a>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-delete am-radius" href="javascript:;" title="编辑">删除</a>
+                </td>
+              </tr>
+              <tr data-uid="2">
+                <td>
+                    <input type="checkbox" class="oa-sel-check" name="" value="">
+                </td>
+                <td>1</td>
+                <td>郑哥哥</td>
+                <td>14</td>
+                <td>2015-11-04 18:58</td>
+                <td class="oa-enable">启用</td>
+                <td>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-editor am-radius" href="javascript:;" title="编辑">编辑</a>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-delete am-radius" href="javascript:;" title="编辑">删除</a>
+                </td>
+              </tr>
+              <tr data-uid="3">
+                <td>
+                    <input type="checkbox" class="oa-sel-check" name="" value="">
+                </td>
+                <td>1</td>
+                <td>郑哥哥</td>
+                <td>14</td>
+                <td>2015-11-04 18:58</td>
+                <td class="oa-enable">启用</td>
+                <td>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-editor am-radius" href="javascript:;" title="编辑">编辑</a>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-delete am-radius" href="javascript:;" title="编辑">删除</a>
+                </td>
+              </tr>
+              <tr data-uid="4">
+                <td>
+                    <input type="checkbox" class="oa-sel-check" name="" value="">
+                </td>
+                <td>1</td>
+                <td>郑哥哥</td>
+                <td>14</td>
+                <td>2015-11-04 18:58</td>
+                <td class="oa-enable">未启用</td>
+                <td>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-editor am-radius" href="javascript:;" title="编辑">编辑</a>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-delete am-radius" href="javascript:;" title="编辑">删除</a>
+                </td>
+              </tr>
+              <tr data-uid="5">
+                <td>
+                    <input type="checkbox" class="oa-sel-check" name="" value="">
+                </td>
+                <td>1</td>
+                <td>郑哥哥</td>
+                <td>14</td>
+                <td>2015-11-04 18:58</td>
+                <td class="oa-enable">未启用</td>
+                <td>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-editor am-radius" href="javascript:;" title="编辑">编辑</a>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-delete am-radius" href="javascript:;" title="编辑">删除</a>
+                </td>
+              </tr>
+              <tr data-uid="6">
+                <td>
+                    <input type="checkbox" class="oa-sel-check" name="" value="">
+                </td>
+                <td>1</td>
+                <td>郑哥哥</td>
+                <td>14</td>
+                <td>2015-11-04 18:58</td>
+                <td class="oa-enable">启用</td>
+                <td>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-editor am-radius" href="javascript:;" title="编辑">编辑</a>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-delete am-radius" href="javascript:;" title="编辑">删除</a>
+                </td>
+              </tr>
+              <tr data-uid="7">
+                <td>
+                    <input type="checkbox" class="oa-sel-check" name="" value="">
+                </td>
+                <td>1</td>
+                <td>郑哥哥</td>
+                <td>14</td>
+                <td>2015-11-04 18:58</td>
+                <td class="oa-enable">启用</td>
+                <td>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-editor am-radius" href="javascript:;" title="编辑">编辑</a>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-delete am-radius" href="javascript:;" title="编辑">删除</a>
+                </td>
+              </tr>
+              <tr data-uid="8">
+                <td>
+                    <input type="checkbox" class="oa-sel-check" name="" value="" >
+                </td>
+                <td>1</td>
+                <td>郑哥哥</td>
+                <td>14</td>
+                <td>2015-11-04 18:58</td>
+                <td class="oa-enable">未启用</td>
+                <td>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-editor am-radius" href="javascript:;" title="编辑">编辑</a>
+                  <a  type="button" class="am-btn am-btn-secondary am-btn-xs ry-list-delete am-radius" href="javascript:;" title="编辑">删除</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="am-margin-bottom-lg am-margin-horizontal">
+          	<label class="am-margin-right"><input type="checkbox" name="" class="oa-sel-all" value="" > <span>全选</span></label>
+          	<button type="button" class="am-btn am-btn-default am-radius am-btn-sm oa-tab-qiyong">启用</button>
+          	<button type="button" class="am-btn am-btn-default am-radius am-btn-sm oa-tab-jinyong">禁用</button>
+            <button type="button" class="am-btn am-btn-default am-radius am-btn-sm oa-tab-delete">删除</button>
+          </div>
+          <ul data-am-widget="pagination" class="am-pagination  am-pagination-default am-text-center"
+		      >
+		      <li class="am-pagination-first ">
+		        <a href="#" class=""><<</a>
+		      </li>
+		      <li class="am-pagination-prev ">
+		        <a href="#" class=""><</a>
+		      </li>
+	            <li class="">
+	              <a href="#" class="">1</a>
+	            </li>
+	            <li class="am-active">
+	              <a href="#" class="am-active">2</a>
+	            </li>
+	            <li class="">
+	              <a href="#" class="">3</a>
+	            </li>
+	            <li class="">
+	              <a href="#" class="">4</a>
+	            </li>
+	            <li class="">
+	              <a href="#" class="">5</a>
+	            </li>
+		      <li class="am-pagination-next ">
+		        <a href="#" class="">></a>
+		      </li>
+		      <li class="am-pagination-last ">
+		        <a href="#" class="">>></a>
+		      </li>
+		  	</ul>
+        </div>
+      </div>
+
+
+
+		</div>
+    <!-- 右边内容区域结束 -->
+
+	</div>
+</section>
+<!-- 底部 -->
+<footer class="box-container oa-foot">
+  <p>Copyright ©2013-2015 sanside.net All Rights Reserved. 蜀ICP备13015392号</p>
+  <p>版权所有 <a href="">三思德科技有限公司</a></p>
+</footer>
+<!-- 底部结束 -->
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/amazeui.min.js"></script>
+<script src="../skin/js/public/public.js"></script>
+<script type="text/javascript">
+//全选
+$('.oa-sel-all').change(function(){
+	if($(this).is(':checked')){
+		$('.oa-sel-check').prop('checked',true);
+		$(this).next().text('全不选');
+	}else{
+		$('.oa-sel-check').prop('checked',false);
+		$(this).next().text('全选');
+	}
+});
+
+$('.oa-tab-delete').click(function(){
+	var del_uid = [];
+	$('table .oa-sel-check:checked').each(function(){
+		del_uid.push($(this).closest('tr').attr('data-uid'));
+		$(this).closest('tr').remove();
+	});
+	
+	alert(del_uid);
+})
+
+$('.oa-tab-qiyong').click(function(){
+	var ena_uid = [];
+	$('table .oa-sel-check:checked').each(function(){
+		
+		ena_uid.push($(this).closest('tr').attr('data-uid'));
+		$(this).closest('tr').find('.oa-enable').text('启用');
+	});
+	
+	alert(ena_uid);
+})
+$('.oa-tab-jinyong').click(function(){
+	var ena_uid = [];
+	$('table .oa-sel-check:checked').each(function(){
+		
+		ena_uid.push($(this).closest('tr').attr('data-uid'));
+		$(this).closest('tr').find('.oa-enable').text('未启用');
+	});
+	
+	alert(ena_uid);
+})
+</script>
+</body>
+</html>

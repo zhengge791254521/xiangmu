@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>三思德OA管理系统</title>
+	<link rel="stylesheet" href="../skin/css/public/amazeui.min.css">
+  <link rel="stylesheet" href="../skin/Font-Awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../skin/icon/iconfont.css">
+	<link rel="stylesheet" href="../skin/css/public/public.css">
+	<link rel="stylesheet" href="../skin/css/public/style.css">
+	<link rel="stylesheet" href="../skin/css/yonghu/yonghu_style.css">
+<style type="text/css">
+
+</style>
+</head>
+<body ontouchstart>
+<!-- class命名 带有oa前缀的皆为自定义 其余都是 UI组件样式 -->
+<!-- 头部start -->
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top">	<div class="oa-middle-div">
+  <div class="am-topbar-brand">
+    <a href="#"><img src="../skin/images/logo-dibu.png" alt=""></a>
+  </div>
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+  	<div class="am-topbar-right">
+  	<!-- 未登录 -->
+      <!-- <button class="am-btn am-btn-primary am-radius oa-login">登录</button>
+      <button class="am-btn am-btn-primary am-radius oa-login">注册</button> -->
+    </div>
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right">
+      <li class="am-active">
+      	<a href="#">首 页</a>
+      </li>
+      <li><a href="#">产品中心</a>
+      </li>
+      <li><a href="#">新闻中心</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#" class="oa-header-tou"> <img src="../skin/images/tou.png" style="width:50px; height:50px;" class="am-img-thumbnail am-circle"> &nbsp;&nbsp;791254521</a>
+        <ul class="oa-munu-pop">
+          <li>
+          	<a href="">个人中心</a>
+            <!-- <div class="munu-u-box">
+              <img src="../skin/images/tou.png" alt="" />
+              <div class="">
+                <p >zhenggge791254521</p>
+                <span class="munu-u"><a href="">个人账户</a></span> 
+                <span class="munu-m"><a href="">消息</a><b class="am-badge am-badge-warning am-round">5</b></
+                span>
+              </div>
+            </div> -->
+            <!-- <div class="am-g munu-exit">
+              <a class="am-u-sm-6" href="#">我的订单</a>
+              <a class='am-u-sm-6 ao-exit' href=""> 安全退出</a>
+            </div> -->
+          </li>
+          <li><a href="">我的订单</a></li>
+          <li><a href="">安全退出</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</header>
+<section class="user-container">
+
+	<div class="oa-middle-div user-cont-box">
+	<div class="am-alert oa-war-opp am-alert-warning" data-am-alert>
+			<button type="button" class="am-close">&times;</button>
+			<i class="iconfont">&#xe612;</i> 您的企业号办公系统还有1个月到期，请及时续期
+		</div>
+		<!-- 左侧侧边栏 -->
+		<div class="user-sidebar">
+			 <div data-am-widget="accordion" class="am-accordion am-accordion-gapped" data-am-accordion='{  }'>
+		      <dl class="am-accordion-item am-active">
+		        <dt class="am-accordion-title user-sidebar-title">
+		          <i class="iconfont">&#xe620;</i>用户中心
+		        </dt>
+		        <dd class="am-accordion-bd am-collapse am-in">
+		          <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+		          <div class="am-accordion-content">
+		            <div class="user-sidebar-group">
+                    <a class="user-sidebar-list">功能模块安装</a>
+                    <a class="user-sidebar-list active">功能模块卸载</a>
+                </div>
+		          </div>
+		        </dd>
+		      </dl>
+		      <dl class="am-accordion-item">
+		        <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe651;</i>绑定资料
+		        </dt>
+		        <dd class="am-accordion-bd am-collapse ">
+		          <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+		          <div class="am-accordion-content">
+		            <div class="user-sidebar-group">
+                    <a class="user-sidebar-list">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                </div>
+		          </div>
+		        </dd>
+		      </dl>
+		      <dl class="am-accordion-item">
+		        <dt class="am-accordion-title user-sidebar-title">
+              		<i class="iconfont">&#xe657;</i>产品购买
+		        </dt>
+		        <dd class="am-accordion-bd am-collapse ">
+		            <div class="am-accordion-content">
+			            <div class="user-sidebar-group">
+	                    	<a class="user-sidebar-list active">功能模块安装</a>
+	                    	<a class="user-sidebar-list">功能模块卸载</a>
+	                	</div>
+		            </div>
+		        </dd>
+		      </dl>
+          <dl class="am-accordion-item">
+            <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe632;</i>人员管理
+            </dt>
+            <dd class="am-accordion-bd am-collapse ">
+              <div class="am-accordion-content">
+                <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl class="am-accordion-item">
+            <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe63d;</i>功能模块
+            </dt>
+            <dd class="am-accordion-bd am-collapse ">
+              <div class="am-accordion-content">
+                <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl class="am-accordion-item">
+            <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe656;</i>财务管理
+            </dt>
+            <dd class="am-accordion-bd am-collapse ">
+              <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+              <div class="am-accordion-content">
+                <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                </div>
+              </div>
+            </dd>
+          </dl>
+		</div>
+
+		</div>
+
+		<!-- 右边内容区域 -->
+		<div class="user-content">
+		
+      <div class="oa-panel am-margin-bottom-lg">
+        <div class="oa-panel-hd oa-user-message">
+          <div class="oa-user-img">
+            <img src="../skin/images/tou.png" alt="..." class="am-img-thumbnail am-radius">
+            <span>试用</span>
+          </div>
+          <div class="am-g">
+            <div class="am-u-sm-6">
+              <div class="oa-user-mess">您好，张三 <img src="../skin/images/hg.png" alt="" /></div>
+              <div class="oa-user-mess"><i class="iconfont am-text-success">&#xe64e;</i> 123456789@qq.com</div>
+              <div class="oa-user-mess"><i class="iconfont am-text-warning">&#xe600;</i> 人数：<span class="am-text-secondary">20</span>/50</div>
+            </div>
+            <div class="am-u-sm-6">
+              <div class="oa-user-mess">
+                2015-11-03 &nbsp;&nbsp;星期一
+              </div>
+              <div class="oa-user-mess">&nbsp;</div>
+              <div class="oa-user-mess">
+                <span class="am-text-danger">￥</span>余额：200 &nbsp;&nbsp;<a class="am-btn am-btn-warning am-btn-xs am-radius" href="">充值</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oa-panel-hd">
+          <i class="iconfont">&#xe659;</i> 产品购买
+        </div>
+        <div class="oa-panel-bd">
+          <ul class="oa-suite-group am-cf">
+
+            <li class="oa-suite-list">
+              <div class="oa-suite-box">
+                <!-- 未购买模块 添加oa-no-buy a标签添加提示语 -->
+                <div class="oa-suite-img oa-no-buy">
+                  <i class="iconfont">&#xe623;</i>
+                  <a href="" title="点击购买模块"><i class="iconfont">&#xe60f;</i></a>
+                </div>
+                <span>PC套件</span>
+              </div>
+            </li>
+
+            <li class="oa-suite-list">
+              <div class="oa-suite-box">
+                <div class="oa-suite-img">
+                  <i class="iconfont">&#xe653;</i>
+                  <a href="" title="点击卸载模块"><i class="iconfont">&#xe614;</i></a>
+                </div>
+                <span>企业号</span>
+              </div>
+            </li>
+
+            <li class="oa-suite-list">
+              <div class="oa-suite-box">
+                <div class="oa-suite-img">
+                  <i class="iconfont">&#xe64d;</i>
+                  <a href="" title="点击卸载模块"><i class="iconfont">&#xe614;</i></a>
+                </div>
+                <span>短信</span>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+			<div class="oa-panel">
+        <div class="oa-panel-hd">
+          <i class="iconfont">&#xe63d;</i> 功能模块
+        </div>
+        <div class="oa-panel-bd">
+          <ul class="oa-suite-group am-cf">
+
+            <li class="oa-suite-list">
+              <div class="oa-suite-box">
+                <div class="oa-suite-img">
+                  <i class="iconfont">&#xe658;</i>
+                  <a href="" title="点击卸载模块"><i class="iconfont">&#xe614;</i></a>
+                </div>
+                <span>OA办公套件</span>
+              </div>
+            </li>
+
+            <li class="oa-suite-list">
+              <div class="oa-suite-box">
+                <div class="oa-suite-img">
+                  <i class="iconfont">&#xe650;</i>
+                  <a href="" title="点击卸载模块"><i class="iconfont">&#xe614;</i></a>
+                </div>
+                <span>企业消息套件asass</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+		</div>
+    <!-- 右边内容区域结束 -->
+
+
+	</div>
+</section>
+<!-- 底部 -->
+<footer class="box-container oa-foot">
+  <p>Copyright ©2013-2015 sanside.net All Rights Reserved. 蜀ICP备13015392号</p>
+  <p>版权所有 <a href="">三思德科技有限公司</a></p>
+</footer>
+<!-- 底部结束 -->
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/amazeui.min.js"></script>
+<script src="../skin/js/public/public.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>

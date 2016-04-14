@@ -1,0 +1,293 @@
+/*公共*/
+*{ margin:0; padding:0;font-family:微软雅黑;}
+li{ list-style:none;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;line-height:0; color:#333333;}
+div,ul,li,p,span,a{margin:0;padding:0;text-decoration: none;}
+body{background:#efefef;}
+.container-fluid{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration:none;
+	color:#333333;	
+	}
+a:hover{
+	color:#333333;	
+	}
+a:active{
+	color:#333333;
+	}
+a:visited {
+	color:#333333;
+ }
+a:active {
+ 	color:#333333;
+ }
+/*头部区域*/
+
+.wx-header h3{
+	color:#fff;	
+	}
+.wx-header-theme h3{
+	line-height: 50px;
+}
+.a-return i{
+	float:left;
+	margin-left:10px;	
+	}
+.a-select i{
+	float:right;
+	margin-right:10px;
+	}
+.a-return,.a-select{
+	border: 0;
+	padding: 0;
+}
+.wx-header .col-xs-2 i{
+	color:#fff;
+	line-height: 50px;
+}
+.top-distance{
+	margin-top:45px;
+}
+.border-top{
+	border-top-width: 1px;
+	border-top-style: none;
+	border-top-color: #ccc;
+}
+
+/*头部区域结束*/
+
+/*底部*/
+.wx-footer{
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+}
+/*下拉*/
+.xialabox{
+	position:fixed;
+	right:7px;
+	top:35px;	
+	z-index:10000;
+	display:none;
+	}
+.menuitem{
+	margin:20px auto;
+	width:130px;
+	background:#FFF; 
+	border-radius:4px;	
+	position:relative;	
+}
+/*三角形*/
+.menuitem:before{
+	height:16px;
+	width:30px;
+	content:"";
+	display:block;
+	position:absolute;	
+	background:url(../../images/public/jiao.svg) no-repeat center center;
+	top:-12px;
+	right:10px;
+}
+.menuitem:after{
+	content:"";
+	clear:both;	
+}
+.menuitem li{
+	text-align:center;
+	width:100%;
+	list-style:none;
+	padding:10px 0;
+	color:#0068b7;	
+	border-bottom:1px solid #d9d9d9;
+}
+.menuitem li a{
+	color:#0068b7;	
+	text-decoration:none ;
+	font-family:"微软雅黑";
+	font-size:1.6em;	
+}
+.zhezhao{
+	display:none;
+	position:fixed;
+	background:#000;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;	
+	z-index:2;
+	opacity:0.2;
+	}
+.communica-search .form-search{
+	width: 100%;
+	display: inline-block;
+    padding: 10px 2%;
+}
+.communica-search .form-control{
+	width: 85%;
+	border-radius: 4px 0 0 4px;
+	float: left;
+	height:42px;
+}
+
+.btnMid{
+	margin:0;
+	padding:0;
+	text-align:center;
+	height:42px;
+	font-size:16px;	
+	}
+.communica-search .btn{
+	width:15%;
+	border-radius: 0 4px 4px 0;
+	float:left;
+}
+/******************************************字体开始************************************/
+@font-face{
+	font-family:Hel;
+	src:url(../../font/HELVETI1.TTF);	
+	}
+.biaoti_1{
+	font-size:18px;
+	font-weight:600;
+	line-height:24px;
+	}
+.line{
+	color:#cccccc;	
+	}
+p{
+	text-indent:2em;
+	padding-bottom:10px;
+	text-align:left;
+	}
+.xiala_1{
+	margin:0;
+	padding:0 2%;
+		
+	}
+.xiala_1 .xiala_1a{
+	width:100%; 
+	height:42px; 
+	font-size:16px;
+	border:none; 
+	border-radius:5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);	
+	}
+.xiala_2{
+	margin:0;
+	padding:0 2%;
+	overflow:hidden;	
+	}
+.xiala_2 .col-xs-6{
+	margin:0;
+	padding:0;
+	width:48%;	
+	}
+.xiala_2 .xiala_1a{
+	width:100%; 
+	height:42px; 
+	font-size:16px; 
+	border:1px solid #cccccc; 
+	border-radius:5px;	
+	}
+.xiala_right{
+	float:right;	
+	}
+.small_biaoti{
+	font-size:14px;
+	color:#999;	
+	}
+.ico{
+	font-size:1.5em;	
+	}
+.fa-angle-right{
+	color:#8a8889;	
+	}
+/******************************************字体结束************************************/
+
+/******************************************颜色开始************************************/
+.bg_color{
+	background: #0068b7;
+}
+.text_color{
+	color:#0068b7;	
+	}
+/******************************************颜色结束************************************/
+/*线开始*/
+.xixian {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	}
+/*线结束*/
+/*平板样式*/
+@media (max-width: 768px) {
+	.xialabox{
+		display:none;	
+		}
+}
+@media (min-width: 768px) {
+.a-return i{
+	float:left;
+	margin-left:20px;	
+	}
+.a-select i{
+	float:right;
+	margin-right:20px;
+	}
+/*下拉*/
+.xialabox{
+	right:15px;
+	top:35px;	
+	}
+.menuitem{
+	width:200px;
+	border-radius:8px;	
+}
+/*三角形*/
+.menuitem:before{
+	top:-12px;
+	right:12px;
+}
+
+}
+.xiaoxiao{
+	width:100%;	
+	}
+.erku{
+	color:#fff;	
+	}
+.btn.bg_color:hover {
+	color:#fff;
+ }
+.btn.bg_color:active{
+	color:#fff;
+	opacity:0.5;
+	}
+.btn.bg_color:visited {
+	color:#fff;
+	opacity:0.5;
+ }
+.btn.bg_color:focus{
+	color:#fff;	
+	}
+.wx-header{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.a-return,.a-select{
+	border: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+

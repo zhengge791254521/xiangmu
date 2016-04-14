@@ -1,0 +1,391 @@
+.file-head{
+	 -webkit-box-shadow: 0 0px 0px #ccc !important; 
+     box-shadow: 0 0px 0px #ccc !important;
+     background: white !important;
+     border-bottom: 1px solid #ddd; 
+}
+.file-logo{
+	line-height: 435px !important;
+    max-width: 35px !important;
+    height: 35px !important;	
+    margin-right: 20px !important;
+}
+.file-sou{
+	background: white;
+}
+.file-liebiao ul li a{
+	position: relative;
+}
+
+.file-img{
+	font-size: 36px;
+	width: 70px !important;
+	color: #b7b7b7;
+	padding: 0 !important;
+	margin-top: -5px !important;
+}
+.file-liebiao{
+	margin-top: -45px;
+}
+.file-a-input{
+	left: 20px !important;
+	right: 0 !important;
+}
+.quanxuan,.z-caozuo-start{
+	padding-top: 12px;
+	color: #01a7eb;
+}
+.mui-media-body .file-span{
+	font-size: 18px;
+	color: #333333;
+	padding-top: 6px;
+}
+.file-liebiao ul li{
+	padding-left: 20px;
+}
+.mui-media-body p span{
+	position:absolute; 
+	top: 32px;
+	right: 20%;
+}
+.file-img-two{
+	margin-right: 25px !important;
+	margin-left: 5px;
+}
+.file-middle{
+	padding-bottom: 10px !important;
+}
+.yc{
+	top: 60% !important;
+}
+
+
+.z-infor-search{
+	padding: 10px 20px 0;
+	background-color: #fff;
+}
+.z-infor-search+.z-infor-listbox{
+	margin-top: 0;
+}
+.z-infor-listbox .z-infor-name{
+	display: inline-block;
+	clear: both;
+	width: 100%;
+}
+.z-infor-listbox .z-infor-name h4{
+	font-weight: 500;
+	font-size: 16px;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	color: #333;
+}
+.z-infor-listbox .z-infor-name>span{
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	border-radius: 100%;
+	margin-left: 6px;
+	margin-bottom: 4px;
+	background-color: #ff3030;
+}
+.z-infor-eye{
+	font-size: 10px;
+}
+.z-infor-listbox .mui-table-view-cell>a{
+	padding-right: 30px;
+}
+
+.z-check .mui-table-view-cell.mui-checkbox>a{
+	padding-left: 50px;
+	padding-right: 10px;
+}
+.z-infor-listbox .mui-table-view-cell.mui-checkbox>a>input{
+	left: 15px;
+	top: 50%;
+	margin-top: -13px;
+	display: none;
+}
+.z-check .mui-table-view-cell.mui-checkbox>a>input{
+	display: inline-block;
+}
+.z-check .mui-table-view-cell.mui-checkbox>a:after{
+	visibility: hidden;
+}
+
+
+
+/*文件柜的样式代码(我收到)*/
+.mui-table-view{
+	font-size: 18px;
+}
+.oa-wenj img{
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+.oa-wenj{
+	position: relative;
+	padding-left: 3px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+.oa-wenj span{
+	position: absolute;
+	top: 20px;
+	left: 100px;
+}
+.wenj{
+	display:block;
+	height: 50%;
+	width: 70%;
+	font-size: 20px;
+	color: #333333;
+	font-weight: 600;
+}
+
+.sdimg img{
+	display: inline;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+.sdcenter{
+	display: inline;
+	float: left;
+}
+.sdwenjian{
+	margin-left:0 !important;
+	color:#a6a6a6 !important;
+}
+.sdwenjian1{
+	margin-top:3px !important;
+}
+.sdcon{
+	background: #FFFFFF;
+	height:100%; 
+	margin-top: 50px;
+}
+.sdm{
+	margin-top:5px !important;
+	width: 100% !important; 
+	font-size: 18px; 
+	color: #333333;
+}
+.sddax{
+	margin-top:-22px !important;
+	font-size: 16px; 
+	color: #999999;
+}
+@media only screen and (min-width:320px ) {
+.yc{
+	height: 138px;
+	margin-top: -60%;
+	margin-left: 5%;
+	background: #FFFFFF;
+	border-radius: 10px;
+}
+.yc .fenx input{
+	width:200px; 
+	margin-top: 30px; 
+	margin-bottom: 15px;
+	background: #f1f1f1;
+	margin-left: 15px;
+	overflow: hidden;
+}
+.yc .fenx span{
+	width:45px;
+	border-radius:5px;
+	line-height:33px;
+	margin-left: 0px; 
+	border: 1px solid #d1d1d1;
+	background: #f1f1f1;
+	padding-left:12px;
+	font-size: 20px;
+	color: #b6b6b6;
+	padding-bottom: 3px;
+}
+.qued{
+	border-top: 1px solid #dddddd;
+	margin-top:16px;
+	border-right: none;
+	border-left: none; 
+}
+.qued .button{
+	float: left;
+	border-right: 1px solid #dddddd;
+	width: 50%;
+	color:#00a0e8;
+	padding-left: 20px;
+}
+.qued button{
+	color:#00a0e8; 
+	border: none;
+	}
+.qued .button1{
+	margin-right: 20px;
+	color:#00a0e8;
+}
+.mui-popover-arrow{
+	display: none;
+}
+.middlePopover2{
+	height: 145px;
+	margin-top: -60%;
+	background: #FFFFFF;
+	border-radius: 10px;
+	margin-left: 10%;
+	position: absolute;
+	top: 50% !important;
+	left: 50% !important;
+	margin-left: -140px;
+	margin-top: -69px;
+}
+.middlePopover2 p{
+	text-align: center;
+	padding-top: 5px;
+	font-size: 18px;
+	color: #333333;
+	padding-top: 10px;
+}
+@media only screen and (min-width:414px ) {
+.yc{
+	height: 134px;
+	margin-top: -60%;
+	margin-left: 15%;
+	background: #FFFFFF;
+	border-radius: 10px;
+}
+
+.file-down{
+		top: 500px !important;
+}
+/*网盘样式代码*/
+.wpan{
+	background: #FFFFFF;
+	box-shadow: none;
+	border-bottom: 1px solid #e6e6e6;
+}
+.wpanimg{
+	padding-top:5px;
+	width:25px;
+	height:25px;
+}
+.wapan{
+	margin-bottom: 4px !important;
+	margin-left:15px !important;
+	width:80% !important;
+	background: #FFFFFF !important; 
+	border: 1px solid #e6e6e6 !important;
+}
+.wpname{
+	margin-top:5px;
+	width: 100%; 
+	font-size: 18px; 
+	color: #333333;
+}
+.wpandax{
+	font-size:14px; 
+	color: #999999; 
+	margin-top: -20px; 
+	margin-right: 20px;
+}
+.quxiao{
+	margin-top: 20px;
+}
+.mui-media-body p{
+	text-indent: 0 !important;
+}
+
+
+
+.z-infor-search{
+	padding: 10px 20px 0;
+	background-color: #fff;
+}
+.z-infor-search+.z-infor-listbox{
+	margin-top: 0;
+}
+.z-infor-listbox .z-infor-name{
+	display: inline-block;
+	clear: both;
+	width: 100%;
+}
+.z-infor-listbox .z-infor-name h4{
+	font-weight: 500;
+	font-size: 16px;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	color: #333;
+}
+.z-infor-listbox .z-infor-name>span{
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	border-radius: 100%;
+	margin-left: 6px;
+	margin-bottom: 4px;
+	background-color: #ff3030;
+}
+.z-infor-eye{
+	font-size: 10px;
+}
+.z-infor-listbox .mui-table-view-cell>a{
+	padding-right: 30px;
+}
+
+.z-check .mui-table-view-cell.mui-checkbox>a{
+	padding-left: 50px;
+	padding-right: 10px;
+}
+.z-infor-listbox .mui-table-view-cell.mui-checkbox>a>input{
+	left: 15px;
+	top: 50%;
+	margin-top: -13px;
+	display: none;
+}
+.z-check .mui-table-view-cell.mui-checkbox>a>input{
+	display: inline-block;
+}
+.z-check .mui-table-view-cell.mui-checkbox>a:after{
+	visibility: hidden;
+}
+
+
+.z-caozuo-nav{
+	top:-50px;
+	z-index: 11;
+	transition: 0.3s ease-out;
+  	-ms-transition: 0.3s ease-out;
+  	-webkit-transition: 0.3s ease-out;
+  	-moz-transition: 0.3s ease-out;
+  	-o-transition: 0.3s ease-out;
+}
+.z-caozuo-nav.active{
+	top:0;
+}
+.z-caozuo-tab{
+	bottom:-50px;
+	background-color: #454545;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	transition: 0.3s ease-out;
+  	-ms-transition: 0.3s ease-out;
+  	-webkit-transition: 0.3s ease-out;
+  	-moz-transition: 0.3s ease-out;
+  	-o-transition: 0.3s ease-out;
+}
+.z-caozuo-tab.active{
+	bottom: 0;
+}
+.z-caozuo-tab >a.mui-tab-item{
+	color:#eee;
+}
+.z-caozuo-tab >a.mui-tab-item.mui-active{
+	color:#01a7eb;
+}
+.z-caozuo-tab >a.disabled{
+	color:#a8a8a8!important;
+}

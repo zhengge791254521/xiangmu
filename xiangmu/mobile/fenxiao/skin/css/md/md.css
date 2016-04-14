@@ -1,0 +1,58 @@
+.md-title-tab{
+	padding: 10px;
+}
+.md-title-tab .md-icon{
+	font-size: 16px;
+}
+.sp-bar-tab{
+	background-color: rgba(0,0,0,0.5);
+}
+.sale{
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+
+.md-buy-box{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.md-buy-box.active{
+	visibility: visible;
+	opacity: 1;
+}
+.md-mask{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background-color: rgba(0,0,0,0.3);
+}
+.md-buy-group{
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	top: 20%;
+	left: 0;
+	z-index: 8;
+	background-color:#fff;
+	-webkit-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+
+  -webkit-transform:translateY(100%);
+	transform:translateY(100%);
+	overflow-y: auto;
+}
+.md-buy-box.active .md-buy-group{
+	-webkit-transform:translateY(0%);
+	transform:translateY(0%);
+}	

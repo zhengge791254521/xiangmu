@@ -1,0 +1,336 @@
+
+/*签到中心*/
+@font-face
+	{
+	font-family:huakangshaonv;
+	src:url(../../font/huakangshaonvziti.ttf);
+	}
+body{
+	background-color:#FFF;	
+}
+h4{
+	color:#FFF;
+	font-family:"微软雅黑";	
+	margin:0;
+	padding:0;
+	font-weight:600;
+	line-height:50px;
+}
+h5{
+	color:#000;
+	font-family:"微软雅黑";	
+	font-weight:600;
+	padding:20px 0;
+}
+h6{
+	color:#4c4c4d;
+	font-family:"微软雅黑";
+}
+time{
+	color:#000;	
+}
+.container-fluid{
+	background-color:#fafafa;	
+}
+.wx-header{
+	overflow:visible;	
+}
+.input_box{
+	width:100%;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+	-o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+	-ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+}
+.input_box:focus {
+	border-color:#ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+	-o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+	-ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+}
+/*签到中心首页*/
+.sign_up_box{
+	margin-top:10px;
+	background-color:#f2f5f5;
+	border-bottom:1px solid #e5e5e5;	
+	width:100% !important;
+	overflow:hidden;
+}
+.sign_up_titlebox{
+	background-color:#FFF; 
+	border-radius:4px;
+	border:1px solid #dfdfdf;
+	width:98%;
+	margin:0 auto;
+	margin-top:10px;
+	position:relative;
+}
+.sign_up_title{
+	color:#000000;	
+	line-height:30px;
+	margin-top:5px;
+	margin-left:10px;
+	padding:0;
+}
+.sign_up_titledoc{
+	color:#666666;
+	font-weight:500;
+	margin:0;
+	line-height:16px;
+	margin-left:10px;
+	padding:4px 0 5px 0;	
+}
+.sign_up_btn{
+	position:absolute;
+	right:0;
+	top:0;
+	height:100%;
+	padding:0 10px;
+	border:0 none;
+	border-radius:4px;
+	color:#FFF;
+	font-size:1.5em;
+	font-family:"微软雅黑";	
+}
+.sign_up_btn:hover{
+	color:#FFF;
+}
+.sign_up_icon i{
+	font-size:1.5em;
+	padding:8px 0;
+	padding-top:12px;
+}
+.sign_up_icon i span{
+	color:#666666;
+	font-size:14px;
+}
+.sign_up_border{
+	position:relative;
+}
+.sign_up_border:before{
+	content:"";
+	display:block;
+	position:absolute;
+	width:1px;
+	height:60%;
+	background-color:#0068b7;
+	top:20%;
+	left:0;	
+}
+.sign_up_border:after{
+	content:"";
+	display:block;
+	position:absolute;
+	width:1px;
+	height:60%;
+	background-color:#0068b7;
+	top:20%;
+	right:0;	
+}
+.more{
+	margin:20px;	
+}
+.more h4{
+	color:#0068b7;
+	font-weight:500;	
+}
+.more a{
+	text-decoration:none;	
+}
+
+/*签到记录列表页面*/
+.search_bgbox{
+	width:100%;
+	background-color:#fafafa;
+	border-bottom:1px solid #f0f0f0;
+	overflow:hidden;
+	margin-top:5px;
+}
+.search_box{
+	position:relative;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.jilu_search_btn{
+	position:absolute;
+	top:20px;
+	right:15px;	
+}
+.exchange_btn{
+	padding-top:20px;
+	padding-bottom:20px;	
+}
+.btn_lg_width{
+	width:100%;	
+	background-color:#FFF;	
+}
+.btn_lg_widthB{
+	width:100%;
+	padding:10px 10px;
+}
+.sign_up_menu{
+	width:100%;	
+}
+.sign_up_down h5{
+	color:#000;	
+	white-space:normal;
+	font-weight:600;
+	line-height:20px;
+	padding:0;
+}
+.sign_up_down span{ 
+	display:block;
+	white-space:normal;	
+	color:#8c8c8c;
+	font-size:1em;
+	padding:0 0 5px 0;
+}
+.fa-check-square-o{
+	font-size:1.5em;
+	margin-top:10px;
+}
+.line{
+	border-bottom:1px solid #d9d9d9;
+	cursor:pointer;	
+	width:inherit;
+}
+.line_mendian{
+	padding-top:6px;
+	padding-bottom:8px;	
+}
+/*异常记录*/
+.yichang_title{
+	font-size:1.5em;
+	width:100%;
+	text-align:center;
+	padding:10px 0;
+}
+.yichang_img{
+	width:100%;
+	padding:0 45px 20px 45px;	
+}
+.yichang_input{
+	width:100%;
+	background-color:#FFF;
+	border:1px solid #bfbfbf;
+	border-radius:4px;
+	padding:5px 0 5px 0;
+	font-size:1.2em;
+	font-weight:400;	
+}
+.yichang_box{
+	margin-bottom:20px;	
+}
+.sign_up_yichangbox{
+	width:100%;
+	margin:0 auto;
+	background-color:#FFF;
+	border-radius:4px 4px 0 0;
+	border-bottom:1px solid #cac8c9;
+	margin-top:10px;
+}
+.yichangjilu_title{
+	padding:0;	
+}
+.yichangjilu_title h4{
+	color:#000;
+	font-weight:500;
+	line-height:22px;
+	padding:0;	
+}
+.yichangjilu_title h5{
+	color:#808080;
+	font-weight:500;
+	line-height:16px;
+	margin-top:0;
+	padding:5px 0;	
+}
+.yichangjilu_id{
+	padding:0;	
+}
+.yichangjilu_id h5{
+	text-align:right;
+	color:#333333;
+	white-space:nowrap;
+}
+/*签到中心表单页面*/
+.area{
+	width:100%;
+	resize:none;
+	height:120px;
+	border-radius:4px;
+	border:1px solid #cccccc;
+}
+.fa-plus{
+	color:#c2c2c2;	
+}
+.btn_up{
+	width:100%;	
+	background-color:#00a0e9;
+	border:0 none;
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-size:18px;
+	font-weight:200;
+}
+.btn_up:hover,
+.btn_up:visited,
+.btn_up:active,
+.btn_up:link{
+	background-color:#008ac9;
+	color:#FFF;
+}
+.btn_up_box{
+	width:100%;
+	margin-top:70px;
+}
+.img_big{
+	padding:0 15px;	
+	margin-top:10px;
+	overflow:hidden;
+}
+@media (min-width: 768px) {
+	.img_box{
+		padding:0;	
+		overflow:hidden;
+	}
+	.img_list{
+		width:100%;	
+		border:4px #fafafa solid;
+	}
+}
+@media (max-width: 768px) {
+	.img_box{
+		padding:0;	
+		overflow:hidden;
+	}
+	.img_list{
+		width:100%;	
+		border:2px #fafafa solid;
+	}
+}
+
+.communica-search .sign-search{
+	width: 100%;
+	display: inline-block;
+    padding: 10px 0;
+}
+.sign_btn{
+	margin-top:20px;	
+}
+
+/********************************************************************/
+.text_box{
+	padding:5px;
+	width:100%;
+	overflow:hidden;
+	background-color:#FFF;
+	border-radius:4px;
+	border:1px solid #cccccc;	
+}
+.xiaoxiao{
+	width:100%;	
+	}

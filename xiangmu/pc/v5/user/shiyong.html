@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>三思德OA管理系统</title>
+	<link rel="stylesheet" href="../skin/css/public/amazeui.min.css">
+	<link rel="stylesheet" href="../skin/Font-Awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../skin/css/public/public.css">
+	<link rel="stylesheet" href="../skin/css/public/style.css">
+	<link rel="stylesheet" href="../skin/css/user/login.css">
+	<!-- <link rel="stylesheet" href="../skin/css/plug/style.css" /> -->
+<style type="text/css">
+
+</style>
+</head>
+<body ontouchstart>
+<!-- class命名 带有oa前缀的皆为自定义 其余都是 UI组件样式 -->
+<!-- 头部start -->
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top">	<div class="oa-middle-div">
+  <div class="am-topbar-brand">
+    <a href="#"><img src="../skin/images/logo-dibu.png" alt=""></a>
+  </div>
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+  	<div class="am-topbar-right">
+     	<a href="../user/login.html"><button class="am-btn am-btn-primary am-radius oa-login">登录</button></a>
+      <a href="../user/regist.html"><button class="am-btn am-btn-primary am-radius oa-login">注册</button></a>
+    </div>
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right">
+      <li class="am-active">
+      	<a href="../shouye.html">首页</a>
+      </li>
+      <li><a href="../product/gongneng.html">产品中心</a>
+			<ul class="am-dropdown-content oa-munu-pop">
+	          <li><a href="../product/gongneng.html">产品功能</a></li>
+	          <li><a href="../product/price.html">产品套餐</a></li>
+	        </ul>
+      </li>
+      <li><a href="../user/shiyong.html">用户试用</a></li>
+      <li><a href="../artide/chanpindongtai.html">新闻中心</a>
+      		<ul class="am-dropdown-content oa-munu-pop">
+	          <li><a href="../artide/chanpindongtai.html">产品动态</a></li>
+	          <li><a href="../artide/hangyezixun.html">行业资讯</a></li>
+	          <li><a href="../artide/yonghushequ.html">用户社区</a></li>
+	        </ul>
+      </li>
+      <li><a href="../about/about.html">关于我们</a>
+      	<ul class="am-dropdown-content oa-munu-pop">
+	          <li><a href="../about/about.html">关于V5</a></li>
+	          <li><a href="../about/changjianwenti.html">帮助中心</a></li>
+	        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</header>
+	<div class="qdy-login-img">
+		<div class="oa-middle-div">
+			<div class="qdy-login panel panel-default">
+        		<form class="am-form am-form-horizontal form" action="download1.html" onsubmit="return login()" method="">
+			    <legend class="oa-legend-title1">试用登记信息填写</legend>
+			    <div class="am-form-group">
+				    <label for="" class="am-u-sm-3 am-form-label length">名称</label>
+				    <div class="am-u-sm-9">
+				      <input type="text" id="" name="username" placeholder="输入您的用户名" >
+				    </div>
+				  </div>
+				  
+			    <div class="am-form-group">
+				    <label for="" class="am-u-sm-3 am-form-label length">邮箱</label>
+				    <div class="am-u-sm-9">
+				       <input type="email" class="am-form-field" id="" placeholder="输入您的邮箱"  minlength="@" data-foolish-msg="输入合法的邮箱地址" required>
+				    </div>
+				</div>
+				<div class="am-form-group">
+				    <label for="" class="am-u-sm-3 am-form-label length">电话</label>
+				    <div class="am-u-sm-9">
+				      <input type="text" class="am-form-field" id="" name="tel" placeholder="输入您的联系号码" data-foolish-msg="请输入正确的电话号码" pattern="^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$" required>
+				    </div>
+				</div>
+				  
+				<div class="am-form-group">
+				    <label for="" class="am-u-sm-3 am-form-label length">套餐类型</label>
+				    <div class="am-u-sm-9">
+				        <select id="doc-select-1">
+				        	<option value="option1">---请选择---</option>
+							<option value="option2">单企业版</option>
+							<option value="option3">多企业版</option>
+							<option value="option4">加盟版</option>
+						</select>
+				    </div>
+				</div>
+				  
+				 
+					<div class="am-form-group">
+						<div class="am-u-sm-12">
+							<button type="submit" class="am-btn am-btn-primary am-btn-block" href="../user/download1.html">立即试用</button></a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<footer class="box-container ssd-foot">
+      <div class="oa-middle-div">
+        <div class="box-inb-ww pd-tb-10">
+          <div class="am-u-sm-6 pd-l-0">
+            <div class="ssd-wx-sao box-container">
+              <div class="wx-img">
+                <img class="img-auto" src="../skin/images/wx.png" alt="">
+              </div>
+              <div class="pd-tb-10">
+                <i class="fa fa-mobile fa-4x"></i>
+                <p class="ft-16">微信公众号</p>
+                <p class="ft-16">请用手机扫描关注</p>
+              </div>
+            </div>
+          </div>
+          <div class="am-u-sm-6">
+            <div class="box-container pd-tb-15 ssd-contact">
+              <p class="ft-16 lh-2"><i class="fa fa-map-marker"></i>Add:成都市高新区天益街38号理想中心2栋12楼1212-1215</p>
+              <p class="ft-16 lh-2"><i class="fa fa-phone"></i>Tel：028-85177375</p>
+              <p class="ft-16 lh-2"><i class="fa fa-envelope-o"></i>E-mail：service@sanside.net</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="pd-tb-15 oa-beianhao">
+      Copyright ©2013-2015 sanside.net All Rights Reserved. 蜀ICP备13015392号
+    </div>
+    </footer>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/amazeui.min.js"></script>
+<script src="../skin/js/public/public.js"></script>
+<script type="text/javascript">
+$(function(){
+	var t=$(".am-form"),
+			o=$('<div id="vld-tooltip">提示信息！</div>');
+
+	o.appendTo(document.body),
+	t.validator({
+		onValid:function(){
+			o.hide()
+		},
+		validate: function(validity) {
+			console.log(validity);
+			var name = validity.field.name,
+					val  = validity.field.value;
+			//判断用户名是否已经注册
+			if(name == 'username'){
+				// $.post('/path/to/file', {value: val}, function(data) {
+				// 	if(!data){
+				// 		validity.valid = false;
+				// 	}else{
+				// 		validity.valid = true;
+				// 	}
+				// });
+			}
+
+			return validity;
+		}
+	}),
+	//验证的时候获取焦点显示提示tip
+		t.on("focusin focusout",".am-form-error input",function(i){
+			if("focusin"===i.type){
+				var a=$(this),
+						e=a.offset(),
+						d=a.data("foolishMsg")||t.validator("getValidationMessage",a.data("validity"));
+				o.text(d).show().css({left:e.left+10,top:e.top+$(this).outerHeight()+10})
+			}else o.hide()
+		})
+});
+</script>
+</body>
+</html>

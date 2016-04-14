@@ -1,0 +1,218 @@
+<!-- 门店列表 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/md/md.css" />
+</head>
+<style type="text/css">
+.mui-table-view.mui-grid-view .mui-table-view-cell{
+    background-color: #fff;
+    /*color: #ff9900;*/
+}
+.su-popver{
+	position: fixed;
+}
+.su-popver .mui-popover-arrow {
+	left: auto;
+	right: 6px;
+}
+.mui-popover {
+	height:40%;
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no a-href">
+  <a href="fenlei.html" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+  <a href="../user/user_search.html" class="mui-icon mui-icon-search mui-pull-right" style="color:#fff;"></a>
+	<div class="mui-title">
+		衣服类商品
+	</div>
+</header>
+
+<div class="mui-content su-scroll">
+<div class="su-scroll-title">
+			<div class="mui-segmented-control">
+				<a class="mui-control-item mui-active" href="#item1">
+					时间
+				</a>
+				<a class="mui-control-item" href="#item2">
+					人气
+				</a>
+				<a class="mui-control-item" href="#item3">
+					价格
+				</a>
+				<a class="mui-control-item" href="#item4">
+					销量
+				</a>
+			</div>
+</div>
+
+<div class="su-scroll-body">
+<div id="pullrefresh" class="mui-scroll-wrapper">
+<div class="mui-scroll">
+<ul class="mui-table-view mui-grid-view mui-grid-9 su-goods-body su-scr-group mg-t-10 a-href" id="su-scr-group">
+  <li class="mui-table-view-cell su-scr-list mui-col-xs-6">
+    <a href="md_shangpin.html">
+    	<img src="../skin/images/gds01.jpg" class="gds-bg" alt="">
+      <div class="su-gds-msg">
+      	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>
+      	<div class="tx-f30 mg-t-xs">
+      		<b class="mn">￥10.40</b>
+      		<span class="hot">HOT</span>
+      	</div>
+      </div>
+    </a>
+  </li>
+  <li class="mui-table-view-cell su-scr-list mui-col-xs-6">
+    <a href="md_shangpin.html">
+    	<img src="../skin/images/gds02.jpg" class="gds-bg" alt="">
+      <div class="su-gds-msg">
+      	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>
+      	<div class="tx-f30 mg-t-xs">
+      		<b class="mn">￥10.40</b>
+      		<span class="hot">HOT</span>
+      	</div>
+      </div>
+    </a>
+  </li>
+  <li class="mui-table-view-cell su-scr-list mui-col-xs-6">
+    <a href="md_shangpin.html">
+    	<img src="../skin/images/gds03.jpg" class="gds-bg" alt="">
+      <div class="su-gds-msg">
+      	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>
+      	<div class="tx-f30 mg-t-xs">
+      		<b class="mn">￥10.40</b>
+      		<span class="hot">HOT</span>
+      	</div>
+      </div>
+    </a>
+  </li>
+  <li class="mui-table-view-cell su-scr-list mui-col-xs-6">
+    <a href="md_shangpin.html">
+    	<img src="../skin/images/gds04.jpg" class="gds-bg" alt="">
+      <div class="su-gds-msg">
+      	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>
+      	<div class="tx-f30 mg-t-xs">
+      		<b class="mn">￥10.40</b>
+      		<span class="hot">HOT</span>
+      	</div>
+      </div>
+    </a>
+  </li>
+</ul>
+</li>
+</ul><!-- 
+<ul class="mui-table-view su-scr-group mg-t-10 a-href" id="su-scr-group">
+	<li class="mui-table-view-cell su-scr-list">
+		<a class="" href="md_cont_list.html">
+			<div class="su-user-img">
+				<img class="" src="../skin/images/tou.png">
+			</div>
+			<div class="mui-media-body">
+				<div class="mui-ellipsis">峰哥超市 </div>
+				<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+					<i class="mui-icon mui-icon-star-filled"></i>
+					<i class="mui-icon mui-icon-star-filled"></i>
+					<i class="mui-icon mui-icon-star-filled"></i>
+					<i class="mui-icon mui-icon-star"></i>
+					<i class="mui-icon mui-icon-star"></i>
+					</span><b class="mg-l-5 tx-f30">4.2</b>
+					<span class="mg-l-5">334546评论</span>
+					<span class="mg-l-5">月售26535单</span>
+				</p>
+				<div class="ft-12">
+					<span class="flt-r tx-6 mg-l-10">9.2Km</span>
+					<p class="mui-ellipsis-2 ft-12">成都市高新区天益路理想中心2栋1212</p>
+				</div>
+			</div>
+		</a>
+	</li>
+</ul> -->
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+
+<script src="../skin/mui/js/mui.lazyload.js"></script>
+<script src="../skin/mui/js/mui.lazyload.img.js"></script>
+<script type="text/javascript">
+;(function($){
+
+	$('.su-popver .mui-scroll-wrapper').scroll();
+
+	var listBox = jQuery('#su-scr-group');
+    $.init({
+        pullRefresh: {
+            container: '#pullrefresh',
+            down: {
+                callback: pulldownRefresh
+            },
+            up: {
+                contentrefresh: '正在加载...',
+                callback: pullupRefresh
+            }
+        }
+    });
+
+    /**
+		 * 下拉刷新具体业务实现
+		 */
+		function pulldownRefresh() {
+			if(listBox.hasClass('no-scroll')){
+        mui('#pullrefresh').pullRefresh().endPulldownToRefresh(false);
+        return;
+      }
+			setTimeout(function() {
+				mui('#pullrefresh').pullRefresh().endPulldownToRefresh();
+			}, 1500);
+		}
+		var count = 0;
+		/**
+		 * 上拉加载具体业务实现
+		 */
+    function pullupRefresh(){
+        // console.log(2);
+        if(listBox.hasClass('no-scroll')){
+            mui('#pullrefresh').pullRefresh().endPullupToRefresh(false);
+            return;
+        }
+        var box = jQuery('#su-scr-group');
+        setTimeout(function() {
+        	mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+        
+            for (var i = 0; i < 6; i++) {
+                var li = '<li class="mui-table-view-cell su-scr-list mui-col-xs-6">'+
+	      							'			<a href="md_shangpin.html">'+
+	      							'				<img src="../skin/images/gds01.jpg" class="gds-bg" alt="">'+
+										  '       <div class="su-gds-msg">'+
+										  '       	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>'+
+										  '       	<div class="tx-f30 mg-t-xs">'+
+										  '        		<b class="mn">￥10.40</b>'+
+										  '        		<span class="hot">HOT</span>'+
+									    '   				<span>3评论</span><span月售265单</span>'+
+										  '        	</div>'+
+										  '        </div>'+
+									    '      </a>'+
+									    '    </li>';
+                box.append(li);
+            }
+        }, 1500);
+    }
+
+ })(mui);
+</script>
+</html>

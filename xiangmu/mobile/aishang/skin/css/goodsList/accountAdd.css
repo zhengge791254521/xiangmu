@@ -1,0 +1,33 @@
+*{
+	font-family: "微软雅黑";
+	background: #FFFFFF;
+}
+.yutop{
+	background:#cc0033;
+	border: none;
+	box-shadow: none;
+}
+.yutop h1{
+	color: #FFFFFF !important;
+	background: #cc0033;
+}
+.yutop a{
+	color: #FFFFFF !important;
+	background: #cc0033;
+}
+.mui-segmented-control{
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid #dddddd;
+}
+.mui-segmented-control .mui-control-item{
+	border-left: 1px solid #dddddd;
+	color: #333333;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+	border-bottom: 2px solid #ff3300;
+	color: #ff3300;
+	background: #ffffff;
+}
+

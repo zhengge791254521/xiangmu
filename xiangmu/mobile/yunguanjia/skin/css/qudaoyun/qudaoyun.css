@@ -1,0 +1,60 @@
+
+.yunfenxi-img{
+	background: #fff!important;
+	border-radius: 3px;
+	width: 98%;
+	margin: 0 auto;
+	height: 300px;
+	padding: 10px;
+}
+.yunfenxi-cont{
+	background: #fff;
+	border-radius: 3px;
+	width: 98%;
+	margin: 10px auto 0;
+	padding: 10px;
+}
+.yunfenxi-cont>span{
+	font-size: 1.2em;
+}
+
+
+.qudaoyun-cont{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.qudaoyun-cont .sel-quyu,.qudaoyun-cont .sel-xiaoqu{
+	padding-top:10px;
+}
+.qudao-liebiao{
+	margin-top: 10px;
+	border-top: 1px solid #ddddde;
+}
+.xiaoqu-lie{
+	margin: 0;
+	border-bottom: 1px solid #ddddde;
+}
+.xiaoqu-lie .lie-left{
+	padding: 15px;
+}
+.xiaoqu-lie .lie-left h3{
+	line-height: 1.5em;
+}
+.xiaoqu-lie .lie-left span{
+	display: block;
+	color: #898989;
+}
+.xiaoqu-lie .lie-right{
+	position: relative;
+}
+.lie-right .juli{
+	position: absolute;
+	top: 2.5em;
+	right: 2em;
+}
+
+.qudaoyun-cont .yun-tu{
+	width: 100%;
+	display: inline-block;
+}

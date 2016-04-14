@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>编写日志</title>
+	<link rel="stylesheet" type="text/css" href="../skin/mui/css/mui.picker.min.css" />
+	<link href="../skin/mui/css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../skin/fonts/iconfont.css" />
+
+	<link href="../skin/mui/css/mui.picker.css" rel="stylesheet"/>
+	<link href="../skin/mui/css/mui.picker.min.css" rel="stylesheet"/>
+    <link href="../skin/mui/css/mui.poppicker.css" rel="stylesheet" />
+    <link href="../skin/mui/css/mui.indexedlist.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/rizhi/log_write.css" />
+</head>
+<style type="text/css">
+	section{
+		background-color: #fff;
+	}
+</style>
+<body>
+<div class="mui-content">
+	<form action="">
+	<section>
+		<div class="log-title">
+			<!-- <div class="log-seltime"> -->
+				<span class="log-time">2015-12-07 (星期一)</span>
+				<!-- <i class="iconfont">&#xe622;</i></div> -->
+		</div>
+		<div class="mui-input-group log-input-group">
+			<div class="log-plan-title">
+				原计划
+			</div>
+			<div class="mui-input-row">
+				<label>1、</label>
+				<div class="log-input-body">
+					<p>欢迎大家在OA平台和同事们分享点什么12</p>
+					<input name="style" type="text" placeholder="在此写下执行情况" value="">
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<label>2、</label>
+				<div class="log-input-body">
+					<p>欢迎大家在OA平台和同事们分享点什么12</p>
+					<input name="style" type="text" placeholder="在此写下执行情况" value="哥今天要超神">
+				</div>
+			</div>
+		</div>
+		<div class="mui-input-group log-input-group log-old-plan">
+			<div class="log-plan-title">
+				计划外
+			</div>
+			<div class="mui-input-row">
+				<label>3、</label>
+				<div class="log-input-body">
+					<!-- <p>欢迎大家在OA平台和同事们分享点什么12</p> -->
+					<input name="style" type="text" placeholder="在此写下计划外的事物" value="">
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<label>4、</label>
+				<div class="log-input-body">
+					<!-- <p>欢迎大家在OA平台和同事们分享点什么12</p> -->
+					<input name="style" type="text" placeholder="在此写下计划外的事物" value="哥今天要超神">
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<button type="button" class="log-add"><i class="mui-icon mui-icon-plusempty"></i>添加一条</button>
+				<button type="button" class="log-del mg-r-sm"><i class="mui-icon mui-icon-undo"></i> 撤销</button>
+			</div>
+		</div>
+		<div class="mui-input-group log-input-group">
+			<div class="log-plan-title">
+				工作总结
+			</div>
+			<div class="mui-input-row">
+				<textarea name="" id="" placeholder="在此写下工作总结" cols="20" rows="6"></textarea>
+			</div>
+		</div>
+		<div class="mui-input-group log-input-group">
+			<div class="log-plan-title">
+				附件
+			</div>
+			<div class="mui-input-row">
+				<button type="button" class="log-fujian mui-pull-right"><i class="iconfont">&#xe60a;</i></button>
+			</div>
+		</div>
+	</section>
+	<section class="mg-t-xs">
+		<div class="log-title">
+			<div class="log-seltime"><span class="log-time">2015-12-07 (星期一)</span><i class="iconfont">&#xe622;</i></div>
+			<input type="hidden" name="newPlanTime">
+		</div>
+		<div class="mui-input-group log-input-group log-new-plan">
+			<div class="log-plan-title">
+				工作计划
+			</div>
+			<div class="mui-input-row">
+				<label>1、</label>
+				<div class="log-input-body">
+					<input name="style" type="text" placeholder="在此写下下个工作计划" value="">
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<label>2、</label>
+				<div class="log-input-body">
+					<input name="style" type="text" placeholder="在此写下下个工作计划" value="哥今天要超神">
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<button type="button" class="log-add"><i class="mui-icon mui-icon-plusempty"></i>添加一条</button>
+				<button type="button" class="log-del mg-r-sm"><i class="mui-icon mui-icon-undo"></i> 撤销</button>
+			</div>
+		</div>
+	</section>
+	<section class="mg-t-xs">
+		<!-- <div class="log-title">
+			<div class="log-seltime"><span class="log-time">2015-12-07</span><i class="iconfont">&#xe622;</i></div>
+		</div> -->
+		<div class="mui-input-group log-input-group">
+			<div class="log-plan-title">
+				共享人员
+			</div>
+			<div class="mui-input-row">
+				<input type="text" name="logUser" id="logUser" >
+			</div>
+		</div>
+		<div class="pd-sm">
+			<p>注：点击提交后进入查看评论页面</p>
+		</div>
+		<div class="pd-md">
+			<button type="button" data-href="rizhi_read.html" class="mui-btn mui-btn-primary mui-btn-block pd-tb-sm tijiao">确认提交</button>
+		</div>
+	</section>
+	</form>
+</div>
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+
+<script src="../skin/js/org.js"></script>
+<script src="../skin/mui/js/mui.indexedlist.js"></script>
+<script src="../skin/mui/js/mui.picker.js"></script>
+<script src="../skin/mui/js/mui.poppicker.js"></script>
+<script src="../skin/mui/js/mui.picker.min.js"></script>
+
+<script src="../skin/js/public/pinyin.js"></script>
+<script src="../skin/js/plug/userselect/userselect.js"></script> 
+
+<script src="../skin/js/plug/layer.m/layer.m.js"></script>
+<script type="text/javascript">
+;(function($) {
+$.init();
+$('body').on('tap','.tijiao', function(){
+	location.href = jQuery(this).attr('data-href');
+})
+
+jQuery('#logUser').userSelect({
+	data: Ewos.data.get("user"),
+	type: "user"
+});
+var logAdd = $('.log-add');
+var logDel = $('.log-del');
+//点击添加一条
+
+logAdd.each(function(index, add) {
+	add.addEventListener('tap', function() {
+		var self = jQuery(this),
+		    num = self.closest('section').find('label').length;
+		if(self.closest('.log-input-group').hasClass('log-new-plan')){
+			var placeholder = '在此写下下个工作计划';
+		}else{
+			var placeholder = '在此写下计划外的事物';
+		}
+
+
+		var str =  '<div class="mui-input-row">'+
+						'<label>'+(num+1)+'、</label>'+
+						'<div class="log-input-body">'+
+							'<input name="style" type="text" placeholder="'+placeholder+'" value="">'+
+						'</div>'+
+					'</div>';
+
+		self.closest('.mui-input-row').before(str);
+	});
+
+});
+
+//点击撤销
+logDel.each(function(index, del) {
+	del.addEventListener('tap', function() {
+		var self = jQuery(this),
+		    num = self.closest('section').find('label').length;
+		if(self.closest('.log-input-group').hasClass('log-new-plan')){
+			var plan = true;
+		}else{
+			var plan = false;
+		}
+
+		if(plan && num<=1){
+			layer.open({
+                content: '至少要有一条工作计划',
+                style: 'background-color:rgba(0,0,0,0.6); color:#fff; border:none;text-align: center;',
+                time:3
+            })
+            return false;
+		}
+		if(self.closest('.mui-input-row').prev('.mui-input-row').length == 0){
+			layer.open({
+                content: '无可撤销的计划',
+                style: 'background-color:rgba(0,0,0,0.6); color:#fff; border:none;text-align: center;',
+                time:3
+            })
+			return false;
+		}
+
+		layer.open({
+            content: '确认撤销第'+num+'条计划？',
+            btn: ['确认', '取消'],
+            shadeClose: false,
+            yes: function(){
+            	self.closest('.mui-input-row').prev('.mui-input-row').remove();
+                layer.closeAll();
+            },no: function(){
+                layer.closeAll();
+            }
+        })
+		
+	});
+});
+
+var selTime = $('.log-seltime');
+selTime.each(function(index, seltime) {
+	seltime.addEventListener('tap', function() {
+		var self = jQuery(this);
+		var options = {
+			type:"date"
+		};
+
+		var picker = new $.DtPicker(options);
+		picker.show(function(rs) {
+			var work = dataWork(rs.text);
+			self.find('.log-time').text(rs.text+' ('+work+')');
+			self.next('input:hidden').val(rs.text);
+			picker.dispose();
+		});
+
+	});
+});
+
+function dataWork(time){
+	var dayNames = new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+	Stamp = new Date(time);
+	return dayNames[Stamp.getDay()];
+}
+
+})(mui);
+</script>
+
+</html>

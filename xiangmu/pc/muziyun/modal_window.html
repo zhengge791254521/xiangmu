@@ -1,0 +1,841 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>MU+ 后台主题UI框架 - 模态窗口</title>
+
+    <meta name="keywords" content="MU+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="MU+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link href="assets/css/bootstrap.min.css?v=3.3.0" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/style.css?v=2.1.0" rel="stylesheet">
+    
+    <link href="assets/css/z-style.css" rel="stylesheet">
+</head>
+<style type="text/css">
+    .sele_li{
+        background-color: #e4e4e4;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        cursor: default;
+        float: left;
+        margin-right: 5px;
+        margin-top: 5px;
+        padding: 0 5px;
+        list-style: none;
+    }
+    .sele_dele{
+        color: #999;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 2px;
+    }
+    .sele_dele:hover{
+        color:#333;
+    }
+
+    .modal-header-pad-small{
+        padding: 15px!important;
+    }
+    .sel-pinyin{
+        width: 100%;
+        /*padding: 10px;*/
+        display: inline-block;
+    }
+    .sel-pinyin .pinyin-list{
+        height: 16px;
+        line-height: 16px;
+    }
+    .sel-pinyin .pinyin-list a{
+        cursor: pointer;
+        padding: 0 2px;
+        font-size: 12px;
+    }
+    .sel-pinyin .pinyin-list a:hover,.sel-pinyin .pinyin-list a.active{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .task-before{
+        margin: 20px auto;
+        font-size: 16px;
+        text-align: center;
+    }
+    #task-row .ibox-title{
+        border: 0;
+        padding-top: 5px;
+        position: relative;
+    }
+    #task-row .ibox-title .task-clearall{
+        position:absolute;
+        top: 15px;
+        right:10px;
+        cursor: pointer;
+    }
+    #task-row .ibox-content{
+        max-height: 350px;
+        overflow-y:auto; 
+    }
+    #task-row .ibox-content ul{
+        padding-left: 20px;
+    }
+    #task-row>.ibox{
+        margin-bottom: 0;
+    }
+    .task-ul>li{
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .task-ul .task-addall{
+        position: absolute;
+        right:15px;
+        top: 2px;
+        cursor: pointer;
+        display: none;
+    }
+    .task-ul>li.active .task-addall{
+        display: inline-block;
+    }
+    .task-ul .task-li-title{
+        cursor: pointer;
+    }
+    .task-ul-nei,.task-ul-nei li{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        padding: 5px 0;
+        margin: 2px 0;
+    }
+    .task-ul-nei li.disab{
+        background: #ccc;
+    }
+    .task-ul-nei li:hover{
+        background: #9fd9f6!important;
+    }
+    
+    .task-ul-nei li .task-xing{
+        border: 1px solid #1ab394;
+        display: inline-block;
+        border-radius: 50%;
+        color:#1ab394;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: 400;
+    }
+    .task-ul-nei .add-task,.task-ul-nei .remove-task{
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        right: 10px;
+    }
+    .task-ul-nei .task-company{
+        position: absolute;
+        left: 50%;
+    }
+    .task-ul-nei li:hover .add-task,.task-ul-nei li:hover .remove-task{
+        display: inline-block;
+    }
+    .task-show{
+        display: none;
+        -moz-transition:ease 0.4s;
+        -o-transition:ease 0.4s;
+        -webkit-transition:ease 0.4s;
+        transition:ease 0.4s;
+    }
+    .task-ul li.active .task-show{
+        display: inline-block;
+        transform:ease-out;
+        -moz-transform:ease-out;
+        -o-transform:ease-out;
+        -webkit-transform:ease-out;
+    }
+    .task-sel-content{
+        display: inline-block;
+        width: 100%;  
+        position: relative;
+    }
+    .btn-white.active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset;
+    }
+</style>
+<body>
+<div id="wrapper">
+  <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+      <div class="row">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>大小设置</h5>
+          </div>
+          <div class="ibox-content">
+            <p>
+                模态窗口提供两种大小尺寸，可以通过为模态窗口的<code>.modal-dialog</code>添加类来实现
+            </p>
+            <div class="text-center">
+              <div id="task-control" class=""  style="margin-bottom: 10px;display:none;"></div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+                大模态窗口
+              </button>
+            </div>
+            <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog"  aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header modal-header-pad-small" align="left">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4>请选择</h4>
+                  </div>
+                  <div class="modal-body">
+                  <div class="input-group m-b" id="task-input">
+                    <input class="form-control input-md input-task" type="text" name="search" placeholder="后台主题">
+                  <div class="input-group-btn">
+                    <button class="btn btn-md btn-primary task-sousuo" type="submit"> 搜索 </button>
+                    </div>
+                  </div>
+                  <div class="row" style="margin:0;" id="task-row">
+                            <div id="task-select" class="ibox float-e-margins col-md-7">
+                                <div class="ibox-title manyi-oa-ul" id="task-nav-sel">
+                                <ul class="nav nav-tabs">
+                                <li class="active" show-box="sel-pinyin">
+                                <a href="javascript:;">按姓氏筛选</a>
+                                </li>
+                                <li show-box="sel-bumen">
+                                <a href="javascript:;">按部门筛选</a>
+                                </li>
+                                <li show-box="sel-quyu">
+                                <a href="javascript:;">按区域筛选</a>
+                                </li>
+                                </ul>
+                                </div>
+                                <div class="ibox-content">
+                                    <div class="sel-pinyin task-cont" id="sel-pinyin">
+                                        <div class="task-sel-content">
+
+                                            <ul class="task-ul-nei">
+                                                    <li><b class="task-xing">郑</b>
+                                                        <a class="task-name" nameId="zheng">郑亚利</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">谢</b>
+                                                        <a class="task-name" nameId="xie">谢志</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">冉</b>
+                                                        <a class="task-name" nameId="ran">冉杰</a>
+                                                        <span class="task-company">技术部</span><a class="add-task" >添加</a>    
+                                                    </li>
+                                                </ul>
+                                            
+                                        </div>
+                                        <div align="center">
+                                        <div class="btn-group task-page">
+                                            <button class="btn btn-white page-first" type="button">
+                                            <i class="fa fa-angle-double-left"></i>
+                                            </button>
+                                            <button class="btn btn-white page-prev" type="button">
+                                            <i class="fa fa-chevron-left"></i>
+                                            </button>
+                                            <button class="btn btn-white page-num active disabled" taskpage="1">1</button>
+                                            <button class="btn btn-white page-num" taskpage="2">2</button>
+                                            <button class="btn btn-white page-num" taskpage="3">3</button>
+                                            <button class="btn btn-white page-num" taskpage="4">4</button>
+                                            <button class="btn btn-white page-next" type="button">
+                                            <i class="fa fa-chevron-right"></i>
+                                            </button>
+                                            <button class="btn btn-white page-last" type="button">
+                                            <i class="fa fa-angle-double-right"></i>
+                                            </button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div id="sel-bumen" class="sel-bumen task-cont" style="display:none;">
+                                        <div class="task-sel-content">
+                                        <div class="task-before">
+                                            正在加载中。。。。
+                                        </div>
+                                        <ul class="task-ul">
+                                            <li>
+                                                <a class="task-addall">全组添加</a>
+                                                <div class="task-li-title"><i class="fa fa-angle-right fa-1x"></i> &nbsp;<span>开黑部</span></div>
+                                                <ul class="task-ul-nei task-show">
+                                                    <li><b class="task-xing">郑</b>
+                                                        <a class="task-name" nameId="zheng">郑亚利</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">谢</b>
+                                                        <a class="task-name" nameId="xie">谢志</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">冉</b>
+                                                        <a class="task-name" nameId="ran">冉杰</a>
+                                                        <span class="task-company">技术部</span><a class="add-task" >添加</a>    
+                                                    </li>
+                                                </ul>
+                                            </li> 
+                                            <li class="active">
+                                                <a class="task-addall">全组添加</a>
+                                                <div class="task-li-title"><i class="fa fa-angle-down fa-1x"></i> &nbsp;<span>技术部</span></div>
+                                                <ul class="task-ul-nei task-show">
+                                                    <li><b class="task-xing">郑</b>
+                                                        <a class="task-name" nameId="zheng">郑亚利</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">谢</b>
+                                                        <a class="task-name" nameId="xie">谢志</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">冉</b>
+                                                        <a class="task-name" nameId="ran">冉杰</a>
+                                                        <span class="task-company">技术部</span><a class="add-task" >添加</a>    
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                    <div id="sel-quyu" class="sel-quyu task-cont" style="display:none;">
+                                    <div class="task-sel-content">
+                                        <div class="task-before">
+                                            暂无数据
+                                        </div>
+                                        <ul class="task-ul">
+                                            <li>
+                                                <a class="task-addall">全组添加</a>
+                                                <div class="task-li-title"><i class="fa fa-angle-right fa-1x"></i> &nbsp;<span>高新区</span></div>
+                                                <ul class="task-ul-nei task-show">
+                                                    <li><b class="task-xing">郑</b>
+                                                        <a class="task-name" nameId="zheng">郑亚利</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">谢</b>
+                                                        <a class="task-name" nameId="xie">谢志</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">冉</b>
+                                                        <a class="task-name" nameId="ran">冉杰</a>
+                                                        <span class="task-company">技术部</span><a class="add-task" >添加</a>    
+                                                    </li>
+                                                </ul>
+                                            </li> 
+                                            <li class="active">
+                                                <a class="task-addall">全组添加</a>
+                                                <div class="task-li-title"><i class="fa fa-angle-down fa-1x"></i> &nbsp;<span>武侯区</span></div>
+                                                <ul class="task-ul-nei task-show">
+                                                    <li><b class="task-xing">郑</b>
+                                                        <a class="task-name" nameId="zheng">郑亚利</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">谢</b>
+                                                        <a class="task-name" nameId="xie">谢志</a>
+                                                        <span class="task-company">技术部</span><a class="add-task">添加</a>    
+                                                    </li>
+                                                    <li>
+                                                        <b class="task-xing">冉</b>
+                                                        <a class="task-name" nameId="ran">冉杰</a>
+                                                        <span class="task-company">技术部</span><a class="add-task" >添加</a>    
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="float-e-margins col-md-5" id="task-save">
+                                <div class="ibox-title manyi-oa-ul">
+                                    <ul class="nav nav-tabs">
+                                    <li class="active">
+                                    <a href="javascript:;">已添加列表</a>
+                                    </li>
+                                    </ul>
+                                    <a class="task-clearall">全部清空</a>
+                                </div>
+                                <div class="ibox-content">
+                                    <ul class="task-ul-nei">
+                                                <li><b class="task-xing">郑</b>
+                                                    <a class="task-name" id="zheng">郑亚利</a>
+                                                    <span class="task-company">技术部</span><a class="remove-task">删除</a>    
+                                                </li>
+                                                <li>
+                                                    <b class="task-xing">谢</b>
+                                                    <a class="task-name" id="xie">谢志</a>
+                                                    <span class="task-company">技术部</span><a class="remove-task">删除</a>    
+                                                </li>
+                                                <li>
+                                                    <b class="task-xing">冉</b>
+                                                    <a class="task-name" id="ran">冉杰</a>
+                                                    <span class="task-company">技术部</span><a class="remove-task">删除</a>    
+                                                </li>
+                                                <li><b class="task-xing">郑</b>
+                                                    <a class="task-name" id="zheng">郑亚利</a>
+                                                    <span class="task-company">技术部</span><a class="remove-task">删除</a>    
+                                                </li>
+                                                <li>
+                                                    <b class="task-xing">谢</b>
+                                                    <a class="task-name" id="xie">谢志</a>
+                                                    <span class="task-company">技术部</span><a class="remove-task">删除</a>    
+                                                </li>
+                                                <li>
+                                                    <b class="task-xing">冉</b>
+                                                    <a class="task-name" id="ran">冉杰</a>
+                                                    <span class="task-company">技术部</span><a class="remove-task">删除</a>    
+                                                </li>
+                                                <li>
+                                                    <b class="task-xing">谢</b>
+                                                    <a class="task-name" id="xie">谢志</a>
+                                                    <span class="task-company">技术部</span><a class="remove-task">删除</a>    
+                                                </li>
+                                                <li>
+                                                    <b class="task-xing">冉</b>
+                                                    <a class="task-name" id="ran">冉杰</a>
+                                                    <span class="task-company">技术部</span><a class="remove-task">删除</a>    
+                                                </li>
+                                            </ul>
+                                            
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                            <button type="button" id="task-add-btn" class="btn btn-primary">添加为任务成员</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+                <div class="footer">
+                        <div class="pull-right">
+                            By：<a href="http://www.alimoban.com" target="_blank">alimoban</a>
+                        </div>
+                        <div>
+                            <strong>Copyright</strong> MU+ &copy; 2014
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js?v=3.3.0"></script>
+    <script src="assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="assets/js/muplus.js?v=2.0.0"></script>
+    <script src="assets/js/plugins/pace/pace.min.js"></script>
+
+    <script type="text/javascript">
+
+    //页面加载时候 先把添加界面全部人员加载
+    ajax_select('sel-pinyin',1);
+
+    $('#task-control input:hidden').each(function(index, el) {
+        var self = $(this);
+        add_task(self,0);
+    });
+
+    //点击添加成员按钮
+    $('#task-add-btn').click(function(event) {
+        var self = $(this);
+        var str='';
+        $('#task-save .task-ul-nei .task-name').each(function(index, el) {
+            var uid = $(this).attr('id');
+            var ok = 1;
+            $('#task-control input[type="hidden"]').each(function(index, el) {
+                if(uid == $(this).val())ok=0;
+                return;
+            });
+            if(ok!= 0){
+                str+='<li class="sele_li"><span class="sele_dele">×</span>'+$(this).text()+'<input type="hidden" name="task[]" value="'+$(this).attr('id')+'" /></li>';
+            }
+        });
+        if(str==''){
+            alert('暂无人员添加或已存在列表中！');
+            return;
+        }
+        $('#task-control').show().append(str);
+        self.siblings('button[data-dismiss="modal"]').click();
+    });
+
+     //删除已添加的人员
+    $('#task-control').on('click','.sele_dele',function(){
+        var self = $(this);
+        var id = self.siblings('input:hidden').val();
+        self.closest('li').remove();
+        $('#task-save #'+id).closest('li').remove();
+        select_nameId(id,0);
+    })
+
+
+    //搜索按钮
+    $('#task-input').on('click','.task-sousuo',function(){
+        var text = $(this).closest('#task-input').children('.input-task').val();
+
+       var select = $('#task-nav-sel li[show-box="sel-pinyin"]');
+        select.addClass('active').siblings('li').removeClass('active');
+        $('#sel-pinyin').show().siblings('div').hide();
+
+        if(text){
+          ajax_select('sel-pinyin','','',"{php echo $this->createWebUrl('power')}",text);  
+        }else{
+            alert('请输入人员姓名');
+        }
+    });
+
+
+    //选项卡
+    $('#task-nav-sel li').click(function() {
+        var self=$(this);
+        var show_box = self.attr('show-box');
+        //选项卡
+        self.addClass('active').siblings('li').removeClass('active');
+        self.closest('#task-nav-sel').next('.ibox-content').children('#'+show_box).show().siblings('div').hide();
+
+        ajax_select(show_box,1,show_box);
+    });
+
+    //展开/关闭列表组
+    $('#task-select').on('click','.task-li-title',function(){
+        var li = $(this).parent('li');
+        if(li.hasClass('active')){
+           li.removeClass('active');
+           $(this).children('i.fa').removeClass('fa-angle-down').addClass('fa-angle-right');
+           return;
+        }
+
+        $(this).children('i.fa').removeClass('fa-angle-right').addClass('fa-angle-down');
+        li.addClass('active');
+    });
+
+
+    //点击添加按钮
+    $('#task-select').on('click','a.add-task',function(){
+        var self = $(this);
+        add_task(self,1);
+    });
+
+    //点击全组添加
+    $('#task-select').on('click','a.task-addall',function(){
+        $(this).siblings('ul.task-ul-nei').children('li').each(function() {
+            var self = $(this).find('a.add-task');
+            if(self.length == 1){
+                add_task(self,1);
+            }
+        });
+    });
+    $.post('/path/to/file', param1: 'value1', function(data, textStatus, xhr) {
+        /*optional stuff to do after success */
+    });
+    /**
+     * [add_task 执行添加效果]
+     * @param {[type]} self [获取的对象]
+     * @param {[type]} num  [添加的方式 1表示点击的添加按钮，0表示从页面加载时获取的需要修改的人员]
+     */
+    function add_task(self,num){
+        if(num ==1){
+            var xing = self.siblings('b.task-xing').html();
+            var name = self.siblings('a.task-name').html();
+            var company = self.siblings('span.task-company').html();
+            var id = self.siblings('a.task-name').attr('nameId');
+        }
+        if(num ==0){
+            var name = self.siblings('b').text();
+            var xing = name.substr(0,1);
+            var id = self.val();
+            var company = self.attr('taskcompany');
+        }
+
+        var li_list = '<li><b class="task-xing">'+xing+'</b><a class="task-name" id="'+id+'">'+name+'</a><span class="task-company">'+company+'</span><a class="remove-task">删除</a></li>';
+
+        $('#task-save').find('ul.task-ul-nei').append(li_list);
+        select_nameId(id,1);
+    }
+
+
+    //已添加列表组删除按钮
+    $('#task-save').on('click','a.remove-task',function(){
+        var self = $(this);
+        var id = self.siblings('.task-name').attr('id');
+        // alert(id);
+        select_nameId(id,0);
+
+        $('#task-control input[value="'+id+'"]').closest('li').remove();
+        self.closest('li').remove();
+        if($('#task-control').has('li').length == 0){
+               $('#task-control').hide();
+        }
+    });
+
+    //清除列表按钮
+    $('#task-save').on('click','a.task-clearall',function(){
+        var self = $(this);
+        $(this).closest('#task-save').find('ul.task-ul-nei').children('li').each(function() {
+            $(this).find('a.remove-task').click();
+        });
+    });
+
+    //点击页码按钮
+    $('#task-select .btn-group').on('click','button',function(){
+        var self = $(this);
+        var num = self.attr('taskpage');
+        var id = self.closest('.task-cont').attr('id');
+        if(self.hasClass('page-first')){
+            ajax_select(id,1);
+        }
+        if(self.hasClass('page-last')){
+            ajax_select(id,num);
+        }
+        if(self.hasClass('page-next')){
+            var sel_num = parseInt(self.siblings('.page-num.active').attr('taskpage'))+1;
+            ajax_select(id,sel_num);
+        }
+        if(self.hasClass('page-prev')){
+            var sel_num = parseInt(self.siblings('.page-num.active').attr('taskpage'))-1;
+            ajax_select(id,sel_num);
+        }
+        if(self.hasClass('page-num')){
+            ajax_select(id,num);
+        }
+    })
+
+/**
+     * [ajax_select ajax选择 根据不同的id 执行不同的ajax]
+     * @param  {[type]} id  [用于判断的id值]
+     * @param  {[type]} value  [分页选择的页面值]
+     * @param  {[type]} box [存放加载等的box]
+     * @param  {[type]} address [php文件地址]
+     * @param  {[type]} keywords [搜索的参数值]
+     * @return {[type]}     [description]
+     */
+    function ajax_select(id,value,box,address,keywords){
+        if(id == 'sel-pinyin') {
+            // var 
+            var array = "key="+id+"&app="+value+"&keywords="+keywords;
+            var data = ajax_perform('{php echo $this->createWebUrl("power")}',array,box);
+            var str="";
+            var z_num=''
+
+            $.each(data,function(i,item){
+                if(!item.uid){
+                    z_num = parseInt(item);
+                    return;
+                }
+                if(ajax_select_nameId(item.uid)){
+                 str+='<li><b class="task-xing">'+item.name+'</b><a class="task-name" nameId='+item.uid+'>'+item.realname+'</a><span class="task-company">'+item.title+'</span><a class="add-task">添加</a></li>';
+                 }else{
+                    str+='<li class=\"disab\"><b class="task-xing">'+item.name+'</b><a class="task-name" nameId='+item.uid+'>'+item.realname+'</a><span class="task-company">'+item.title+'</span></li>';
+                 }
+            })
+
+            $("#sel-pinyin task-ul").html(str);
+            task_page(value,z_num);
+
+        }
+        if(id == 'sel-bumen'){
+            var data = ajax_perform('{php echo $this->createWebUrl("sbumen")}','产品部一',box);
+            var sub='';
+            for (it in data) {
+                if(data[it] == ''){
+                    continue;
+                }
+                sub+="<li><a class=\"task-addall\">全组添加</a><div class=\"task-li-title\"><i class=\"fa fa-angle-right fa-1x\"></i> &nbsp;<span>"+it+"</span></div><ul class=\"task-ul-nei task-show\">";
+                $.each(data[it],function(i,item){
+                    if(ajax_select_nameId(item.uid)){
+                        sub+="<li><b class=\"task-xing\">"+item.title[1]+"</b><a class=\"task-name\" nameId=\""+item.uid+"\">"+item.title[0]+"</a><span class=\"task-company\">"+it+"</span><a class=\"add-task\">添加</a></li>"; 
+                    }else{
+                      sub+="<li class=\"disab\"><b class=\"task-xing\">"+item.title[1]+"</b><a class=\"task-name\" nameId=\""+item.uid+"\">"+item.title[0]+"</a><span class=\"task-company\">"+it+"</span></li>"; 
+                    }
+                     
+                });
+                sub+="</ul></li>";
+                
+            } 
+            $("#sel-bumen task-ul").html(sub);         
+        }
+        if(id == 'sel-quyu'){
+            var data = ajax_perform('{php echo $this->createWebUrl("Aarea")}',id,box);
+            var sdk='';
+            for (tem in data) {
+                if(data[tem] == ''){
+                    continue;
+                }
+                sdk+="<li><a class=\"task-addall\">全组添加</a><div class=\"task-li-title\"><i class=\"fa fa-angle-right fa-1x\"></i> &nbsp;<span>"+tem+"</span></div><ul class=\"task-ul-nei task-show\">";
+                $.each(data[tem],function(i,item){
+                    if(ajax_select_nameId(item.uid)){
+                        sdk+="<li><b class=\"task-xing\">"+item.title[1]+"</b><a class=\"task-name\" nameId=\""+item.uid+"\">"+item.title[0]+"</a><span class=\"task-company\">"+tem+"</span><a class=\"add-task\">添加</a></li>";  
+                    }else{
+                        sdk+="<li class=\"disab\"><b class=\"task-xing\">"+item.title[1]+"</b><a class=\"task-name\" nameId=\""+item.uid+"\">"+item.title[0]+"</a><span class=\"task-company\">"+tem+"</span></li>"; 
+                    }
+                })
+                sdk+="</ul></li>";
+                // $("#area").append(sd+sdk+hj);
+            }
+            $("#sel-quyu task-ul").html(sdk); 
+        }
+    }
+
+
+    /**
+     * [ajax_perform ajax方法]
+     * @param  {[type]} address [PHP 地址]
+     * @param  {[type]} value   [要传递的值]
+     * @param  {[type]} box     [加载等内容存放的box]
+     * @return {[type]}         [description]
+     */
+    function ajax_perform(address,value,box){
+        var newData='';
+        $.ajax({
+            url: address,
+            type: 'post',
+            dataType: 'json',
+            data: value,
+            beforeSend :function(){
+                // $('#'+box).children('.task-sel-content').html('<div class="task-before">正在加载中。。。。</div>');
+                // alert(value);
+            },
+            error:function(){
+                // $('#'+box).children('.task-sel-content').html('<div class="task-before">加载出错</div>');
+            },
+            success:function(data){
+                newData = data;
+            }
+        })
+        return newData;
+    }
+
+
+    /**
+     * [select_nameId 当添加人员后 将候选列表中的添加按钮删除或者 追加]
+     * @param  {[type]} id        [传过来的id值]
+     * @param  {[type]} operation [1:添加。0:删除]
+     * @return {[type]}           [description]
+     */
+    function select_nameId(id,operation){
+        var add_task = '<a class="add-task">添加</a>';
+
+        var task_select = $('#task-select').find('a[nameId="'+id+'"]');
+
+        if(operation==1){
+            task_select.siblings('.add-task').remove();
+            task_select.parent('li').addClass('disab');
+        }else{
+            task_select.parent('li').append(add_task);
+            task_select.parent('li').removeClass('disab');
+        }
+    }
+
+    function ajax_select_nameId(id){
+        if($('#task-save').find('a#'+id).length == 1){
+            return false;
+        }
+        return true;
+    }
+    function task_page(num,all_num){
+        
+        var page = parseInt(Math.ceil(all_num/10));
+        if(page == 1){
+            $('.task-page').hide();
+            return;
+        }
+        $('.task-page').show();
+
+        num = parseInt(num);
+        $('.task-page .page-next').removeClass('disabled');
+        $('.task-page .page-last').removeClass('disabled');
+        $('.task-page .page-prev').removeClass('disabled');
+        $('.task-page .page-first').removeClass('disabled');
+
+        if(num==1){
+            $('.task-page .page-prev').addClass('disabled');
+            $('.task-page .page-first').addClass('disabled');
+            $('.task-page .page-last').attr('taskpage',page);
+            
+            if(page<=4){
+                var str = page_calculate(1,page,num);
+            }else{
+                var str = page_calculate(1,4,num);
+            }
+            
+                $('.task-page .page-num').remove();
+                $('.task-page .page-prev').after(str);
+                return;
+        }
+        if (num == page) {
+            $('.task-page .page-next').addClass('disabled');
+            $('.task-page .page-last').addClass('disabled');
+
+            var cha = num%4 -1;
+            if(cha >0){
+                var str = page_calculate(num-cha,num,num);
+                    $('.task-page .page-num').remove();
+                    $('.task-page .page-prev').after(str);
+                    return;
+            }
+        }
+        if(num%4==1 && page>=num){
+            if(page-num>3){
+                var str = page_calculate(num,num+3,num);
+                $('.task-page .page-num').remove();
+                $('.task-page .page-prev').after(str);
+                return;
+            }else{
+                var str = page_calculate(num,page,num);
+                $('.task-page .page-num').remove();
+                $('.task-page .page-prev').after(str);
+                return;
+            }
+        }else if(num%4==0 && page>=num){
+
+            var str = page_calculate(num-3,num,num);
+                $('.task-page .page-num').remove();
+                $('.task-page .page-prev').after(str);
+                return;
+        }else{
+            $('.page-num[taskpage="'+num+'"]').addClass('active disabled').siblings('.page-num').removeClass('active disabled');
+        }
+    }
+    function page_calculate(min,max,num){
+        var str = '';
+        for (var i = min; i <= max; i++) {
+            if(i== num){
+                str+='<button class="btn btn-default page-num active disabled" taskpage="'+i+'">'+i+'</button>';
+                continue;
+            }
+            str+='<button class="btn btn-default page-num" taskpage="'+i+'">'+i+'</button>';
+        }
+        return str;
+    }
+    // select_nameId('xie',1);
+    </script>
+</body>
+
+</html>

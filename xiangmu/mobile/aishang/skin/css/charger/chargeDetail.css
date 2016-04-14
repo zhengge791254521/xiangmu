@@ -1,0 +1,22 @@
+*{
+	font-family: "微软雅黑";
+}
+.yutop{
+	background:#cc0033 !important;
+	
+}
+.yutop h1{
+	color: #FFFFFF !important;
+}
+.yutop a{
+	color: #FFFFFF !important;
+}
+.hongse{
+	font-weight: 600;
+	color: #cc0033;
+}
+.heisei{
+	color: #333333;
+	font-weight: 600;
+}
+

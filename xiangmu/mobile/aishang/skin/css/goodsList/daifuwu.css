@@ -1,0 +1,78 @@
+*{
+	font-family: "微软雅黑";
+	background: #FFFFFF;
+}
+.yutop{
+	background:#cc0033;
+	border: none;
+	box-shadow: none;
+}
+.yutop h1{
+	color: #FFFFFF !important;
+	background: #cc0033;
+}
+.yutop a{
+	color: #FFFFFF !important;
+	background: #cc0033;
+}
+.wode{
+	font-size: 16px;
+	background: #cc0033;
+}
+.mui-segmented-control{
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid #dddddd;
+}
+.mui-segmented-control .mui-control-item{
+	border-left: 1px solid #dddddd;
+	color: #333333;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+	border-bottom: 2px solid #ff3300;
+	color: #ff3300;
+	background: #ffffff;
+}
+.dingdannum p{
+	padding-top: 15px;
+	margin-left: 15px;
+	color: #333333;
+}
+.detail{
+	width: 100%;
+	min-height: 180px;
+	background: #eeeeee;
+}
+.detail .deleft img{
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 30%;
+	float: left;
+}
+
+.detail .deright ul{
+	width: 60%;
+	margin-top: 15px;
+	list-style: none;
+	text-align: left;
+	float: right;
+	margin-left: 10px;
+	background: #eeeeee;
+}
+.detail .deright ul li p{
+	background: #eeeeee;
+	margin-bottom: 5px;
+	line-height: 24px;
+}
+.detail .deright ul li p span{
+	color: #333333;
+	background: #eeeeee;
+}
+.total ul li{
+	text-align: right;
+	width: 100%;
+}
+.ored{
+	color:#ff3300;
+}

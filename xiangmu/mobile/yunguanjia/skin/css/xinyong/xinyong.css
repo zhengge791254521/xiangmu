@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+.xiala_1{
+	padding:0;
+	margin-top:10px;	
+	}
+.xiala_2{
+	margin-top:15px;	
+	}
+.xinyong_content{
+	background:#fff;	
+	padding:10px 15px;
+	border-bottom:1px solid #cccccc;
+	}
+.frit{
+	margin-top:15px;	
+	}
+.cot{
+	background:#fff;	
+	}
+.cot a{
+	color:#333333;
+	text-decoration:none;
+	}
+.longhu_content a{
+	text-decoration:none;
+	color:#333333;	
+	}
+.longhu_content .row{
+	padding-right:0;
+	margin-right:0;
+	}
+.bigbox_longhu{
+	margin-top:15px;	
+	}
+.longhu_content .row .pad{
+	text-align:left;
+	margin-left:15px;
+	}
+.tongji{
+	padding-top:10px;
+	text-align:left;
+	padding-left:15px;
+	padding-right:15px;	
+	}
+.text-fenxi{
+	font-size:16px;
+	border-top:1px solid #cccccc;
+	margin-top:15px;
+	padding-top:10px;	
+
+}
+
+.text-box{
+	width: 96%;
+	background:#fafafa;
+	margin-top:10px;
+	border-radius: 10px;
+	padding:10px 10px;
+}
+.defen{
+	font-size:40px;
+	text-align:center;	
+	}
+.fen{
+	font-size:24px;	
+	}
+#main{
+	height:260px; width:100%;
+	}
+@media (min-width:768px) {
+	#main{
+		height:500px;	
+		}
+	}
+	
+	
+	
+	
+	
+	
+	

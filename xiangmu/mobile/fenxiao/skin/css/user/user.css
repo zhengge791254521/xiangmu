@@ -1,0 +1,38 @@
+.user-setting-list i{
+	margin-right: 5px;
+}
+.user-img-set a{
+	line-height: 40px;
+}
+.user-img-set .head-span{
+	height: 40px;
+	margin-right: 10px;
+}
+
+/*余额*/
+.user-yue-box{
+	text-align: center;
+	padding: 20px;
+}
+.user-yue-box .icon{
+	font-size: 1.3rem;
+	color:#ff3300;
+	display:block;
+	margin:15px 0;
+}
+.user-yue-box p{
+	font-size: 20px;
+	font-weight: 600;
+	margin:10px 0;
+	color:#ff3300;
+}
+.user_tg_order .mui-table-view-chevron .mui-table-view-cell{
+	/*padding-right: 40px;*/
+}
+.user_tg_order .mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn),.user_tg_order.mui-table-view-cell.mui-collapse.mui-active .mui-table-view-cell>a:not(.mui-btn).mui-active{
+	margin-right: -30px;
+	margin-left: -30px;
+}
+.user_tg_order.mui-table-view-cell.mui-collapse.mui-active .mui-table-view-cell>a:not(.mui-btn).mui-active{
+	padding: inherit;
+}

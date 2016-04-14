@@ -1,0 +1,180 @@
+<!-- 支付页面 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>三级分销</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+	<link rel="stylesheet" href="../skin/css/style.css" />
+</head>
+<style type="text/css">
+.oderS img{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	top: 58%;
+	right: 5%;
+	margin-top: -12px;
+	
+}
+.orderImg img{
+	width:45px;
+	height:45px;
+}
+.mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{
+	left: 10px;
+}
+.way{
+	padding-right: 13px !important;
+}
+.xinxi{
+	margin-bottom: 50px;
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">结算</div>
+</header>
+<div class="su-bar-tab su-buy-box">
+	<a class="box-center su-buy-true" id="su-buy-true">确认下单</a>
+	<span class="mui-tab-item ct-bar bd-r pd-lr-10 mg-r-10">
+		实付款:￥<span id="buyCar-money" data-num="0">2100.00</span>
+	</span>
+	<span class="mui-tab-item ft-12">优惠￥30
+	</span>
+</div>
+<div class="mui-content">
+<form method="post">
+<ul class="mui-table-view mg-t-10">
+	<li class="mui-table-view-cell a-href">
+		<a class="mui-navigate-right" href="shouhuoAddress.html">
+			<img class="mui-media-object mui-pull-left" src="../skin/images/icon/04.png" alt="" />
+			<div class="mui-media-body">
+				<div class="tx-3 fw-6">小琼琼 <span class="ft-14 fw-5">
+					<span class="icon-iconfont-mobilefill"></span>15196615841</span>
+				</div>
+				<p class="mui-ellipsis-2">四川省成都市高新区三思德公司</p>
+			</div>
+			
+		</a>
+	</li>
+</ul>
+<div class="bg-f mg-t-10">
+	<div>
+		<div class="mui-input-row mui-radio">
+		<label class="way">
+			<span class="mui-pull-left">
+				<input name="radio1" type="radio">
+				<span class="mg-l-24">使用红包</span>
+			</span>
+			<span class="mui-pull-right">(面值￥200000)
+		</label>
+		</div>
+		<div class="mui-input-row mui-radio">
+		<label class="way">
+			<span class="mui-pull-left">
+				<input name="radio1" type="radio">
+				<span class="mg-l-24">使用优惠券</span>
+			</span>
+			<span class="mui-pull-right">(面值￥200000)
+		</label>
+		</div >
+		<div class="mui-input-row mui-radio">
+		<label class="way">
+			<span class="mui-pull-left">
+				<input name="radio1" type="radio">
+				<span class="mg-l-24">使用会员卡</span>
+			</span>
+			<span class="mui-pull-right">(面值￥200000)
+		</label>
+		</div >
+		</div>
+	</div>
+<ul class="mui-table-view mg-t-10 bg-f pst-r" href="#">
+	<li class="mui-table-view-cell a-href">
+		<a>
+			<img class="mall-list-img" src="../skin/images/tou.png">
+			<div class="mui-media-body">
+				<span class="mui-ellipsis-2 ft-16 pd-t-sm tx-90">最新韩国进口的新品牌的保暖羽绒最</span>
+				<p class="ft-14">颜色:白色<span class="mg-l-15">尺寸:XL</span></p>
+				<p class="ft-14 fw-6 tx-f30">￥20000<span class="mg-l-24 tx-6">x2</span></p>
+			</div>
+		</a>
+		<div class="ico-box oderS">
+				<img src="../skin/images/order/1.png" alt="" />
+			</div>
+	</li>
+	<li class="mui-table-view-cell a-href" href="#">
+		<a>
+			<img class="mall-list-img" src="../skin/images/tou.png">
+			<div class="mui-media-body">
+				<span class="mui-ellipsis-2 ft-16 pd-t-sm tx-90">最新韩国进口的新品牌的保暖羽绒</span>
+				<p class="ft-14">颜色:白色<span class="mg-l-15">尺寸:XL</span></p>
+				<p class="ft-14 fw-6 tx-f30">￥20000<span class="mg-l-24 tx-6">x2</span></p>
+			</div>
+		</a>
+		<div class="ico-box oderS">
+				<img src="../skin/images/order/2.png" alt="" />
+			</div>
+	</li>
+	<li class="mui-table-view-cell a-href" href="#">
+		<a>
+			<img class="mall-list-img" src="../skin/images/tou.png">
+			<div class="mui-media-body">
+				<span class="mui-ellipsis-2 ft-16 pd-t-sm tx-90">最新韩国进口的新品牌的保暖羽绒</span>
+				<p class="ft-14">颜色:白色<span class="mg-l-15">尺寸:XL</span></p>
+				<p class="ft-14 fw-6 tx-f30">￥20000<span class="mg-l-24 tx-6">x2</span></p>
+			</div>
+		</a>
+		<div class="ico-box oderS">
+				<img src="../skin/images/order/3.png" alt="" />
+			</div>
+	</li>
+	<li class="mui-table-view-cell a-href" href="#">
+		<a>
+			<img class="mall-list-img" src="../skin/images/tou.png">
+			<div class="mui-media-body">
+				<span class="mui-ellipsis-2 ft-16 pd-t-sm tx-90">最新韩国进口的新品牌的保暖羽绒</span>
+				<p class="ft-14">颜色:白色<span class="mg-l-15">尺寸:XL</span></p>
+				<p class="ft-14 fw-6 tx-f30">￥20000<span class="mg-l-24 tx-6">x2</span></p>
+			</div>
+		</a>
+		<div class="ico-box oderS">
+				<img src="../skin/images/order/4.png" alt="" />
+			</div>
+	</li>
+</ul>
+<ul class="mui-table-view mg-t-10 xinxi bg-f tx-9 ft-16">
+	<li class="mui-table-view-cell">
+		<span class="tx-3 ft-16">付款方式</span>
+		<span class="flt-r ft-14">在线支付</span>
+	</li>
+	<li class="mui-table-view-cell">
+		<span class="tx-3 ft-16">邮费</span>
+		<span class="flt-r ft-14">￥0</span>
+	</li>
+	<li class="mui-table-view-cell">
+		<span class="tx-3 ft-16">实付费</span>
+		<span class="flt-r fw-6 ft-16 tx-f30">￥2000.00</span>
+	</li>
+</ul>
+</form>
+</div>
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+<script type="text/javascript">
+;(function($){
+
+
+
+})(mui);
+</script>
+</html>
+

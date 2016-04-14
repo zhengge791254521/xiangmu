@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>爱尚生活</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+
+
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	
+	<link rel="stylesheet" href="../skin/mui/css/mui.picker.css"/> 
+  <link rel="stylesheet" href="../skin/mui/css/mui.poppicker.css" />
+</head>
+<style type="text/css">
+.mui-table-view.mui-grid-view .mui-table-view-cell{
+	background-color: #fff;
+	color:#ff9900;
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+  <!--<a class="mui-icon iconfont mui-pull-right">&#xe609;</a>-->
+	<div class="mui-title">评价</div>
+</header>
+<div class="mui-content">
+<form action="#">
+<ul class="mui-table-view">
+	<li class="mui-table-view-cell">
+			<div class="mui-media-body">
+				<div class="overhid">
+					<div class="mui-ellipsis">服务评价 </div>
+				</div>
+			</div>
+	</li>
+	<li class="mui-table-view-cell su-ser-pingjia pd-t-0 pj_start">
+			<div class="mui-media-body">
+				<div class="overhid">
+					<p class="mg-r-5 mg-t-5">
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+			</p>
+				</div>
+			</div>
+	</li>
+</ul>
+<div class="">
+	<ul class="mui-table-view mg-t-5">
+		<li class="mui-table-view-cell su-ser-pingjia">
+			<span class="ft-16">商品评价</span>
+		</li>
+		<li class="mui-table-view-cell su-ser-pingjia pj_start" id="showUserPicker">
+			<img class="mui-media-object mui-pull-left" src="../skin/images/shuijiao.jpg">
+			<span class="mui-ellipsis ft-14">商品名称商品名称商品名</span>
+			<p class="mg-r-5 mg-t-5">
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+			</p>
+			<input type="hidden" name="">
+		</li>
+		<div class="pd-lr-10 bg-f">
+			<div class="mui-input-row">
+				<textarea id="textarea" rows="4" class="pd-5 mg-t-5" placeholder="你对商品的评价"></textarea>
+			</div>
+		</div>
+	</ul>
+	
+	<ul class="mui-table-view mg-t-5">
+		<li class="mui-table-view-cell su-ser-pingjia">
+			<span class="ft-16">商品评价</span>
+		</li>
+		<li class="mui-table-view-cell su-ser-pingjia pj_start" id="showUserPicker">
+			<img class="mui-media-object mui-pull-left" src="../skin/images/shuijiao.jpg">
+			<span class="mui-ellipsis ft-14">商品名称商品名称商品名</span>
+			<p class="mg-r-5 mg-t-5">
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+			</p>
+			<input type="hidden" name="">
+		</li>
+		<div class="pd-lr-10 bg-f">
+		<div class="mui-input-row">
+			<textarea id="textarea" rows="4" class="pd-5 mg-t-5" placeholder="你对商品的评价"></textarea>
+		</div>
+	</div>
+	</ul>
+	
+	<ul class="mui-table-view mg-t-5">
+		<li class="mui-table-view-cell su-ser-pingjia">
+			<span class="ft-16">商品评价</span>
+		</li>
+		<li class="mui-table-view-cell su-ser-pingjia pj_start" id="showUserPicker">
+			<img class="mui-media-object mui-pull-left" src="../skin/images/shuijiao.jpg">
+			<span class="mui-ellipsis ft-14">商品名称商品名称商品名</span>
+			<p class="mg-r-5 mg-t-5">
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+				<i class="mui-icon mui-icon-star-filled"></i>
+			</p>
+			<input type="hidden" name="">
+		</li>
+		<div class="pd-lr-10 bg-f">
+		<div class="mui-input-row">
+			<textarea id="textarea" rows="4" class="pd-5 mg-t-5" placeholder="你对商品的评价"></textarea>
+		</div>
+	</div>
+	</ul>
+	
+</div>
+
+
+
+
+<nav class="mui-bar mui-bar-tab pd-lr-10">
+	<button type="button" class="mui-btn mui-btn-danger mui-btn-block pd-tb-10">提交评价</button>
+</nav>
+</form>
+</div>
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/mui/js/mui.picker.js"></script>
+<script src="../skin/mui/js/mui.poppicker.js"></script>
+
+<script src="../skin/js/public/super.js"></script>
+<script type="text/javascript">
+;(function($){
+	$.init();
+
+	var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: '0',
+						text: '很不满意 0分'
+					}, {
+						value: '1',
+						text: '不满意 1分'
+					}, {
+						value: '2',
+						text: '一般 2分'
+					}, {
+						value: '3',
+						text: '还行 3分'
+					}, {
+						value: '4',
+						text: '满意 4分'
+					},{
+						value: '5',
+						text: '非常满意 5分'
+					}]);
+
+					$('body').on('tap','.pj_start',function(e){
+
+					// var showUserPickerButton = document.getElementById('showUserPicker');
+					// showUserPickerButton.addEventListener('tap', function(event) {
+						var self = jQuery(this);
+						userPicker.show(function(items) {
+							var num = parseInt(items[0].value),
+									idx = 0,
+									icon = self.find('i.mui-icon');
+							if(num == 0){
+								icon.each(function(index, el) {
+									jQuery(this).removeClass('mui-icon-star-filled').addClass('mui-icon-star');
+								});
+							}else{
+								icon.each(function(index, el) {
+									if(index < num){
+										jQuery(this).removeClass('mui-icon-star').addClass('mui-icon-star-filled');
+									}else{
+										jQuery(this).removeClass('mui-icon-star-filled').addClass('mui-icon-star');
+									}
+									
+								});
+							}
+							self.find('input:hidden').val(num)
+
+							// self.
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					});
+
+ })(mui);
+</script>
+</html>

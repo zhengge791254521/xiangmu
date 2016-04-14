@@ -1,0 +1,153 @@
+.index-top{
+	height: 50px;
+	width: 100%;
+	background:#efefef;
+	padding: 5px 15px;
+	border-bottom: #ddd;
+}
+.index-regist{
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  background:#d9cdb5;
+  border-bottom: #ddd;
+}
+.index-regist img{
+  height: 100%;
+  max-width: 100%;
+}
+.index-foot-logo{
+  margin-top: 40px;
+}
+.index-foot-logo img{
+  width: 100px;
+  margin-bottom: -10px;
+}
+.top-img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	float: left;
+}
+.user-name{
+	height: 40px;
+	/*line-height: 50px;*/
+	float: left;
+	padding:0 10px;
+}
+.user-name p{
+	font-weight: 400;
+	font-size: 16px;
+}
+.user-name span{
+	font-size: 12px;
+}
+.uesr-tianjia{
+	width: 34px;
+	height: 34px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	float: right;
+  margin-top: 5px;
+	padding-top: 5px;
+  border-radius: 100%;
+}
+.uesr-tianjia i{
+  font-size: 20px;
+}
+.index-module{
+	width: 100%;
+	padding: 0 5px;
+}
+.index-module li{
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+}
+.index-module a.button{
+	width: 100%;
+	height: 70px;
+  line-height: 60px;
+	display: inline-block;
+  background: #fafafa;
+}
+.index-module a.button span.hj-icon{
+	font-size: 16px;
+	margin-left: 10px;
+  position: relative;
+  padding-left: 30px;
+  margin-left: -5px;
+}
+.index-module i{
+  position: absolute;
+  left: 0;
+  top:0;
+  font-size: 24px;
+}
+/*首页轮播*/
+.slider{
+	position: relative;
+  height:180px;
+}
+.slider img{
+  width: 100%;
+	height: 100%;
+}
+@media (min-width: 768px) {
+  .slider{    
+    height:240px;
+  }
+}
+
+    .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      list-style: none;
+      /*z-index: 22;*/
+      top:-15px;
+      left: 50%;
+      z-index: 22;
+      margin-left: -30px;
+      position: relative;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 10px;
+      height: 0;
+      height: 10px;
+      border-radius: 100%;
+      padding-top: 10px;
+      background: #ccc;
+      /*background-image: url(../images/slider/pagination.png);
+      background-position: 0 -13px;*/
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background:#fff;
+    }
+
+    .slidesjs-pagination li a:hover {
+      background:#fff;
+    }

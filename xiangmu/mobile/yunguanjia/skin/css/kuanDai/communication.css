@@ -1,0 +1,110 @@
+
+.communica-select>.btn-group{
+	width: 100%;
+}
+.communica-select .commun-left,.communica-select .commun-right{
+	width: 50%;
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+.communica-select .commun-left{
+	border-radius: 4px 0 0 4px;
+	background: #0168b7;
+	color:#fff;
+	position: relative;
+}
+.communica-select .commun-right{
+	color: #0067b6;
+	border-color:#0168b7;
+	border-radius: 0 4px 4px 0!important; 
+}
+.communica-select .caret{
+	position: absolute;
+	border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px dashed;
+    height: 0;
+    right: 5%;
+    top:1em;
+    width: 0;
+}
+.communica-select-ul{
+	width: 50%;
+	background: #008cd6;
+}
+.communica-select-ul li{
+ 	padding: 0;
+ 	margin: 0;
+ 	font-size:1.3em;
+}
+.communica-select-ul li a{
+	line-height: 2em;
+	color:#fff;
+}
+.communica-select-ul li a:hover{
+	color:#fff;
+	background: #0168b7;
+}
+.communica-select-ul li p{
+	margin:0!important;
+	padding:0;
+}
+
+.communica-search .form-search{
+	width: 100%;
+	display: inline-block;
+}
+.communica-search .form-control{
+	width: 85%;
+	border-radius: 4px 0 0 4px;
+	float: left;
+	line-height: 1.2em;
+}
+.communica-search .btn{
+	width:15%;
+	border-radius: 0 4px 4px 0;
+	float:left;
+}
+.communica-cont{
+	width:100%;
+}
+.communica-cont .comm-cont{
+	width:100%;
+}
+.communica-cont ul.row{
+	margin:0;
+	width: 100%;
+}
+.comm-cont p.comm-head{
+	background: #dddddf;
+	color:#585657;
+	text-align:center;
+	font-size: 1.2em;
+	line-height: 2em;
+	border-bottom:1px solid #cacaca;
+	padding-bottom:0;
+	text-indent:0;
+}
+.comm-cont [class^="col-"]{
+	padding: 0 5%;
+	font-size: 1.2em;
+	line-height: 2em;
+	word-wrap: break-word;
+}
+.comm-cont a.btn{
+	width:100%;
+	border:0;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	text-align:left;
+}
+.comm-cont li{
+	float:left;
+	width: 100%;
+	display: inline-block;
+	border-bottom:1px solid #cacaca;
+}
+
+
+

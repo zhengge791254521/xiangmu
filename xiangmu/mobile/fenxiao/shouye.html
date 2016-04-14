@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="skin/fonts/style.css" />
+	<link rel="stylesheet" href="skin/css/public.css" />
+
+	<link rel="stylesheet" href="skin/css/style.css" />
+</head>
+<style type="text/css">
+.su-tit-box{
+	display: inline-block;
+	height: 100%;
+}
+.mui-slider{
+	/*height: 200px;*/
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav">
+  <a class="mui-icon mui-icon-bars mui-pull-right"></a>
+	<div class="mui-title">
+		<a class="su-tit-box" href="http://www.baidu.com">
+			理想中心<span class="mui-icon mui-icon-arrowdown"></span>
+		</a>
+		
+	</div>
+</header>
+<nav class="mui-bar mui-bar-tab a-href">
+	<a id="defaultTab" class="mui-tab-item mui-active" href="#">
+		<span class="mui-icon icon-iconfont-home"></span>
+		<span class="mui-tab-label">首页</span>
+	</a>
+	<a class="mui-tab-item" href="mendian/md_list.html">
+		<span class="mui-icon icon-iconfont-shop"><span class="mui-badge">9</span></span>
+		<span class="mui-tab-label">店铺</span>
+	</a>
+	<a class="mui-tab-item" href="fenlei/fenlei.html">
+		<span class="mui-icon icon-iconfont-similar"></span>
+		<span class="mui-tab-label">分类</span>
+	</a>
+	<a class="mui-tab-item" href="buycar/buy_list.html">
+		<span class="mui-icon icon-iconfont-cart"></span>
+		<span class="mui-tab-label">购物车</span>
+	</a>
+	<a class="mui-tab-item" href="user/user.html">
+		<span class="mui-icon icon-iconfont-people"></span>
+		<span class="mui-tab-label">我的</span>
+	</a>
+</nav>
+<div class="mui-content su-scroll">
+<div class="su-scroll-body">
+<div id="pullrefresh" class="mui-scroll-wrapper">
+<div class="mui-scroll">
+	<div id="slider" class="mui-slider" >
+		<div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="skin/images/yuantiao.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="skin/images/shuijiao.jpg">
+				</a>
+			</div>
+			<!-- 第二张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="skin/images/muwu.jpg">
+				</a>
+			</div>
+			<!-- 第三张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="skin/images/cbd.jpg">
+				</a>
+			</div>
+			<!-- 第四张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="skin/images/yuantiao.jpg">
+				</a>
+			</div>
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="skin/images/shuijiao.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+		</div>
+	</div>
+
+	<section class="su-index-tab bg-f">
+		<a class="su-tab-list" href="javascript:;">
+			<span class="icon-bg"><img src="skin/images/icon/01.png"></span>
+			<p>特色进口</p>
+		</a>
+		<a class="su-tab-list" href="javascript:;">
+			<span class="icon-bg"><img src="skin/images/icon/02.png"></span>
+			<p>品牌促销</p>
+		</a>
+		<a class="su-tab-list" href="javascript:;">
+			<span class="icon-bg bg-f70"><i class="icon-iconfont-lightforbid"></i></span>
+			<p>特价秒杀</p>
+		</a>
+		<a class="su-tab-list" href="javascript:;">
+			<span class="icon-bg bg-green"><i class="icon-iconfont-countdown"></i></span>
+			<p>限时抢购</p>
+		</a>
+	</section>
+	<section class="su-goods-box">
+		<div class="su-goods-title text-ct">
+			<div class="su-gds-icon"><i class="icon-iconfont-tag"></i>推荐商品</div>
+		</div>
+		<div class="su-goods-body a-href">
+			<ul class="mui-table-view mui-grid-view mui-grid-9 su-scr-group" id="su-scr-group">
+        <li class="mui-table-view-cell mui-col-xs-6 su-scr-list">
+	        <a  href="mendian/md_shangpin.html">
+	        	<img src="skin/images/gds01.jpg" class="gds-bg" alt="">
+	          <div class="su-gds-msg">
+	          	<div class="mui-ellipsis-2">情人节巧克力，好吃，香</div>
+	          	<div class="tx-f30 mg-t-xs">
+	          		<b class="mn">￥10.40</b>
+	          		<span class="hot">HOT</span>
+	          	</div>
+	          </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell mui-col-xs-6 su-scr-list">
+          <a  href="mendian/md_shangpin.html">
+          	<img src="skin/images/gds02.jpg" class="gds-bg" alt="">
+	          <div class="su-gds-msg">
+	          	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>
+	          	<div class="tx-f30 mg-t-xs">
+	          		<b class="mn">￥10.40</b>
+	          		<span class="hot">HOT</span>
+	          	</div>
+	          </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell mui-col-xs-6 su-scr-list">
+          <a  href="mendian/md_shangpin.html">
+          	<img src="skin/images/gds03.jpg" class="gds-bg" alt="">
+	          <div class="su-gds-msg">
+	          	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>
+	          	<div class="tx-f30 mg-t-xs">
+	          		<b class="mn">￥10.40</b>
+	          		<span class="hot">HOT</span>
+	          	</div>
+	          </div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell mui-col-xs-6 su-scr-list">
+          <a  href="mendian/md_shangpin.html">
+          	<img src="skin/images/gds04.jpg" class="gds-bg" alt="">
+	          <div class="su-gds-msg">
+	          	<div class="mui-ellipsis-2">情人节巧克力</div>
+	          	<div class="tx-f30 mg-t-xs">
+	          		<b class="mn">￥10.40</b>
+	          		<span class="hot">HOT</span>
+	          	</div>
+	          </div>
+          </a>
+        </li>
+    	</ul>
+		</div>
+	</section>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+<script src="skin/mui/js/mui.min.js"></script>
+<script src="skin/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	var slider = mui("#slider");
+	slider.slider({
+		interval: 5000
+	});
+</script>
+<script src="skin/js/public/super.js"></script>
+<script type="text/javascript">
+;(function($){
+	var listBox = jQuery('#su-scr-group');
+    $.init({
+        pullRefresh: {
+            container: '#pullrefresh',
+            up: {
+                contentrefresh: '正在加载...',
+                callback: pullupRefresh
+            }
+        }
+    });
+  
+		var count = 0;
+		/**
+		 * 上拉加载具体业务实现
+		 */
+    function pullupRefresh(){
+        // console.log(2);
+        if(listBox.hasClass('no-scroll')){
+            mui('#pullrefresh').pullRefresh().endPullupToRefresh(false);
+            return;
+        }
+
+        setTimeout(function() {
+
+            mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+            var table = document.body.querySelector('.su-scr-group');
+            var cells = document.body.querySelectorAll('.su-scr-list');
+            for (var i = cells.length, len = i + 3; i < len; i++) {
+                var li = document.createElement('li');
+                li.className = 'mui-table-view-cell mui-col-xs-6 su-scr-list';
+                li.innerHTML = '<a  href="mendian/md_shangpin.html">'+
+                							'				<img src="skin/images/gds03.jpg" class="gds-bg" alt="">'+
+														  '        <div class="su-gds-msg">'+
+														  '        	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>'+
+														  '        	<div class="tx-f30 mg-t-xs">'+
+														  '        		<b class="mn">￥10.40</b>'+
+														  '        		<span class="hot">HOT</span>'+
+														  '        	</div></div>'+
+													    '      </a>';
+                table.appendChild(li);
+            }
+        }, 1500);
+    }
+
+ })(mui);
+</script>
+</html>

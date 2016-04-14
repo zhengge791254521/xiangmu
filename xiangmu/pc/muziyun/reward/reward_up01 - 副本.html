@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="renderer" content="webkit">
+
+    <title>渠道云管家 - 酬金管理</title>
+    <meta name="keywords" content="渠道云管家 - 酬金管理">
+    <meta name="description" content="渠道云管家 - 酬金管理">
+
+    <link href="../assets/css/bootstrap.min.css?v=3.3.0" rel="stylesheet">
+    <link href="../assets/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+    <link href="../assets/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="../assets/css/animate.css" rel="stylesheet">
+
+    <link href="../assets/css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="../assets/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
+    <link href="../assets/css/style.css?v=2.1.0" rel="stylesheet">
+    <link href="../assets/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="../assets/css/z-style.css" rel="stylesheet">
+    <link href="../assets/css/p-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../assets/img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">ALi-MoBan</strong>
+                             </span>  <span class="text-muted text-xs block">超级管理员 <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="form_avatar.html">修改头像</a>
+                                </li>
+                                <li><a href="profile.html">个人资料</a>
+                                </li>
+                                <li><a href="contacts.html">联系我们</a>
+                                </li>
+                                <li><a href="mailbox.html">信箱</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            MU+
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="../index.html"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html#"><i class="fa fa-file-text"></i> <span class="nav-label">市场反馈</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="../feed_back/feed_back_gaoji.html">高级反馈记录</a>
+                            </li>
+                            <li><a href="../feed_back/feed_back_olinejilu.html">在线反馈记录</a>
+                            <li><a href="../feed_back/feed_back_my.html">我的反馈</a>
+                            </li>
+                            <li><a href="../feed_back/feed_back_myoline.html">在线反馈</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-pencil-square-o"></i> <span class="nav-label">掌上签到</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="../sign_up/sign_up_guanli.html">签到记录</a></li>
+                            <li><a href="../sign_up/sign_up_new01.html">新建签到</a></li>
+                            <li><a href="../sign_up/sign_up_geren.html">我的记录</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href=""><i class="fa fa-database"></i> <span class="nav-label">酬金管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="reward_list.html">酬金查询</a></li>
+                            <li class="active"><a href="reward_up.html">添加酬金</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class=" dashbard-1 white-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top gray-bg" role="navigation" style="margin-bottom: 0; background-color:#f5f5f5;">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message"><a href="index.html" title="返回首页"><i class="fa fa-home"></i></a>欢迎使用渠道云管家</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                                <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="assets/img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46小时前</small>
+                                            <strong>小四</strong> 项目已处理完结
+                                            <br>
+                                            <small class="text-muted">3天前 2014.11.8</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="assets/img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">25小时前</small>
+                                            <strong>国民岳父</strong> 这是一条测试信息
+                                            <br>
+                                            <small class="text-muted">昨天</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html">
+                                            <i class="fa fa-envelope"></i>  <strong> 查看所有消息</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                                <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
+                                            <span class="pull-right text-muted small">4分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-qq fa-fw"></i> 3条新回复
+                                            <span class="pull-right text-muted small">12分钟钱</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>查看所有 </strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-9">
+                    <h2>添加酬金</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">主页</a>
+                        </li>
+                        <li>
+                            酬金管理
+                        </li>
+                        <li>
+                            <strong>添加酬金</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title manyi-oa-ul reward_ul">
+                        <ul class="nav nav-tabs">
+                        <li><a href="reward_up.html">新建酬金</a>
+                        </li>
+                        <li  class="active"><a href="reward_up01.html">添加酬金</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class=" row wrapper wrapper-content animated fadeInRight">
+                        <div class="col-lg-12" style=" padding:0px;">
+                            <div class="panel panel-default">
+                            <div class="panel-heading">添加酬金
+                                <div class="btn btn-primary btn-xs download_btn" data-toggle="modal" data-target="#myModal5" style="float:right;">批量添加</div>
+                            </div>
+                            <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">批量添加酬金</h4>
+                                        </div>
+                                        <div class=" row wrapper wrapper-content animated fadeInRight">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style=" padding:0px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">导入数据</div>
+                                                    <div class="panel-body">
+                                                        <div class="form-group">
+                                                            <label class="col-xs-12 col-sm-3 col-md-2 control-label reward_up_title">选择数据表</label>
+                                                            <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                                                <input class="form-control" type="file" value="" name="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div class="form-group">
+                                                            <label class="col-xs-12 col-sm-3 col-md-2 control-label" style="line-height:34px;"></label>
+                                                            <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                                                <p style="color:red">请按照表格格式上传</p>
+                                                                <p>导入酬金数据表，<a href="">酬金数据格式下载</a></p>
+                                                                <p>不懂如何配置，请联系管理员</p>
+                                                                <br>
+                                                                <p>表格说明</p>
+                                                                <img src="assets/img/reward/example_map.png" style="width:inherit">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary" data-dismiss="modal">确定</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal inmodal fade" id="reward_bianji" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">修改酬金信息</h4>
+                                        </div>
+                                        <div class=" row wrapper wrapper-content animated fadeInRight">
+                                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style=" padding:0px;">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">修改酬金</div>
+                                                    <div class="panel-body">
+                                                        <div class="form-group row">
+                                                            <label class="col-xs-12 col-sm-3 col-md-2 control-label reward_up_title" >门店名</label>
+                                                            <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                                                <input  class="form-control" type="text" value="小美营业厅" disabled="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-xs-12 col-sm-3 col-md-2 control-label reward_up_title" >总酬金</label>
+                                                            <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                                                <input class="form-control" type="text" placeholder="单位：元（￥）" value="" name="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-xs-12 col-sm-3 col-md-2 control-label reward_up_title" >4G业务</label>
+                                                            <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                                                <input class="form-control" type="text" placeholder="" value="" name="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-xs-12 col-sm-3 col-md-2 control-label reward_up_title" >手机销售</label>
+                                                            <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                                                <input class="form-control" type="text" placeholder="" value="" name="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-xs-12 col-sm-3 col-md-2 control-label reward_up_title" >号卡销售</label>
+                                                            <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                                                <input class="form-control" type="text" placeholder="" value="" name="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary" data-dismiss="modal">确定</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                            <form class="form-horizontal" role="form" method="get" action="">
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">选择门店</label>
+                                    <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                        <div class="input-group" style=" width:100%;"> 
+                                            <select data-placeholder="选择门店..." class="chosen-select" style="width:inherit;" tabindex="2">
+                                                <option value="">请选择门店</option>
+                                                <option value="" hassubinfo="true">三思德营业厅</option>
+                                                <option value="" hassubinfo="true">大山铺小美营业厅</option>
+                                                <option value="" hassubinfo="true">高新皮皮营业厅</option>
+                                                <option value="" hassubinfo="true">孟家巷小明营业厅</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">总酬金</label>
+                                    <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                        <input class="form-control reward_money" type="text" placeholder="单位：元（￥）" value="" name="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">手机销售</label>
+                                    <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                        <input class="form-control reward_money" type="text" placeholder="" value="" name="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">号卡销售</label>
+                                    <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                        <input class="form-control reward_money" type="text" placeholder="" value="" name="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">4G业务</label>
+                                    <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12">
+                                        <input class="form-control reward_total" type="text" placeholder="" value="" name="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>   
+                        </div>
+                    <div class="panel panel-default" style="margin-top:40px;">
+                        <div class="panel-heading reward_heading">
+                            <p>已添加门店</p>
+                            <form action="" method="get">
+                                <div class="input-group rewaed_group">
+                                    <input type="text" placeholder="请输入门店名" name="search" class="form-control">
+                                    <i class="fa fa-search reward_search"></i>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-body">
+                            <div class="project-list">
+                                 <table class="table table-hover manyi-table">
+                                    <thead>
+                                        <tr id="title_box">
+                                            <th id="xuanze">门店名</th>
+                                            <th>总酬金</th>
+                                            <th id="caozuo">操作</th>
+                                        </tr>
+                                    </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="project-title" id="xuanze">
+                                                <a>三思德营业厅</a>
+                                            </td>
+                                            <td class="project-title">
+                                                <a>￥10000</a>
+                                            </td>
+                                            <td class="project-actions" id="caozuo">
+                                                <button class="btn btn-white btn-sm" data-toggle="modal" data-target="#reward_bianji"><i class="fa fa-folder"></i> 编辑 </button>
+                                                <button class="btn btn-white btn-sm delete_btn" type="button"><i class="fa fa-times delete_btn "></i> 删除 </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="project-title" id="xuanze">
+                                                <a>小美营业厅</a>
+                                            </td>
+                                            <td class="project-title">
+                                                <a>￥10000</a>
+                                            </td>
+                                            <td class="project-actions" id="caozuo">
+                                                <button class="btn btn-white btn-sm" data-toggle="modal" data-target="#reward_bianji"><i class="fa fa-folder"></i> 编辑 </button>
+                                                <button class="btn btn-white btn-sm delete_btn" type="button"><i class="fa fa-times delete_btn "></i> 删除 </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="project-title" id="xuanze">
+                                                <a>孟家巷小明营业厅</a>
+                                            </td>
+                                            <td class="project-title">
+                                                <a>￥10000</a>
+                                            </td>
+                                            <td class="project-actions" id="caozuo">
+                                                <button class="btn btn-white btn-sm" data-toggle="modal" data-target="#reward_bianji"><i class="fa fa-folder"></i> 编辑 </button>
+                                                <button class="btn btn-white btn-sm delete_btn" type="button"><i class="fa fa-times delete_btn "></i> 删除 </button>
+                                            </td>
+                                        </tr>
+                                    </tbody> 
+                                </table>
+                                <div class="manyi-btn-ping text-center">
+                                    <button type="button" class="btn btn-white">
+                                        <a href="javascript:;">首页</a>
+                                    </button> 
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-white">
+                                            <a href="javascript:;">上一页</a>
+                                        </button>  
+                                        <button type="button" class="btn btn-white">
+                                            <a href="javascript:;">1</a>
+                                        </button>  <button type="button" class="btn btn-white">
+                                            <a href="javascript:;">2</a>
+                                        </button>  <button type="button" class="btn btn-white">
+                                            <a href="javascript:;">下一页</a>
+                                        </button>  
+                                    </div>
+                                    <button type="button" class="btn btn-white">
+                                        <a href="javascript:;">尾页</a>
+                                    </button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    By：<a href="http://www.alimoban.com" target="_blank">alimoban</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> MU+ &copy; 2014
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js?v=3.3.0"></script>
+    <script src="../assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../assets/js/muplus.js?v=2.0.0"></script>
+    <script src="../assets/js/plugins/pace/pace.min.js"></script>
+
+    <!-- Switchery -->
+    <script src="../assets/js/plugins/switchery/switchery.js"></script>
+
+    <!-- Chosen -->
+    <script src="../assets/js/plugins/chosen/chosen.jquery.js"></script>
+
+
+   <script>
+        $(document).ready(function () {
+
+        var config = {
+            '.chosen-select': {},
+            '.chosen-select-deselect': {
+                allow_single_deselect: true
+            },
+            '.chosen-select-no-single': {
+                disable_search_threshold: 10
+            },
+            '.chosen-select-no-results': {
+                no_results_text: 'Oops, nothing found!'
+            },
+            '.chosen-select-width': {
+                width: "95%"
+            }
+        }
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+        $('tbody').on('click','.delete_btn',function(){
+            $(this).closest('tr').remove();
+        });
+    });
+           
+    </script>
+
+ 
+
+</body>
+
+</html>

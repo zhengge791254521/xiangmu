@@ -1,0 +1,74 @@
+<!-- 营业员列表 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/md/md.css" />
+</head>
+<style type="text/css">
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">营业员设置</div>
+</header>
+<div class="mui-content">
+<div class="pd-10">
+<form class="">
+	<div class="mui-input-row">
+		<input type="text" class="mui-input-clear" placeholder="营业员名称">
+	</div>
+
+	<div class="mui-input-row">
+		<input type="text" class="mui-input-clear" id="tel" placeholder="营业员电话">
+	</div>
+	<div class="pd-tb-sm">
+		<button type="submit" class="mui-btn mui-btn-danger mui-btn-block pd-tb-sm">确定</button>
+	</div>
+</form>
+</div>
+</div>
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+
+<script src="../skin/js/public/super.js"></script>
+<script src="../skin/js/plug/layer.m/layer.m.js"></script>
+<script type="text/javascript">
+jQuery('form').submit(function(event) {
+	var self = jQuery(this),
+			status = true;
+			input = self.find('input'),
+			phone = self.find('#tel').val();
+	input.each(function(index, el) {
+		if(jQuery(this).val() == ''){
+			status = false;
+			return false;
+		}
+	});
+	if(!status){
+		layer.open({
+      content: '请填写完所有信息',
+      style: 'background-color:rgba(0,0,0,0.6); color:#fff; border:none;text-align: center;',
+      time:3
+    })
+		return false;
+	}
+	if(!isTel(phone)){
+		layer.open({
+      content: '请填写正确的手机号码',
+      style: 'background-color:rgba(0,0,0,0.6); color:#fff; border:none;text-align: center;',
+      time:3
+    })
+    return false;
+	}
+});
+</script>
+</html>

@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="renderer" content="webkit">
+
+    <title>宽带信息-小区详情</title>
+    <meta name="keywords" content="宽带信息统一模板--宽带信息-小区">
+    <meta name="description" content="宽带的统一模板 宽带信息-小区">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link href="../assets/css/bootstrap.min.css?v=3.3.0" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+
+    <link href="../assets/css/animate.css" rel="stylesheet">
+    <link href="../assets/css/style.css?v=2.1.0" rel="stylesheet">
+
+    <link href="../assets/css/z-style.css" rel="stylesheet">
+    <link href="../assets/css/kuandai/kuandai-all.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/kuandai/kuaidai-2-xq.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../assets/img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="../index.html#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">ALi-MoBan</strong>
+                             </span>  <span class="text-muted text-xs block">超级管理员 <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="form_avatar.html">修改头像</a>
+                                </li>
+                                <li><a href="profile.html">个人资料</a>
+                                </li>
+                                <li><a href="contacts.html">联系我们</a>
+                                </li>
+                                <li><a href="mailbox.html">信箱</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            MU+
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="yuntu_1.html">
+                        	<i class="fa fa-connectdevelop"></i> 
+                            <span class="nav-label">宽带信息</span> 
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li >
+                            	<a href="kuandai-1.html">宽带设置</a>
+                            </li>
+                            <li class="active">
+                            	<a href="kuandai-2.html">小区管理</a>
+                            </li>
+                            <li >
+                            	<a href="kuandai-3.html">宽带记录</a>
+                            </li>
+                            
+                            <li >
+                            	<a href="kuandai-1-usertable.html">宽带专区</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1" >
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message"><a href="../index.html" title="返回首页"><i class="fa fa-home"></i></a>欢迎使用渠道云管家</span>
+                        </li>
+                        
+                        
+
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-9">
+                    <h2>宽带信息</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="../index.html">主页</a>
+                        </li>
+                        <li>
+                            宽带信息
+                        </li>
+                        <li>
+                            <strong>小区管理</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!--主要内容-->
+            
+            
+            <div class="row animated fadeInRight" >
+            
+			<div class="main">
+                <div class="row big-box">
+                <!--图表-->
+                <div class="col-md-12 col-lg-8 tubiao-box">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">2015年5月图表</div>
+                        	<div class="chart" id="main" >
+                    
+                            <!-- ECharts单文件引入 -->
+                            <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+                            <script type="text/javascript">
+                            // 路径配置
+                            require.config({
+                            paths: {
+                            echarts: 'http://echarts.baidu.com/build/dist'
+                            }
+                            });
+                            
+                            // 使用
+                            require(
+                            [
+                            'echarts',
+                            'echarts/chart/pie' // 使用柱状图就加载bar模块，按需加载
+                            ],
+                            function (ec) {
+                            // 基于准备好的dom，初始化echarts图表
+                            var myChart = ec.init(document.getElementById('main')); 
+                            
+                            var idx = 1;
+                            option = {
+                            timeline : {
+                                data : [
+                                    '2013-01-01', '2013-02-01', '2013-03-01', '2013-04-01', '2013-05-01',
+                                    { name:'2013-06-01', symbol:'emptyStar6', symbolSize:8 },
+                                    '2013-07-01', '2013-08-01', '2013-09-01', '2013-10-01', '2013-11-01',
+                                    { name:'2013-12-01', symbol:'star6', symbolSize:8 }
+                                ],
+                                label : {
+                                    formatter : function(s) {
+                                        return s.slice(0, 7);
+                                    }
+                                }
+                            },
+                            options : [
+                                {
+                                    title : {
+                                        /*text: '宽带端口图表',*/
+                                        subtext: ''
+                                    },
+                                    tooltip : {
+                                        trigger: 'item',
+                                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                                    },
+                                    legend: {
+                                        data:['已用端口','剩余端口']
+                                    },
+                                    toolbox: {
+                                        show : true,
+                                        feature : {
+                                            mark : {show: true},
+                                            dataView : {show: true, readOnly: false},
+                                            magicType : {
+                                                show: true, 
+                                                type: ['pie', 'funnel'],
+                                                option: {
+                                                    funnel: {
+                                                        x: '25%',
+                                                        width: '50%',
+                                                        funnelAlign: 'left',
+                                                        max: 1700
+                                                    }
+                                                }
+                                            },
+                                            restore : {show: true},
+                                            saveAsImage : {show: true}
+                                        }
+                                    },
+                                    series : [
+                                        {
+                                            name:'宽带（端口数量）',
+                                            type:'pie',
+                                            center: ['50%', '45%'],
+                                            radius: '50%',
+                                            data:[
+                                                {value: idx * 128 + 8,  name:'已用端口'},
+                                                {value: idx * 64  + 160,  name:'剩余端口'}
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    series : [
+                                        {
+                                            name:'宽带（端口数量）',
+                                            type:'pie',
+                                            data:[
+                                                {value: idx * 18 + 80,  name:'已用端口'},
+                                                {value: idx * 64  + 160,  name:'剩余端口'}
+                            
+                                            ]
+                                        }
+                                    ]
+                                },
+                                
+                                
+                                {
+                                    series : [
+                                        {
+                                            name:'宽带（端口数量）',
+                                            type:'pie',
+                                            data:[
+                                                {value: idx * 128 + 80,  name:'已用端口'},
+                                                {value: idx * 114  + 160,  name:'剩余端口'}
+                            
+                                            ]
+                                        }
+                                    ]
+                                },
+                                
+                                
+                                {
+                                    series : [
+                                        {
+                                            name:'宽带（端口数量）',
+                                            type:'pie',
+                                            data:[
+                                                {value: idx * 128 + 80,  name:'已用端口'},
+                                                {value: idx * 20  + 160,  name:'剩余端口'}
+                            
+                                            ]
+                                        }
+                                    ]
+                                },
+                                
+                                
+                                {
+                                    series : [
+                                        {
+                                            name:'宽带（端口数量）',
+                                            type:'pie',
+                                            data:[
+                                                {value: idx * 128 + 80,  name:'已用端口'},
+                                                {value: idx * 6  + 160,  name:'剩余端口'}
+                            
+                                            ]
+                                        }
+                                    ]
+                                },
+                            
+                            ]
+                            };
+                            
+                            
+                            // 为echarts对象加载数据 
+                            myChart.setOption(option); 
+                            }
+                            );
+                            </script>
+                            
+                            </div>
+                	</div>
+                </div> 
+    			<!--图表 结束-->
+                
+                <div class="col-md-12 col-lg-4 new-buju">		
+                     <div class="panel panel-default city" >
+                        <div class="panel-heading">2015年5月</div>
+                        <dl>
+                          <dt>理想中心小区</dt>
+                          <dd>区域：高新区  理想中心</dd>
+                          <dd>地址：高新区天益街38号高新区天益街38号高新区天益街38号高新区天益街38号高新区天益街38号</dd>
+                          <dt>宽带信息</dt>
+                          <dd>套餐：E8套餐 E8套餐 E8套餐 E8套餐 E8套餐 E8套餐</dd>
+                          <dt>宽带端口</dt>
+                          <dd>总端口数：<b>12000</b>个</dd>
+                          <dd>剩余端口：<b>2000</b>个</dd>
+                        </dl>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map" id="dituContent" >
+                
+            <script type="text/javascript">
+            //创建和初始化地图函数：
+            function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMarker();//向地图中添加marker
+            }
+            
+            //创建地图函数：
+            function createMap(){
+            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+            var point = new BMap.Point(104.069765,30.60242);//定义一个中心点坐标
+            map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+            window.map = map;//将map变量存储在全局
+            }
+            
+            //地图事件设置函数：
+            function setMapEvent(){
+            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+            map.enableKeyboard();//启用键盘上下左右键移动地图
+            }
+            
+            //地图控件添加函数：
+            function addMapControl(){
+            //向地图中添加缩放控件
+            var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+            map.addControl(ctrl_nav);
+            //向地图中添加缩略图控件
+            var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:0});
+            map.addControl(ctrl_ove);
+            //向地图中添加比例尺控件
+            var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            map.addControl(ctrl_sca);
+            }
+            
+            //标注点数组
+            var markerArr = [{title:"小区所在位置",content:"我的备注",point:"104.069504|30.60113",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+            ];
+            //创建marker
+            function addMarker(){
+            for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+            
+            (function(){
+            var index = i;
+            var _iw = createInfoWindow(i);
+            var _marker = marker;
+            _marker.addEventListener("click",function(){
+            this.openInfoWindow(_iw);
+            });
+            _iw.addEventListener("open",function(){
+            _marker.getLabel().hide();
+            })
+            _iw.addEventListener("close",function(){
+            _marker.getLabel().show();
+            })
+            label.addEventListener("click",function(){
+            _marker.openInfoWindow(_iw);
+            })
+            if(!!json.isOpen){
+            label.hide();
+            _marker.openInfoWindow(_iw);
+            }
+            })()
+            }
+            }
+            //创建InfoWindow
+            function createInfoWindow(i){
+            var json = markerArr[i];
+            var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+            return iw;
+            }
+            //创建一个Icon
+            function createIcon(json){
+            var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+            return icon;
+            }
+            
+            initMap();//创建和初始化地图
+            </script>
+                
+            </div>
+
+                    </div>
+
+
+	     	</div>
+     
+            <!--主要内容 结束-->
+           
+            <!--footer-->
+            <div class="footer">
+                <div class="pull-right">
+                    By：<a href="http://www.alimoban.com" target="_blank">alimoban</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> MU+ &copy; 2014
+                </div>
+            </div>
+			<!--footer over-->
+            
+        </div>  
+           
+
+        </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js?v=3.3.0"></script>
+    <script src="../assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../assets/js/muplus.js?v=2.0.0"></script>
+    <script src="../assets/js/plugins/pace/pace.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.contact-box').each(function () {
+                animationHover(this, 'pulse');
+            });
+        });
+    </script>
+
+ 
+
+</body>
+
+</html>

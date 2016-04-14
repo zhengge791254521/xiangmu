@@ -1,0 +1,92 @@
+<!-- 用户入驻 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/user/user.css" />
+	<link rel="stylesheet" type="text/css" href="../skin/mui/css/feedback-page.css" />
+</head>
+<style type="text/css">
+.mui-table-view.mui-grid-view .mui-table-view-cell{
+    background-color: #fff;
+    color: #ff9900;
+}
+.feedback .image-list{
+	height: auto;
+}
+
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">商家入驻申请</div>
+</header>
+<div class="mui-content">
+<div id="segmentedControl" class="mui-segmented-control a-href">
+	<a class="mui-control-item" href="shangjia_ruzhu.html">
+		企业用户
+	</a>
+	<a class="mui-control-item mui-active" href="user_ruzhu.html">
+		个人用户
+	</a>
+</div>
+<div class="pd-10">
+<form action="">
+	<h5>推荐人手机号</h5>
+	<div class="mui-input-row">
+		<input type="text" class="mui-input-clear" placeholder="请输入推荐人手机号" required>
+	</div>
+	<h5>真实姓名</h5>
+	<div class="mui-input-row">
+		<input type="text" class="mui-input-clear" placeholder="请输入您的真实姓名" required>
+	</div>
+	<h5>身份证号</h5>
+	<div class="mui-input-row">
+		<input type="text" class="mui-input-clear" placeholder="请输入您的身份证号" required>
+	</div>
+	<h5>身份证正面,背面,手持照片</h5>
+	<div class="mui-input-row feedback">
+		<div id="image-list2" class="row image-list">
+			<div class="image-item space"><div class="image-close">X</div><input type="file" accept="image/*" id="image-1"></div>
+			<div class="image-item space"><div class="image-close">X</div><input type="file" accept="image/*" id="image-1"></div>
+			<div class="image-item space"><div class="image-close">X</div><input type="file" accept="image/*" id="image-1"></div>
+		</div>
+	</div>
+	<h5 class="mg-t-15">手机号</h5>
+	<div class="mui-input-row">
+		<div class="mg-b-5">
+		<input type="text" class="mui-input-clear" placeholder="请输入您的身份证号" required>
+		</div>
+		<div>
+			<div class="flt-r mg-l-5">
+				<button type="button" class="mui-btn">
+					获取验证码
+				</button>
+			</div>
+			<div class="overhid">
+				<input type="text" class="mui-input-clear" placeholder="请输入验证码" required>
+			</div>
+		</div>
+	</div>
+	<button type="submit" class="mui-btn mui-btn-danger mui-btn-block">确认提交</button>
+</form>
+</div>
+</div>
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+<script type="text/javascript">
+;(function($){
+
+
+ })(mui);
+</script>
+</html>

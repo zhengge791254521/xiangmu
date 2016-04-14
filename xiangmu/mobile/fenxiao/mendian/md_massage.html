@@ -1,0 +1,159 @@
+<!-- 门店信息 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/md/md.css" />
+</head>
+<style type="text/css">
+.mui-table-view.mui-grid-view .mui-table-view-cell{
+    background-color: #fff;
+    /*color: #ff9900;*/
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">郑哥的店铺</div>
+</header>
+<div class="mui-content">
+<ul class="mui-table-view" style="margin-top:0;">
+	<li class="mui-table-view-cell">
+		<img class="mui-media-object mui-pull-left" src="../skin/images/shuijiao.jpg">
+		<div class="mui-media-body">
+			<div class="su-collect" data-status="yes">
+			<!--  -->
+				<span class="mui-icon mui-icon-star-filled tx-f70"></span>
+				<p class="tx-3">关注</p>
+			</div>
+			<div class="overhid">
+				<div class="mui-ellipsis">李哥超市</div>
+				<p class="mui-ellipsis-2"><span class="su-ser-score mg-r-sm">
+					<i class="mui-icon mui-icon-star-filled"></i>
+					<i class="mui-icon mui-icon-star-filled"></i>
+					<i class="mui-icon mui-icon-star-filled"></i>
+					<i class="mui-icon mui-icon-star"></i>
+					<i class="mui-icon mui-icon-star"></i>
+					</span>
+				</p>
+				<p class="ft-12 mui-ellipsis-2">成都市高新区天益路理想中心2栋1212</p>
+			</div>
+		</div>
+	</li>
+</ul>
+<section class="su-index-tab bg-f a-href mg-t-10">
+	<a class="su-tab-list bd-r" href="md_cont_list.html">
+		<span class="tx-f90">12</span>
+		<p>全部商品</p>
+	</a>
+	<a class="su-tab-list bd-r">
+		<span class="tx-f30">123</span>
+		<p>粉丝</p>
+	</a>
+	<a class="su-tab-list" href="../my_mendian/my_md_pingjia.html">
+		<span class="tx-green">123</span>
+		<p>评价</p>
+	</a>
+</section>
+<ul class="mui-table-view">
+	<li class="mui-table-view-cell">
+		<a class="mui-navigate-right" href="">
+			<div class="flt-l tx-6">店铺电话：</div>
+			<div class="mui-media-body">
+				<div class="tx-3 ft-16">15856565656  <span class="mui-badge bg-f70 tx-f">折</span></div>
+			</div>
+		</a>
+	</li>
+	<li class="mui-table-view-cell">
+		<!-- <a class="mui-navigate-right" href=""> -->
+			<div class="flt-l tx-6">店铺地址：</div>
+			<div class="mui-media-body">
+				<div class="tx-3 ft-16 mui-ellipsis-2">成都市高新区天益路理想中心2栋1212</div>
+			</div>
+		<!-- </a> -->
+	</li>
+	<li class="mui-table-view-cell">
+		<div class="flt-l tx-6">营业时间：</div>
+		<div class="mui-media-body">
+			<div class="tx-3 ft-16 mui-ellipsis">9:00 -- 18:00</div>
+		</div>
+	</li>
+	<li class="mui-table-view-cell">
+		<div class="flt-l tx-6">店铺公告：</div>
+		<div class="mui-media-body">
+			<div class="tx-3 ft-16">成都市高新区天益路理想中心2栋1212成都市高新区天益路理想中心2栋1212</div>
+		</div>
+	</li>
+</ul>
+<div class="bg-f pd-sm mg-t-sm bd-b">
+	<img class="su-img" src="../skin/images/baojie.png" alt="">
+</div>
+<div class="su-goods-box">
+	<div class="su-goods-title text-ct">
+		<div class="su-gds-icon">店铺信息</div>
+	</div>
+	<div class="bg-f pd-10 word-bk ft-16">sdasf鼎折覆餗大法师asdfsdafsd的爽asdasdsad肤水的房顶上dfsfsd的双方各水电费水电费</div>
+</div>
+
+</div>
+
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+
+<script src="../skin/js/plug/layer.m/layer.m.js"></script>
+<script type="text/javascript">
+;(function($){
+
+ $('body').on('tap','.su-collect',function(){
+  	var self = jQuery(this),
+  			sel = self.attr('data-status'),
+  			icon = self.find('.mui-icon');
+  			stastus = false,
+  			cont='',
+  			color = self.find('.mui-icon');
+  			if(sel == 'yes'){
+  				cont = '已取消关注';
+  				self.attr('data-status','no');
+  				icon.removeClass('mui-icon-star-filled').addClass('mui-icon-star');
+  				status = false;
+  			}else{
+					cont = '已成功关注';
+					self.attr('data-status','yes');
+					icon.removeClass('mui-icon-star').addClass('mui-icon-star-filled');
+  				status = true;
+  			}
+  		// jQuery.ajax({
+  		// 	url: '/path/to/file',
+  		// 	type: 'post',
+  		// 	dataType: 'json',
+  		// 	data: {status: status},
+  		// 	success:function(data){
+  					// if(data){
+  					// 	self.attr('data-status','no');
+  					// 	color.removeClass('tx-f70').addClass('tx-6');
+  					// }else{
+  					// 	self.attr('data-status','yes');
+  					// 	color.removeClass('tx-6').addClass('tx-f70');
+  					// }
+  		// 	}
+  		// });
+  			layer.open({
+          content: cont,
+          style: 'background-color:rgba(0,0,0,0.6); color:#fff; border:none;text-align: center;',
+          time:2
+      	})
+
+  })
+ })(mui);
+</script>
+</html>

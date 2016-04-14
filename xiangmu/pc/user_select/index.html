@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/userSlect.css">
+	<title>LightBox插件开发</title>
+</head>
+<style type="text/css">
+
+</style>
+<body>
+
+
+<!-- <div class="pop-box">
+<div class="pop-mask"></div>
+<div class="pop-box-popup">
+	<div class="user-select-box">
+		<div class="user-select-title">
+			请选择人员
+			<div class="pop-close"></div>
+		</div>
+		<div class="user-select-body">
+			<div class="box-container">
+				<div class="select-box-group">
+					<div class="sbox-title">
+						<ul class="title-type-group">
+							<li class="title-type-list active"><a href="javascript:;">全部</a></li>
+							<li class="title-type-list"><a href="javascript:;">按区域</a></li>
+							<li class="title-type-list"><a href="javascript:;">按部门</a></li>
+						</ul>
+					</div>
+					<div class="sbox-body">
+						<div class="sbox-item user_all" data-type="user_all">
+							<div class="user-all-btn">
+								<div class="checkbox-box title-checked pull-right">
+						  		<input type="checkbox" value="1" id="select-all" class="checkbox-input" name="" data-type="select-all" />
+							  	<label for="select-all"></label>
+						  	</div>
+							</div>
+							<div class="sel-div show">
+								<ul class="sel-ul">
+									<li class="sel-li"><a data-address=""><b></b>郑亚利<span class="user-information">高新区</span></a></li>
+									<li class="sel-li"><a data-address=""><b></b>谢小志<span class="user-information">高新区</span></a></li>
+									<li class="sel-li"><a data-address=""><b></b>冉小杰<span class="user-information">高新区</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sbox-item user_area active" data-type="user_area">
+							<div class="sel-div show">
+								<p class="sel-p"><b></b>成都市</p>
+								<ul class="sel-ul">
+									<li class="sel-li"><a data-address=""><b></b>高新区</a></li>
+									<li class="sel-li"><a data-address=""><b></b>武侯区</a></li>
+									<li class="sel-li"><a data-address=""><b></b>金牛区</a></li>
+								</ul>
+							</div>
+							<div class="sel-div show">
+								<p class="sel-p"><b></b>四川省</p>
+								<ul class="sel-ul">
+									<li class="sel-li">
+										<div class="sel-div">
+											<p class="sel-p"><b></b>南充市</p>
+											<ul class="sel-ul">
+												<li class="sel-li"><a data-address=""><b></b>嘉陵区</a></li>
+												<li class="sel-li"><a data-address=""><b></b>顺庆区</a></li>
+												<li class="sel-li"><a data-address=""><b></b>高坪区</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="sel-li">
+										<div class="sel-div show">
+											<p class="sel-p"><b></b>成都市</p>
+											<ul class="sel-ul">
+												<li class="sel-li"><a data-address=""><b></b>高新区</a></li>
+												<li class="sel-li"><a data-address=""><b></b>武侯区</a></li>
+												<li class="sel-li"><a data-address=""><b></b>金牛区</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="sel-li">
+										<div class="sel-div">
+											<p class="sel-p"><b></b>绵阳市</p>
+											<ul class="sel-ul">
+												<li class="sel-li"><a data-address=""><b></b>江油区</a></li>
+												<li class="sel-li"><a data-address=""><b></b>2区</a></li>
+												<li class="sel-li"><a data-address=""><b></b>3区</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+						</div>
+						
+						<div class="sbox-item"></div>
+					</div>
+				</div>
+				<div class="select-box-gather">
+					<div class="gather-title">
+						选择添加的人员
+						<div class="checkbox-box title-checked pull-right">
+				  		<input type="checkbox" value="1" id="checkboxFourInput" class="checkbox-input" name="" />
+					  	<label for="checkboxFourInput"></label>
+				  	</div>
+					</div>
+					<div class="gather-body">
+						<div class="gather-box-title">成都地区</div>
+						<ul class="gather-ul">
+							<li class="gather-li"><a href="" class="gather-user" data-id=""><b></b>郑亚利</a>
+								<div class="checkbox-box title-checked pull-right">
+						  		<input type="checkbox" value="1" id="gather-list0" class="checkbox-input" name="" />
+							  	<label for="gather-list0"></label>
+						  	</div>
+							</li>
+							<li class="gather-li"><a href="" class="gather-user"><b></b>谢小志</a>
+								<div class="checkbox-box title-checked pull-right">
+						  		<input type="checkbox" value="1" id="gather-list1" class="checkbox-input" name="" />
+							  	<label for="gather-list1"></label>
+						  	</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="user-select-footer text-right">
+			<button class="btn btn-default" type="button">关闭</button>
+			<button class="btn btn-primary" type="button">确认添加</button>
+		</div>
+	</div>
+</div>
+</div> -->
+
+
+<!-- <input id="da_shared" type="text" value="" name="shareuid" style="display: none;">
+
+<br>
+<!-- <a href="">哇哈哈</a> -->
+
+<!-- <div class="userselect-box">
+	<ul class="userselect-choices">
+		<li class="userselect-operate">
+			<a class="operate-btn operate-user" href="javascript:;">
+				<i class=""></i>
+			</a>
+			<a class="operate-btn operate-delete" href="javascript:;">
+				<i class=""></i>
+			</a>
+		</li>
+		<li class="userselect-search-choice">
+			<span>
+			<i class="userselect-icon-user"></i>
+			林英俊
+			</span>
+			<a class="userselect-search-choice-close" tabindex="-1" onclick="return false;" href="javascript:;"></a>
+		</li>
+		<li class="userselect-search-choice">
+			<span>
+			<i class="userselect-icon-user"></i>
+			林英俊
+			</span>
+			<a class="userselect-search-choice-close" tabindex="-1" onclick="return false;" href="javascript:;"></a>
+		</li>
+		<li class="userselect-search-choice">
+			<span>
+			<i class="userselect-icon-user"></i>
+			林英俊
+			</span>
+			<a class="userselect-search-choice-close" tabindex="-1" onclick="return false;" href="javascript:;"></a>
+		</li>
+		<li class="userselect-search-choice">
+			<span>
+			<i class="userselect-icon-user"></i>
+			林英俊
+			</span>
+			<a class="userselect-search-choice-close" tabindex="-1" onclick="return false;" href="javascript:;"></a>
+		</li>
+	</ul>
+</div> -->
+<input id="da_shared" type="text" value="" name="shareuid">
+
+
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/userSelect.js"></script>
+<script type="text/javascript">
+$(function(){
+
+var user=[
+{enable:1,iconSkin:"user",id:"u_1",imgUrl:"ssss",name:"郑亚利",phone:"18200132067",position:"",text:"郑亚利",type:"user",provice:'四川省',city:'成都市',dist:'高新区',groupid:'1',title:'普通会员'}
+,
+{enable:1,iconSkin:"user",id:"u_2",imgUrl:"ssss",name:"谢小志",phone:"13535353535",position:"",text:"谢小志",type:"user",provice:'四川省',city:'成都市',dist:'高新区',groupid:'5',title:'经销商'}
+,
+{enable:1,iconSkin:"user",id:"u_3",imgUrl:"ssss",name:"冉小杰",phone:"18282828282",position:"",text:"冉小杰",type:"user",provice:'四川省',city:'成都市',dist:'金牛区',groupid:'3',title:'渠道经理'}
+,
+{enable:1,iconSkin:"user",id:"u_4",imgUrl:"ssss",name:"刘雪峰",phone:"12525252525",position:"",text:"刘雪峰",type:"user",provice:'四川省',city:'成都市',dist:'金牛区',groupid:'1',title:'产品顾问'}
+,
+{enable:1,iconSkin:"user",id:"u_5",imgUrl:"ssss",name:"彭全元",phone:"13939393939",position:"",text:"彭全元",type:"user",provice:'四川省',city:'成都市',dist:'武侯区',groupid:'2',title:'产品顾问'}
+,
+{enable:1,iconSkin:"user",id:"u_6",imgUrl:"ssss",name:"杨青",phone:"13939393939",position:"",text:"杨青",type:"user",provice:'四川省',city:'南充市',dist:'顺庆区',groupid:'4',title:'执业合伙人'}
+,
+{enable:1,iconSkin:"user",id:"u_7",imgUrl:"ssss",name:"何逸飞",phone:"13939393939",position:"",text:"何逸飞",type:"user",provice:'四川省',city:'南充市',dist:'高坪区',groupid:'2',title:'产品顾问'}
+,
+{enable:1,iconSkin:"user",id:"u_8",imgUrl:"ssss",name:"大理",phone:"18282828282",position:"",text:"大理",type:"user",provice:'云南省',city:'大理市',dist:'洱海区',groupid:'4',title:'执业合伙人'}
+,
+{enable:1,iconSkin:"user",id:"u_9",imgUrl:"ssss",name:"丽江",phone:"12525252525",position:"",text:"丽江",type:"user",provice:'云南省',city:'丽江市',dist:'古城区',groupid:'1',title:'普通会员'}
+,
+{enable:1,iconSkin:"user",id:"u_10",imgUrl:"ssss",name:"昆明",phone:"13939393939",position:"",text:"昆明",type:"user",provice:'云南省',city:'昆明市',dist:'昆明区',groupid:'5',title:'经销商'}
+];
+
+	// var lightbox = new LightBox();
+	$('#da_shared').userSelect({
+		data:user
+
+	});
+})
+</script>
+</html>

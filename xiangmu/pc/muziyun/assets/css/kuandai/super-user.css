@@ -1,0 +1,24 @@
+/*宽带的管理员用户展示页面的样式*/
+.tubiao {
+    height: 300px;
+}
+.box-xiaoqu-xinxi {
+    height: 300px;
+}
+
+.dk-number {
+    font-size: 16px;
+}
+
+.duankou {
+    font-family: "微软雅黑";
+}
+.number-color {
+    color: red;
+    font-size: 16px;
+}
+
+.font-zi {
+    font-weight: 600px;
+
+}

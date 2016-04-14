@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="renderer" content="webkit">
+
+    <title>MU+ 后台主题UI框架 - 百度ECHarts</title>
+    <meta name="keywords" content="MU+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="MU+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link href="../assets/css/bootstrap.min.css?v=3.3.0" rel="stylesheet">
+    <link href="../assets/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+
+    <link href="../assets/css/animate.css" rel="stylesheet">
+    <link href="../assets/css/style.css?v=2.1.0" rel="stylesheet">
+
+    <link href="../assets/css/z-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../assets/img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="../index.html#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">ALi-MoBan</strong>
+                             </span>  <span class="text-muted text-xs block">超级管理员 <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="form_avatar.html">修改头像</a>
+                                </li>
+                                <li><a href="profile.html">个人资料</a>
+                                </li>
+                                <li><a href="contacts.html">联系我们</a>
+                                </li>
+                                <li><a href="mailbox.html">信箱</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            MU+
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="../index.html"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="yuntu_1.html"><i class="fa fa-skyatlas"></i> <span class="nav-label">渠道云图</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="yuntu_1.html">区域列表</a>
+                            </li>
+                            <li class="active"><a href="yuntu_3.html">渠道分析图</a>
+                            </li>
+                            <li><a href="yuntu_2.html">查看云图</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="请输入您需要查找的内容 …" class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message"><a href="../index.html" title="返回首页"><i class="fa fa-home"></i></a>欢迎使用MU+后台主题</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="../index.html#">
+                                <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="../assets/img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46小时前</small>
+                                            <strong>小四</strong> 项目已处理完结
+                                            <br>
+                                            <small class="text-muted">3天前 2014.11.8</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="../assets/img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">25小时前</small>
+                                            <strong>国民岳父</strong> 这是一条测试信息
+                                            <br>
+                                            <small class="text-muted">昨天</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html">
+                                            <i class="fa fa-envelope"></i>  <strong> 查看所有消息</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="../index.html#">
+                                <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
+                                            <span class="pull-right text-muted small">4分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-qq fa-fw"></i> 3条新回复
+                                            <span class="pull-right text-muted small">12分钟钱</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>查看所有 </strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-9">
+                    <h2>云分析列表</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="../index.html">主页</a>
+                        </li>
+                        <li>
+                            渠道云图
+                        </li>
+                        <li>
+                            <strong>云分析图表</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row animated fadeInRight">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">分析详情</div>
+                                    <div class="panel-body">
+                                        <div class="ibox">
+                                            <div class="ibox-content yunlie_line">
+                                                <div class="row">
+                                                  <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 ">
+                                                      <div id="yunfenxi-pie"class="echarts"></div>
+                                                  </div>
+                                                  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                                    <div class="yunfenxi-cont">
+                                                        <h2>中国移动在2015年2月份高新区市场占比份额</h2>
+                                                        <ul>
+                                                            <li>1、中国移动市场占比为35%</li>
+                                                            <li>2、中国联通市场占比为25%</li>
+                                                            <li>3、中国电信市场占比为40%</li>
+                                                        </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    By：<a href="http://www.alimoban.com" target="_blank">alimoban</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> MU+ &copy; 2014
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js?v=3.3.0"></script>
+    <script src="../assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- ECharts -->
+    <script src="../assets/js/plugins/echarts/echarts-all.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../assets/js/muplus.js?v=2.0.0"></script>
+    <script src="../assets/js/plugins/pace/pace.min.js"></script>
+
+    <!-- ECharts demo data -->
+    <script>
+            var myChart = echarts.init(document.getElementById('yunfenxi-pie'));
+            var option = {
+                title : {
+                    text: '高新区三大运营商市场份额图',
+                    subtext: '2015年2月份',
+                    x:'center',
+                    textStyle:{
+                        fontSize: 22,
+                        fontWeight: 'bolder',
+                        color: '#333'
+                    },
+                    subtextStyle:{
+                        fontSize: 15,
+                        fontWeight: 'bolder',
+                    }
+                },
+                tooltip: {
+                    show: true,
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                 legend: {
+                    orient : 'vertical',
+                    x : 'left',
+                    data:['中国移动','中国联通','中国电信']
+                },
+                toolbox: {
+                    show : true,
+                    orient : 'vertical',
+                    feature : {
+                        mark : {show: true},
+                        dataView : {show: true, readOnly: false},
+                        restore : {show: true},
+                        saveAsImage : {show: true}
+                    }
+                },
+                calculable : true,
+                series : [
+                    {
+                        name:'运营份额',
+                        type:'pie',
+                        selectedMode: 'single',
+                        radius :'60%',
+                        center: ['50%', '55%'],
+                        data:[
+                            {value:35, name:'中国移动'},
+                            {value:25, name:'中国联通'},
+                            {value:40, name:'中国电信'}
+                        ]
+                    }
+                ]
+            };
+
+            myChart.setOption(option);
+            window.onresize = myChart.resize;
+
+    </script>
+
+
+</body>
+
+</html>

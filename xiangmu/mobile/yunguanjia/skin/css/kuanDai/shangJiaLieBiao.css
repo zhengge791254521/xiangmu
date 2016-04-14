@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* 商家列表 */
+/* 商家列表主页 */
+.liandong {
+	margin-top: 8px;
+}
+.nameAndAdd {
+}
+.sign_up_box {
+	margin-top: 20px;
+}
+.padding-title {
+	width: 97%;
+	margin: 4px auto;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 4px;
+}
+.sign_up_border:before{
+	content:"";
+	display:block;
+	position:absolute;
+	width:1px;
+	height:80%;
+	background-color:#0068b7;
+	top:10%;
+	left:0;
+}
+.sign_up_border:after{
+	content:"";
+	display:block;
+	position:absolute;
+	width:1px;
+	height:80%;
+	background-color:#0068b7;
+	top:10%;
+	right:0;
+}
+.lianjie {
+	margin: 4px;
+	padding: 3px;
+}
+
+/* 商家详情主页 */
+.box-Dname {
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+
+}
+
+p {
+	padding-bottom: 0px ;
+	padding-left: 0px;
+}
+small b {
+	color: red;
+}
+.shangjia-map{
+	margin: 0;
+}

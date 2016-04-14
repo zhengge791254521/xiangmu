@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>爱尚生活</title>
+	<link rel="stylesheet" type="text/css" href="../skin/mui/css/mui.picker.min.css" />
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/iconfont.css" />
+
+	<link rel="stylesheet" href="../skin/mui/css/mui.picker.min.css"/> 
+  <!-- <link rel="stylesheet" href="../skin/mui/css/mui.poppicker.css" /> -->
+  <!-- <link rel="stylesheet" href="../skin/mui/css/mui.indexedlist.css" /> -->
+
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+</head>
+<style type="text/css">
+/*.mui-table-view{
+	background-color: #eee;
+}*/
+
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+  <a class="mui-icon iconfont mui-pull-right">&#xe609;</a>
+	<div class="mui-title">压力锅的美食城</div>
+</header>
+<div class="su-bar-tab su-buy-box">
+	<a class="box-center su-buy-true" id="su-buy-true">确认下单</a>
+	<span class="su-buy-car" id="buy_end"><i class="iconfont tx-f ft-24">&#xe63d;</i>
+	<!-- 购物车数量显示  class加show　表示显示-->
+		<span id="buyCar-num" data-num="0" class="mall-buy-num su-buy-num">1</span>
+	</span>
+	<span class="mui-tab-item ct-bar bd-r pd-lr-sm mg-r-sm">
+		￥<span id="buyCar-money" data-num="0" >0</span>
+	</span>
+	<span class="mui-tab-item ft-12">优惠￥30
+	</span>
+</div>
+<div class="mui-content su-scroll">
+<div class="su-scroll-title">
+<div id="segmentedControl" class="mui-segmented-control">
+	<a class="mui-control-item mui-active" href="#item1">
+		商品
+	</a>
+	<a class="mui-control-item" href="#item2">
+		评价
+	</a>
+	<a class="mui-control-item" href="#item3">
+		商家
+	</a>
+</div>
+<ul class="mui-table-view">
+	<li class="mui-table-view-cell pd-tb-0 pd-lr-xs">
+		<a class="mui-navigate-right ft-12" style="margin:0;background-color:#fff7d6;">
+  		<i class="iconfont tx-f70 ft-14">&#xe617;</i> 峰哥超市今天全部打2折，欢迎选购峰哥超市今天全部打2折，欢迎选购
+		</a>
+	</li>
+</ul>
+</div>
+<div class="su-scroll-body">
+	<!-- <div id="pullrefresh" class="mui-scroll-wrapper"> -->
+    <!-- <div class="mui-scroll"> -->
+    	<div class="mui-row mui-fullscreen su-buy-select-box">
+				<div class="mui-col-xs-3 pst-r">
+					<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+							<a class="mui-control-item mui-active" href="#content1">超级好吃的东东
+								<!-- 设置id是为了判断加入购物车的时候货物的类型 class加show　表示显示 -->
+								<span class="sel-num" id="cebian_1" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content2">蛋糕类
+								<span class="sel-num" id="cebian_2" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content3">面食类
+								<span class="sel-num" id="cebian_3" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content2">蛋糕类
+								<span class="sel-num" id="cebian_2" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content3">面食类
+								<span class="sel-num" id="cebian_3" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content2">蛋糕类
+								<span class="sel-num" id="cebian_2" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content3">面食类
+								<span class="sel-num" id="cebian_3" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content2">蛋糕类
+								<span class="sel-num" id="cebian_2" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content3">面食类
+								<span class="sel-num" id="cebian_3" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content2">蛋糕类
+								<span class="sel-num" id="cebian_2" data-num="0">0</span>
+							</a>
+							<a class="mui-control-item" href="#content3">面食类
+								<span class="sel-num" id="cebian_3" data-num="0">0</span>
+							</a>
+					</div>
+				</div>
+				<div id="su-buy-control-body" class="mui-col-xs-9" style="">
+					<div id="content1" class="mui-control-content mui-active">
+						<div class="mui-scroll">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<a href="http://www.baidu.com">
+									<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+									<div class="mui-media-body">
+										<div class="mui-ellipsis ft-14">棉花糖</div>
+										<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											</span><b class=" tx-f30">4.2</b>
+											<span>3评论</span>
+											<span>月售265单</span>
+										</p>
+										<div class="mg-tb-sm pst-r pd-t-sm">
+											<!-- type值和侧边的类型id对应 -->
+											<div class="su-buybtn-box flt-r " data-uid="shang_1" data-type="cebian_1" data-money="18">
+												<span class="mui-icon mui-icon-minus su-buy-del"></span>
+												<span class="su-buy-body" data-num="0">0</span>
+												<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+											</div>
+											<div class="overhid tx-f30">
+												<span class="ft-10">￥</span><b>18</b>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="http://www.baidu.com">
+									<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='300'">
+									<div class="mui-media-body">
+										<div class="mui-ellipsis ft-14">幸福甘蔗</div>
+										<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											</span><b class=" tx-f30">4.2</b>
+											<span>3评论</span>
+											<span>月售265单</span>
+										</p>
+										<div class="mg-tb-sm pst-r pd-t-sm">
+											<div class="su-buybtn-box flt-r" data-uid="shang_2" data-type="cebian_1" data-money="20">
+												<span class="mui-icon mui-icon-minus su-buy-del"></span>
+												<span class="su-buy-body" data-num="0">0</span>
+												<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+											</div>
+											<div class="overhid tx-f30">
+												<span class="ft-10">￥</span><b>20</b>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="http://www.baidu.com">
+									<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='800'">
+									<div class="mui-media-body">
+										<div class="mui-ellipsis ft-14">大白兔奶糖</div>
+										<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											</span><b class=" tx-f30">4.2</b>
+											<span>3评论</span>
+											<span>月售265单</span>
+										</p>
+										<div class="mg-tb-sm pst-r pd-t-sm">
+											<div class="su-buybtn-box flt-r" data-uid="shang_3" data-type="cebian_1"  data-money="8">
+												<span class="mui-icon mui-icon-minus su-buy-del"></span>
+												<span class="su-buy-body" data-num="0">0</span>
+												<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+											</div>
+											<div class="overhid tx-f30">
+												<span class="ft-10">￥</span><b>8</b>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="http://www.baidu.com">
+									<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='700'">
+									<div class="mui-media-body">
+										<div class="mui-ellipsis ft-14">美味棒棒娃</div>
+										<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											</span><b class=" tx-f30">4.2</b>
+											<span>3评论</span>
+											<span>月售265单</span>
+										</p>
+										<div class="mg-tb-sm pst-r pd-t-sm">
+											<div class="su-buybtn-box flt-r" data-uid="shang_4" data-type="cebian_1" data-money="28">
+												<span class="mui-icon mui-icon-minus su-buy-del"></span>
+												<span class="su-buy-body" data-num="0">0</span>
+												<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+											</div>
+											<div class="overhid tx-f30">
+												<span class="ft-10">￥</span><b>28</b>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="http://www.baidu.com">
+									<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+									<div class="mui-media-body">
+										<div class="mui-ellipsis ft-14">奥利奥</div>
+										<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star-filled"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											<i class="mui-icon mui-icon-star"></i>
+											</span><b class=" tx-f30">4.2</b>
+											<span>3评论</span>
+											<span>月售265单</span>
+										</p>
+										<div class="mg-tb-sm pst-r pd-t-sm">
+											<div class="su-buybtn-box flt-r" data-uid="shang_5" data-type="cebian_1" data-money="25.4">
+												<span class="mui-icon mui-icon-minus su-buy-del"></span>
+												<span class="su-buy-body" data-num="0">0</span>
+												<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+											</div>
+											<div class="overhid tx-f30">
+												<span class="ft-10">￥</span><b>25.4</b>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+					<div id="content2" class="mui-control-content">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">峰哥蛋烘糕</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_6" data-type="cebian_2" data-money="5.4">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>5.4</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">生日蛋糕</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_7" data-type="cebian_2" data-money="9.7">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>9.7</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">蛋黄派</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_8" data-type="cebian_2" data-money="10">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>10</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">肉松三明治</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_9" data-type="cebian_2" data-money="15.3">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>15.3</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">火腿夹心饼</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_10" data-type="cebian_2" data-money="7.6">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>7.6</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="content3" class="mui-control-content">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">意大利宽面</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_11" data-type="cebian_3" data-money="25.4">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>25.4</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">兰州拉面</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_12" data-type="cebian_3" data-money="13">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>13</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">重庆小面</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_13" data-type="cebian_3" data-money="12">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>12</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">超级炸酱面</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_14" data-type="cebian_3" data-money="15">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>15</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">川北凉粉</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_15" data-type="cebian_3" data-money="20">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>20</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a href="http://www.baidu.com">
+										<img class="mui-media-object mui-pull-left" data-lazyload="../skin/images/tou.png?version='500'">
+										<div class="mui-media-body">
+											<div class="mui-ellipsis ft-14">四川妹子</div>
+											<p class="mui-ellipsis ft-10"><span class="su-ser-score mg-r-sm">
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star-filled"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												<i class="mui-icon mui-icon-star"></i>
+												</span><b class=" tx-f30">4.2</b>
+												<span>3评论</span>
+												<span>月售265单</span>
+											</p>
+											<div class="mg-tb-sm pst-r pd-t-sm">
+												<div class="su-buybtn-box flt-r" data-uid="shang_16" data-type="cebian_3" data-money="20">
+													<span class="mui-icon mui-icon-minus su-buy-del"></span>
+													<span class="su-buy-body" data-num="0">0</span>
+													<span class="mui-icon mui-icon-plus-filled su-buy-add"></span>
+												</div>
+												<div class="overhid tx-f30">
+													<span class="ft-10">￥</span><b>20</b>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+	<!-- </div> -->
+</div>
+</div>
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/mui/js/mui.lazyload.js"></script>
+<script src="../skin/mui/js/mui.lazyload.img.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+
+<script src="../skin/js/public/super.js"></script>
+<script src="../skin/js/public/jquery.fly.min.js"></script>
+<script type="text/javascript">
+
+;(function($){
+var value = [];
+
+	$('.mui-control-content').scroll();
+	
+	$('#su-buy-control-body').on('tap','.mui-table-view-cell a',function(e) {
+    	console.log(jQuery(e.target).hasClass('su-buybtn-box'))
+    	var tar = jQuery(e.target);
+    	if(tar.hasClass('su-buybtn-box') || tar.hasClass('su-buy-add') || tar.hasClass('su-buy-del') || tar.hasClass('su-buy-body')){
+    		return false;
+    	}
+    	alert('链接');
+    	// var self = jQuery(this);
+    	// alert(self.attr('href'))
+    });
+    $('#su-buy-control-body').on('tap','.su-buy-add',function(e) {
+    	var self = jQuery(this),
+					startTop = self.offset().top - jQuery('body').scrollTop(),
+					offset = jQuery('#buy_end').offset(),
+					flyer = jQuery('<span class="u-flyer">1</span>'),
+					endTop = offset.top - jQuery('body').scrollTop();
+			//执行添加方法
+			buyAdd(self,true);
+			flyer.fly({
+			    start: {
+			        left: self.offset().left,
+			        top: startTop
+			    },
+			    end: {
+			        left: offset.left,
+			        top: endTop,
+			        width: 20,
+			        height: 20
+			    },
+			    onEnd:function(){
+		        this.destory();
+			    }
+			});
+    });
+    $('#su-buy-control-body').on('tap','.su-buy-del',function(e) {
+    		var self = jQuery(this);
+    		buyAdd(self,false);
+    });
+
+
+
+	function buyAdd(self,opt){
+		// 购物车的盒子
+		var buyBox = jQuery('#buyCar-num'),
+				dataNum = buyBox.attr('data-num'),
+				moneyBox = jQuery('#buyCar-money'),
+				moneyNum = moneyBox.attr('data-num'),
+
+		// 点击的商品类型		
+				btnBox = self.closest('.su-buybtn-box'),
+				type = btnBox.attr('data-type'),
+				money = btnBox.attr('data-money'),
+				uid = btnBox.attr('data-uid'),
+		// 侧边的分类 盒子
+				typeBox = jQuery('#'+type),
+				typeNum = typeBox.attr('data-num'),
+
+		// 加减按钮中间的数量
+				selBox = self.siblings('.su-buy-body'),
+				selNum = selBox.attr('data-num'),
+				delBox = self.hasClass('su-buy-del') ? self : self.siblings('.su-buy-del'),
+
+				addBuy = function(box,num){
+					!box.is(':hidden') || box.addClass('show');
+					num = !isNaN(parseInt(num)) ? parseInt(num) + 1 :0;
+					box.text(num).attr('data-num',num);
+
+					return num;
+				},
+
+				subBuy = function(box,num){
+					num = !isNaN(parseInt(num)) ? parseInt(num) - 1 :0;
+					box.text(num).attr('data-num',num);
+					num == 0 && box.removeClass('show');
+
+					return num;
+				},
+
+				eachNum = function(id,num,opt){
+					//用关联数组的方式 将对象的键名 用变量改变
+					var aa = id,
+							thisValue = {};
+							thisValue[aa] = num,
+
+							yan = false,
+							inx = 0;
+							thisValue[id] = num;
+					
+					jQuery.each(value,function(index, el) {
+						jQuery.each(el,function(i,item){
+							if(i == id){
+								yan = true;
+								inx = index;
+								return false;
+							}
+						});
+						if(yan){
+							return false
+						}
+					});
+					// console.log(thisValue,yan,inx)
+					if(opt){
+						if(yan){
+							value.splice(inx,1,thisValue);
+						}else{
+							value.push(thisValue)
+						}
+					}else{
+						num != 0 ? value.splice(inx,1,thisValue) : value.splice(inx,1);
+						
+					}
+				}
+		
+
+
+
+		money = !isNaN(Number(money)) ? Number(money):0;
+		moneyNum = !isNaN(Number(moneyNum)) ? Number(moneyNum):0;
+
+		//accAdd 自定义的js 加法 主要用于 小数点计算 
+		
+		if(opt){
+			// 购物车的数量
+			dataNum = addBuy(buyBox,dataNum);
+			// 侧边的分类 购买数量
+			typeNum = addBuy(typeBox,typeNum);
+			// 加减按钮中间的数量
+			selNum = addBuy(selBox,selNum);
+
+			eachNum(uid,selNum,true);
+
+			delBox.hasClass('show') || delBox.addClass('show');
+			selBox.hasClass('show') || selBox.addClass('show');
+			moneyNum = moneyNum.accAdd(money);
+		}else if(selNum > 0){
+			// 购物车的数量
+			dataNum = subBuy(buyBox,dataNum);
+			// 侧边的分类 购买数量
+			typeNum = subBuy(typeBox,typeNum);
+			// 加减按钮中间的数量
+			selNum = subBuy(selBox,selNum);
+
+			eachNum(uid,selNum,false);
+
+			if(selNum == 0){
+				delBox.removeClass('show');
+				selBox.removeClass('show');
+			}
+
+			moneyNum = moneyNum.accSub(money);
+		}
+		console.log(selNum)
+		// jQuery.ajax({
+		// 	url: '/path/to/file',
+		// 	type: 'post',
+		// 	dataType: 'json',
+		// 	data: {id:uid,num:selNum},
+		// 	success:function(){
+		// 	}
+		// });
+		
+		console.log(value)
+		moneyBox.text(moneyNum).attr('data-num',moneyNum);
+
+	}
+
+	$('body').on('tap','#su-buy-true',function(){
+		// jQuery.ajax({
+		// 	url: '/path/to/file',
+		// 	type: 'post',
+		// 	dataType: 'json',
+		// 	data: {value:value},
+		// 	success:function(){
+		// 		下单成功，跳转
+		// 	}
+		// });
+	})
+
+	$('#su-buy-control-body').imageLazyload({
+		placeholder: '../skin/images/42x42.gif'
+	});
+ })(mui);
+</script>
+
+<!--<script src="../skin/mui/js/mui.pullToRefresh.js"></script>
+		<script src="../skin/mui/js/mui.pullToRefresh.material.js"></script>
+		<script>
+			mui.init();
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration
+				});
+				$.ready(function() {
+					//循环初始化所有下拉刷新，上拉加载。
+					$.each(document.querySelectorAll('.mui-control-content .mui-scroll'), function(index, pullRefreshEl) {
+						console.log(pullRefreshEl)
+						$(pullRefreshEl).pullToRefresh({
+							down: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view');
+										ul.insertBefore(createFragment(ul, index, 10, true), ul.firstChild);
+										self.endPullDownToRefresh();
+									}, 2000);
+								}
+							},
+							up: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view');
+										ul.appendChild(createFragment(ul, index, 5));
+										self.endPullUpToRefresh();
+									}, 2000);
+								}
+							}
+						});
+					});
+					var createFragment = function(ul, index, count, reverse) {
+						var length = ul.querySelectorAll('li').length;
+						var fragment = document.createDocumentFragment();
+						var li;
+						for (var i = 0; i < count; i++) {
+							li = document.createElement('li');
+							li.className = 'mui-table-view-cell';
+							li.innerHTML = '第' + (index + 1) + '个选项卡子项-' + (length + (reverse ? (count - i) : (i + 1)));
+							fragment.appendChild(li);
+						}
+						return fragment;
+					};
+				});
+			})(mui);
+		</script>-->
+</html>

@@ -1,0 +1,123 @@
+/*满意调查*/
+.satisf-img{
+	float: left;
+	width: 50px;
+	height: 55px;
+	padding: 5px 0;
+}
+.satisf-people .satisf-img{
+	width: 90px;
+	height: 90px;
+}
+.satisf-img img{
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	
+}
+.satisfied{
+	display: inline-block;
+	width: 100%;
+}
+.satisfied .row{
+	margin: 0;
+}
+.satisfied .satisf-div .biaoti_1{
+	font-size: 18px;
+}
+.satisfied .satisf-div .small_biaoti{
+	font-size: 14px;
+}
+.satisfied li{
+	border-bottom: 1px solid #ccc;
+}
+.satisfied li a{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	color:#000;
+}
+.satisfied li a .satisf-ok{
+	position: absolute;
+	right: 10px;
+	line-height: 55px;
+	color:#999;
+}
+.satisf-cont{
+	float: left;
+	padding: 5px 10px;
+}
+.satisf-cont p{
+	font-size: 1.2em;
+	padding-bottom:0px;
+    text-indent: 0;
+}
+.satisf-cont p b{
+	font-size: 1.4em;
+	font-weight: 600;
+}
+.satisf-cont .right-jian{
+	color:#ccc;
+	margin-top: 1.2em;
+}
+.satisf-people{
+	width: 100%;
+	padding:0 0 10px 10px;
+	display: inline-block;
+}
+.satisfied-cont{
+	display: inline-block;
+	width: 100%;
+}
+.satisfied-cont .satisf-pingjia{
+	width: 100%;
+	padding:10px 4%;
+	background: #ddd;
+	border-bottom: 2px solid #fff;
+}
+.satisf-pingjia .satisf-title{
+	font-size:1.2em;
+	line-height: 1.5em;
+}
+.satisf-pingjia .row{
+	margin: 0;
+}
+
+.choose input,.choose img{
+	float: left;
+	display: inline-block;
+	/*line-height: 1.5em;*/
+}
+.choose input{
+	margin: 10px 10px 0 0;
+}
+.choose img{
+	margin: 8px 0 0;
+}
+.comm-cont p.comm-head {
+    background: none repeat scroll 0 0 #dddddf;
+    border-bottom: 1px solid #cacaca;
+    color: #585657;
+    font-size: 1.2em;
+    line-height: 2em;
+    padding-bottom: 0;
+    text-align: left;
+    text-indent: 1em;
+}
+.comm-cont li {
+    border-bottom: 1px solid #cacaca;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    line-height: 3em;
+    text-indent: 1.5em;
+}
+.defen-cont strong,.comm-cont li strong{
+	color:#0068b7;
+}
+.sa-fenshu span{
+	color:#0068b7;
+	font-size: 30px;
+}

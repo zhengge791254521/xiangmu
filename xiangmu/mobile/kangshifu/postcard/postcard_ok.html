@@ -1,0 +1,261 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link href="../skin/css/public.css" rel="stylesheet" type="text/css">
+    
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="../skin/css/plug/swiper/swiper.min.css" type="text/css"/> -->
+	<!-- <link rel="stylesheet" href="../skin/css/plug/jcrop/jquery.Jcrop.min.css" type="text/css"/> -->
+
+    <link href="../skin/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../skin/css/postcard.css" rel="stylesheet" type="text/css">
+	<title>弘金金融微信管理平台</title>
+</head>
+
+</head>  
+<body style="background:#fff;">
+<div class="postcard-make-box">
+<div class="postcard-top">
+	<a href="" class="prev-btn"><img src="../skin/images/prev.png" class="img-responsive" alt="" /></a>
+	<a class="make-true  pull-right" id="make-true"><img src="../skin/images/make.png" class="img-responsive"></a>
+</div>
+<div class="postcard-ok" id="postcard-ok">
+    <div class="pc-left">
+        <div class="card-upload-box-ok">
+            <img src="../skin/images/photoframe.png" alt="" class="img-responsive card-img photo-xk" />
+            
+            <div class="card-div">
+                <img class="card-photo upload-img" src="../skin/images/1111.jpg" alt="" />
+            </div>
+            <img class="card-pf img-responsive photo-xk" src="../skin/images/photoframe/pf9.png" alt="" />
+        </div>
+    </div>
+    <div class="pc-right">
+        <div class="pc-youbian-box  pc-pop">
+            <div class="pc-youbian" data-type="pc-pop-cont">
+                <div class="youbian-num pc-text" id="pc-youbian" data-value="610000">
+                    <span>6</span>
+                    <span>1</span>
+                    <span>0</span>
+                    <span>0</span>
+                    <span>0</span>
+                    <span>0</span>   
+                </div>
+                <div class="pc-contentinfo">
+                    <div class="res-pad pc-text" id="pc-senduser" style="width:50%">郑哥哥</div>
+                    <div class="res-pad"></div>
+                    <div class="res-pad"></div>
+                    <div class="pc-ress"></div>
+                    <div class="pc-ress"></div>
+                    <div class="youpiao-address">
+                    	<div class="youpiao"><img src="../skin/images/youpiao.png" alt="" /></div>
+                    	<p id="pc-cont" class="pc-text">地方哈撒剪发卡减肥后开始东方航空减肥撒谎个咖啡豆和公开发第三个答复和可减肥会更健康的</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="pc-address">
+            	<div class="noodles-logo">
+            		<img src="../skin/images/ksf.png" class="img-responsive">
+            	</div>
+            	<div class="pc-addressinfo" data-type="pc-pop-address">
+            		<div class="pc-ress"></div>
+                <div class="pc-ress"></div>
+                <div class="pc-ress"></div>
+                <div id="pc-oneself" style="margin-left:35%;" class="res-pad pc-text">郑哥哥</div>
+                <p id="pc-address" class="pc-text">地方哈撒剪发卡减肥后开始东方航空减肥撒谎个咖啡豆和公开发第三个答复和可减肥会更健康的</p>
+            	</div>
+            </div>
+        </div>
+        <!-- <img src="../skin/images/pc-right.png" alt="" class="img-responsive" />
+        <div class="pc-right-content">
+            <p>地方哈撒剪发卡减肥后开始东方航空减肥撒谎个咖啡豆和公开发第三个答复和可减肥会更健康的</p>
+        </div> -->
+    </div>
+</div>
+<div class="pull-right">
+	<img id="wxShare" style="width:100px; margin-top:10px;" class="" src="../skin/images/9_12.png" alt="" class="img-responsive" />
+</div>
+</div>
+
+<img src="" alt="" id="down_button" />
+<div class="pop-box" id="pop">
+	<div class="pop-mask"></div>
+	<div class="pop-pc-box">
+		<form class="form-horizontal">
+			<div class="form-group text-right">
+				<button type="button" class="btn pc-close">关闭</button>
+				<button type="button" class="btn pc-save">输入确认</button>
+			</div>
+			<div class="box-form-pc">
+			  	<div class="form-pc-box pc-pop-cont" id="pc-pop-cont">
+			  	<div class="form-group">
+				      <input type="text" class="form-control" data-id="pc-youbian" name="youbian" placeholder="记得6位邮政编码哦" value="" maxlength="6" required>
+				  </div>
+				  <div class="form-group">
+				      <input type="text" class="form-control" data-id="pc-senduser" name="senduser" placeholder="对谁发送呢" required>
+				  </div>
+				  <div class="form-group">
+				      <textarea class="form-control" rows="3" data-id="pc-cont" name="zhufu" placeholder="输入你的美好祝福，请不要超过70字" maxlength="70" required></textarea>
+				  </div>
+			  </div>
+			  <div class="form-pc-box pc-pop-address" id="pc-pop-address">
+				  <div class="form-group">
+				    <textarea class="form-control" data-id="pc-address" name="address" placeholder="对方的地址在哪里？不超过40字哦" maxlength="40" required></textarea>
+				  </div>
+				  <div class="form-group">
+				    <input type="text" class="form-control" data-id="pc-oneself" name="oneself" placeholder="签署您的大名" required>
+				  </div>
+			  </div>
+			  <input type="hidden" id="cardSrc" name="cardSrc" value="" />
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+
+<!-- <script src="../skin/js/plug/jcrop/jquery.Jcrop.min.js"></script> -->
+<script src="../skin/js/plug/html2canvas/html2canvas.min.js"></script>
+
+<script type="text/javascript">
+window.onload = function(){
+	function imageModify(img){
+    var imgWidth = img.width();
+    var imgHeight = img.height();
+    $('.photo-xk').width(imgWidth+10);
+    $('.photo-xk').height(imgHeight+10);
+    var okheight = $('.postcard-ok').height();
+    if(imgHeight<okheight){
+    	$('.card-upload-box-ok').css({marginTop:(okheight-imgHeight)/2});
+    }
+}
+imageModify($('.upload-img'));
+}
+
+$('#make-true').click(function(){
+	var vali_true = true;
+	$('.form-horizontal').find('.form-control').each(function(index, el) {
+		if($(this).val() == ''){
+			alert('先完善信息才能制作哦');
+			vali_true =false;
+			return false;
+		}
+	});
+	if(vali_true){
+		make_card();
+		// alert($('#cardSrc').val())
+		// $('.form-horizontal').submit();
+	}
+	
+});
+//关闭弹出框，因为是取消所以如果有写入就恢复之前的
+$('.pc-close').click(function(event) {
+	var uid = $('.form-pc-box:visible').attr('id');
+	createValue($('[data-type="'+uid+'"]'));
+	$('.pop-box').fadeOut();
+	// $('.form-pc-box').hide();
+});
+$('.pc-pop').click(function(event) {
+	// var type = $(this).attr('data-type');
+	$('.pop-box').fadeIn();
+	// $('.pop-box').find('#'+type).show().siblings('.form-pc-box').hide();
+
+	createValue($(this));
+});
+
+function make_card(){
+	html2canvas( $("#postcard-ok") ,{  		
+		onrendered: function(canvas){
+			$('#down_button').attr('src',canvas.toDataURL());
+			$('#cardSrc').val(canvas.toDataURL());
+		}
+	});
+}
+
+
+
+$('.pc-save').click(function(){
+	var valida = true;
+	$('.form-pc-box:visible').find('[required]').each(function(index, el) {
+		if(!requiredInput($(this))){
+			alert('记得明信片信息要填写完哦!');
+			$(this).focus();
+			valida = false;
+			return false;
+		}
+		if($(this).attr('name') == 'youbian'){
+			if(!is_postcode($(this).val())){
+				valida = false;
+				alert('输入正确邮编哦');
+			}
+		}
+	});
+
+	if(valida){
+			pop_cont();
+	}
+
+});
+//将页面上的数据 放到弹出框里面
+function createValue(self){
+	self.find('.pc-text').each(function(index, el) {
+		var pid = $(this).attr('id');
+		var value = $(this).text();
+		if(pid == 'pc-youbian'){
+			value = $(this).attr('data-value');
+		}
+		$('.pop-pc-box').find('[data-id="'+pid+'"]').val(value)
+
+	});
+}
+//将弹出框中写入的值放到页面上
+function pop_cont(){
+	$('.form-pc-box:visible').find('.form-control').each(function(index, el) {
+		var pid = $(this).attr('data-id');
+		var value = $(this).val();
+		if(pid == 'pc-youbian'){
+			$('#'+pid).attr('data-value',value);
+			var span = '';
+			$.each(value.split(""),function(index, el) {
+				span+='<span>'+el+'</span>';
+			});
+			$('#'+pid).html(span);
+			return;
+		}
+		$('#'+pid).text(value);
+		$('.pop-box').fadeOut();
+	});
+}
+function requiredInput(self){
+	if(self.val()==''){
+		return false;
+	}
+	return true;
+}
+function is_postcode(postcode) {  
+    if ( postcode == "") {  
+        return false;  
+    } else {  
+        if (! /^[0-9][0-9]{5}$/.test(postcode)) {  
+            return false;  
+        }  
+    }  
+    return true;  
+}  
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,17 @@
+*{
+	font-family: "微软雅黑";
+	background: #FFFFFF;
+}
+.yutop{
+	background:#cc0033;
+	border: none;
+	box-shadow: none;
+}
+.yutop h1{
+	color: #FFFFFF !important;
+	background: #cc0033;
+}
+.yutop a{
+	color: #FFFFFF !important;
+	background: #cc0033;
+}

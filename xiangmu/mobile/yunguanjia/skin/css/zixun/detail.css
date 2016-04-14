@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*咨询中心的详情页面 */
+
+.word{
+	/*margin-top:20px;*/
+	letter-spacing:0.1em;
+	border-bottom:1px solid #ddddde;
+	padding:15px 0;
+	}
+.word1{
+	font-size:24px;
+	line-height:48px;
+	color:#000000;
+	}
+.word2{
+	color:#707f87;
+	font-size:12px;
+	line-height:24px;
+	/*margin-top:5px;*/
+	}
+.pic{
+	margin-top:15px;}
+.main{
+	text-indent:2em;
+	font-size:14px;
+	line-height:26px;
+	margin-top:10px;
+	color:#000000;
+	
+	}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>爱尚生活</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/user/user.css" />
+</head>
+<style type="text/css">
+.mui-slider{
+	/*height: 200px;*/
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">搜索</div>
+</header>
+<div class="mui-content su-scroll">
+<div class="su-scroll-title">
+<div class="su-search-box pd-tb-5">
+	<button class="mui-icon mui-icon-search flt-r bd-0 mg-r-10" id="search_btn"></button>
+	<div class="overhid su-sear-body">
+		<div class="mui-input-row mui-search">
+			<input type="search" class="mui-input-clear" id="search_input" placeholder="请输入要搜索的地址" >
+		</div>
+	</div>
+</div>
+</div>
+<div class="su-scroll-body" id="search_box">
+<div class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell text-ct"><i class="mui-spinner"></i></li>
+		<li class="mui-table-view-cell text-ct"><span class="mui-icon mui-icon-info"></span>没有匹配的地方哦</li>
+		<li class="mui-table-view-cell">
+		<a>
+			<span class="flt-r ft-14 tx-9">2.5KM</span>
+			<div class="overhid">
+				南城都汇小吃店
+			</div>
+			<p>高新区天益街理想中心2栋1212</p>
+		</a>
+		</li>
+		<li class="mui-table-view-cell">
+		<a>
+			<span class="flt-r ft-14 tx-9">2.5KM</span>
+			<div class="overhid">
+				南城都汇小吃店
+			</div>
+			<p>高新区天益街理想中心2栋1212</p>
+		</a>
+		</li>
+	</ul>
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+
+<script type="text/javascript">
+;(function($){
+	$('.mui-scroll-wrapper').scroll();
+ })(mui);
+</script>
+</html>

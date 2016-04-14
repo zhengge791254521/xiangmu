@@ -1,0 +1,128 @@
+/*个人中心*/
+.personal-photo{
+	padding-bottom: 15px;
+	overflow:hidden;
+	margin-top:-1px;
+	border-bottom:#c9cacb 1px solid;
+}
+.per-photo-name,.per-photo-cont{
+	font-weight: bold;
+	text-align: center;
+}
+.per-photo-name h3,.per-photo-cont h4{
+	line-height: 1.5em;
+	color:#FFF;
+}
+.personal-content .persona-li,.txl-content .persona-li{
+	width: 100%;
+	padding: 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #c9cacb;
+}
+.personal-content .persona-li a{
+	width: 100%;
+	border-radius:0;
+	border:0;
+	position: relative;
+}
+.text{
+	display: inline-block;
+	float: left;
+	font-size:1.2em;
+	line-height: 1.8em;
+	margin-top:0.5em;
+}
+.personal-content .persona-li>a i{
+	position: absolute;
+	color:#c8c8c8;
+	right:5%;
+	font-size:1.2em;
+	padding: 0;
+	line-height: 2.4em;		
+}
+
+.txl-content .persona-li{
+	padding-left: 5%;
+	font-size:1.4em;
+	line-height: 2.6em;
+	position: relative;
+}
+.txl-content .persona-li>a{
+	position: absolute;
+	color:#c8c8c8;
+	right:5%;
+	padding: 5px 0 0;
+	color: #00a1e9;
+}
+.txl-content .persona-li .switch{
+	display: inline-block;
+	position: absolute;
+	right:3%;
+}
+.txl-content .persona-li .switch span{
+	padding:5px;
+	font-size: 12px;
+	width: 30px;
+}
+@media (max-width: 768px) {
+.per-photo-img{
+	width:96px;
+	height:96px;
+	border-radius:50%;
+	border:2px solid #FFF;
+	margin:10px auto;	
+	overflow:hidden;
+	text-align:center;
+}
+#imgShow{
+	width:110px;
+}
+}
+@media (min-width: 768px) {
+.per-photo-img{
+	width:126px;
+	height:126px;
+	border-radius:50%;
+	border:2px solid #FFF;
+	margin:10px auto;	
+	overflow:hidden;
+	text-align:center;
+}
+#imgShow{
+	width:180px;
+}
+}
+#up_img{
+	margin-top:10px;	
+}
+#tip{
+	color:#999;
+	font-size:0.9em;	
+}
+h5{
+	color:#000;
+	font-family:"微软雅黑";	
+	font-weight:600;
+	padding:20px 0;
+}
+.btn_up{
+	width:100%;	
+	background-color:#00a0e9;
+	border:0 none;
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-size:18px;
+	font-weight:200;
+}
+.btn_up:hover{
+	background-color:#008ac9;
+	color:#FFF;
+}
+.btn_up_box{
+	margin-top:70px;
+	width:100%;
+}
+.xiaoxiao{
+	width:100%;	
+	}
+

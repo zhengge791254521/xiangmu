@@ -1,0 +1,59 @@
+.oa-ry-list-tb thead{
+	background-color: #ebfaff;
+}
+.oa-ry-list-tb i{
+	font-size: 20px;
+}
+.oa-ry-list-tb img{
+	width:40px;
+	height: 40px;
+}
+.oa-ry-list-tb td{
+	vertical-align: middle!important;
+}
+.oa-ry-list-tb .ry-list-editor{
+	/*color:#f37b1d;*/
+	/*box-shadow: 1px 1px 1px #3bb4f2;*/
+}
+.oa-ry-list-tb .ry-list-delete{
+	/*color:#5eb95e;*/
+	/*box-shadow: 1px 1px 1px rgba(0,0,0,0.2);*/
+}
+.ry-list-search{
+	width: 50%;
+	float: right;
+}
+.ry-tb-address-box{
+	padding-right: 30px;
+	position: relative;	
+}
+.letter-title{
+	background-color: #ebfaff;
+	text-align: left!important;
+	padding: 5px 20px;
+}
+.ry-tb-address-az{
+	position: absolute;
+	top:0;
+	right: 0;
+	background-color: #ebfaff;
+	width: 30px;
+	padding: 0 5px;
+	height: 100%;
+	text-align: center;
+}
+.ry-tb-address-az li{
+	margin-top: 5px;
+	font-weight: 400;
+	color:#999;
+}
+.ry-tb-address-az li.user-sel{
+	cursor: pointer;
+	color:#333;
+}
+.ry-tb-address-az li.user-sel:hover{
+	font-weight: 700;
+}
+.oa-sel-all+span{
+	font-weight: 500;
+}

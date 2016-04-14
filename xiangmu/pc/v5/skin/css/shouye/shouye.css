@@ -1,0 +1,62 @@
+.clear{
+	clear: both;
+}
+
+
+.oa-pl .oa-pl-1{
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	background: red;
+	line-height: 70px;
+	float: left;
+}
+.oa-pl .oa-pl-2{
+	width: 500px;
+	height: 50px;
+	border-radius: 80px;
+	background: rgba(221,221,221,0.6);
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 50px;
+	margin-top: 10px;
+	float: left;
+}
+.oa-pl img{
+	width: 72px;
+	height: 72px;
+	border-radius: 70px;
+	line-height: 70px;
+}
+.oa-1{
+	overflow: hidden;
+	height: 100%;
+}
+
+
+
+.oa-2{
+	float: right;
+	overflow: hidden;
+	height: 100%;
+	margin: 10px auto 0;
+}
+.myscroll{
+	height: 270px;
+	overflow: hidden;
+}
+.myscroll li {
+    height: 72px;
+}
+.oa-lianxi{
+	background: rgba(0, 0, 0, 0) url("../../images/7.jpg") repeat fixed 0 0;
+    border: medium none;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 0;
+    text-align: center;
+    width: 100%;
+}
+.oa-pl-2 p{
+	color: white;
+}

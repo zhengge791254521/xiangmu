@@ -1,0 +1,204 @@
+<!-- 红包 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>三级分销</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../skin/fonts/style.css"/>
+	
+	<link rel="stylesheet" href="../skin/css/public.css" />
+	<link rel="stylesheet" href="../skin/css/style.css" />
+</head>
+<style type="text/css">
+.use{
+	position: absolute;
+	top: 50%;
+	right:10px;
+	margin-top: -25px;
+	background: #01A7EB;
+	color: #FFFFFF;
+	border: none;
+}
+.hbjine{
+	position: absolute;
+	top: 50%;
+	left: 38px;
+	margin-top: -20px;
+	color: #FFCC00;
+}
+.hbjine1{
+	position: absolute;
+	top: 50%;
+	left: 45px;
+	margin-top: -2px;
+	color: #FFCC00;
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+  <!--<a class="mui-icon mui-icon-plusempty mui-pull-right"></a>-->
+	<div class="mui-title">我的红包</div>
+</header>
+<div class="mui-content su-scroll">
+<div class="su-scroll-body">
+	<div id="pullrefresh" class="mui-scroll-wrapper">
+    <div class="mui-scroll">
+    	<div class="su-scr-group su-service-group" id="su-scr-group">
+    		<ul class="mui-table-view mg-t-5">
+				 	<li class="mui-table-view-cell pst-r">
+							<img src="../skin/images/order/redbag.png" class="img-80 flt-l mg-r-10" alt="">
+								<span class="hbjine ft-18">2000</span><p class="hbjine1 ft-18">￥</p>
+							<div class="overhid">
+								<div>
+									<div class="mui-ellipsis-2">大转盘红包</div>
+								</div>
+								<div class="mui-ellipsis tx-9 mg-t-15">有效期:不限</div>
+								<div class="mui-ellipsis">
+									<button type="button" class="mui-btn use pd-15">使用</button>
+								</div>
+							</div>
+				 	</li>
+				 	<li class="mui-table-view-cell pst-r">
+							<img src="../skin/images/order/redbag.png" class="img-80 flt-l mg-r-10" alt="">
+								<span class="hbjine ft-18">2000</span><p class="hbjine1 ft-18">￥</p>
+							<div class="overhid">
+								<div>
+									<div class="mui-ellipsis-2">大转盘红包</div>
+								</div>
+								<div class="mui-ellipsis tx-9 mg-t-15">有效期:不限</div>
+								<div class="mui-ellipsis">
+									<button type="button" class="mui-btn use pd-15">使用</button>
+								</div>
+							</div>
+				 	</li>
+				 	<li class="mui-table-view-cell pst-r">
+							<img src="../skin/images/order/redbag.png" class="img-80 flt-l mg-r-10" alt="">
+								<span class="hbjine ft-18">2000</span><p class="hbjine1 ft-18">￥</p>
+							<div class="overhid">
+								<div>
+									<div class="mui-ellipsis-2">大转盘红包</div>
+								</div>
+								<div class="mui-ellipsis tx-9 mg-t-15">有效期:不限</div>
+								<div class="mui-ellipsis">
+									<button type="button" class="mui-btn use pd-15">使用</button>
+								</div>
+							</div>
+				 	</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+<script type="text/javascript">
+;(function($){
+	var listBox = jQuery('#su-scr-group');
+    $.init({
+        pullRefresh: {
+            container: '#pullrefresh',
+//          down: {
+//              callback: pulldownRefresh
+//          }
+        }
+    });
+    /**
+		 * 下拉刷新具体业务实现
+		 */
+		function pulldownRefresh() {
+			if(listBox.hasClass('no-scroll')){
+        mui('#pullrefresh').pullRefresh().endPulldownToRefresh(false);
+        return;
+      }
+			setTimeout(function() {
+				mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+          		var table = document.body.querySelector('.su-scr-group');
+          		var cells = document.body.querySelectorAll('.su-scr-list');
+				 
+				 for (var i = cells.length, len = i+1; i < len; i++) {
+				 	var li = document.createElement('li');
+				 	li.className = 'mui-table-view-cell';
+				 	li.innerHTML =
+				 	'<li class="mui-table-view-cell pst-r">'+
+						'<a href="#">'+
+							'<img src="../skin/images/order/redbag.png" class="img-80 flt-l mg-r-10" alt="">'+
+								'<span class="hbjine ft-18">2000</span><p class="hbjine1 ft-18">￥</p>'+
+							'<div class="overhid">'+
+								'<div>'+
+									'<div class="mui-ellipsis-2">大转盘红包</div>'+
+								'</div>'+
+								'<div class="mui-ellipsis tx-9 mg-t-15">有效期:不限</div>'+
+								'<div class="mui-ellipsis">'+
+									'<button type="button" class="mui-btn use pd-15">使用</button>'+
+								'</div>'+
+							'</div>'+
+						'</a>'+
+				 	'</li>';
+				 	//下拉刷新，新纪录插到最前面；
+				 	table.insertBefore(li, table.lastChild);
+				 }
+				mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+			}, 1500);
+		}
+		var count = 0;
+		/**
+		 * 上拉加载具体业务实现
+		 */
+    function pullupRefresh(){
+        // console.log(2);
+        if(listBox.hasClass('no-scroll')){
+            mui('#pullrefresh').pullRefresh().endPullupToRefresh(false);
+            return;
+        }
+
+        setTimeout(function() {
+
+//          mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+//          var table = document.body.querySelector('.su-scr-group');
+//          var cells = document.body.querySelectorAll('.su-scr-list');
+//          for (var i = cells.length, len = i + 3; i < len; i++) {
+//              var li = document.createElement('li');
+//              li.className = 'su-scr-list';
+//              li.innerHTML = '<ul class="mui-table-view mui-grid-view mui-grid-9 su-goods-body"><li class="mui-table-view-cell mui-col-xs-6">'+
+//              							'			<a href="#">'+
+//              							'				<img src="../skin/images/gds03.jpg" class="gds-bg" alt="">'+
+//														  '        <div class="su-gds-msg">'+
+//														  '        	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>'+
+//														  '        	<div class="tx-f30 mg-t-xs">'+
+//														  '        		<b class="mn">￥10.40</b>'+
+//														  '        		<span class="hot">HOT</span>'+
+//														  '        	</div></div>'+
+//													    '      </a>'+
+//													    '    </li>'+
+//													    '    <li class="mui-table-view-cell mui-col-xs-6">'+
+//													    '      <a href="#">'+
+//													    '      	<img src="../skin/images/gds04.jpg" class="gds-bg" alt="">'+
+//														  '        <div class="su-gds-msg">'+
+//														  '       	<div class="mui-ellipsis-2">情人节巧克力，好吃，香脆，情侣最佳食品,情人节巧克力，好吃，香脆，情侣最佳食品</div>'+
+//														  '        	<div class="tx-f30 mg-t-xs">'+
+//														  '        		<b class="mn">￥10.40</b>'+
+//														  '        		<span class="hot">HOT</span>'+
+//														  '        	</div>'+
+//														  '        </div>'+
+//													    '      </a>'+
+//													    '    </li>'+
+//													    '  </ul>';
+//              table.appendChild(li);
+            //}
+        }, 1500);
+    }
+
+//  $('body').on('tap','.fuwu-btn',function(e) {
+//  		alert(5)
+//  });
+ })(mui);
+</script>
+</html>
+

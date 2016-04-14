@@ -1,0 +1,160 @@
+<!-- 订单列表 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>三级分销</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+</head>
+<style type="text/css">
+.mui-table-view{
+	background-color: #eee;
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">订单管理</div>
+</header>
+
+<div class="mui-content su-scroll">
+<div id="segmentedControl" class="mui-segmented-control a-href">
+	<a class="mui-control-item mui-active" href="order_list.html">
+		待处理
+	</a>
+	<a class="mui-control-item" href="order_list_1.html">
+		配送中
+	</a>
+	<a class="mui-control-item" href="order_list_2.html">
+		已完成
+	</a>
+	<a class="mui-control-item" href="order_list_3.html">
+		已评价
+	</a>
+</div>
+
+<div class="su-scroll-body">
+	<div id="pullrefresh" class="mui-scroll-wrapper">
+    <div class="mui-scroll">
+    	<div class="mui-table-view su-scr-group su-service-group a-href" id="su-scr-group">
+				<div class="mg-t-5 bg-f bd-b pd-10">
+					<a href="order_detail.html">
+					<div class="ft-14">
+						<span class="mg-r-10 tx-6">订单编号:</span>
+						<span class="tx-3">786546545654546</span>
+						<span class="ft-16 flt-r mui-icon mui-icon-arrowright"></span>
+					</div>
+					<div class="pd-t-5" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3;">
+						<div class="overhid ft-14">
+							<div class="mui-ellipsis"><span class="tx-9">下单时间：</span>2015-11-20 11:20 
+							<span class="tx-9 flt-r tx-blue">在线支付</span></div>
+							<div class="mui-ellipsis"><span class="tx-9">下单人：</span><span class="mg-r-5">安某某</span>15196615841</div>
+							<div class="mui-ellipsis"><span class="tx-9">联系电话：</span>13556565656</div>
+							<div><span class="tx-9">地址:</span>四川省成都市理想中心2栋12楼1212号</div>
+						</div>
+					</div>
+					</a>
+					<div class="text-right pd-t-5">
+						<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-5 mg-r-15">接单</button>
+						<span class="ft-16 flt-r fw-6 tx-3 mg-t-5">合计:
+							<span class="tx-f30 mg-r-5">￥25.00</span>
+						</span>
+					</div>
+				</div>
+				
+				<div class="mg-t-5 bg-f bd-b pd-10">
+					<a href="order_detail.html">
+					<div class="ft-14">
+						<span class="mg-r-10 tx-6">订单编号:</span>
+						<span class="tx-3">786546545654546</span>
+						<span class="ft-16 flt-r mui-icon mui-icon-arrowright"></span>
+					</div>
+					<div class="pd-t-5" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3;">
+						<div class="overhid ft-14">
+							<div class="mui-ellipsis"><span class="tx-9">下单时间：</span>2015-11-20 11:20 
+							<span class="tx-9 flt-r tx-blue">在线支付</span></div>
+							<div class="mui-ellipsis"><span class="tx-9">下单人：</span><span class="mg-r-5">安某某</span>15196615841</div>
+							<div class="mui-ellipsis"><span class="tx-9">联系电话：</span>13556565656</div>
+							<div><span class="tx-9">地址:</span>四川省成都市理想中心2栋12楼1212号</div>
+						</div>
+					</div>
+					</a>
+					<div class="text-right pd-t-5">
+						<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-5 mg-r-15">接单</button>
+						<span class="ft-16 flt-r fw-6 tx-3 mg-t-5">合计:
+							<span class="tx-f30 mg-r-5">￥25.00</span>
+						</span>
+					</div>
+				</div>
+				
+				<div class="mg-t-5 bg-f bd-b pd-10">
+					<a href="order_detail.html">
+					<div class="ft-14">
+						<span class="mg-r-10 tx-6">订单编号:</span>
+						<span class="tx-3">786546545654546</span>
+						<span class="ft-16 flt-r mui-icon mui-icon-arrowright"></span>
+					</div>
+					<div class="pd-t-5" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3;">
+						<div class="overhid ft-14">
+							<div class="mui-ellipsis"><span class="tx-9">下单时间：</span>2015-11-20 11:20 
+							<span class="tx-9 flt-r tx-blue">在线支付</span></div>
+							<div class="mui-ellipsis"><span class="tx-9">下单人：</span><span class="mg-r-5">安某某</span>15196615841</div>
+							<div class="mui-ellipsis"><span class="tx-9">联系电话：</span>13556565656</div>
+							<div><span class="tx-9">地址:</span>四川省成都市理想中心2栋12楼1212号</div>
+						</div>
+					</div>
+					</a>
+					<div class="text-right pd-t-5">
+						<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-5 mg-r-15">接单</button>
+						<span class="ft-16 flt-r fw-6 tx-3 mg-t-5">合计:
+							<span class="tx-f30 mg-r-5">￥25.00</span>
+						</span>
+					</div>
+				</div>
+				<div class="mg-t-5 bg-f bd-b pd-10">
+					<a href="order_detail.html">
+					<div class="ft-14">
+						<span class="mg-r-10 tx-6">订单编号:</span>
+						<span class="tx-3">786546545654546</span>
+						<span class="ft-16 flt-r mui-icon mui-icon-arrowright"></span>
+					</div>
+					<div class="pd-t-5" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3;">
+						<div class="overhid ft-14">
+							<div class="mui-ellipsis"><span class="tx-9">下单时间：</span>2015-11-20 11:20 
+							<span class="tx-9 flt-r tx-blue">在线支付</span></div>
+							<div class="mui-ellipsis"><span class="tx-9">下单人：</span><span class="mg-r-5">安某某</span>15196615841</div>
+							<div class="mui-ellipsis"><span class="tx-9">联系电话：</span>13556565656</div>
+							<div><span class="tx-9">地址:</span>四川省成都市理想中心2栋12楼1212号</div>
+						</div>
+					</div>
+					</a>
+					<div class="text-right pd-t-5">
+						<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-5 mg-r-15">接单</button>
+						<span class="ft-16 flt-r fw-6 tx-3 mg-t-5">合计:
+							<span class="tx-f30 mg-r-5">￥25.00</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+<script type="text/javascript">
+;(function($){
+	$('#pullrefresh').scroll();
+ })(mui);
+</script>
+</html>
+

@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>三思德OA管理系统</title>
+<link rel="stylesheet" href="../../skin/css/public/amazeui.min.css">
+<link rel="stylesheet" href="../../skin/Font-Awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../skin/icon/iconfont.css">
+<link rel="stylesheet" href="../../skin/css/public/public.css">
+<link rel="stylesheet" href="../../skin/css/public/style.css">
+<link rel="stylesheet" href="../../skin/css/yonghu/yonghu_style.css">
+<link rel="stylesheet" href="../../skin/css/yonghu/buy/oa_buy.css">
+<style type="text/css">
+</style>
+</head>
+
+<body ontouchstart>
+<!-- class命名 带有oa前缀的皆为自定义 其余都是 UI组件样式 -->
+<!-- 头部start -->
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top">
+  <div class="oa-middle-div">
+    <div class="am-topbar-brand">
+      <a href="#"><img src="../../skin/images/logo-dibu.png" alt=""></a>
+    </div>
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+      <div class="am-topbar-right">
+        <!-- 未登录 -->
+        <button class="am-btn am-btn-primary am-radius oa-login">登录</button>
+        <button class="am-btn am-btn-primary am-radius oa-login">注册</button>
+      </div>
+      <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right">
+        <li class="am-active">
+          <a href="#">首 页</a>
+        </li>
+        <li><a href="#">产品中心</a>
+        </li>
+        <li><a href="#">新闻中心</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">个人中心</a>
+          <ul class="oa-munu-pop">
+            <li>
+              <div class="munu-u-box">
+                <img src="../../skin/images/tou.png" alt="" />
+                <div class="">
+                  <p>zhenggge791254521</p>
+                  <span class="munu-u"><a href="">个人账户</a></span>
+                  <!-- <span class="munu-m"><a href="">消息</a><b class="am-badge am-badge-warning am-round">5</b></span> -->
+                </div>
+              </div>
+              <div class="am-g munu-exit">
+                <a class="am-u-sm-6" href="#">我的订单</a>
+                <a class='am-u-sm-6 ao-exit' href=""> 安全退出</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="user-container">
+  <div class="oa-middle-div user-cont-box am-cf">
+    <!-- 左侧侧边栏 -->
+    <div class="user-sidebar">
+      <div data-am-widget="accordion" class="am-accordion am-accordion-gapped" data-am-accordion='{  }'>
+        <dl class="am-accordion-item">
+          <dt class="am-accordion-title user-sidebar-title">
+          <i class="iconfont">&#xe620;</i>用户中心
+        </dt>
+          <dd class="am-accordion-bd am-collapse">
+            <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+            <div class="am-accordion-content">
+              <div class="user-sidebar-group">
+                <a class="user-sidebar-list">功能模块安装</a>
+                <a class="user-sidebar-list active">功能模块卸载</a>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        <dl class="am-accordion-item">
+          <dt class="am-accordion-title user-sidebar-title">
+          <i class="iconfont">&#xe651;</i>绑定资料
+        </dt>
+          <dd class="am-accordion-bd am-collapse ">
+            <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+            <div class="am-accordion-content">
+              <div class="user-sidebar-group">
+                <a class="user-sidebar-list">功能模块安装</a>
+                <a class="user-sidebar-list">功能模块卸载</a>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        <dl class="am-accordion-item am-active">
+          <dt class="am-accordion-title user-sidebar-title">
+          <i class="iconfont">&#xe657;</i>产品购买
+        </dt>
+          <dd class="am-accordion-bd am-collapse am-in">
+            <div class="am-accordion-content">
+              <div class="user-sidebar-group">
+                <a class="user-sidebar-list active">购买PC端权限</a>
+                <a class="user-sidebar-list">购买企业号套餐</a>
+                <a class="user-sidebar-list">购买短信条数</a>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        <dl class="am-accordion-item">
+          <dt class="am-accordion-title user-sidebar-title">
+          <i class="iconfont">&#xe632;</i>人员管理
+        </dt>
+          <dd class="am-accordion-bd am-collapse ">
+            <div class="am-accordion-content">
+              <div class="user-sidebar-group">
+                <a class="user-sidebar-list">企业管理员</a>
+                <a class="user-sidebar-list active">通讯录</a>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        <dl class="am-accordion-item">
+          <dt class="am-accordion-title user-sidebar-title">
+          <i class="iconfont">&#xe63d;</i>功能模块
+        </dt>
+          <dd class="am-accordion-bd am-collapse ">
+            <div class="am-accordion-content">
+              <div class="user-sidebar-group">
+                <a class="user-sidebar-list active">功能模块安装</a>
+                <a class="user-sidebar-list">功能模块卸载</a>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        <dl class="am-accordion-item">
+          <dt class="am-accordion-title user-sidebar-title">
+          <i class="iconfont">&#xe656;</i>财务管理
+          </dt>
+          <dd class="am-accordion-bd am-collapse ">
+            <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+            <div class="am-accordion-content">
+              <div class="user-sidebar-group">
+                <a class="user-sidebar-list active">功能模块安装</a>
+                <a class="user-sidebar-list">功能模块卸载</a>
+              </div>
+            </div>
+          </dd>
+        </dl>
+      </div>
+
+    </div>
+
+    <!-- 右边内容区域 -->
+    <div class="user-content"> 
+      <div class="oa-panel">
+        <div class="oa-panel-hd">
+          <i class="iconfont">&#xe654;</i> 充值中心
+        </div>
+        <div class="oa-panel-bd">
+          <div class="oa-selectbuy-box oa-border-stretch">
+          	<div class="oa-process am-cf">
+          		<div class="am-u-sm-4 oa-proc-list active">
+          			<div class="oa-proc-num">
+          				<span>1</span>
+          			</div>
+          			<p>填写充值信息</p>
+          		</div>
+          		<div class="am-u-sm-4 oa-proc-list">
+          			<div class="oa-proc-num">
+          				<span>2</span>
+          			</div>
+          			<p>支付</p>
+          		</div>
+          		<div class="am-u-sm-4 oa-proc-list">
+          			<div class="oa-proc-num">
+          				<span>3</span>
+          			</div>
+          			<p>自动充值</p>
+          		</div>
+          	</div>
+          </div>
+          <div class="oa-selectbuy-box">
+            <form class="am-form am-form-horizontal">
+            <div class="am-form-group">
+              <span class="am-text-right">账户</span>
+              <span class="am-text-warning">
+                zhengge
+              </span>
+            </div>
+            <div class="am-form-group">
+              <span class=" am-text-right">当前余额</span>
+              <span class="am-text-warning">
+                50.00 元
+              </span>
+            </div>
+            <div class="am-form-group">
+              <span class="am-u-sm-3 am-text-right">选择面额</span>
+              <div class="am-u-sm-9">
+                <button class="am-btn bg-white am-btn-secondary oa-buy-option" type="button" data-money="50">50元 <span><i class="fa fa-check"></i></span></button>
+                <button class="am-btn bg-white am-btn-secondary oa-buy-option" type="button" data-money="100">100元 <span><i class="fa fa-check"></i></span></button>
+                <button class="am-btn bg-white am-btn-secondary oa-buy-option active" type="button" data-money="200">200元 <span><i class="fa fa-check"></i></span></button>
+                <button class="am-btn bg-white am-btn-secondary oa-buy-option" type="button" data-money="500">500元 <span><i class="fa fa-check"></i></span></button>
+              </div>
+            </div>
+            <div class="am-form-group">
+              <span class="am-u-sm-3 am-text-right">输入充值金额</span>
+              <div class="am-u-sm-9">
+                <input type="text" id="oa-chongzhi-input" style="width:200px;"/>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <span class="am-u-sm-3 am-text-right">本次充值金额为</span>
+              <div class="am-u-sm-9 am-text-warning">
+                <strong id="oa-chongzhi">0</strong> 元
+              </div>
+            </div>
+          </div>
+          <div class="oa-selectbuy-box am-text-center">
+            <button type="button" class="am-btn am-btn-secondary am-radius" id="buy-true">确认充值</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 右边内容区域结束 -->
+  </div>
+</section>
+<!-- 底部 -->
+<footer class="box-container oa-foot">
+  <p>Copyright ©2013-2015 sanside.net All Rights Reserved. 蜀ICP备13015392号</p>
+  <p>版权所有 <a href="">三思德科技有限公司</a></p>
+</footer>
+<!-- 底部结束 -->
+<script src="../../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../../skin/js/public/amazeui.min.js"></script>
+<script src="../../skin/js/plug/layer/layer.js"></script>
+<script src="../../skin/js/public/public.js"></script>
+<script type="text/javascript">
+  $('.oa-buy-option').click(function(event) {
+    $(this).addClass('active').siblings('.oa-buy-option').removeClass('active');
+    var num = $(this).attr('data-money');
+    $('#oa-chongzhi').text(num);
+    $('#oa-chongzhi-input').val('');
+  });
+
+  $('#oa-chongzhi-input').blur(function(event) {
+    var num = $(this).val();
+    $('#oa-chongzhi').text(num);
+    $('.oa-buy-option').removeClass('active');
+  });
+
+$('#buy-true').click(function(event) {
+  var value = $('#oa-chongzhi').text();
+  layer.confirm('您所需支付金额为：<span class="am-text-warning">'+value+'</span> 元', {
+    btn: ['确认','取消'] //按钮
+  }, function(){
+      layer.msg('进入支付页面', {icon: 1});
+  }, function(){
+      layer.msg('已取消', {icon: 2});
+  });
+});
+</script>
+</body>
+
+</html>

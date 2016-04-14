@@ -1,0 +1,314 @@
+/*预警机制*/
+@font-face
+	{
+	font-family:huakangshaonv;
+	src:url(../font-awesome/fonts/huakangshaonvziti.ttf);
+	}
+body{
+	background-color:#e5e5e5;	
+}
+
+/*预警机制的列表部分*/
+.sign_up_box{
+	margin-top:10px;
+	background-color:#f2f5f5;
+	border-bottom:1px solid #e5e5e5;	
+	width:100% !important;
+	overflow:hidden;
+	
+	height: auto;
+}
+.sign_up_titlebox{
+	background-color:#FFF; 
+	border-radius:4px;
+	border:1px solid #dfdfdf;
+	width:98%;
+	margin:0 auto;
+	margin-top:10px;
+	margin-left:5px;
+	margin-right:5px;
+	position:relative;
+}
+.sign_up_title{
+	color:#000000;	
+	font-weight:500;
+	line-height:30px;
+	margin-top:5px;
+	/*margin-left:10px;*/
+	padding:0;
+}
+.sign_up_titledoc{
+	color:#666666;
+	font-weight:500;
+	margin:0;
+	/*margin-left:10px;*/
+	padding:5px 0 5px 0;
+	/*height:auto;*/
+	/*line-height:inherit;*/
+}
+.sign_up_btn{
+	position:absolute;
+	right:0;
+	top:0;
+	height:100%;
+	padding:0 20px;
+	border:0 none;
+	border-radius:4px;
+	color:#FFF;
+	font-size:1.5em;
+	font-family:"微软雅黑";	
+}
+.sign_up_btn:hover{
+	color:#FFF;
+}
+.sign_up_icon i{
+	font-size:1.5em;
+	color:#0068b7;	
+	padding:8px 0;
+	padding-top:5px;
+}
+.sign_up_icon i span{
+	color:#666666;
+	font-size:14px;
+}
+.sign_up_border{
+	position:relative;
+}
+.sign_up_border:before{
+	content:"";
+	display:block;
+	position:absolute;
+	width:1px;
+	height:60%;
+	background-color:#0068b7;
+	top:20%;
+	left:0;	
+}
+.sign_up_border:after{
+	content:"";
+	display:block;
+	position:absolute;
+	width:1px;
+	height:60%;
+	background-color:#0068b7;
+	top:20%;
+	right:0;	
+}
+.more{
+	margin:20px;	
+}
+.more h4{
+	color:#0068b7;
+	font-weight:500;	
+}
+.more a{
+	text-decoration:none;	
+}
+
+
+.search_bgbox{
+	width:100%;
+	background-color:#ebeced;
+	overflow:hidden;
+}
+.search_box{
+	position:relative;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.jilu_search_btn{
+	position:absolute;
+	top:20px;
+	right:15px;	
+}
+.jilu_btn{
+	width:100%;	
+	border:0 none;
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-size:1.2em;
+	padding:8px 0;
+}
+.jilu_btn:hover,
+.jilu_btn:visited,
+.jilu_btn:focus,
+.jilu_btn:active{
+	background-color:#0068b7;
+	color:#FFF;
+}
+.exchange_btn{
+	padding-top:20px;
+	padding-bottom:20px;	
+}
+.btn_lg_width{
+	width:100%;	
+	background-color:#FFF;	
+}
+.btn_lg_widthB{
+	width:100%;
+	padding:10px 10px;
+}
+.sign_up_menu{
+	width:100%;	
+}
+.sign_up_down h5{
+	color:#000;	
+	white-space:normal;
+	font-weight:600;
+	line-height:30px;
+	padding:0;
+}
+.sign_up_down span{ 
+	display:block;
+	white-space:normal;	
+	color:#8c8c8c;
+	font-size:1em;
+	padding:0 0 5px 0;
+}
+.sign_up_down span i{
+	color:#1273bc;	
+}
+.fa-check-square-o{
+	color:#1273bc;	
+	font-size:1.5em;
+	margin-top:10px;
+}
+.line{
+	border-bottom:1px solid #d9d9d9;
+	cursor:pointer;	
+	width:inherit;
+}
+.line_mendian{
+	padding-top:6px;
+	padding-bottom:8px;	
+}
+
+.yichang_title{
+	font-family:huakangshaonv;
+	font-size:1.5em;
+	width:100%;
+	text-align:center;
+	padding:10px 0;
+}
+.yichang_img{
+	width:100%;
+	padding:0 45px 20px 45px;	
+}
+.yichang_input{
+	width:100%;
+	background-color:#FFF;
+	border:1px solid #bfbfbf;
+	border-radius:4px;
+	padding:5px 0 5px 0;
+	font-size:1.2em;
+	font-weight:400;	
+}
+.yichang_btn{
+	width:100%;
+	background-color:#00a0e9;
+	color:#FFF;
+	border:0 none;	
+	font-family:"微软雅黑";
+	font-size:18px;
+	font-weight:200;
+}
+.yichang_btn:hover,
+.yichang_btn:active,
+.yichang_btn:focus,
+.yichang_btn:visited{
+	background-color:#008ac9;
+	color:#FFF;	
+}
+.yichang_box{
+	margin-bottom:20px;	
+}
+.sign_up_yichangbox{
+	width:98%;
+	margin:0 auto;
+	background-color:#FFF;
+	border-radius:4px 4px 0 0;
+	border-bottom:1px solid #cac8c9;
+	margin-top:10px;
+}
+.yichangjilu_title h4{
+	color:#000;
+	font-weight:500;
+	margin-left:10px;
+	line-height:30px;	
+}
+.yichangjilu_title h5{
+	color:#808080;
+	font-weight:500;
+	margin-left:10px;
+	line-height:16px;
+	margin-top:0;
+}
+.yichangjilu_id h5{
+	text-align:right;
+	color:#333333;
+	white-space:nowrap;
+	margin-right:10px;	
+}
+.yichang_time{
+	margin-right:10px;	
+}
+
+.area{
+	width:100%;
+	resize:none;
+	height:120px;
+	border-radius:4px;
+	border:1px solid #cccccc;
+}
+.fa-plus{
+	color:#c2c2c2;	
+}
+.btn_up{
+	width:100%;	
+	background-color:#00a0e9;
+	border:0 none;
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-size:18px;
+	font-weight:200;
+}
+.btn_up:hover{
+	background-color:#008ac9;
+	color:#FFF;
+}
+.btn_up_box{
+	width:100%;
+	margin-top:70px;
+}
+.sign_up_titledoc i{
+	font-size:1.5em;
+	color:#1b78bf;	
+	/*padding:8px 0;*/
+	}
+.word{
+	font-size:1.0em;
+	font-family:"微软雅黑";
+	color:red;
+	line-height:23px;
+	
+	font-weight:bold;}
+.word2{
+	font-size:1.0em;
+	font-family:"微软雅黑";
+	color:gray;
+	line-height:23px;
+	margin-left:18px;
+	font-weight:bold;}
+/*调节下拉菜单的位置的样式表*/
+.xiala_1{
+	margin:0;
+	margin:20px 0;
+	}
+.yujing_word{
+	margin-right:5px;
+	margin-left:5px;
+	padding-left:5px;
+	padding-right:5px;}
+.yujing_word1{
+	padding-left:5px;
+	padding-right:5px;}

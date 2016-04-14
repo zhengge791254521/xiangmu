@@ -1,0 +1,40 @@
+.detail{
+	width: 100%;
+	min-height: 80px;
+	clear: all;
+}
+.deleft{
+	width: 70%;
+	height: 100%;
+	display: inline-block;
+}
+.sale{
+	border: none;
+	position: absolute;
+	top: 70%;
+	right: 0;
+}
+.mui-bar-tab{
+	background: rgba(0,0,0,0.5) !important;
+}
+.addcart{
+	background-color: #01A7EB !important;
+}
+.addcart1{
+	background-color:#CC0033 !important;
+}
+.store{
+	padding-left: 0 !important;
+}
+.mui-table-view:before{
+	height: 0;
+}
+.mui-table-view:after{
+	height: 0;
+}
+.phone{
+	position: absolute;
+	top:50%;
+	right: 35px;
+	margin-top: -12px;
+}

@@ -1,0 +1,115 @@
+<!-- 营业员列表 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/md/md.css" />
+</head>
+<style type="text/css">
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">我的营业员</div>
+</header>
+<nav class="mui-bar mui-bar-tab pd-lr-10 a-href">
+	<a href="my_md_yingyeyuan_add.html" id="add_yingye" class="mui-btn mui-btn-danger mui-btn-block">新增营业员</a>
+</nav>
+<div class="mui-content">
+<ul class="mui-table-view" id="dianyuan">
+	<li class="mui-table-view-cell mui-media">
+		<a class="mui-navigate-right" data-id="user_1" data-user="冉杰">
+			<div class="mui-media-body">
+				冉杰
+				<p class="mui-ellipsis">1353245312</p>
+			</div>
+		</a>
+	</li>
+	<li class="mui-table-view-cell mui-media">
+		<a class="mui-navigate-right" data-id="user_2" data-user="谢志">
+			<div class="mui-media-body">
+				谢志
+				<p class="mui-ellipsis">46541213</p>
+			</div>
+		</a>
+	</li>
+	<li class="mui-table-view-cell mui-media">
+		<a class="mui-navigate-right" data-id="user_3" data-user="华川">
+			<div class="mui-media-body">
+				华川
+				<p class="mui-ellipsis">136635987</p>
+			</div>
+		</a>
+	</li>
+	
+</ul>
+
+</div>
+<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+	<ul class="mui-table-view a-href">
+		<li class="mui-table-view-cell">
+			<a href="#" id="bianji" class="bianji">修改店员信息</a>
+		</li>
+		<li class="mui-table-view-cell">
+			<a href="#" id="del" class="del" style="color:#ff3300;">删除该店员</a>
+		</li>
+	</ul>
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell">
+			<a href="#picture"><b>取消</b></a>
+		</li>
+	</ul>
+</div>
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+
+<script src="../skin/js/public/super.js"></script>
+<script src="../skin/js/plug/layer.m/layer.m.js"></script>
+<script type="text/javascript">
+
+;(function($){
+var uid,
+		name;
+	$('body').on('tap','#dianyuan .mui-table-view-cell>a',function(){
+		var self = jQuery(this);
+				uid = self.attr('data-id');
+				name = self.attr('data-user');
+		$('#picture').popover('toggle');
+	})
+
+// 执行弹框的内容
+	$('body').on('tap', '#picture li>a', function() {
+		var self = jQuery(this),
+				id = self.attr('id');
+		// uid 表示 选择的营业员id号，  这里获取的id 是 操作id，比如编辑或者删除
+		$('#picture').popover('toggle');
+		if(id == 'bianji'){
+
+			var href = 'my_md_yingyeyuan_add.html?user='+uid;
+			location.href = href;
+		}else if(id == 'del'){
+			layer.open({
+            content: '是否删除店员 '+name+'？',
+            btn: ['确认', '取消'],
+            shadeClose: false,
+            yes: function(){
+            	jQuery('#dianyuan .mui-table-view-cell>a[data-id="'+uid+'"]').closest('li').remove();
+                layer.closeAll();
+            },no: function(){
+                layer.closeAll();
+            }
+        })
+		}
+
+	})
+ })(mui);
+</script>
+</html>

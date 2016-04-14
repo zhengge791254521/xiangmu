@@ -1,0 +1,813 @@
+body{
+	position: relative;
+}
+
+
+.shanchu_zhezhao{
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	z-index: 1040;
+}
+.shanchu_show{
+	position: fixed;
+	z-index: 1041;
+	width: 200px;
+	/*height: 100px;*/
+	left: 40%;
+	top:40%;
+}
+.shanchu_waring{
+	display: block;
+	color:#f00;
+	padding-top: 10px;
+	text-align: center;
+}
+
+
+
+.ibox{
+	margin-bottom: 0;
+}
+.nav-tabs > li {
+   
+    padding: 0;
+}
+.padpad{
+	padding: 0 0 40px;
+}
+.hh.contact-box{
+	padding: 20px 5px;
+}
+.pad{
+	padding:15px;
+}
+.pad1{
+	padding:0;
+}
+
+.ibox-content{
+	width: 100%;
+	display: inline-block;
+}
+.lle{
+	
+	margin-right: 5px!important;
+}
+.rri{
+	
+	margin-left: 5px!important;
+}
+.xiangd{
+	position: relative;
+}
+.quanshen{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 80px;
+
+}
+.quanshan{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 230px;
+
+}
+.aaa{
+	margin: 20px 40px 20px 0;
+	width: 220px;
+}
+.bbb{
+		margin-top: 35px;
+}
+.ccc{
+	padding-top: 20px;
+	
+}
+.sh{
+	
+	font-size: 10px!important;
+}
+.dqyc{
+	
+	font-size: 10px!important;
+}
+.ddd{
+	
+}
+.dingsi{
+	padding-left: 0;
+	padding-right: 0;
+}
+.eee{
+	font-size: 14px;
+	padding-left: 15px;
+	
+}
+.gray-bg{
+	background: #fff;
+}
+.biankuang{
+	border: 1px solid #DDDDDD;
+	border-radius: 5px 5px 0 0;
+
+}
+.biankuang2{
+	border: 1px solid #DDDDDD;
+	
+
+}
+.biankuang1{
+	border: 1px solid #DDDDDD;
+	border-radius: 5px 5px 0 0;
+	border-top:1px solid #DDDDDD!important;
+	border-bottom:none;  
+}
+.mat{
+	margin-top: 15px;
+}
+.ggg{
+	display: none;
+	position: relative;
+	top:2%;
+	left: 15%;
+}
+.jjj{
+	position: relative;
+	top: -30px;
+
+}
+
+
+.kkk{
+	margin-top: 50px;
+}
+.lll{
+
+	color: #009FE9;
+	font-weight: bold;
+	font-size: 2cm;
+}
+.mmm{
+	margin-top: 20px;
+	padding: 0;
+}
+.nnn{
+	padding:0 18px;
+	margin-bottom: 20px;
+	margin-top: -10px;
+}
+.ooo{
+	width: 100px;
+	margin-bottom: 10px;
+
+}
+.rrr{
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 40px;
+}
+.rrr button{
+	width: 70px;
+	
+}
+.qita2 button{
+	width: 70px;
+}
+.qita{
+	display: inline-block;
+}
+.qita1{
+	display: inline-block;
+	position: relative;
+	top: -3px;
+}
+.ttt{
+	margin-top: 15px;
+}
+.www{
+
+	font-size: 14px;
+
+	
+}
+.xxx{
+	margin-bottom: 50px;
+}
+
+.fenye{
+	width: 100%;
+	text-align: center;
+	
+}
+.fenye1{
+	width: 100%;
+	text-align: center;
+	
+	
+}
+.xiugaitj{
+	display: none;
+	position: relative;
+	height: 50px;
+}
+.xiugaitj input{
+	position: absolute;
+
+	right: 0;
+	width: 60px!important;
+}
+.table-notd{
+	display: none;
+}
+.manyi-oa-ul{
+	height: auto;
+    padding-bottom: 0;
+}
+.aaaa{
+	
+	height: 20px;
+	width: 30px;
+	font-size: 10px;
+	line-height: 7px;
+
+}
+.bbbb{
+	border-top:1px; 
+	background-color: #f5f5f5;
+	
+	border-radius:5px 5px 0 0; 
+
+}
+.bbbba{
+	border-top:1px; 
+	background-color: #f5f5f5;
+	
+}
+.padi{
+	padding:15px;
+	border: 1px solid #DDDDDD;
+}
+.beijing{
+	background: #1AB394;
+	color: #fff;
+	border: 1px solid #DDDDDD;
+}
+/*.sc{
+	display: inline-block;
+	position: absolute;
+	top:2px;
+	right: -70px;
+}*/
+.yinc1{
+	text-align: center;
+	border: none;
+	 
+}
+/*.yuan{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top:-24px;
+	right: -39px;
+	border-radius: 8px;
+	border: 1px solid #DDDDDD; 
+	background: -webkit-radial-gradient(5px 5px, circle, #fff, #fff);
+  	background: -moz-radial-gradient(5px 5px, circle, #fff, #fff);
+  	background: radial-gradient(5px 5px, circle, #fff, #fff);
+}
+*/
+.qdqd{
+	display: none;
+	
+	width: 40px;
+
+	margin-left: 5px;
+	
+}
+
+.ouluoba{
+	
+	border: 1px solid #DDDDDD;
+	border-top: 4px solid #1AB394;
+}
+.siye{
+	position: relative;
+	top: -35px;
+	display: inline-block;
+	height: 1px;
+	color: #1AB394;
+	margin-left: 130px;
+
+}
+.zuojiantou{
+
+	font-size: 20px;
+	position: relative;
+}
+.leimu ul li:first-child{
+	margin-left: 16px;
+}
+
+.cccc{
+	height: 22px;
+	
+	font-size:11px;
+	line-height: 8px;
+}
+.dddd{
+	font-size: 14px;
+	padding-left: 15px;
+	
+}
+.eeee{
+	margin-bottom: 0;
+}
+
+.ffff{
+	margin-top: 15px;
+	border: 1px solid #DDDDDD;
+	padding-left: 0;
+	padding-right: 0;
+	width: 98%;
+	border-radius:5px 5px 0 0; 
+	margin-left: 16px;
+	
+}
+.ffffc{
+	margin-top: 15px;
+	border: 1px solid #DDDDDD;
+	padding-left: 0;
+	padding-right: 0;
+	border-radius:5px 5px 0 0; 
+
+}
+
+.ffffb{
+	margin-top: 25px;
+	border: 1px solid #DDDDDD;
+	padding-left: 0;
+	padding-right: 0;
+	border-radius:5px 5px 0 0; 
+
+}
+.ffffa{
+    
+    border-radius: 0;
+    
+    margin-bottom: 0;
+}
+.iiii{
+	line-height: 60px;
+
+}
+.tianjia{
+	margin-top: 20px;
+
+}
+.bbbbb{
+	line-height: 60px;
+
+}
+.ccccc{
+	position: relative;
+	margin-top: 8px;
+}
+.jjjj{
+	margin-left:10px!important; 
+}
+.kkkk{
+	color: #1AB394;
+	padding: 3px;
+}
+.kkkk:hover{
+	color: #fff;
+	background: #5CB85C;
+}
+.buyao{
+	padding-top: 0;
+	border: #fff;
+	padding: 0;
+}
+.nihao{
+	position: relative;
+	top: 3px;
+	
+}
+.nihaoba{
+	
+	margin-left: 10px;
+}
+
+
+.llll{
+	margin-bottom: 15px;
+}
+.nnnn{
+	width: 120px;
+	margin-left: 0;
+	position: absolute;
+	top: 9px;
+	right: 22px;
+
+}
+
+.pppp{
+	position: relative;
+}
+.hh{
+	margin-left: -30px;
+	margin-right: -30px;
+	
+}
+.hha{
+	margin-top: 20px;
+}
+.aaaaa{
+	display: none;
+	position: relative;
+	text-align: right;
+	padding: 0;
+	height: 5px;
+}
+.forme{
+	margin-bottom: -15px;
+}
+.sel{
+	position: relative;
+	left: 15px;
+	top:-3px;
+}
+.daochu{
+	position: absolute;
+	right: 15px;
+	top: 25px;
+
+}
+.daochu button{
+	width: 100px;
+	font-size: 12px;
+}
+.fen{
+	position: absolute;
+	top:23px;
+	right: 40px;
+	display: block;
+	width: 160px;
+	height: 110px;
+	
+	
+	float: right;
+	font-size: 1cm;
+	text-align: center;
+	
+
+}
+.fen span{
+	position: relative;
+	top:4px;
+	left: 4px;
+	display: block;
+	width: 150px;
+	height: 100px;
+	
+	color: #1AB394;
+	
+	line-height: 100px;
+	
+}
+.fenyea{
+	position: relative;	
+}
+.fenyeb{
+	position: absolute;
+	top: -53px;
+	right: 0;
+}
+
+
+.leimu{
+	
+	padding-left: 0;
+	padding-right: 0;
+	border-width: 4px 0 0!important;
+}
+.leimu li{
+	list-style: outside none none;
+}
+.leimu .active a{
+	display: block!important;
+	width: 100%!important;
+	height: 100%!important;
+	background: #1AB394!important;
+	color: #fff!important;
+	
+}
+.baidi{
+	background: #fff;
+	padding-bottom: 15px;
+}
+.waic{
+	display: none;
+	position: fixed;
+	top:0px;
+	background: #000;
+	opacity: 0.5;
+	width: 100%;
+	
+	z-index: 1000;
+}
+.waicc{
+	display: none;
+	position: fixed;
+	top: 0;
+	background: #000;
+	opacity: 0.5;
+	width: 100%;
+	
+	z-index: 1000;
+}
+.lic{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 70%;
+	
+	z-index: 1001;
+	animation:all 2s ease 0s; 
+	-webkit-animation:all 2s ease 0s;
+	-moz-animation:all 2s ease 0s;
+	-o-animation:all 2s ease 0s;   
+}
+.licc{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 70%;
+	
+	z-index: 1001;
+	animation:all 2s ease 0s; 
+	-webkit-animation:all 2s ease 0s;
+	-moz-animation:all 2s ease 0s;
+	-o-animation:all 2s ease 0s;   
+}
+.cha{
+	position: absolute;
+	top: 0;
+	right: 24px;
+	font-size: 25px;
+	cursor: pointer;
+}
+.cao{
+	position: absolute;
+	bottom: 15px;
+	right: 50px;
+}
+.ya{
+	margin:4px 15px 0 0!important;  
+}
+.queding{
+	width: 150px;
+}
+.ggggg{
+	position: relative;
+	padding-bottom: 50px;
+}
+.fffff{
+	position: absolute;
+	top: -49px;
+	right: -69px;
+}
+.table td{
+	  vertical-align: middle!important;
+}
+	.sola{
+		position: relative;	
+	}
+	.leng{
+		position: absolute;
+		right: 7px;
+		top:-6px;
+		text-align: right;
+		width: 30%;
+
+	}
+	.leng button{
+		height: 34px;
+		font-size:12px;
+	}
+.footer{
+	position: absolute;
+	bottom: -38px;
+	left: 220px;
+}	
+
+@media (max-width: 1680px){  
+
+	
+	.ggg{
+		padding-left: 0;
+		padding-right: 0;
+		margin-top: 15px;
+		left: 0;
+	}
+	
+	
+
+}
+@media (max-width: 1400px){  
+	.hh .col-lg-4{
+		width: 50%;
+	}
+}
+@media (max-width: 1365px){ 
+	.rrrrr{
+		padding-right: 0;
+	}
+	.leng{
+		
+		width: 40%;
+	}
+	
+	
+}
+@media (max-width: 1364px){ 
+
+	
+}
+@media (max-width: 1200px){  
+	.ssss{
+		position: relative;
+		left: 20px;
+	}
+	.tianjia{
+		padding: 0 15px 15px;
+	}
+	
+	.likai{
+		position: relative;
+		top: 17px;
+	}
+	.likai1{
+		position: relative;
+		top: 10px;
+	}
+}
+@media (max-width: 1100px){ 
+	.person{
+		padding-top: 27px;
+
+	}
+	.nnnn{
+		
+		width: 90px;
+	}
+	.hh .col-lg-4{
+		width: 100%;
+	}
+	.leng{
+		
+		width: 50%;
+	}
+	.ssss{
+		
+		left: 5px;
+	}
+	
+	.ffff{
+		width: 95%;
+	}
+	
+}
+@media (max-width: 980px){  
+	.person{
+		padding-top: 0;
+
+	}
+	
+}
+@media (max-width: 992px){
+	 
+	.ssss{
+		
+		left: 2px;
+	}
+	
+	.fffff{
+		top: -10px;
+		right: -3px;
+	}
+	.leng{
+		
+		width: 55%;
+	}
+	.qita2 button{
+		width: 30px;
+	}
+	
+}
+@media (max-width: 991px){  
+	.www{
+		margin-left: -12px;
+	}
+	.oooo{
+		
+	}
+	.pppp{
+		margin-left: 5px!important;
+		margin-right: -10px!important;
+	}
+}
+@media (max-width: 785px){  
+	
+	
+}
+
+@media (max-width: 768px){  
+	
+	.footer{
+		left: 0;
+	}
+	
+	.oooo{
+		text-align: left;
+		margin-left: -17px;
+	}
+	.ddd{
+	width: 160px;
+	}
+	
+	
+	.nnnn{
+		
+		width: 70px;
+	}
+	.contact-box{
+		position: relative;
+	}
+	.person{
+		position: absolute;
+		top: 30px;
+		left: 170px;
+	}
+	.fffff{
+		top: -10px;
+		right: -15px;
+	}
+	.fen{
+	
+		right: -10px;
+
+	}
+
+}
+@media (max-width: 568px){  
+	
+	.ddd{
+	width: 130px;
+	}
+	
+	.rrr{
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	}	
+	.rrr button{
+		width: 30px;
+	}
+	
+	.person{
+		top: 25px;
+		left: 145px;
+	}
+	.person h3{
+		font-size: 14px;
+		
+	}
+	.person p{
+		font-size: 12px;
+	}
+	.leimu li a{
+		padding:10px;
+	}
+	.sh{
+		display: none;
+		font-size: 10px!important;
+	}
+	.dqyc{
+		display: none;
+		font-size: 10px!important;
+	}
+}
+

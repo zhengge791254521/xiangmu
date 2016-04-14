@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>实习僧-实习生-最靠谱的实习生招聘网站</title>
+	<meta name="description" content="实习僧是国内领先的实习生招聘网站,500强实习,优质实习机会,优秀实习生,找实习就上实习僧,实习生招聘首选实习僧,大学生实习第一品牌。">
+	<meta name="keywords" content="实习,实习生,找实习,实习生招聘,寒假实习,实习僧,大学生实习,实习网,实习吧">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no"> -->
+
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="format-detection" content="address=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="skin/font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="skin/css/qb_chat.css">
+
+</head>
+<style type="text/css">
+.fixed-all{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: #fff;
+	padding: 15px;
+	z-index: 999;
+	box-sizing: border-box;
+}
+.fixed-all.show{
+	display: block;
+}
+.fixed-all p{
+	margin-bottom: 10px;
+	line-height: 1.2em;
+}
+.fixed-all .shixi-code{
+	display: block;
+	max-width: 100%;
+	min-width: 70%;
+	margin:10px auto;
+}
+.fixed-all .btn-box{
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+}
+.fixed-all .btn-box .sx-btn{
+	padding: 12px 0;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 6px;
+	display: block;
+	width: 100%;
+  border: 1px solid #0062cc;
+  background-color: #0062cc;
+
+}
+</style>
+<body>
+<!--
+<div id="layermbox9" class="layermbox layermbox2" index="9"><div class="laymshade"></div><div class="layermmain"><div class="section"><div class="layermchild  layermanim"><div class="layermcont"><i></i><i class="laymloadtwo"></i><i></i></div></div></div></div></div>
+<div class="fixed-all">
+<div>
+	<p>这位宝宝，<span style="color:red;">恭喜你成功获取本课程</span>~</p>
+	<p>如果你关注了公众号【前辈IM】，
+可以直接点击【下一步】查看你的课程信息。</p>
+<p>如果你没有关注，请长按下方二维码关注哦~</p>
+<p>僧妞就帮你到这啦，祝你在讲座中有所收获哦~</p>
+</div>
+	<div>
+		<img src="skin/images/shixiseng.jpg" alt="" class="shixi-code">
+	</div>
+	
+	<div class="btn-box">
+		<button class="sx-btn">下一步</button>
+	</div>
+</div>
+-->
+<header id="header" class="qb-bar qb-bar-nav qb-header">
+		<h1 class="qb-title">导航栏</h1>
+		<a class="qb-nav-back"></a>
+		<a class="flt-r iconfont">&#xe626;</a>
+</header>
+<footer class="qb-foot-box">
+	<!-- <div class=""> -->
+		<div class="qb-footer-btn flt-l write-voice">
+			<button class="qb-btn msg-write" id="msg-write"><i class="qb-icon iconfont">&#xe627;</i></button>
+			<button class="qb-btn msg-voice" id="msg-voice"><i class="qb-icon iconfont">&#xe629;</i></button>
+		</div>
+		<div class="qb-footer-btn flt-r">
+			<button class="qb-btn msg-send" id="msg-send" >发送</button>
+			<button class="qb-btn msg-type" id="msg-type"><i class="qb-icon qb-icon-mic iconfont">&#xe617;</i></button>
+		</div>
+		<div class="qb-footer-center">
+			<textarea id="msg-text" class="input-text"></textarea>
+			<button id="msg-sound" type="button" class="input-sound">按住说话</button>
+		</div>
+	<!-- </div> -->
+	
+	<div class="footer-mask"><span>听课中</span></div>
+</footer>
+<!-- 工具盒子 -->
+<div class="qb-application-box" id="app-box">
+	<div class="mask"></div>
+	<ul class="app-box">
+		<li id="send-img"><div><p><i class="qb-icon iconfont">&#xe62c;</i></p><span>发送图片</span></div></li>
+		<li class="teacher-contrl">
+      <div class="teach-chat chat-disable"><p><i class="qb-icon iconfont">&#xe62a;</i></p><span>禁止聊天</span></div>
+      <div class="teach-chat chat-open"><p><i class="qb-icon iconfont">&#xe62a;</i></p><span>禁止聊天</span></div>
+    </li>
+	</ul>
+</div>
+
+<div class="qb-content">
+	<div class="qb-cont-box">
+	<div class="qb-status">正在讲课中...</div>
+	<div class="qb-message-box" id="message-content">
+	  <p class="qb-sendertime">2016-3-17 15:30</p>
+	  <div class="qb-chat-box qb-sender">
+	      <div class="qb-chat-img"><img src="skin/images/demo1.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-cont">
+		          <span class="qb-mess">Hello!!</span>
+		      </div>
+	      </div>
+	  </div>
+
+	  <p class="qb-loading"><b></b></p>
+
+	  <div class="qb-chat-box qb-receiver">
+	      <div class="qb-chat-img"><img src="skin/images/demo2.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-name">奶茶妹妹</div>
+	      	<div class="qb-chat-cont">
+		          <span class="qb-mess">Hello!!</span>
+		      </div>
+	      </div>
+	  </div>
+	   <div class="qb-chat-box qb-receiver">
+	      <div class="qb-chat-img"><img src="skin/images/demo2.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-name">奶茶妹妹</div>
+	      	<div class="qb-chat-cont">
+		          <span class="qb-mess">
+								<img src="skin/images/img.png" alt="">
+		          </span>
+		      </div>
+	      </div>
+	  </div>
+	  <div class="qb-chat-box qb-sender">
+	      <div class="qb-chat-img"><img src="skin/images/demo1.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-cont">
+		          <span class="qb-mess"><img src="skin/images/img.png" alt=""></span>
+		      </div>
+	      </div>
+	  </div>
+	  <p class="qb-sendertime">2016-3-17 15:30</p>
+
+	  <div class="qb-chat-box qb-receiver">
+	      <div class="qb-chat-img"><img src="skin/images/demo2.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-name">奶茶妹妹</div>
+	      	<div class="qb-chat-cont qb-mess-voice" data-src="http://media.qlchat.com/wtLive/audio/VQNUGZEV-JDX8-8HKO-1458737083065-1X9TBIRN5GTY.mp3">
+	      			<div class="qb-affiliated">
+	      				<b class="qb-noread"></b>
+	      				<span class="qb-voicetime">60"</span>
+	      			</div>
+		          <span class="qb-mess"><div class="qb-voice"></div></span>
+		      </div>
+	      </div>
+	  </div>
+
+	  <div class="qb-chat-box qb-receiver">
+	      <div class="qb-chat-img"><img src="skin/images/demo2.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-name">奶茶妹妹</div>
+	      	<div class="qb-chat-cont qb-mess-voice" data-src="mp3/a2.mp3">
+	      			<div class="qb-affiliated">
+	      				<b class="qb-noread"></b>
+	      				<span class="qb-voicetime">60"</span>
+	      			</div>
+		          <span class="qb-mess"><div class="qb-voice"></div></span>
+		      </div>
+	      </div>
+	  </div>
+
+	  <div class="qb-chat-box qb-receiver">
+	      <div class="qb-chat-img"><img src="skin/images/demo2.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-name">奶茶妹妹</div>
+	      	<div class="qb-chat-cont qb-mess-voice" data-src="mp3/a1.mp3">
+	      			<div class="qb-affiliated">
+	      				<b class="qb-noread"></b>
+	      				<span class="qb-voicetime">60"</span>
+	      			</div>
+		          <span class="qb-mess"><div class="qb-voice"></div></span>
+		      </div>
+	      </div>
+	  </div>
+	  <div class="qb-chat-box qb-receiver">
+	      <div class="qb-chat-img"><img src="skin/images/demo2.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-name">奶茶妹妹</div>
+		      <div class="qb-chat-cont">
+		      		<div class="qb-affiliated">
+		      			<div class="qb-chat-status">
+		      				<b class="qb-chat-loading"></b>
+		      			</div>
+		      		</div>
+		          <span class="qb-mess">我是一个超级坑货~文能挂机喷队友,武能越塔送人头</span>
+		      </div>
+		    </div>
+	  </div>
+	  <div class="qb-chat-box qb-sender">
+	      <div class="qb-chat-img"><img src="skin/images/demo1.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-cont">
+	      			<div class="qb-affiliated">
+		      			<div class="qb-chat-status">
+		      				<i class="qb-chat-loading iconfont">&#xe622;</i>
+		      			</div>
+		      		</div>
+		          <span class="qb-mess">很高兴见到你！很高兴见到你！很高兴见到你！很高兴见到你！很高兴见到你！很高兴见到你！</span>
+		      </div>
+	      </div>
+	  </div>
+	  <!-- <div class="qb-chat-box qb-sender">
+	      <div class="qb-chat-img"><img src="skin/images/demo1.png"></div>
+	      <div class="qb-chat-message-box">
+	      	<div class="qb-chat-cont qb-mess-voice qb-playing">
+	      			<div class="qb-affiliated">
+	      				<div class="qb-chat-status">
+		      				<i class="qb-chat-loading iconfont">&#xe622;</i>
+		      			</div>
+	      				<span class="qb-voicetime">60"</span>
+	      			</div>
+		          <span class="qb-mess"><div class="qb-voice"></div></span>
+		      </div>
+	      </div>
+	  </div> -->
+	</div>
+<!-- 	<div class="qb-see">
+		只看主讲
+	</div>
+	<div class="qb-msgtip">有消息 <span class="red">99+</span></div>
+	</div> -->
+</div>
+<style type="text/css">
+
+</style>
+
+
+<div class="qb-voice-fiexd" id="qb-voice-fiexd">
+	<div class="voice-record-box">
+		<div class="voice-icon"><i class="iconfont">&#xe629;</i></div>
+		<div class="text-tip">录音中...  <span id="record-time">60</span>s</div>
+	</div>
+	<div class="voice-off-box">
+		<div class="voice-icon"><i class="iconfont">&#xe628;</i></div>
+		<div class="text-tip">取消发送</div>
+	</div>
+</div>
+<div class="player" id="player">
+	<audio id="audio" src="" ></audio>
+</div>
+</body>
+<script src="skin/js/jquery-1.10.2.min.js"></script>
+<script src="skin/js/jquery.tap.js"></script>
+<script src="skin/js/music.js"></script>
+<script>
+// $('.qb-see').click(function(event) {
+// 	var str = '<div class="qb-chat-box qb-sender">'+
+// 	      '<div class="qb-chat-img"><img src="skin/images/demo1.png"></div>'+
+// 	      '<div class="qb-chat-message-box">'+
+// 	      '	<div class="qb-chat-cont qb-mess-voice"  data-src="mp3/a3.mp3">'+
+// 	      '			<div class="qb-affiliated">'+
+// 	      '				<div class="qb-chat-status">'+
+// 		    '  				<i class="qb-chat-loading iconfont">&#xe622;</i>'+
+// 		    '  			</div>'+
+// 	      '				<span class="qb-voicetime">60"</span>'+
+// 	      '			</div>'+
+// 		    '      <span class="qb-mess"><div class="qb-voice"></div></span>'+
+// 		    '  </div>'+
+// 	      '</div>'+
+// 	  '</div>';
+
+// 	 $('#message-content').append(str);
+// });
+
+
+;(function($){
+var voiceBtn = document.getElementById('msg-sound');
+var $voiceBox = $('#qb-voice-fiexd'),
+    $jqVoiceBtn = $('#msg-sound'),
+    $recordBOx = $('#record-time'),	//录音显示秒数的盒子
+		startTime = 0,	//开始按下的时间戳
+		recordTime = 0,	//录音时间
+		endTime = 0,		//手指抬起的时间戳
+		delayTimer,			//按下后延时0.5秒启动录音函数
+		timer,					//正式录音计时函数
+		startY = 0,
+		offsetY = 0;
+function startTh(evt){
+	evt.preventDefault();
+
+	$jqVoiceBtn.addClass('active');
+	startTime = new Date() * 1;
+	delayTimer = setTimeout(function(){
+		clearInterval(timer);
+		$voiceBox.addClass('show').removeClass('off');
+		console.log('开始录音');
+		recordTime = 0;
+		$recordBOx.text(recordTime)
+			//归零录音时间
+		timer = setInterval(function(){
+			recordTime++;
+			$recordBOx.text(recordTime)
+		},1000)
+	},500)
+
+	// //记录手指按下的坐标
+	startY = evt.touches[0].pageY;
+
+	//清除偏移量
+	offsetY = 0;
+}
+
+function moveTh(evt){
+	//兼容chrome android，阻止浏览器默认行为
+	evt.preventDefault();
+
+	//计算手指的偏移量
+	offsetY = evt.targetTouches[0].pageY - startY;
+
+	console.log(offsetY)
+	if(offsetY < -100){
+		$voiceBox.addClass('off');
+	}else{
+		$voiceBox.removeClass('off');
+	}
+}
+
+function endTh(evt){
+	evt.preventDefault();
+
+	$jqVoiceBtn.removeClass('active');
+
+	endTime = new Date() * 1;
+	if( endTime - startTime < 500){
+		console.log('没有录音');
+		window.clearInterval(delayTimer);
+		return;
+	}
+
+	window.clearInterval(timer);
+	$voiceBox.removeClass('show')
+	if($voiceBox.hasClass('off')){
+		alert('取消录音')
+	}else{
+		var voiceWidth = recordTime/60 >= 0.3 ? recordTime/60 : 0.3,
+        fuuid = guid(),
+        msg = {
+        time : recordTime,
+        fuuid : fuuid,
+        ftype : 'voice',
+        voiceWidth : voiceWidth
+    };
+    send_value(msg,'voice');
+	}
+
+
+}
+voiceBtn.addEventListener('touchstart', startTh);
+voiceBtn.addEventListener('touchmove', moveTh);
+voiceBtn.addEventListener('touchend', endTh);
+
+
+})(jQuery);
+
+function isAndroid(){
+	var u = navigator.userAgent, app = navigator.appVersion;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; 
+	return isAndroid;
+	
+}
+function isiOS(){
+	var u = navigator.userAgent, app = navigator.appVersion;
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+	return isiOS;
+}
+
+
+
+var userImg = "skin/images/demo1.png",
+    $msgBox = $('#message-content'),
+    $textBox = $('#msg-text'),
+    $sendBtn = $('#msg-send'),
+    $typeBtn = $('#msg-type'),
+    $appBox  = $('#app-box');
+//$(function(){
+
+$('.write-voice button.qb-btn').tap(function(){
+	var $this = $(this);
+	if($this.hasClass('msg-write')){
+		$this.closest('.qb-foot-box').removeClass('foot-voice');
+		//还原文字写入时候,如果已经有内容则把发送按钮显示出来
+		if($textBox.val().length >=1){
+			$('#msg-send').addClass('show');
+		}
+	}else{
+		$this.closest('.qb-foot-box').addClass('foot-voice');
+		$sendBtn.removeClass('show');
+	}
+})
+
+		$textBox.bind('propertychange input', function () {
+				
+        var msg = $(this).val();
+        if(msg.length >= 1){
+            $('#msg-send').addClass('show');
+        }else{
+        		$('#msg-send').removeClass('show');
+        }
+    });
+
+		//点击发送
+    $sendBtn.tap(function(){
+        var fuuid = new Date().getTime() + Math.floor(Math.random()*100);
+        var msg = {
+            text : $textBox.val(),
+            fuuid : fuuid
+        }
+        send_value(msg,'text');
+        $textBox.val('');
+        $(this).removeClass('show');
+    });
+
+    //展开工具盒子
+    $typeBtn.tap(function(){
+    	$appBox.addClass('active')
+    })
+    // 收缩工具盒子
+    $appBox.find('.mask').tap(function(){
+    	$appBox.removeClass('active')
+    })
+    //发送数据和添加自己的数据信息
+    function send_value(msg, type){
+        if(msg_type(type)) {
+            var str =
+                    '<div class="qb-chat-box qb-sender" data-fuuid="'+msg.fuuid+'">' +
+                    '    <div class="qb-chat-img"><img src="' + userImg + '"></div>' +
+                    '       <div class="qb-chat-message-box">' +
+                    '           <div class="qb-chat-cont">' +
+                    '               <div class="qb-affiliated">' +
+                    '           <div class="qb-chat-status"><i class="qb-chat-error iconfont">&#xe60a;</i><i class="qb-chat-loading iconfont">&#xe622;</i></div>' +
+                    '       </div>' +
+                    '          <span class="qb-mess">' + msg.text + '</span>' +
+                    '      </div>' +
+                    '  </div>' +
+                    '</div>';
+        }else{
+            var str =
+                    '<div class="qb-chat-box qb-sender" data-fuuid="'+msg.fuuid+'" data-time="'+msg.time+'">' +
+                    '    <div class="qb-chat-img"><img src="' + userImg + '"></div>' +
+                    '       <div class="qb-chat-message-box">' +
+                    '           <div class="qb-chat-cont qb-mess-voice" style="width: '+100*msg.voiceWidth+'%;" data-src="mp3/a1.mp3">' +
+                    '               <div class="qb-affiliated">' +
+                    '           <div class="qb-chat-status"><i class="qb-chat-error iconfont">&#xe60a;</i><i class="qb-chat-loading iconfont">&#xe622;</i></div>' +
+                    '       </div>' +
+                    '          <span class="qb-mess"><div class="qb-voice"></div></span>' +
+                    '      </div>' +
+                    '  </div>' +
+                    '</div>';
+        }
+
+        $msgBox.append(str);
+        boxScroll();
+
+
+        if(vok_click(msg)){
+            $msgBox.find('[data-fuuid="'+msg.fuuid+'"]').find('.qb-chat-status').remove();
+        }else{
+            alert('失败');
+        }
+    }
+    function msg_type(type){
+        if(type == 'voice'){
+            return false;
+        }
+        return true;
+    }
+		// 生成随机fuuid,支持数字与大小写混合
+    function guid() {
+        return 'fud_xxxxxxxxxxxx'.replace(/[x]/g, function() {
+            var r = Math.random()*36| 0,t= Math.random()*2|0;
+            return t?r.toString(36).toUpperCase(): r.toString(36);
+        });
+    }
+
+
+
+
+    function boxScroll(){
+        var scrollHeigth = $msgBox.height();
+        $msgBox.animate({scrollTop: scrollHeigth}, 800);
+    }
+
+    function vok_click(teacher_uuid) {
+    	// $.ajax({
+    	// 	url: '/path/to/file',
+    	// 	type: 'default GET (Other values: POST)',
+    	// 	dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+    	// 	data: {param1: 'value1'},
+    	// 	error:function(){
+
+    	// 	},
+    	// 	success:function (data) {
+     //      if (data.code == 100) {
+     //          alert('绑定成功!将跳转到您的课程列表');
+     //          window.location.href = '/';
+     //      }
+
+     //      else {
+     //          alert(data.msg);
+     //      }
+     //  	}
+    	// })
+    	
+        /*$.post('/classroom/text/send'+ teacher_uuid,
+                function (data) {
+                    if (data.code == 100) {
+                        alert('绑定成功!将跳转到您的课程列表');
+                        window.location.href = '/';
+                    }
+
+                    else {
+                        alert(data.msg);
+                    }
+                },"json"
+        );*/
+
+        return true;
+    }
+var upStatus = false;
+$msgBox.scroll(function(){
+    var $this = $(this),
+        top = $this.scrollTop();;
+   if(top <= 0){
+   		//为true 表示正在执行加载,防止多次加载
+   		if (!upStatus) {
+	      $this.prepend('<p class="qb-loading"><i class="iconfont">&#xe616;</i></p>');
+	      upStatus = true;
+	    }
+	   }
+})
+</script>
+</html>

@@ -1,0 +1,124 @@
+<!-- 商品列表 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/shangpin/shangpin.css" />
+</head>
+<style type="text/css">
+
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">
+		<div class="sp-segmented-title a-href">
+			<div class="mui-segmented-control">
+				<a class="mui-control-item mui-active" href="sp_list.html">
+					所有商品
+				</a>
+				<a class="mui-control-item" href="sp_fenzu.html">
+					商品分组
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<nav class="mui-bar mui-bar-tab pd-lr-10 a-href">
+	<a href="sp_add.html" type="button" class="mui-btn mui-btn-danger mui-btn-block">新增商品</a>
+</nav>
+<div class="mui-content">
+	<div class="bg-f">
+		<div class="flt-l">
+			<a href="#topPopover" class="mui-btn pd-10 bd-cle-no" id="ce-side">
+				大师制作
+			</a>
+		</div>
+		<div class="overhid">
+			<div class="mui-segmented-control">
+				<a class="mui-control-item mui-active" href="#item1">
+					已上架
+				</a>
+				<a class="mui-control-item" href="#item2">
+					待上架
+				</a>
+				<a class="mui-control-item" href="#item3">
+					已告罄
+				</a>
+				<a class="mui-control-item" href="#item4">
+					已下架
+				</a>
+			</div>
+		</div>
+	</div>
+	<div>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell mui-media">
+				<div class="st-desc"><span>罄</span></div>
+				<a href="javascript:;" class="mui-navigate-right">
+					<img class="img-60 flt-l mg-r-5" src="../skin/images/shuijiao.jpg">
+					<div class="mui-media-body">
+						<div class="mui-ellipsis">幸福小笼包</div>
+						<p class="tx-3"><span class="tx-f30">￥25.00</span> /个</p>
+						<p class="mui-ellipsis">库存200个 售出100个</p>
+					</div>
+				</a>
+				<div class="mg-t-10 text-r">
+					<button type="button" class="mui-btn mui-btn-red mui-btn-outlined mg-t-5">下架</button>
+				</div>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;" class="mui-navigate-right">
+					<img class="img-60 flt-l mg-r-5" src="../skin/images/shuijiao.jpg">
+					<div class="mui-media-body">
+						<div class="mui-ellipsis">幸福小笼包</div>
+						<p class="tx-3"><span class="tx-f30">￥25.00</span> /个</p>
+						<p class="mui-ellipsis">库存200个 售出100个</p>
+					</div>
+				</a>
+				<div class="mg-t-10 text-r">
+					<button type="button" class="mui-btn mui-btn-red mui-btn-outlined mg-t-5">下架</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view a-href">
+						<li class="mui-table-view-cell">
+							<a href="#">所有</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">大师制作</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">糖果类</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="http://www.baidu.com">服装类</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">水果类</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+<script type="text/javascript">
+;(function($){
+	mui('.mui-scroll-wrapper').scroll();
+})(mui);
+</script>
+</html>

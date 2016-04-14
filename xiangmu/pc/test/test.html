@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+	<script src="./jquery-1.11.1.js"></script>
+	<!-- 加载MD5算法 -->
+	<script src="./md5.js"></script>
+	
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
+	<title>test</title>
+	<style>
+	li{list-style: none;}
+	.panel{
+		width: 500px;
+		margin: 100px auto;
+	}
+	span{
+		color:#f00;
+	}
+
+	.sele_ul{
+		border: 0;
+		display: inline-block;
+	}
+	.sele_li{
+	    background-color: #e4e4e4;
+	    border: 1px solid #aaa;
+	    border-radius: 4px;
+	    cursor: default;
+	    float: left;
+	    margin-right: 5px;
+	    margin-top: 5px;
+	    padding: 0 5px;
+	}
+	.sele_dele{
+		color: #999;
+	    cursor: pointer;
+	    display: inline-block;
+	    font-weight: bold;
+	    margin-right: 2px;
+	}
+	.sele_dele:hover{
+		color:#333;
+	}
+	.drop_ul_down{
+		width: 100%;
+		text-align: center;
+		max-height: 100px;
+		overflow: auto;
+	}
+	.sele_ul_drop{
+		display: inline-block;
+	}
+	</style>
+
+	
+</head>
+<body>
+<div class="panel panel-default">
+	<div class="panel-heading shaixuan"> 验证 </div>
+	<div class="panel-body project-list">
+	<form method="post" action="from.php">
+  <div class="form-group">
+    <label for="exampleInputUser">请输入用户名</label>
+    <input type="text" class="form-control" id="exampleInputUser" placeholder="请输入用户名" name="username" bitian="0">
+  </div>
+  <div class="form-group">
+    <label for="password">请输入密码</label>
+    <input type="password" class="form-control" id="password" placeholder="请输入密码" name="password" bitian="0">
+  </div>
+  <div class="form-group">
+    <label for="confirm_password">重复输入密码</label>
+    <input type="password" class="form-control" id="confirm_password" placeholder="重复输入密码" name="password2" bitian="0">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">请输入邮箱</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入邮箱" name="email" bitian="0">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputTel">请输入电话号码</label>
+    <input type="text" class="form-control" id="exampleInputTel" placeholder="请输入电话号码" name="tel" bitian="0">
+  </div>
+  <div class="checkbox">
+    <label for="exampleInputCheck">
+      <input type="checkbox" id="exampleInputCheck">记住我
+    </label>
+  </div>
+  <button type="button" class="btn btn-default">Submit</button>
+</form>
+</div>
+</div>
+</body>
+
+<script>
+	$(function(){
+		$('input').blur(function() {
+			// var is_checked=$(this).is(':checked');
+			// alert(is_checked);
+			var self = $(this);
+			var text = self.val();
+			var name = self.attr('name');
+			self.siblings('span').remove();
+			if(bitian(self,text)){
+				if (name == 'username') {
+					username(self,text);
+				}
+				if(name == 'password' || name == 'password2'){
+					password(self,text,name);
+				}
+				if(name == 'email') {
+					email(self,text);
+				}
+				if(name == 'tel') {
+					tel(self,text);
+				}
+			}
+		});
+
+		$('button').click(function(event) {
+			var OK = 1;
+			if(!check()){
+				OK = 0;
+			}
+			$('input').each(function(index, el) {
+				$(this).blur();
+				var tian = $(this).attr('bitian');
+				if(tian == '0'){
+					OK =0;
+					return false;
+				}
+			});
+
+			if(OK == 1){alert(OK);
+				//验证成功后，把密码用md5 加密
+				$("#password").val($.md5($("#password").val()));
+				$("#confirm_password").val($.md5($("#confirm_password").val()));
+
+				//获取 表单的值
+				var username = $('#exampleInputUser').val(),
+					password = $('#password').val(),
+					email = $('#exampleInputEmail1').val(),
+					tel = $('#exampleInputTel').val();
+
+				$.ajax({
+					url: 'from.php',
+					type: 'post',
+					dataType: 'json',
+					// data: $('form').serialize(),
+					// json数据格式
+					data: {username:username,password:password,email:email,tel:tel},
+					beforeSend:function(){
+						
+					},
+					success:function(data){
+						console.log(data);
+						if(!data.status){
+							alert('失败!');
+							return false;
+						}
+						var option='';
+						$.each(data.val,function(key, value) {
+							option+='<div class="form-group"><label for="exampleInputTel">你输入的'+key+'是：</label><span class="form-control" >'+value+'</span></div>';
+						});
+						option+='<div class="form-group"><label for="exampleInputTel">当前时间为：</label><span class="form-control" >'+data.sendtime+'</span></div>';
+						$('.panel-body').append(option);
+					}
+				})
+				// $(this).closest('form').submit();
+			}else{
+				alert('验证不通过！无法提交!');
+			}
+		});
+
+		$('input[type="checkbox"]').click(function(event) {
+			check();
+		});
+
+		function check(){
+			var checded = $('input[type="checkbox"]');
+			checded.siblings('span').remove();
+			var is_checked = checded.is(':checked');
+			if(!is_checked){
+				checded.after('<span>此处必点</span>');
+			}
+			return is_checked;
+		}
+		function bitian(self,text){
+			if(text == ''){
+				self.after('<span>该项必填</span>');
+				self.attr('bitian',0);
+				return false;
+			}else{
+				return true;
+			}
+		}
+
+		function username(self,text){
+			var zhongwen = /^[\u4e00-\u9fa5]+$/;
+            if (zhongwen.test(text)) {
+            	self.after('<span>用户名不能是中文</span>');
+            	self.attr('bitian',0);
+            }else{
+            	self.attr('bitian',1);
+            }
+		}
+
+		function password(self,text,name){
+			if(name =='password'){
+				var text2 = $('input[name="password2"]').val();
+				if(!text2 ==''){
+					passduibi(self,text,text2);
+				}
+			}
+
+			if(name == 'password2'){
+				var text1 = $('input[name="password"]').val();
+					passduibi(self,text1,text);
+			}
+		}
+
+		function passduibi(self,text1,text2){
+			if(text1 != text2){
+				$('input[name="password2"]').after('<span>两次密码必须一致!</span>');
+				self.attr('bitian',0);
+			}else{
+				$('input[name="password"]').attr('bitian',1);
+				$('input[name="password2"]').attr('bitian',1);
+				$('input[name="password2"]').siblings('span').remove();
+			}
+		}
+
+		function email(self,email){
+			var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+		　　if (!reg.test(email)) {
+				self.attr('bitian',0);
+			　　self.after('<span>邮箱格式错误</span>');
+			}else{
+				self.attr('bitian',1);
+			}
+		}
+
+		function tel(self,tel){
+			var isMobile=/^(?:13\d|15\d|18\d)\d{5}(\d{3}|\*{3})$/; //手机号码验证规则
+			var isPhone=/^((0\d{2,3})-)?(\d{7,8})(-(\d{3,}))?$/;   //座机验证规则
+		if (!isMobile.test(tel) && !isPhone.test(tel)) {
+				self.attr('bitian',0);
+			　　self.after('<span>电话格式输入错误</span>');
+			}else{
+				self.attr('bitian',1);
+			}
+		}
+		
+	});
+	</script>
+</html>

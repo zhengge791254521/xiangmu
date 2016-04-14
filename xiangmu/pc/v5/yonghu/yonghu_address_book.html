@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>三思德OA管理系统</title>
+		<link rel="stylesheet" href="../skin/css/public/amazeui.min.css">
+		<link rel="stylesheet" href="../skin/Font-Awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../skin/icon/iconfont.css">
+		<link rel="stylesheet" href="../skin/css/public/public.css">
+		<link rel="stylesheet" href="../skin/css/public/style.css">
+		<link rel="stylesheet" href="../skin/css/yonghu/yonghu_style.css">
+		<link rel="stylesheet" href="../skin/css/yonghu/yonghu_renyuan.css">
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body ontouchstart>
+		<!-- class命名 带有oa前缀的皆为自定义 其余都是 UI组件样式 -->
+		<!-- 头部start -->
+		<header class="am-topbar am-topbar-inverse am-topbar-fixed-top">
+			<div class="oa-middle-div">
+				<div class="am-topbar-brand">
+					<a href="#"><img src="../skin/images/logo-dibu.png" alt=""></a>
+				</div>
+				<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+				<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+					<div class="am-topbar-right">
+						<!-- 未登录 -->
+						<button class="am-btn am-btn-primary am-radius oa-login">登录</button>
+						<button class="am-btn am-btn-primary am-radius oa-login">注册</button>
+					</div>
+					<ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right">
+						<li class="am-active">
+							<a href="#">首 页</a>
+						</li>
+						<li><a href="#">产品中心</a>
+						</li>
+						<li><a href="#">新闻中心</a></li>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">个人中心</a>
+							<ul class="oa-munu-pop">
+								<li>
+									<div class="munu-u-box">
+										<img src="../skin/images/tou.png" alt="" />
+										<div class="">
+											<p>zhenggge791254521</p>
+											<span class="munu-u"><a href="">个人账户</a></span>
+											<!-- <span class="munu-m"><a href="">消息</a><b class="am-badge am-badge-warning am-round">5</b></span> -->
+										</div>
+									</div>
+									<div class="am-g munu-exit">
+										<a class="am-u-sm-6" href="#">我的订单</a>
+										<a class='am-u-sm-6 ao-exit' href=""> 安全退出</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="user-container">
+			<div class="oa-middle-div user-cont-box am-cf">
+				<!-- 左侧侧边栏 -->
+				<div class="user-sidebar">
+					<div data-am-widget="accordion" class="am-accordion am-accordion-gapped" data-am-accordion='{  }'>
+						<dl class="am-accordion-item">
+							<dt class="am-accordion-title user-sidebar-title">
+		          <i class="iconfont">&#xe620;</i>用户中心
+		        </dt>
+							<dd class="am-accordion-bd am-collapse">
+								<!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+								<div class="am-accordion-content">
+									<div class="user-sidebar-group">
+										<a class="user-sidebar-list">功能模块安装</a>
+										<a class="user-sidebar-list active">功能模块卸载</a>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl class="am-accordion-item">
+							<dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe651;</i>绑定资料
+		        </dt>
+							<dd class="am-accordion-bd am-collapse ">
+								<!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+								<div class="am-accordion-content">
+									<div class="user-sidebar-group">
+										<a class="user-sidebar-list">功能模块安装</a>
+										<a class="user-sidebar-list">功能模块卸载</a>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl class="am-accordion-item">
+							<dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe657;</i>产品购买
+		        </dt>
+							<dd class="am-accordion-bd am-collapse ">
+								<div class="am-accordion-content">
+									<div class="user-sidebar-group">
+										<a class="user-sidebar-list active">功能模块安装</a>
+										<a class="user-sidebar-list">功能模块卸载</a>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl class="am-accordion-item am-active">
+							<dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe632;</i>人员管理
+            </dt>
+							<dd class="am-accordion-bd am-collapse  am-in">
+								<div class="am-accordion-content">
+									<div class="user-sidebar-group">
+										<a class="user-sidebar-list">企业管理员</a>
+										<a class="user-sidebar-list active">通讯录</a>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl class="am-accordion-item">
+							<dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe63d;</i>功能模块
+            </dt>
+							<dd class="am-accordion-bd am-collapse ">
+								<div class="am-accordion-content">
+									<div class="user-sidebar-group">
+										<a class="user-sidebar-list active">功能模块安装</a>
+										<a class="user-sidebar-list">功能模块卸载</a>
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl class="am-accordion-item">
+							<dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe656;</i>财务管理
+            </dt>
+							<dd class="am-accordion-bd am-collapse ">
+								<!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+								<div class="am-accordion-content">
+									<div class="user-sidebar-group">
+										<a class="user-sidebar-list active">功能模块安装</a>
+										<a class="user-sidebar-list">功能模块卸载</a>
+									</div>
+								</div>
+							</dd>
+						</dl>
+					</div>
+
+				</div>
+
+				<!-- 右边内容区域 -->
+				<div class="user-content">
+					<div class="oa-panel">
+						<div class="oa-panel-hd">
+							<i class="iconfont">&#xe620;</i> 通讯录
+						</div>
+						<div class="oa-panel-bd">
+							<div class="am-padding">
+								<button type="button" class="am-btn am-btn-warning bg-orange am-radius am-btn-sm">同步到通讯录</button>
+								<div class="am-input-group ry-list-search">
+									<input type="text" id="" class="am-form-field" placeholder="输入想要查找的同事姓名">
+									<span class="am-input-group-btn">
+                <button class="am-btn am-btn-default" type="button"><span class="am-icon-search"></span> </button>
+									</span>
+								</div>
+							</div>
+							<div class="ry-tb-address-box am-cf">
+								<!--右侧字母展示 盒子-->
+								<ul class="ry-tb-address-az" id="ry-tb-address-az">
+								</ul>
+								<!--通讯录人员展示盒子-->
+								<div id="table-group-box">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- 右边内容区域结束 -->
+			</div>
+		</section>
+		<!-- 底部 -->
+		<footer class="box-container oa-foot">
+			<p>Copyright ©2013-2015 sanside.net All Rights Reserved. 蜀ICP备13015392号</p>
+			<p>版权所有 <a href="">三思德科技有限公司</a></p>
+		</footer>
+		<!-- 底部结束 -->
+		<script src="../skin/js/jquery-2.1.1.min.js"></script>
+		<script src="../skin/js/public/amazeui.min.js"></script>
+		<script src="../skin/js/public/public.js"></script>
+		<script src="../skin/js/public/pinyin.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			 
+			 
+			//后台需要传过来的数据格式
+			var user_book = [{
+			  img_url:"../skin/images/tou.png",username:"峰娃子",conpay:"职员",tel:"186465734",email:"745646545@qq.com"
+			},
+			{
+			  img_url:"../skin/images/tou.png",username:"郑哥哥",conpay:"董事长",tel:"186465734",email:"745646545@qq.com"
+			},
+			{
+			  img_url:"../skin/images/tou.png",username:"杰娃子",conpay:"职员",tel:"186465734",email:"745646545@qq.com"
+			},
+			{
+			  img_url:"../skin/images/tou.png",username:"杰神",conpay:"职员",tel:"186465734",email:"745646545@qq.com"
+			},
+			{
+			  img_url:"../skin/images/tou.png",username:"郑亚利",conpay:"职员",tel:"186465734",email:"745646545@qq.com"
+			},
+			{
+			  img_url:"../skin/images/tou.png",username:"杨路",conpay:"职员",tel:"186465734",email:"745646545@qq.com"
+			},
+			{
+			  img_url:"../skin/images/tou.png",username:"彭全元",conpay:"职员",tel:"186465734",email:"745646545@qq.com"
+			},
+			{
+			  img_url:"../skin/images/tou.png",username:"魏长江",conpay:"职员",tel:"186465734",email:"745646545@qq.com"
+			}];
+			
+			getUserList();
+			
+			//获取后台传递的json数据并分析
+			function getUserList(){
+			  var xing= [];
+			  $.each(user_book,function(index, el){
+			  var firstPin = codefans_net_CC2PY(el.username).substr(0,1);
+			  xing.push(firstPin);
+			  });
+			  //对名字的首字母进去重复 排序
+			  xing = unique(xing);
+			  setUserList(xing);
+			}
+			
+			//在页面添加通讯录人员信息和侧边字母
+			function setUserList(array){
+			  var user_li = '<li data-id="all" class="user-sel">#</li>';
+			  var table_td = '<table class="am-table am-table-centered oa-ry-list-tb am-table-hover">';
+			  $.each(array,function(index,elm){
+			    user_li +='<li data-id="user_'+elm+'"  class="user-sel">'+elm+'</li>';
+			
+			    table_td +='<tbody><tr><td class="letter-title" id="user_'+elm+'" colspan="5">'+elm+'</td></tr>';
+			
+			    $.each(user_book,function(i,item){
+			      if(elm == codefans_net_CC2PY(item.username).substr(0,1)){
+			        table_td +='<tr><td><img src="'+item.img_url+'" class="am-img-thumbnail am-circle"></td><td class="ry-list-name">'+item.username+'</td><td>'+item.conpay+'</td><td>'+item.tel+'</td><td>'+item.email+'</td></tr>';
+			      }
+			    })
+			
+			    table_td +='</tbody>';
+			  })
+			  table_td +='</table></div>';
+			  
+			  $('#table-group-box').append(table_td);
+			  $('#ry-tb-address-az').append(user_li);
+			
+			  $('#ry-tb-address-az').parent('.ry-tb-address-box').height($('#ry-tb-address-az').height());
+			  resizeHeight($('.user-container'),'load');
+			
+			  bindUserList();
+			}
+			//绑定相应的事件
+			function bindUserList(){
+			  $('#ry-tb-address-az').on('click','.user-sel',function(event) {
+			    var uid = $(this).attr('data-id');
+			    if(uid != 'all'){
+			    	$('#table-group-box #'+uid).closest('tr').nextAll('tr').show();
+			      $('#table-group-box #'+uid).closest('tbody').show().siblings('tbody').hide();
+			    }else{
+			      $('table tbody tr').show();
+			      $('table tbody').show();
+			    }
+			  });
+			  $('.ry-list-search input').keyup(function(event) {
+			    if(event.keyCode == 13){
+			      var val = $(this).val();
+			      selectUser(val);
+			    }
+			  });
+			  $('.ry-list-search button').click(function(event) {
+			      var val = $('.ry-list-search input').val();
+			      selectUser(val);
+			  });
+			
+			  var selectUser = function(val){
+			    $('#table-group-box tbody').hide();
+			    $('#table-group-box .ry-list-name').each(function() {
+			      var self = $(this);
+			      self.closest('tr').hide();
+			      if(self.html().indexOf(val) >=0){
+			        self.closest('tr').show();
+			        self.closest('tbody').show();
+			      }
+			    });
+			  }
+			
+			}
+			//A-Z去重复排序
+			function unique(array) {
+			  var ret = [];
+			  var o = {};
+			  for(var i=0, len=array.length; i<len; ++i){
+			  if(!o[array[i]]){ 
+			    ret.push(array[i]); 
+			    o[array[i]] = array[i]; 
+			    }
+			  }
+			  return ret.sort(); 
+			}
+			
+			
+			
+			})
+		</script>
+	</body>
+
+</html>

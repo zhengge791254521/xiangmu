@@ -1,0 +1,446 @@
+/********************掌上签到管理人员列表页************************/
+#title_box{
+	border:none;
+	background-color:#1ab394;
+	color:#FFF;
+}
+#title_box:hover{
+	background-color:#1ab394;
+}
+/**************************签到详情页面******************************************/
+
+.sign_up_line{
+	border-right:1px solid #e7eaec;
+	padding:20px 30px;
+}
+.sign_up_content{
+	overflow:hidden;
+	padding:15px 0;
+}
+.sign_up_content > h3,
+.sign_up_content > p{
+	float:left;	
+}
+.sign_up_img{
+	margin-left:10px;
+	font-size:14px;
+	line-height:28px;	
+}
+.sign_up_img > li{
+	list-style:none;
+	float:left;
+	margin:5px;
+	width:160px;
+}
+.sign_up_img > li img{
+	border:1px solid #e7eaec;
+	width:inherit;	
+}
+
+/**************************个人签到详情页面******************************************/
+#sign_up_bottom{
+	border:0;
+	padding:0;	
+}
+#sign_up_top{
+	border:0;	
+}
+.sign_up_geren{
+	background-color:#FFF;
+	overflow: hidden;
+	border:none;
+	width: 80%;
+	margin: 0 auto;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.3);	
+	border-top:15px #1ab394 solid;
+}
+
+/********************************添加签到项目页面***********************************************/
+#sign_new_check{
+	margin:0;
+}
+#sign_new_check > .i-checks{
+	margin:0;
+	padding:0;	
+}
+#sign_new_select{
+	margin-bottom:0;	
+}
+.sign_new_tip{
+	width:100%;
+	resize:none;
+	border-radius:4px;
+	border:1px solid #e5e6e7;	
+}
+.sign_new_tip01{
+	width:100%;
+	margin-top:20px;
+	height:100px;
+	resize:none;
+	border-radius:4px;
+	border:1px solid #e5e6e7;	
+}
+.sign_box{
+	box-shadow:0px 1px 2px rgba(0,0,0,0.3);	
+}
+.download_btn{
+	float: right;
+}
+.sign_up_data{
+	height: 34px;
+}
+/********************反馈详情页面************************/
+.feed_back_xiangqing{
+	background-color:#FFF;
+	border:none;
+	width: 80%;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.3);	
+	border-top:15px #1ab394 solid;
+	min-height:500px;
+	position: relative;
+	margin: 0 auto;
+}
+.time_box{
+	margin-top:10px;	
+}
+.message_box{
+	width:100%;
+	overflow:hidden;
+	margin-top:20px;	
+}
+.message_img_right{
+	float:right;	
+}
+.message_right{
+	float:right;	
+}
+.message_img{
+	width:60px;
+	height:60px;
+	border-radius:6px;
+	overflow:hidden;
+	text-align:center;	
+}
+.message_img img{
+	width:inherit;	
+	height:inherit;
+}
+.message_right{
+	background-color:#8ec31e;
+	color:#FFF;
+	margin-right:30px;	
+}
+.message_img_left{
+	float:left;	
+}
+.message_left{
+	float:left;
+	background-color:#1991f0;
+	color:#FFF;	
+	margin-left:30px;
+}
+.message{
+	max-width:600px;
+	border-radius:6px;
+	padding:6px 6px 6px 6px;
+	position:relative;
+	word-break:break-all;
+	border:none 0;
+}
+.message img{
+	max-width:600px;
+	border-radius:6px;	
+}
+.message_right:before{
+	content:"";
+	display:block;
+	position:absolute;
+	background:url(../img/feed_back/message_01.svg) center center no-repeat;
+	width:30px;
+	height:30px;
+	right:-20px;
+	top:0;
+}
+.message_left:before{
+	content:"";
+	display:block;
+	position:absolute;
+	background:url(../img/feed_back/message_02.svg) center center no-repeat;
+	width:30px;
+	height:30px;
+	left:-20px;
+	top:0;
+}
+@media (max-width:1400px){
+	.message{
+		max-width:320px;
+	}
+	.message img{
+		max-width:300px;
+		border-radius:6px;	
+	}	
+	.feed_back_content{
+		padding:10px 40px;
+	}
+}
+@media (max-width:1200px){
+	.message{
+		max-width:300px;
+	}
+	.message img{
+		max-width:280px;
+		border-radius:6px;	
+	}	
+	.feed_back_content{
+		padding:10px 30px;
+	}
+}
+@media (max-width:1000px){
+	.message{
+		max-width:200px;
+		border-radius:6px;
+		padding:6px 6px 6px 6px;
+		position:relative;
+		word-break:break-all;
+	}
+	.message img{
+		max-width:180px;
+		border-radius:6px;	
+	}	
+	.feed_back_content{
+		padding:10px 30px;
+	}
+	
+}
+@media (max-width:768px){
+	.message{
+		max-width:120px;
+		border-radius:6px;
+		padding:6px 6px 6px 6px;
+		position:relative;
+		word-break:break-all;
+	}
+	.message img{
+		max-width:100px;
+		border-radius:6px;	
+	}	
+	.feed_back_content{
+		padding:10px 10px;
+	}
+}
+
+@media (min-width:1400px){
+	.message{
+		max-width:450px;
+		border-radius:6px;
+		padding:6px 6px 6px 6px;
+		position:relative;
+		word-break:break-all;
+	}
+	.message img{
+		max-width:420px;
+		border-radius:6px;	
+	}	
+	.feed_back_content{
+		padding:10px 50px;
+	}
+}
+.kong{
+	height:100px;	
+}
+.feed_back_input{
+	height:60px;
+	width:100%;
+	background-color:rgba(0,0,0,0.4);
+	position:absolute;
+	bottom:0;
+	left:0;	
+}
+.feed_back_input textarea{
+	position:absolute;
+	width:300px;
+	height:40px;
+	resize:none;
+	top:10px;
+	margin-left:-170px;
+	left:50%;
+}
+.feed_back_input input{
+	position:absolute;
+	height:40px;
+	width:60px;
+	top:10px;
+	left:50%;
+	margin-left:150px;
+}
+.feed_back_input i{
+	position:absolute;
+	color:#e5e5e5;
+	top:16px;
+	left:50%;
+	margin-left:-220px;
+	cursor:pointer;
+}
+/**************************高级反馈详情页面******************************************/
+
+.sign_up_line{
+	border-right:1px solid #e7eaec;
+	padding:20px 30px;
+}
+.sign_up_content{
+	overflow:hidden;
+	padding:15px 0;
+}
+.sign_up_content > h3,
+.sign_up_content > p{
+	float:left;	
+}
+.sign_up_img{
+	margin-left:10px;
+	font-size:14px;
+	line-height:28px;	
+}
+.sign_up_img > li{
+	list-style:none;
+	float:left;
+	margin:5px;
+	width:160px;
+}
+.sign_up_img > li img{
+	border:1px solid #e7eaec;
+	width:inherit;	
+}
+#sign_up_bottom{
+	border:0;
+	padding:0;	
+}
+#sign_up_top{
+	border:0;	
+}
+.sign_up_geren{
+	background-color:#FFF;
+	overflow: hidden;
+	border:none;
+	width: 80%;
+	margin: 0 auto;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.3);	
+	border-top:15px #1ab394 solid;
+}
+.sign_up_img textarea{
+	width: 100%;
+	resize:none;
+	border: 1px solid #1ab394;
+}
+.sign_up_XQbtn{
+	padding: 0;
+}
+.sign_up_img > .btn{
+	float: right;
+}
+.sign_up_huifu{
+	font-weight: 600;
+}
+
+/***********************************/
+
+.feed_back_box{
+	box-shadow:0px 1px 2px rgba(0,0,0,0.3);	
+}
+.download_btn{
+	float: right;
+}
+/************************************/
+.reawrd_noborder{
+	border: none;
+}
+.reward_line{
+	position: relative;
+	border:1px solid #e7eaec;
+	border-top: 15px solid #1ab394;
+}
+@media (min-width: 992px){
+	.reward_line:before{
+		content: "";
+		position: absolute;
+		width: 1px;
+		height:100%;
+		background-color:#e7eaec;
+		left: 50%;
+		bottom: 0;
+	}
+}
+@media (max-width: 992px){
+	.reward_line:before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height:1px;
+		background-color:#e7eaec;
+		left: 0;
+		top: 500px;
+	}
+}
+.reward_fenxibox{
+	max-width: 400px;
+	margin-left: 30px;
+}
+.reward_fenxibox h2{
+	font-family: "微软雅黑";
+	font-weight: 400;
+	color: black;
+}
+.reward_fenxibox p{
+	font-weight: 400;
+	font-size: 16px;
+}
+.reward_fenxibox >:nth-child(2){
+	padding-top: 10px;
+}
+.reward_heading{
+	padding:10px 15px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.reward_heading p{
+	float: left;
+	margin-top: 5px;
+}
+.rewaed_group{
+	width: 30%;
+	float: right;
+	position: relative;
+}
+.reward_search{
+	position: absolute;
+	z-index: 99;
+	right: 10px;
+	font-size: 1.2em;
+	color:#999999;
+	top: 11px;
+}
+.reward_up_title{
+	line-height: 34px;
+}
+@media (min-width: 768px){
+	.reward_up_title{
+		text-align: right;
+	}
+}
+.reward_ul{
+	border-bottom: 1px solid #e7eaec;
+}
+.chosen-container-single .chosen-single{
+	background-color: red;
+	border-radius: 1px;
+	border-color: #e5e6e7;
+	box-shadow: none;
+	line-height: 32px;
+}
+
+.test_sousuo{
+			margin-top:15px; 
+			max-width:1166px; 
+			margin:0 5%;
+			margin-top:30px;
+				
+			}

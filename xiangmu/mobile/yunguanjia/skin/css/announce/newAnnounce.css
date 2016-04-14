@@ -1,0 +1,23 @@
+
+.title_box{
+	border-bottom:#ddddde 1px solid;	
+	padding:15px 0;
+	overflow:hidden;
+}
+.fa-angle-right{
+
+}
+.img_box{
+	display:inline-block;
+	position:relative;	
+}
+.tongzhi_new{
+	position:absolute;	
+	top:-4px;
+	right:-60px;
+}
+a{
+	color:#000000;}
+a:hover{
+	color:#000;
+	text-decoration:none;}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<link href="static/css/public_yun.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="static/css/style.css" media="screen" />
+
+<title>三思德科技</title>
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="container-fluid padding-header">
+	<div class="header">
+		<nav class="navbar middle-div">
+			<div class="col-md-12">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                <span class="sr-only">daohang</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	                <a class="navbar-brand" href="#page1">
+	                <img class="img-responsive img-logo" src="static/images/logo.png" >
+	                </a>
+	        </div>
+	      
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	            <ul class="nav navbar-nav navbar-right" id="menu">
+	                <li><a href="javascript:;" ><span class="nav-login">登录</span></a></li>                               
+	                <li><a href="qdy_regist.html" ><span class="nav-shenqing">新用户注册</span></a></li>                              
+	            </ul>
+	        </div>
+	        </div>
+	    </nav>
+	</div>
+	
+	<div class="qdy-login-img">
+		<div class="middle-div">
+			<div class="qdy-login panel panel-default">
+                <div class="panel-heading">
+                	<div class="row">
+                		<div class="col-md-6 login-lo text-left">渠道云管家会员登录</div>
+                		<div class="col-md-6 weixin-lo text-right"><a href="javascript:;" login="0">微信扫描登录</a></div>
+                	</div>
+                    
+                </div>
+                <div class="panel-body project-list">
+                	<div class="pc-login" >
+                		<div class="input-group text-height">
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+							<input class="form-control" type="text" placeholder="请输入用户名">
+						</div>
+						<div class="input-group text-height">
+							<span class="input-group-addon"><i class="fa fa-unlock-alt"></i> </span>
+							<input class="form-control" type="text" placeholder="请输入密码">
+						</div>
+						<div class="input-group">
+							<div class="row">
+		                		<div class="col-md-7 text-left checkbox">
+									<label>
+									<input type="checkbox" value="">
+									自动登录
+									</label>
+								</div>
+		                		<div class="col-md-5 text-right"><a href="" style="font-size:16px;">忘记密码？</a></div>
+		                	</div>
+						</div>
+						<div class="input-group">
+							<button class="btn btn-sm btn-primary bg_blue full-width" type="submit">
+								登录
+							</button>
+						</div>
+                	</div>
+                	<div class="weixin-login" style="display:none;">
+                		<div class="input-group text-center full-width">
+                			<img src="static/images/erweima.png" width="250" alt="">
+                		</div>
+                		<div class="input-group text-center full-width">
+                			请使用微信扫描二维码登录
+                		</div>
+                	</div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="middle-div">
+		<div class="foot row">
+			<div class="col-md-3">
+				<img src="static/images/logo-dibu.png" class="img-responsive" alt="Responsive image">
+				<div class="text-right"><img src="static/images/erweima.png" class="img-responsive erwei-img" alt="Responsive image"></div>
+			</div>
+			<div class="col-md-3">
+				<h4>商务合作</h4>
+				<ul>
+					<li><p>商务QQ：</p><span>229980</span></li>
+					<li><p>商务电话：</p><span>4000283990</span></li>
+					<li><p>快站服务商</p></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h4>商务合作</h4>
+				<ul>
+					<li><p>渠道合作：</p><span>400-028-3990</span></li>
+					<li><p>地址：</p><span>四川省成都市金牛区城隍东巷41号6-7楼</span></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h4>联系我们</h4>
+				<ul>
+					<li><p>热线：</p><span>400-028-3990</span></li>
+					<li><p>反馈：</p><span>facebook@v5work.com</span></li>
+					<li><p>微信号：</p><span>v5workcom</span></li>
+					<li><p>招聘：</p><span>HR@v5work.com</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="foot-bottom col-md-12 text-center">
+			Copyright ©2013-2015 sanside.net All Rights Reserved. 蜀ICP备13015392号
+		</div>
+	</footer>
+</div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$('.qdy-login .weixin-lo a').click(function(event) {
+			var num = $(this).attr('login');
+			if(num == 0){
+				$('.qdy-login .weixin-login').show().siblings('.pc-login').hide();
+				$(this).html('填写用户名/密码登录');
+				$(this).attr('login','1');
+			}else{
+				
+				$('.qdy-login .pc-login').show().siblings('.weixin-login').hide();
+				$(this).html('微信扫描登录');
+				$(this).attr('login','0');
+			}
+		});
+	})
+</script>
+</html>

@@ -1,0 +1,312 @@
+.card-upload-box{
+	margin: 15px auto;
+	width: 290px;
+	height: 390px;
+	text-align: center;
+	position: relative;
+}
+.postcard-ok .card-upload-box-ok{
+	margin: 15px auto;
+	width: 80%;
+	text-align: center;
+	position: relative;
+}
+.postcard-content{
+	margin-top: 20px;
+}
+.card-upload-box img{
+	/*width: 100%;*/
+}
+.card-upload-box .pf-kuang{
+	z-index: 22;
+	position: relative;
+}
+.card-img{
+	-webkit-transform:rotate(-6deg);
+	-moz-transform:rotate(-6deg);
+	-o-transform:rotate(-6deg);
+	-ms-transform:rotate(-6deg);
+	transform:rotate(-6deg);
+}
+.card-upload{
+	position: absolute;
+	top: 40%;
+	width: 60%;
+	left: 20%;
+	z-index: 34;
+	/*display: inline-block;*/
+}
+.card-upload:active{
+	width: 50%;
+}
+.card-upload>img{
+	width: 100%;
+}
+.upload-img{
+	max-width: 100%;
+	/*max-height: 100%;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	z-index: 20;
+}
+.card-next{
+	width: 30%;
+	position: absolute;
+	right: 0;
+	top: -30px;
+	display: inline-block;
+}
+.card-reset{
+	/*width: 30%;*/
+	padding: 2px 15px;
+	position: absolute;
+	left: 0;
+	top: -30px;
+	color: #771d00;
+	font-weight: 700;
+	display: inline-block;
+	background: #cacbcd;
+}
+.photo_make{
+	margin-top: 80px;
+}
+.photo_make .card-next{
+	top:-60px;
+}
+.photo_make .card-prev{
+	top:-60px;
+	width: 30%;
+	position: absolute;
+	left: 0;
+	display: inline-block;
+}
+.card-div{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top:0;
+	padding: 2% 1% 5%;
+	overflow: hidden;
+}
+.card-div img{
+	max-width: 95%;
+	position: absolute;
+	top:5px;
+	left: 2%;
+	/*height: 95%;*/
+}
+.card-div .card-photo{
+	z-index: 31;
+}
+.card-pf{
+	z-index: 33;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.pf-select-box{
+	width: 100%;
+	/*height: 100px;*/
+	padding: 10px;
+	overflow: hidden;
+}
+.pf-select-box .swiper-slide{
+	/*height: 100%;*/
+	padding: 5px;
+	/*display: inline-block;*/
+	float: left;
+}
+.pf-select-box .swiper-slide.active{
+	box-shadow: 0 0 5px #000 inset;
+}
+.pf-select-box .swiper-slide img{
+	width: 100%;
+	display: block;
+}
+
+.postcard-make{
+	height: 100%;
+}
+
+
+
+.postcard-make-box{
+	width: 480px;
+	display: block;
+	margin:0 auto;
+}
+.postcard-top{
+	width: 480px;
+	display: block;
+	position: relative;
+	height: 50px;
+}
+.postcard-ok{
+	width: 480px;
+	display: inline-block;
+}
+.pc-left{
+	position: relative;
+	width: 40%;
+	float: left;
+	display: inline-block;
+	height: 100%;
+}
+.prev-btn{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100px;
+	display: inline-block;
+}
+.prev-btn img{
+	width: 100%;
+}
+.pc-right{
+	width: 60%;
+	position: relative;
+	float: left;
+	display: inline-block;
+	height: 100%;
+	padding: 2%;
+	/*background: #ccc;*/
+}
+
+.pc-right .pc-youbian-box{
+	width: 100%;
+	display: inline-block;
+}
+.pc-youbian{
+	float: left;
+	display: inline-block;
+	width:100%;
+}
+.youbian-num{
+	display: inline-block;
+	width: 100%;
+}
+.pc-youbian span{
+	width: 18px;
+	height: 18px;
+	border:1px solid #999;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 20px;
+	display: inline-block;
+	margin-right: 2px;
+}
+.youpiao{
+	float: right;
+	/*position: absolute;
+	top:20px;
+	right:15px;*/
+	width: 30%;
+}
+.youpiao img{
+	width: 100%;
+}
+
+.pc-contentinfo{
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+.pc-pop:active{
+	border:1px solid #449d44;
+}
+.pc-youbian-box .youpiao-address{
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	
+}
+.youpiao-address p{
+	margin-top: 20px;
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	text-indent: 2em;
+}
+.pc-ress{
+	width: 100%;
+	height: 20px;
+	display: inline-block;
+	border-bottom: 1px solid #ccc;
+}
+.res-pad{
+	width: 65%;
+	height: 20px;
+	display: inline-block;
+	border-bottom: 1px solid #ccc;
+}
+.pc-address{
+	width:100%;
+	display: inline-block;
+	margin-top: 10px;
+	position: relative;
+}
+.noodles-logo{
+	float: left;
+	width:30%;
+
+}
+.noodles-logo img{
+	width:100%;
+}
+.pc-addressinfo{
+	float: left;
+	width: 70%;
+	position: relative;
+}
+.pc-addressinfo p{
+	position: absolute;
+	left: 0;
+	top:0;
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	text-indent: 2em;
+}
+.make-true{
+	margin-top: 10px;
+	width: 100px;
+	display: inline-block;
+}
+.make-true img{
+	width: 100%;
+}
+.confirm-make{
+	margin-top: 10px;
+	width: 70%;
+	float: right;
+	display: inline-block;
+}
+.make-bottom-logo{
+	width: 80px;
+	float: right;
+	display: inline-block;
+}
+.pop-pc-box{
+	z-index: 1111;
+	width: 100%;
+	padding: 10px 5%;
+	display: inline-block;
+	position: relative;
+	background-color: #cfbb9e;
+}
+.box-form-pc{
+	width: 100%;
+	display: inline-block;
+	height: 220px;
+	overflow-y:scroll;
+}
+.form-pc-box{
+	/*display: none;*/
+}

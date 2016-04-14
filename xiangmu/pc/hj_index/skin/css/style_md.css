@@ -1,0 +1,48 @@
+@media (min-width: 768px) and (max-width: 1200px){
+	#bs-example-navbar-collapse-1 .hj-nav-content{
+		margin-left: 20px;
+	}
+	.navbar-brand img{
+		height: 40px;
+	}
+	.hj-nav-content li > a > p{
+		font-size: 16px;
+	}
+
+	/*轮播按钮*/
+	.swiper-next,.swiper-prev{
+		top:auto;
+	    bottom: -30px;
+	    font-size: 14px;
+	    height: 26px;
+	    line-height: 26px;
+	    margin-top: -35px;
+	    width: 20px;
+	    margin-top: 0;
+	    z-index: 11;
+	}
+	.swiper-next{
+	  right: 20px;
+	}
+	.swiper-prev{
+	  left: 20px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	#hj-slider{
+		padding: 20px 20px 40px;
+		background: #929292;
+	}
+	.swiper-next,.swiper-prev,.swiper-pagination{
+		bottom:5px;
+	}
+	.swiper-pagination .swiper-pagination-bullet{
+		background: #fff;
+	}
+	.hj-content{
+		padding-top: 50px;
+		background: #fff;
+	}
+}

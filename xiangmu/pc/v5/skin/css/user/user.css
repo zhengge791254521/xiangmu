@@ -1,0 +1,282 @@
+﻿a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+		margin: 0;
+		padding: 0;
+	}
+	article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+		display: block;
+	}
+	ol, ul {
+    	list-style: none;
+	}
+	img {
+		border: 0 none;
+		vertical-align: middle;
+	}
+
+	.zhinan{
+	text-align: center;
+	padding: 5px;
+}
+.zhinan-b{
+	border:1px solid #DFD9E7;
+	padding: 10px;
+}
+.zhinan-b p{
+	line-height: 50px;
+}
+.zhinan-b button{
+	border-radius: 10px
+}
+
+/*下载*/
+.oa-down{
+	width: 100%;
+	height: 1260px;
+	margin: 0 auto;
+}
+.oa-center{
+	height: 60px;
+}
+.oa-center h1{
+	text-align: center;
+	line-height: 60px;
+	color: #9f9f9f;
+}
+.oa-down-top{
+	background: url(../../images/download1.png) no-repeat;
+	width: 100%;
+	height: 568px;
+	margin: 0px auto;
+	position: relative;
+}
+.oa-down-top .oa-down-anniu .p{
+	position: absolute;
+	width: 230px;
+	height: 40px;
+	border: none;
+	top: 343px;
+	left: 660px;
+	border-radius: 10px;
+}
+
+.oa-down-top .oa-down-anniu1 .p{
+	position: absolute;
+	width: 230px;
+	height: 40px;
+	top: 396px;
+	left: 660px;
+	border-radius: 10px;
+	border: none;
+}
+
+.oa-down .oa-down-bottom{
+	width: 1080px;
+	height: 600px;
+	margin: 0 auto;
+}
+.oa-down .oa-down-bottom .oa-down-bottom-top{
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+}
+.oa-down .oa-down-bottom .oa-down-bottom-top>ul>li{
+	width: 358px;
+	height: 298px;
+	border: 1px solid black;
+	float: left;
+	margin-right: 2px;
+}
+.oa-down .oa-down-bottom .oa-down-bottom-top>ul>li .oa-down-bottom-top-1{
+	margin: 20px auto;
+	text-align: center;
+}
+.oa-down .oa-down-bottom .oa-down-bottom-top>ul>li .oa-down-bottom-top-1 ul li{
+	padding-bottom: 20px;
+	font-size: 16px;
+}
+.li1{
+	border-radius: 6px;
+}
+.oa{
+	margin-right: 0;
+}
+.oa-down .oa-down-bottom .oa-down-bottom-bottom{
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+}
+.oa-down .oa-down-bottom .oa-down-bottom-bottom>ul>li{
+	width: 358px;
+	height: 298px;
+	border: 1px solid black;
+	float: left;
+	margin-right: 2px;
+}
+.oa-down .oa-down-bottom .oa-down-bottom-bottom>ul>li .oa-down-bottom-bottom-1{
+	margin: 20px auto;
+	text-align: center;
+}
+.oa-down .oa-down-bottom .oa-down-bottom-bottom>ul>li .oa-down-bottom-bottom-1 ul li{
+	padding-bottom: 20px;
+	font-size: 16px;
+}
+.oa-down .oa-down-bottom .oa-down-bottom-bottom>ul>li .oa-down-bottom-bottom-1 .oa-li1{
+	width: 120px;
+	height: 36px;
+	background: #88c82e;
+	margin: 20px auto 0;
+	border-radius: 10px;
+	color: white;
+	line-height: 36px;
+
+}
+
+
+.am-form-horizontal .am-checkbox, .am-form-horizontal .am-checkbox-inline, .am-form-horizontal .am-form-label, .am-form-horizontal .am-radio, .am-form-horizontal .am-radio-inline {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0.3em;
+}
+.oa-yue a{
+	font-size:11px;
+	}
+
+
+
+
+.cebian-right{
+	position: fixed;
+	right: 10px;
+	top: 250px;
+	width: 45px;
+	height: 200px;
+	
+}
+.cebian-box{
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	margin: 5px 0;
+	background: #fff;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.cebian-box a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background: url(../../images/cebian.png) no-repeat;
+}
+a.ce-shenqing{
+	background-position:0 -90px;
+}
+a.ce-shenqing:hover{
+	background-position:0 -270px;
+}
+a.ce-phone{
+	background-position:0 -45px;
+}
+a.ce-phone:hover{
+	background-position:0 -225px;
+}
+a.ce-qq{
+	background-position:0 0;
+}
+a.ce-qq:hover{
+	background-position:0 -180px;
+}
+a.ce-erweima{
+	background-position:0 -135px;
+}
+.box{
+	width:738px;
+	height:790px;
+	background:#FFFFFF;
+	margin:10px auto;
+	overflow:hidden;
+	border-radius:5px 5px;
+	}
+
+/*content中间的主体内容*/
+.box_right{
+	width:740px;
+	height:770px;
+	float:left;
+	margin-top:10px;
+	}
+.box_right_top{
+	width:740px;
+	height:50px;
+	background:url(../../images/tiao.fw.png) no-repeat center;}
+.span_one{
+	line-height:50px;
+	margin-left:50px;
+	font-weight:bold;
+	
+		}
+
+
+
+
+
+
+/*注册*/
+/*公共*/
+
+
+.row{
+	margin: 0;
+}
+
+.middle-div{
+	width: 1150px;
+	margin: 43px auto;
+	display: block;
+	position: relative;
+}
+.qdy-regist .panel-heading{
+	padding: 20px 15px 0;
+}
+.qdy-regist-box{
+	width: 100%;
+	height: 595px;
+	padding-top: 160px;
+	background: url(../../images/regist_bg.jpg) 50%;
+}
+.qdy-regist-box .regis-pc-img{
+	width: 607px;
+	height: 400px;
+	float: left;
+	position: relative;
+	z-index: 2;
+}
+.regist-cont{
+	margin-top: 10px;
+	width: 435px;
+	float: left;
+	z-index: 2;
+}
+.regist-cont .qdy-regist{
+	border: 0;
+}
+.regist-cont .qdy-regist .regist-lo{
+	font-size: 16px;
+	color:#333;
+}
+.regis-yanzheng .form-control{
+	width: auto;
+}
+.regis-yanzheng button{
+	float: right;
+}
+.regis-bg{
+	position: absolute;
+	width: 700px;
+	height: 390px;
+	top:10px;
+	right: 70px;
+	background: #008cd6;
+	opacity: 0.2;
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html onselectstart="return false" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<style>
+body{
+	background: #000;
+}
+*{
+	margin: 0;
+	padding: 0;
+}	
+div.pic{
+	width: 120px;
+	height:180px;				/* 120: 180  4:6*/
+	margin: 150px auto 0;
+	border:1px solid #fff;
+	position: relative;
+	transform-style:preserve-3d;
+	transform:perspective(800px) rotateX(-10deg) rotateY(0deg);
+}
+div.pic img{
+	position: absolute;
+	/*display: none;*/
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #fff;
+	-webkit-box-reflect:below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%);
+	-o-box-reflect:below 10px -o-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%);
+}
+div.pic p{
+	width: 1200px;
+	height:1200px;
+	background: -webkit-radial-gradient(center center,600px 600px,rgba(255,255,255,0.5),rgba(0,0,0,0) 100%);
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	margin-top: -600px;
+	margin-left: -600px;
+	transform:rotateX(90deg);
+	border-radius: 100%;
+}
+</style>
+<body>
+	<div class="pic">
+	<p></p>
+		<img src="img/1.jpg" alt="" />
+		<img src="img/2.jpg" alt=""/>
+		<img src="img/3.jpg" alt="" />
+		<img src="img/4.jpg" alt="" />
+		<img src="img/5.jpg" alt="" />
+		<img src="img/6.jpg" alt="" />
+		<img src="img/7.jpg" alt="" />
+		<img src="img/8.jpg" alt="" />
+		<img src="img/9.jpg" alt="" />
+		<img src="img/10.jpg" alt="" />
+		<img src="img/11.jpg" alt="" />
+	</div>
+</body>
+
+<!-- onselectstart="return false"    禁用浏览器复制功能 -->
+<!-- ondragstart="return false"    禁用浏览器复制功能 -->
+<script type="text/javascript">
+$(function(){
+	var imgL = $('div.pic img').size();
+	var deg = 360 / imgL;
+	//移动的距离初始参数
+	var roY = 0,roX = -10;
+	//定义鼠标移动的距离参数
+	var xN = 0,yN = 0;
+	var timer = null;
+	$('div.pic img').each(function(i) {
+		$(this).css({
+			'transform': 'rotateY('+i*deg+'deg) translateZ(350px)'
+		});
+		$(this).attr('ondragstart','return false');
+	});
+
+	$(document).mousedown(function(ev){
+		//先清除定时器
+		clearInterval(timer);
+		//记录初始的坐标
+		var x_ = ev.clientX;
+		var y_ = ev.clientY;
+		$(this).bind('mousemove',function(ev) {
+			console.log('在移动');
+			//不断记录移动的坐标
+			var x = ev.clientX;
+			var y = ev.clientY;
+
+			//获取移动的距离
+			xN = x-x_;
+			yN = y-y_;
+
+			//实现拖拽的距离
+			roY += xN*0.2;
+			roX -= yN*0.1;
+			// $('body').append('<div style="width:5px;height:5px;background:#f00;position:absolute;top:'+y+'px;left:'+x+'px"></div>');
+			$('div.pic').css({
+				transform: 'perspective(800px) rotateX('+roX+'deg) rotateY('+roY+'deg)'
+			});
+			//更新初始坐标
+			x_ = ev.clientX;
+			y_ = ev.clientY;
+		});
+	}).mouseup(function(event) {
+		$(this).unbind('mousemove');
+		timer = setInterval(function(){
+			xN *= 0.95;
+			yN *= 0.95;
+			if(Math.abs(xN) < 1 && Math.abs(yN) < 1){
+				clearInterval(timer);
+			}
+			//实现拖拽的距离
+			roY += xN*0.2;
+			roX -= yN*0.1;
+			$('div.pic').css({
+				transform: 'perspective(800px) rotateX('+roX+'deg) rotateY('+roY+'deg)'
+			});
+			console.log(xN);
+		},30);
+	});
+})
+</script>
+</html>

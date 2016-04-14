@@ -1,190 +1,253 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>web前端开发案例展示</title>
+<meta name="Keywords" content="我叫郑亚利,前端开发">
+<meta name="Description" content="前端开发求职，成都，8k">
+<meta name="renderer" content="webkit">
 
-    <title>1+N校园</title>
-    <link rel="stylesheet" href="Public/frozenui/css/frozen.css">
-    <!-- public公共样式,个人整合一些常用样式 建议保留public 和style 其余的按模块区分-->
-    <link rel="stylesheet" href="Public/css/public.css">
-    <link rel="stylesheet" href="Public/css/style.css">
+	<link rel="stylesheet" href="skin/amazeui/css/amazeui.css"/>
+	<link rel="stylesheet" href="skin/css/public.css" />
+	
+	<link rel="stylesheet" href="skin/css/pc/style.css" />
 
 </head>
-<body ontouchstart>
-<header class="ui-header ui-header-positive ui-border-b sch-header" id="">
-	<!-- 点击的时候尽量用自己设置的class或者id ,这里的向下图标在头部有样式问题,原因尚未找到,在css做了单独处理 -->
-    <div class="sch-select-group" id="school-sel">
-    	电子科技大学成都学院
-        <!-- <div class="ui-select">
-            <select id="school" style="color:#fff;" onchange="selectschool(this)">
-                <option value="0">校园选择</option>
-                <option value="1">电子科技大学成都学院</option>
-            </select>
-        </div> -->
-    </div>
-    <h1>1+N校园</h1>
-    <i class="opn-header-btn-msg btn" data-href="{:U('/User/message')}">
-        <!-- <if condition="$usermsgcount neq 0"> -->
-        <div class="ui-badge" style="position: absolute;top: 2px;right: 2px">&nbsp;</div>
-        <!-- </if> -->
-    </i>
+
+<body>
+<header class="am-topbar am-topbar-inverse" id="header">
+	<div class="am-container am-cf">
+	  <h1 class="am-topbar-brand pd-0">
+	    <a href="index.html"><span>ZHENGYALI</span>
+	    <!-- <span class="am-icon-odnoklassniki"></span> -->
+	    </a>
+	  </h1>
+
+	  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+	  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+			<ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+	      <li class="am-active"><a href="javascript:;"> 首页 </a></li>
+	      <li><a href="my_resume.html" target="_blank"> 求职简历 </a></li>
+	      <li><a href="javascript:;"> 联系方式 </a></li>
+	      <li><a href="javascript:;"> 个人相册 </a></li>
+	    </ul>
+	  </div>
+ 	</div>
 </header>
-
-<!-- 选择盒子,尽量不修改样式,如果出发点在头部就把盒子放在 header后面 在style 里面有一些处理 -->
-<div class="sch-mask-box" data-id="school-sel">
-	<div class="sch-mask"></div>
-	<div class="sch-mask-cont">
-		<ul class="ui-list ui-list-text ui-list-active ui-border-tb">
-        <li class="ui-border-t">
-            <p>电子科技大学成都学员</p>
-        </li>
-        <li class="ui-border-t">
-            <p>犀浦大夜市</p>
-        </li>
-    </ul>
+<div class="content">
+	<div class="zyl-banner" id="zyl-banner">
+		<div class="am-container am-cf">
+			<div class="ft-40">这是梦的开始。。。</div>
+			<div class="ft-20 tx-6">每日的点点滴滴~~ 从这里开始</div>
+			<div class="tx-6">前端之路，由此开启</div>
+		</div>
 	</div>
-</div>
-<footer class="ui-footer sch-footer">
-    <ul class="ui-tiled">
-        <li data-href="{:U('/Index/index')}"><div class="foot-icon foot-index"></div><p>主页</p></li>
-        <li data-href="{:U('/Food/fooda')}" class="active"><div class="foot-icon foot-order"></div><p>订单</p></li>
-        <li data-href="{:U('/Together/together')}"><div class="foot-icon foot-find"></div><p>一起约吧</p></li>
-        <li data-href="{:U('/User/my')}"><div class="foot-icon foot-me"></div><p>我的</p></li>
-    </ul>
-</footer>
-
-<div id="index-content" class="ui-container content-box">
-		<div class="sch-banner-box">
-		  <div class="ui-slider">
-		      <ul class="ui-slider-content" style="width: 300%">
-		          <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
-		          <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
-		          <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
-		      </ul>
+	<div class="am-container">
+		<div class="am-g mg-t-24">
+		  <div class="am-hide-sm-only am-u-md-4 am-u-lg-3">
+		  	<div class="am-btn-group-stacked w-100 idx-btn" data-am-sticky="{top:30}">
+				  <a class="am-btn pd-tb-15 am-btn-default am-btn-block am-radius" href="#pc-xm" id="btn-pc">PC端</a>
+				  <a class="am-btn pd-tb-15 am-btn-default am-btn-block am-radius" href="#mobile-xm" id="btn-mobile">移动端</a>
+				</div>
+		  </div>
+		  <div class="am-u-sm-12 am-u-md-8 am-u-lg-9 pd-lr-15">
+			  <div id="pc-xm">
+			  	<h1>PC端项目</h1>
+			    <div class="am-g">
+			    	<div class="am-u-sm-6 am-u-lg-4">
+							<a class="idx-show" target="_blank" href="xiangmu/pc/jiaoyu/index.html" >
+								<img src="skin/images/pc/01.png" alt="" />
+								<span>海洋教育网站</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4">
+							<a class="idx-show" target="_blank" href="xiangmu/pc/3d/index.html">
+								<img src="skin/images/pc/02.png" alt="" />
+								<span>3D旋转特效</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4">
+							<a class="idx-show" target="_blank" href="xiangmu/pc/css3silder/index.html">
+								<img src="skin/images/pc/03.png" alt="" />
+								<span>css3平滑</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 am-u-end">
+							<a class="idx-show" target="_blank" href="xiangmu/pc/qudao_yun/qdy_index.html">
+								<img src="skin/images/pc/04.png" alt="" />
+								<span>云管家宣传页</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 am-u-end">
+							<a class="idx-show" target="_blank" href="xiangmu/pc/lunbo/lunbo.html">
+								<img src="skin/images/pc/05.png" alt="" />
+								<span>旋转木马轮播</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 am-u-end">
+							<a class="idx-show" target="_blank" href="xiangmu/pc/test/test.html">
+								<img src="skin/images/pc/06.png" alt="" />
+								<span>表单验证</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 am-u-end">
+							<a class="idx-show" target="_blank" href="xiangmu/pc/user_select/index.html">
+								<img src="skin/images/pc/07.png" alt="" />
+								<span>选人插件PC版</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 am-u-end">
+							<a class="idx-show" target="_blank" href="xiangmu/pc/muziyun/index.html">
+								<img src="skin/images/pc/08.png" alt="" />
+								<span>云管家后台</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 am-u-end">
+							<a class="idx-show" target="_blank" href="xiangmu/pc/hj_index/hj_index.html">
+								<img src="skin/images/pc/09.png" alt="" />
+								<span>弘金金融官网</span>
+							</a>
+			    	</div>
+			    </div>
+				</div>
+				<div id="mobile-xm" style="margin-top:50px">
+			    <h1>移动端项目<span class="ft-16 tx-9">（使用谷歌跨屏浏览或者点击项目并扫描二维码）</span></h1>
+			    <div class="am-g">
+			    	<div class="am-u-sm-6 am-u-lg-4 idx-box" data-tag="trigger" data-mobile="skin/images/mobile/01_wx.png">
+							<a class="idx-show" data-tag="trigger" href="xiangmu/mobile/fenxiao/aishang/mer_buy_list.html">
+								<img data-tag="trigger" src="skin/images/mobile/01.png" alt="" />
+								<span data-tag="trigger">商品添加下单</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 idx-box" data-tag="trigger" data-mobile="skin/images/mobile/02_wx.png">
+							<a class="idx-show" data-tag="trigger" href="xiangmu/mobile/fenxiao/shouye.html">
+								<img data-tag="trigger" src="skin/images/mobile/02.png" alt="" />
+								<span data-tag="trigger">群飞商贸全套</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 idx-box" data-tag="trigger" data-mobile="skin/images/mobile/03_wx.png">
+							<a class="idx-show" data-tag="trigger" href="xiangmu/mobile/oa_phone/rizhi/rizhi_write.html">
+								<img data-tag="trigger" src="skin/images/mobile/03.png" alt="" />
+								<span data-tag="trigger">OA日志书写评论</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 idx-box" data-tag="trigger" data-mobile="skin/images/mobile/04_wx.png">
+							<a class="idx-show" data-tag="trigger" href="xiangmu/mobile/oa_phone/userselect.html" >
+								<img data-tag="trigger" src="skin/images/mobile/04.png" alt="" />
+								<span data-tag="trigger">人员选择插件</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 idx-box" data-tag="trigger" data-mobile="skin/images/mobile/05_wx.png">
+							<a class="idx-show" data-tag="trigger" href="xiangmu/mobile/yunguanjia/shouye.html" >
+								<img data-tag="trigger" src="skin/images/mobile/05.png" alt="" />
+								<span data-tag="trigger">云管家首页</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 idx-box" data-tag="trigger" data-mobile="skin/images/mobile/06_wx.png">
+							<a class="idx-show" data-tag="trigger" href="xiangmu/mobile/kangshifu/postcard/postcard_ok.html">
+								<img data-tag="trigger" src="skin/images/mobile/06.png" alt="" />
+								<span data-tag="trigger">明信片制作</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 idx-box" data-tag="trigger" data-mobile="skin/images/mobile/07_wx.png">
+							<a class="idx-show" data-tag="trigger" href="xiangmu/mobile/hongjin/order.html">
+								<img data-tag="trigger" src="skin/images/mobile/07.png" alt="" />
+								<span data-tag="trigger">订单列表</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 am-u-end idx-box" data-tag="trigger" data-mobile="skin/images/mobile/08_wx.png">
+							<a class="idx-show" data-tag="trigger" href="xiangmu/mobile/touchimg/demo.html" >
+								<img data-tag="trigger" src="skin/images/mobile/08.png" alt="" />
+								<span data-tag="trigger">手机轮播</span>
+							</a>
+			    	</div>
+			    	<div class="am-u-sm-6 am-u-lg-4 am-u-end idx-box" data-tag="trigger" data-mobile="skin/images/mobile/08_wx.png">
+							<a class="idx-show" data-tag="trigger" href="xiangmu/mobile/touchimg/demo.html" >
+								<img data-tag="trigger" src="skin/images/mobile/09.png" alt="" />
+								<span data-tag="trigger">仿微信聊天页面</span>
+							</a>
+			    	</div>
+			    </div>
+			  </div>
 		  </div>
 		</div>
-    
-    <div class="bangdai-box">
-        <div class="ui-row-flex ui-row-flex-hor">
-            <div data-href="{:U('/Food/fooda')}" class="ui-center bangdai-left">
-                <div class="opn-block-index-lg">
-                    <div class="ui-avatar-lg">
-                        <span style="background-image:url(Public/images/icon/index_food.png)"></span>
-                    </div>
-                    <p class="mg-t-15">我来帮带</p>
-                </div>
-            </div>
-            <div class="ui-col ui-center">
-                <div class="pd-10 ui-row-flex ui-flex-align-start">
-                    <div class="bangdai-title">我要求带</div>
 
-                </div>
-                <div class="ui-row-flex ui-row-flex-hor">
-                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
-                        <div class="opn-block-index-lg">
-                            <div class="ui-avatar-s">
-                                <span style="background-image:url(Public/images/icon/index_addfood.png)"></span>
-                            </div>
-                            <p class="mg-t-10">食物</p>
-                        </div>
-                    </div>
-                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
-                        <div class="opn-block-index-lg">
-                            <div class="ui-avatar-s">
-                                <span style="background-image:url(Public/images/icon/index_express.png)"></span>
-                            </div>
-                            <p class="mg-t-10">快递</p>
-                        </div>
-                    </div>
-                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
-                        <div class="opn-block-index-lg">
-                            <div class="ui-avatar-s">
-                                <span style="background-image:url(Public/images/icon/index_goods.png)"></span>
-                            </div>
-                            <p class="mg-t-10">物品</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bangdai-box">
-        <div class="ui-row-flex ui-row-flex-hor">
-            <div class="ui-col">
-                <div class="pd-10 ui-row-flex ui-flex-align-start">
-                    <div class="bangdai-title">校园圈</div>
-
-                </div>
-                <div class="ui-row-flex ui-row-flex-hor">
-                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
-                        <div class="opn-block-index-lg">
-                            <div class="ui-avatar-lg">
-                                <span style="background-image:url(Public/images/icon/index_together.png)"></span>
-                            </div>
-                            <p class="mg-t-15">一起约吧</p>
-                        </div>
-                    </div>
-                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
-                        <div class="opn-block-index-lg">
-                            <div class="ui-avatar-lg">
-                                <span style="background-image:url(Public/images/icon/index_master.png)"></span>
-                            </div>
-                            <p class="mg-t-15">学校达人</p>
-                        </div>
-                    </div>
-                    <div data-href="{:U('/School/school')}" class="ui-col ui-center bangdai-list">
-                        <div class="opn-block-index-lg">
-                            <div class="ui-avatar-lg">
-                                <span style="background-image:url(Public/images/icon/index_question.png)"></span>
-                            </div>
-                            <p class="mg-t-15">历届考题</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+	</div>
+</div>	
 
 </body>
-<script src='Public/frozenui/lib/zepto.min.js'></script>
-<script src='Public/frozenui/js/frozen.js'></script>
-<script src="Public/js/jquery-1.11.1.min.js"></script>
-<!-- <script src="Public/js/jquery.cookie.js"></script> -->
-<script type="text/javascript">
-(function($){
-    var slider = new fz.Scroll('.ui-slider', {
-        role: 'slider',
-        indicator: true,
-        autoplay: true,
-        interval: 3000
-    });
+<script src="skin/js/jquery-2.1.1.min.js"></script>
+<script src="skin/amazeui/js/amazeui.min.js"></script>
+<script>
+$(document).ready(function(){
+	function pcOffset(){
+		return $('#pc-xm').offset().top - $(window).scrollTop();
+	}
+	function mbOffset(){
+		return $('#mobile-xm').offset().top - $(window).scrollTop();
+	}
 
-    slider.on('beforeScrollStart', function(fromIndex, toIndex) {
-        console.log(fromIndex,toIndex)
-    });
+	$(window).scroll(function(event) {
+		console.log(pcOffset(),mbOffset())
+		if(pcOffset()<=0 &&  mbOffset() >0){
 
-    slider.on('scrollEnd', function(cruPage) {
-        console.log(cruPage)
-    });
+			$('#btn-pc').first().addClass('am-btn-primary').removeClass('am-btn-default').siblings('#btn-mobile').addClass('am-btn-default').removeClass('am-btn-primary');
+		}else if(mbOffset() <=0){
+			$('#btn-mobile').first().addClass('am-btn-primary').removeClass('am-btn-default').siblings('#btn-pc').addClass('am-btn-default').removeClass('am-btn-primary');
+		}
+	});
+	$('.idx-btn a.am-btn').click(function(){
+		$(this).addClass('am-btn-primary').removeClass('am-btn-default');
+		$(this).siblings('a.am-btn').addClass('am-btn-default').removeClass('am-btn-primary');
+	})
 
-    //列表弹出和关闭
-    $('.sch-select-group').tap(function(){
-    	var $this = $(this),
-    			id = $this.attr('id');
-    			$this.toggleClass('show');
-    			$('[data-id="'+id+'"]').toggleClass('show');
-    });
-    $('.sch-mask-box .sch-mask').tap(function(){
-    	var $box = $(this).closest('.sch-mask-box'),
-    			id = $box.attr('data-id');
-    			$box.toggleClass('show');
-    			$('#'+id).toggleClass('show');
-    })
-})(Zepto);
+	// $('.idx-btn').scrollspynav({offsetTop: 45})
+});
+$(document).ready(function(){
+	/*
+	* 智能机浏览器版本信息:
+	*/
+	var browser={
+	    versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion; 
+            return {//移动终端浏览器版本信息 
+				trident: u.indexOf('Trident') > -1, //IE内核
+				presto: u.indexOf('Presto') > -1, //opera内核
+				webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+				gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+				mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
+				ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+				android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+				iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+				iPad: u.indexOf('iPad') > -1, //是否iPad
+				webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+			};
+	    }(),
+		language:(navigator.browserLanguage || navigator.language).toLowerCase()
+	}
 
+	if(!browser.versions.android && !browser.versions.iPhone && !browser.versions.iPad){
 
+		$('#mobile-xm .idx-show').each(function(index,elm){
+			$(this).attr('href','javascript:;');
+			var mobileImg = $(this).closest('.idx-box').attr('data-mobile');
+			$(this).append('<img src="'+mobileImg+'" class="mobile-img">');
+
+		});
+
+		$('#mobile-xm .idx-box').click(function(event) {
+			alert('移动端页面请在谷歌手机模式下打开');
+			// var img = $(this).find('.mobile-img');
+			// img.hasClass('show') ? img.removeClass('show') : img.addClass('show');
+		});
+		$(document).click(function(e){
+			if($(e.target).attr("data-tag") != "trigger"){
+				$('#mobile-xm .mobile-img').removeClass('show');
+			}
+		});
+	}
+});
 </script>
 </html>

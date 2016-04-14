@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>编写日志</title>
+
+	<link rel="stylesheet" type="text/css" href="../skin/mui/css/mui.picker.min.css" />
+	<link href="../skin/mui/css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../skin/fonts/iconfont.css" />
+
+	<link href="../skin/mui/css/mui.picker.css" rel="stylesheet"/>
+	<!-- <link href="../skin/mui/css/mui.picker.min.css" rel="stylesheet"/> -->
+    <link href="../skin/mui/css/mui.poppicker.css" rel="stylesheet" />
+    <!-- <link href="../skin/mui/css/mui.indexedlist.css" rel="stylesheet" /> -->
+
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/rizhi/log_write.css" />
+</head>
+<style type="text/css">
+	section{
+		background-color: #fff;
+	}
+</style>
+<body>
+<div class="mui-content">
+	<!-- <form action=""> -->
+	<section class="log-group">
+		<img id="review-img" src="../skin/images/001.small.png" class="log-review-img" alt="">
+		<div class="log-title">
+			<!-- <div class="log-seltime"> -->
+				<span class="log-name mui-pull-left">郑亚利的日志</span>
+				<span class="log-subtime">2015-12-9 提交</span>
+				<!-- <i class="iconfont">&#xe622;</i></div> -->
+		</div>
+		<div class="mui-input-group log-input-group">
+			<div class="log-plan-title">
+				原计划
+			</div>
+			<div class="mui-input-row">
+				<label>1、</label>
+				<div class="log-input-body">
+					<p>欢迎大家在OA平台和同事们分享点什么12</p>
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<label>2、</label>
+				<div class="log-input-body">
+					<p>欢迎大家在OA平台和同事们分享点什么12</p>
+				</div>
+			</div>
+		</div>
+		<div class="mui-input-group log-input-group log-old-plan">
+			<div class="log-plan-title">
+				计划外
+			</div>
+			<div class="mui-input-row">
+				<label>3、</label>
+				<div class="log-input-body">
+					<p>欢迎大家在OA平台和同事们分享点什么12</p>
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<label>4、</label>
+				<div class="log-input-body">
+					<p>欢迎大家在OA平台和同事们分享点什么12</p>
+				</div>
+			</div>
+			<!-- <div class="mui-input-row">
+				<button type="button" class="log-add"><i class="mui-icon mui-icon-plusempty"></i>添加一条</button>
+				<button type="button" class="log-del mg-r-sm"><i class="mui-icon mui-icon-undo"></i> 撤销</button>
+			</div> -->
+		</div>
+		<div class="mui-input-group log-input-group">
+			<div class="log-plan-title">
+				工作总结
+			</div>
+			<div class="mui-input-row">
+				<textarea name="" id="" placeholder="在此写下工作总结" cols="20" rows="6"></textarea>
+			</div>
+		</div>
+		<div class="mui-input-group log-input-group">
+			<div class="log-plan-title">
+				附件
+			</div>
+			<div class="mui-input-row mui-table-view-cell">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="../skin/images/shuijiao.jpg">
+					<div class="mui-media-body">
+						szhuengs.png
+						<p class="mui-ellipsis">187.58 KB</p>
+					</div>
+				</a>
+			</div>
+			<div class="mui-input-row">
+				<button type="button" class="log-fujian mui-pull-right"><i class="iconfont">&#xe60a;</i></button>
+			</div>
+		</div>
+	</section>
+	<section class="mg-t-xs">
+		<div class="log-title">
+			<span class="log-time">2015-12-07 (星期一)</span>
+		</div>
+		<div class="mui-input-group log-input-group log-new-plan">
+			<div class="log-plan-title">
+				工作计划
+			</div>
+			<div class="mui-input-row">
+				<label>1、</label>
+				<div class="log-input-body">
+					<p>欢迎大家在OA平台和同事们分享点什么12</p>
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<label>2、</label>
+				<div class="log-input-body">
+					<p>欢迎大家在OA平台和同事们分享点什么12</p>
+				</div>
+			</div>
+			<!-- <div class="mui-input-row">
+				<button type="button" class="log-add"><i class="mui-icon mui-icon-plusempty"></i>添加一条</button>
+				<button type="button" class="log-del mg-r-sm"><i class="mui-icon mui-icon-undo"></i> 撤销</button>
+			</div> -->
+		</div>
+	</section>
+	<section class="mg-t-xs">
+		<div class="mui-input-group log-input-group">
+			<div class="log-plan-title">
+				点评
+			</div>
+			<div class="mui-input-row">
+				<button type="button" class="log-fujian mui-pull-right">确认点评</button>
+				<div class="log-review" id="log-review">
+					点此选择评语
+					<img src="../skin/images/001.small.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="pd-md">
+		</div>
+	</section>
+	<section class="mg-t-xs">
+		
+		<div class="mui-input-group z-pinlun-group" id="pinlun-group">
+			<div class="log-plan-title">
+				评论
+			</div>
+			<div class="mui-input-row">
+				<!--<div class="z-pinlun-box" data-all='all'>-->
+				<div class="z-pinlun">
+					<button class="mui-btn mui-btn-primary z-pinlun-btn" id="pinlun-btn" data-user="杨璐" data-uid="u_4">回复</button>
+					<div class="z-pinlun-input">
+						<input type="text" class="mui-input-clear" id="pinlun-text" data-input-clear="1"><span class="mui-icon mui-icon-clear mui-hidden"></span>
+					</div>
+				</div>
+				<!--</div>-->
+			</div>
+			<div class="mui-input-row">
+				<div class="z-pinlun-box">
+					<a><img class="" src="../skin/images/bg.jpg"></a>
+					<div class="z-pinlun-body">
+						<div class="z-pinlun-body-title">
+							<span data-user="冉杰" data-uid="u_3" class="z-pinglun-span"><i class="mui-icon mui-icon-chat"></i>回复</span>
+							<h4 class="mui-ellipsis">冉杰</h4>
+						</div>
+						<span class="mui-h6 mui-ellipsis">12-15 14:20</span>
+						<p>今天天气不错！风和日丽</p>
+						<div class="z-pinlun-smbox">
+							<p data-user="郑亚利" data-uid="u_1"><span>郑亚利</span> 回复 <span>长江哥</span>：今天天气不错！风和日丽</p>
+							<p data-user="长江哥" data-uid="u_2"><span>长江哥</span> 回复 <span>郑亚利</span>：今天天气不错！风和日丽</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<div class="z-pinlun-box">
+					<a><img class="" src="../skin/images/bg.jpg"></a>
+					<div class="z-pinlun-body">
+						<div class="z-pinlun-body-title">
+							<span data-user="郑亚利" data-uid="u_1" class="z-pinglun-span"><i class="mui-icon mui-icon-chat"></i>回复</span>
+							<h4 class="mui-ellipsis">郑亚利</h4>
+						</div>
+						<span class="mui-h6 mui-ellipsis">12-15 14:20</span>
+						<p>今天天气不错！风和日丽</p>
+						<div class="z-pinlun-smbox">
+							<p data-user="郑亚利" data-uid="u_1"><span>郑亚利</span> 回复 <span>长江哥</span>：今天天气不错！风和日丽</p>
+							<p data-user="长江哥" data-uid="u_2"><span>长江哥</span> 回复 <span>郑亚利</span>：今天天气不错！风和日丽</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-input-row">
+				<div class="z-pinlun-box">
+					<a><img class="" src="../skin/images/bg.jpg"></a>
+					<div class="z-pinlun-body">
+						<div class="z-pinlun-body-title">
+							<span data-user="郑亚利" data-uid="u_1" class="z-pinglun-span"><i class="mui-icon mui-icon-chat"></i>回复</span>
+							<h4 class="mui-ellipsis">郑亚利</h4>
+						</div>
+						<span class="mui-h6 mui-ellipsis">12-15 14:20</span>
+						<p>今天天气不错！风和日丽</p>
+						<!--<div class="z-pinlun-smbox">
+							<p data-user="郑亚利" data-uid="u_1"><span>郑亚利</span> 回复 <span>长江哥</span>：今天天气不错！风和日丽</p>
+							<p data-user="长江哥" data-uid="u_2"><span>长江哥</span> 回复 <span>郑亚利</span>：今天天气不错！风和日丽</p>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			</div>
+	</section>
+	<!--</form>-->
+</div>
+<!--<div class="oa-mask-box">
+	<div class='oa-mask'></div>
+	<div class="z-pinlun">
+		<button class="mui-btn mui-btn-primary" class="z-pinlun-btn">回复</button>
+		<div class="z-pinlun-input">
+			<input type="text" class="mui-input-clear" />
+		</div>
+	</div>
+</div>-->
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+
+<script src="../skin/js/org.js"></script>
+<!-- <script src="../skin/mui/js/mui.indexedlist.js"></script> -->
+<script src="../skin/mui/js/mui.picker.js"></script>
+<script src="../skin/mui/js/mui.poppicker.js"></script>
+<!-- <script src="../skin/mui/js/mui.picker.min.js"></script> -->
+
+<!-- <script src="../skin/js/public/pinyin.js"></script>
+<script src="../skin/js/plug/userselect/userselect.js"></script>  -->
+
+
+<script src="../skin/js/plug/layer.m/layer.m.js"></script>
+<script type="text/javascript">
+;(function($) {
+$.init();
+	var reviewPicker = new $.PopPicker();
+	reviewPicker.setData([{
+		value: '../skin/images/008.small.png',
+		text: '不理想   1分'
+	}, {
+		value: '../skin/images/001.small.png',
+		text: '已阅     2分'
+	},{
+		value: '../skin/images/002.small.png',
+		text: '有进步   3分'
+	},{
+		value: '../skin/images/005.small.png',
+		text: '很给力   4分'
+	},{
+		value: '../skin/images/004.small.png',
+		text: '干得不错 5分'
+	}]);
+
+	var review = document.getElementById('log-review');
+	var reviewImg = jQuery('#review-img');
+	review.addEventListener('tap', function(event) {
+		var self = jQuery(this);
+		reviewPicker.show(function(items) {
+			self.html('<img src="'+items[0].value+'" alt="" />');
+			reviewImg.attr('src',items[0].value);
+		});
+	}, false);
+
+
+//user 表示 当前操作手机的用户名称
+
+})(mui);
+
+
+var user = '杨璐'	,
+	userId = 'u_4',
+	userImg = '../skin/images/bg.jpg';
+
+</script>
+<!--因为需要全局变量user 所以pinlun.js 必须放在后面-->
+<script src="../skin/js/public/pinlun.js"></script>
+</html>

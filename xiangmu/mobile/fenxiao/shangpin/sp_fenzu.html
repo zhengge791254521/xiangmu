@@ -1,0 +1,133 @@
+<!-- 商品分组 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+	<link rel="stylesheet" href="../skin/css/shangpin/shangpin.css" />
+</head>
+<style type="text/css">
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<div class="mui-title">
+		<div class="sp-segmented-title a-href">
+			<div class="mui-segmented-control">
+				<a class="mui-control-item" href="sp_list.html">
+					所有商品
+				</a>
+				<a class="mui-control-item mui-active" href="sp_fenzu.html">
+					商品分组
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<nav class="mui-bar mui-bar-tab pd-lr-10">
+	<button type="button" class="mui-btn mui-btn-danger mui-btn-block sp-fenzu-add">添加分组</button>
+</nav>
+<div class="mui-content">
+	<div class="sp-fenzu-box">
+		<ul class="mui-table-view bg-f">
+			<li class="mui-table-view-cell mui-media" data-id="u_1">
+				<div class="flt-r">
+					<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-tb-5 sp-bianji">编辑</button>
+					<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-tb-5 sp-del">删除</button>
+				</div>
+				<div class="mui-ellipsis overhid sp-text">幸福小笼包</div>
+			</li>
+		</ul>
+		<ul class="mui-table-view bg-f mg-t-10">
+			<li class="mui-table-view-cell mui-media" data-id="u_2">
+				<div class="flt-r">
+					<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-tb-5 sp-bianji">编辑</button>
+					<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-tb-5 sp-del">删除</button>
+				</div>
+				<div class="mui-ellipsis overhid sp-text">幸福小笼包</div>
+			</li>
+		</ul>
+		<ul class="mui-table-view bg-f mg-t-10" >
+			<li class="mui-table-view-cell mui-media" data-id="u_3">
+				<div class="flt-r">
+					<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-tb-5 sp-bianji">编辑</button>
+					<button type="button" class="mui-btn mui-btn-red mui-btn-outlined pd-tb-5 sp-del">删除</button>
+				</div>
+				<div class="mui-ellipsis overhid sp-text">幸福小笼包</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+<script src="../skin/js/plug/layer.m/layer.m.js"></script>
+<script type="text/javascript">
+;(function($){
+	$('body').on('tap','.sp-fenzu-add',function(){
+		var self = jQuery(this),
+				id = 'add';
+				addFenzu(id, 'add');
+	})
+	$('body').on('tap','.sp-bianji',function(){
+		var self = jQuery(this),
+				id = self.closest('li').attr('data-id'),
+				val = self.closest('li').find('.sp-text').text();
+				addFenzu(id, 'bianji', val);
+	})
+	$('body').on('tap','.sp-del',function(){
+		var self = jQuery(this),
+				id = self.closest('li').attr('data-id'),
+				val = self.closest('li').find('.sp-text').text();
+				addFenzu(id, 'del', val);
+	})
+
+	function addFenzu(id,opt,val){
+		if(opt == 'add'){
+			cont = '<input type="text" name="fenzu" placeholder="输入分组名称(6字以内)" id="fenzu-input" maxlength="6">';
+		}else if(opt == 'bianji'){
+			cont = '<input type="text" name="fenzu" placeholder="输入分组名称(6字以内)" id="fenzu-input" maxlength="6" value="'+val+'">';
+		}else{
+			cont = '是否确认删除 '+val;
+		}
+		layer.open({
+	    content: cont,
+	    btn: ['确认', '取消'],
+	    shadeClose: false,
+	    yes: function(e){
+
+	    	var val = jQuery('#fenzu-input').is(':visible') ? jQuery('#fenzu-input').val() : false;
+	    	console.log(val)
+	    	ajaxFenzu(id, opt, val);
+
+	      layer.closeAll();
+	    }, no: function(){
+	      layer.closeAll();
+	    }
+		});
+	}
+	function ajaxFenzu(id, opt, val){
+		var box = jQuery('.sp-fenzu-box').find('.mui-table-view-cell[data-id="'+id+'"]');
+		// $.post('/path/to/file', {opt: opt, id: id, val: val}, function(data){
+			if(opt == 'add'){
+				//成功添加则刷新页面
+				location.reload();
+			}else if(opt == 'bianji'){
+				//成功编辑
+				box.find('.sp-text').text(val);
+			}else{
+				box.closest('.mui-table-view').remove();
+			}
+		// });
+	}
+
+})(mui);
+</script>
+</html>

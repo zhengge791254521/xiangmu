@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- <link href="skin/font-awesome/css/font-awesome.min.css"rel="stylesheet" type="text/css"> -->
+    <link href="skin/icon/icon.css" rel="stylesheet" type="text/css">
+	<link href="skin/css/button.css" rel="stylesheet" type="text/css">
+
+    <link href="skin/css/public.css" rel="stylesheet" type="text/css">
+    
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+    
+	<title>弘金金融微信管理平台</title>
+</head>
+<body>
+<header class="hj-nav row bg-pink font-white">
+    <a class="col-xs-2 a-return button button-caution bg-pink font-white" href="javascript:;" role="button">
+        <i class="lnr lnr-chevron-left"></i>
+    </a>
+    <div class="col-xs-8 wx-header-theme text-center">
+        <h3>我的订单</h3>
+    </div>
+</header>
+<!-- 以上为头部 -->
+
+
+<link href="skin/css/user/user.css" rel="stylesheet" type="text/css">
+<link href="skin/css/financial/financial.css" rel="stylesheet" type="text/css">
+<div class="container-fluid box-content bg-default">
+<section class="order-select bg-white row">
+    <!-- <div class=""> -->
+    <div class="dropdown difference-select">
+        <button class="btn diff-dropDown dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <div class="diff-title">
+                <span>分类</span><i class="lnr lnr-chevron-down"></i>
+            </div>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">预约中</a></li>
+            <li><a href="#">受理中</a></li>
+            <li><a href="#">成功</a></li>
+            <li><a href="#">失败</a></li>
+        </ul>
+    </div>
+        <!-- <div class="diff-dropDown">
+            <div class="diff-title">
+                <span>全部</span><i class="lnr lnr-chevron-down"></i>
+            </div>
+        </div>
+        <div class="list-group">
+            <a class="list-group-item">预约中</a>
+            <a class="list-group-item">受理中</a>
+            <a class="list-group-item">成功</a>
+            <a class="list-group-item">失败</a>
+        </div> -->
+    <!-- </div> -->
+    <div class="dropdown difference-select">
+        <button class="btn diff-dropDown dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <div class="diff-title">
+                <span>分类</span><i class="lnr lnr-chevron-down"></i>
+            </div>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">投资产品</a></li>
+            <li><a href="#">融资产品</a></li>
+            <li><a href="#">贷款产品</a></li>
+            <li><a href="#">周边产品</a></li>
+        </ul>
+    </div>
+</section>
+<section class="hj-list-box">
+    <div class="list-box list-group">
+        
+        <a href="#" class="list-group-item">
+            <div class="st-desc" data-icon="H"><span>新</span></div>
+            <div class="hj-list-title">
+                中银基智通理财计划-2015年A15489期
+            </div>
+            <div class="hj-list-body">
+                <div class="col-xs-4 invest-box text-center">
+                    <div class="invest-cont"><span class="font-pink">4.65%</span>
+                    </div>
+                    <span class="font-gray">预期年化收益率</span>
+                </div>
+                <div class="col-xs-4 invest-box text-center">
+                    <div class="invest-cont"><span class="font-block">365天</span>
+                    </div>
+                    <span class="font-gray">期限</span>
+                </div>
+                <p class="detail-arrow"><i class="lnr lnr-chevron-right"></i></p>
+            </div>
+        </a>
+        <a href="#" class="list-group-item">
+            <div class="st-desc" data-icon="H"><span>新</span></div>
+            <div class="hj-list-body">
+                <div class="belong-box">
+                    <div class="belong-img">
+                        <img src="skin/images/meinv.png" alt="">
+                    </div>
+                    <p class="col-xs-11 font-gray">回租宝是基于汽车融资租赁服务中售后回租的一款特色产品。</p>
+                    <span class="font-pink"><b>¥&nbsp;</b>580.00</span>
+                </div>
+                <p class="detail-arrow"><i class="lnr lnr-chevron-right"></i></p>
+            </div>
+        </a>
+        <a href="#" class="list-group-item">
+            <p class="belong bg-gray font-white">周边</p>
+            
+            <div class="user-order-title row">
+                <span class="col-xs-10 col-md-11">
+                    拉卡拉收款宝手机移动pos机刷卡器实时到账信用卡还款芯片一清
+                </span>
+            </div>
+            <div class="user-order-title">
+                <div class="col-xs-7 row">
+                    <div class="col-xs-4 order-status-box active">
+                        <p class="order-status"></p>
+                        <span>预约中</span>
+                    </div>
+                    <div class="col-xs-4 order-status-box">
+                        <p class="order-status"></p>
+                        <span>受理中</span>
+                    </div>
+                    <div class="col-xs-4 order-status-box">
+                        <p class="order-status"></p>
+                        <span>交易成功</span>
+                    </div>
+                </div>
+                <div class="col-xs-5 text-right">
+                    <button type="button" class="btn bg-pink font-white over">取消订单</button>
+                </div>
+                <span class="order-time font-gray">2015-02-06 15:35</span>
+            </div>
+        </a>
+        <a href="#" class="list-group-item">
+            <p class="belong bg-gray font-white">周边</p>
+            
+            <div class="user-order-title row">
+                <span class="col-xs-10 col-md-11">
+                    拉卡拉收款宝手机移动pos机刷卡器实时到账信用卡还款芯片一清
+                </span>
+            </div>
+            <div class="user-order-title">
+                <div class="col-xs-7 row">
+                <!-- 在哪个状态下就在哪个box上 加个active -->
+                    <div class="col-xs-4 order-status-box ">
+                        <p class="order-status"></p>
+                        <span>预约中</span>
+                    </div>
+                    <div class="col-xs-4 order-status-box active">
+                        <p class="order-status"></p>
+                        <span>受理中</span>
+                    </div>
+                    <div class="col-xs-4 order-status-box">
+                        <p class="order-status"></p>
+                        <span>交易成功</span>
+                    </div>
+                </div>
+                <div class="col-xs-5 text-right">
+                    <button type="button" class="btn bg-pink font-white over">取消订单</button>
+                </div>
+                <span class="order-time font-gray">2015-02-06 15:35</span>
+            </div>
+        </a>
+        <a href="#" class="list-group-item">
+            <p class="belong bg-gray font-white">周边</p>
+            
+            <div class="user-order-title row">
+                <span class="col-xs-10 col-md-11">
+                    拉卡拉收款宝手机移动pos机刷卡器实时到账信用卡还款芯片一清
+                </span>
+            </div>
+            <div class="user-order-title">
+                <div class="col-xs-7 row">
+                <!-- 在哪个状态下就在哪个box上 加个active -->
+                    <div class="col-xs-4 order-status-box ">
+                        <p class="order-status"></p>
+                        <span>预约中</span>
+                    </div>
+                    <div class="col-xs-4 order-status-box">
+                        <p class="order-status"></p>
+                        <span>受理中</span>
+                    </div>
+                    <div class="col-xs-4 order-status-box active">
+                        <p class="order-status"></p>
+                        <span>交易成功</span>
+                    </div>
+                </div>
+                <div class="col-xs-5 text-right">
+                    <button type="button" class="btn bg-pink font-white over">确认完成</button>
+                </div>
+                <span class="order-time font-gray">2015-02-06 15:35</span>
+            </div>
+        </a>
+    </div>
+
+    <nav class="text-center">
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">上一页
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li>
+          <a href="#" aria-label="Next">下一页
+          </a>
+        </li>
+      </ul>
+    </nav>
+</section>
+
+<script type="text/javascript">
+</script>
+<footer>
+    Copyright@2015hjjr168.com All Right Reserved
+</footer>   
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+    $('.over').click(function(event) {
+        event.stopPropagation();
+        alert(1);
+    });
+    $('.list-group-item').click(function(event) {
+        alert(2);
+    });
+})
+    $(document).ready(function() {
+        if($('body').height() < $(window).height()){
+            $('body').height($(window).height());
+        }
+    });
+</script>
+
+</html>

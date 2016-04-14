@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="renderer" content="webkit">
+
+    <title>MU+ 后台主题UI框架 - 联系人</title>
+    <meta name="keywords" content="MU+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="MU+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link href="../assets/css/bootstrap.min.css?v=3.3.0" rel="stylesheet">
+    <link href="../assets/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+    <link href="../assets/css/plugins/switchery/switchery.css" rel="stylesheet">
+    <link href="../assets/css/animate.css" rel="stylesheet">
+    <link href="../assets/css/style.css?v=2.1.0" rel="stylesheet">
+    <link href="../assets/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="../assets/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+	<link href="../assets/css/plugins/iCheck/custom.css" rel="stylesheet">
+   
+    <link href="../assets/css/z-style.css" rel="stylesheet">
+    <style>	
+	.note-editor .note-editable {
+		padding: 10px;
+		overflow: auto;
+		height: 100%;
+		outline: 0;
+	}
+	.note-editor {
+		overflow: hidden;
+		height:350px;
+	}
+	.checkbox label {
+		padding-left: 0;
+	}	
+	.wenb{
+		font-size:14px;
+		padding:10px;
+		border-bottom:1px solid #efefef; 	
+		}
+	.biaoti_11{
+		font-size:16px;
+		font-weight:500;
+		font-family:微软雅黑;
+		padding-bottom:10px;
+		padding-left:10px;
+		padding-right:10px;	
+		}
+	#main{
+		height:420px; backgroud:#ccc;
+		padding:10px;	
+		}
+	.longhu_ji{
+		padding-top:10px;	
+		}
+	@media (min-width: 1024px) {
+	
+		#main{
+			height:400px; backgroud:#ccc;	
+		}
+	
+	}
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../assets/img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">ALi-MoBan</strong>
+                             </span>  <span class="text-muted text-xs block">超级管理员 <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="form_avatar.html">修改头像</a>
+                                </li>
+                                <li><a href="profile.html">个人资料</a>
+                                </li>
+                                <li><a href="contacts.html">联系我们</a>
+                                </li>
+                                <li><a href="mailbox.html">信箱</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            MU+
+                        </div>
+                    </li>
+                    <li  class="active">
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span></a>
+                    </li>
+                    <li>
+                        <a href="yuntu_1.html"><i class="fa fa-skyatlas"></i> <span class="nav-label">渠道云图</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="yuntu_1.html">区域列表</a>
+                            </li>
+                            <li><a href="yuntu_3.html">渠道分析图</a>
+                            </li>
+                            <li><a href="yuntu_2.html">查看云图</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="manyidu.html"><i class="fa fa-star"></i> <span class="nav-label">满意度调查</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="manyidu.html">调查列表</a>
+                            </li>
+                            <li><a href="manyidu_2.html">调查结果</a>
+                            <li><a href="manyidu_oa.html">添加调查项目</a>
+                            </li>
+                            <li><a href="manyidu_oa_1.html">修改调查项目</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mendian.html"><i class="fa fa-home"></i> <span class="nav-label">门店管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="mendian.html">添加门店</a>
+                            </li>
+                            <li><a href="mendian_1.html">门店列表</a>
+                            <li><a href="mendian_2.html">门店批量上传</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html#"><i class="fa fa-sitemap"></i> <span class="nav-label">基础设置</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="index.html#">系统设置 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="yonghu.html">基础配置</a>
+                                    </li>
+                                    <li>
+                                        <a href="yonghu1.html">用户分组</a>
+                                    </li>
+                                    <li>
+                                        <a href="juese1.html">角色分组</a>
+                                    </li>
+                                    <li>
+                                        <a href="yonghu1.html">区域管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="zuzhigoujia.html">组织架构</a>
+                                    </li>
+                                    <li>
+                                        <a href="huiyuanliebiao.html">人员管理</a>
+                                    </li>
+                                    <li>
+                                        <a href="jichu_xitong_1.html">短息接口设置</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index.html#">导航设置 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="jichu_nav.html">导航查看</a>
+                                    </li>
+                                    <li>
+                                        <a href="jichu_nav_1.html">微站首页导航</a>
+                                    </li>
+                                    <li>
+                                        <a href="jichu_nav_2.html">个人中心导航</a>
+                                    </li>
+                                    <li>
+                                        <a href="jichu_nav_3.html">添加导航</a>
+                                    </li>
+                                    <li>
+                                        <a href="jichu_nav_4.html">分配导航</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index.html#">公司设置 <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="jichu_gongsi.html">公司列表</a>
+                                    </li>
+                                    <li>
+                                        <a href="jichu_gongsi_1.html">添加公司资料</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="yuntu_1.html"><i class="fa fa-files-o"></i> <span class="nav-label">龙虎版</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <ul class="nav nav-second-level">
+                            <li class="active"><a href="paihang.html">销量排行</a>
+                            </li>
+                            <li><a href="tianjiashuju.html">添加数据</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message"><a href="index.html" title="返回首页"><i class="fa fa-home"></i></a>欢迎使用渠道云管家</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                                <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="../assets/img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46小时前</small>
+                                            <strong>小四</strong> 项目已处理完结
+                                            <br>
+                                            <small class="text-muted">3天前 2014.11.8</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="../assets/img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">25小时前</small>
+                                            <strong>国民岳父</strong> 这是一条测试信息
+                                            <br>
+                                            <small class="text-muted">昨天</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html">
+                                            <i class="fa fa-envelope"></i>  <strong> 查看所有消息</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="index.html#">
+                                <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
+                                            <span class="pull-right text-muted small">4分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-qq fa-fw"></i> 3条新回复
+                                            <span class="pull-right text-muted small">12分钟钱</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>查看所有 </strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>            
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>龙虎榜</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">主页</a>
+                        </li>
+                        <li>
+                            <a>龙虎榜</a>
+                        </li>
+                        <li>
+                            <strong>详情</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+                     
+          	<div class="row animated fadeInRight">
+            	<div class="col-lg-7" style="margin-top:15px;">
+                            <div class="panel panel-default">
+                            	<div class="panel-heading">数据统计</div>
+                            <div>
+                            <form class="form-horizontal">
+   								<div id="main"></div>
+                            </form>   
+                        </div>                     
+                    </div>
+                </div>
+                
+                <div class="col-lg-5" style="margin-top:15px; margin-bottom:40px;">
+                    <div class="panel panel-default">
+                    	<div class="panel-heading">数据分析</div>
+                    <div>
+                    <form class="form-horizontal">
+                     	<div align="center"><h3 class="longhu_ji">三思德营业厅2月同比上月：</h3></div>
+                        <div class="biaoti_11">话费销售同比上月增长15%,手机销量同比上月减少了10%。</div>
+                        <div class="biaoti_11">话费销售同比上月增长15%,手机销量同比上月减少了10%。</div>
+                        <div class="biaoti_11">话费销售同比上月增长15%,手机销量同比上月减少了10%。</div>
+                        <div class="biaoti_11">话费销售同比上月增长15%,手机销量同比上月减少了10%。</div>
+                        <div class="biaoti_11">话费销售同比上月增长15%,手机销量同比上月减少了10%。</div>
+                        <div class="biaoti_11">话费销售同比上月增长15%,手机销量同比上月减少了10%。</div>
+                        <div class="biaoti_11">话费销售同比上月增长15%,手机销量同比上月减少了10%。</div>
+                        <div class="biaoti_11">话费销售同比上月增长15%,手机销量同比上月减少了10%。</div>
+                    </form>   
+                    </div>                     
+                    </div>
+                </div>
+            </div>
+            
+            <div style="padding-bottom:40px;"></div>
+            
+            <div class="footer">
+                <div class="pull-right">
+                    By：<a href="http://www.alimoban.com" target="_blank">alimoban</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> MU+ &copy; 2014
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    
+    <!-- Mainly scripts -->
+    <script src="../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js?v=3.3.0"></script>
+    <script src="../assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../assets/js/muplus.js?v=2.0.0"></script>
+    <script src="../assets/js/plugins/pace/pace.min.js"></script>
+
+    <!-- SUMMERNOTE -->
+    <script src="../assets/js/plugins/summernote/summernote.min.js"></script>
+    <script src="../assets/js/plugins/summernote/summernote-zh-CN.js"></script>
+	<script src="../assets/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="../assets/js/plugins/switchery/switchery.js"></script>
+    
+    <!-- ECharts -->
+   	<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+	<script src="../assets/js/longhu.js"></script>
+  
+    <script>
+        $(document).ready(function () {
+            $('.contact-box').each(function () {
+                animationHover(this, 'pulse');
+            });
+			
+			var elem = document.querySelector('.js-switch');
+            var switchery = new Switchery(elem, {
+                color: '#1AB394'
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.contact-box').each(function () {
+                animationHover(this, 'pulse');
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function () {
+
+            $('.summernote').summernote({
+                lang: 'zh-CN'
+            });
+
+        });
+        var edit = function () {
+            $("#eg").addClass("no-padding");
+            $('.click2edit').summernote({
+                lang: 'zh-CN',
+                focus: true
+            });
+        };
+        var save = function () {
+            $("#eg").removeClass("no-padding");
+            var aHTML = $('.click2edit').code(); //save HTML If you need(aHTML: array).
+            $('.click2edit').destroy();
+        };
+    </script>
+	<script>
+	$(function(){
+		$(".nav-tabs li").click(function(){
+			//alert('a');
+			var index = $(this).index();
+			$(".sho-top div.sho").eq(index).show().siblings("div.sho").hide();
+			$(".nav-tabs li").removeClass("active");
+			$(this).addClass("active");
+	
+		})
+	})
+	</script>
+  	 <script>
+        $(document).ready(function(){
+
+            $('#loading-example-btn').click(function () {
+                btn = $(this);
+                simpleLoad(btn, true)
+
+                // Ajax example
+//                $.ajax().always(function () {
+//                    simpleLoad($(this), false)
+//                });
+
+                simpleLoad(btn, false)
+            });
+        });
+
+        function simpleLoad(btn, state) {
+            if (state) {
+                btn.children().addClass('fa-spin');
+                btn.contents().last().replaceWith(" Loading");
+            } else {
+                setTimeout(function () {
+                    btn.children().removeClass('fa-spin');
+                    btn.contents().last().replaceWith(" Refresh");
+                }, 2000);
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+ 
+ 
+
+
+</body>
+
+</html>

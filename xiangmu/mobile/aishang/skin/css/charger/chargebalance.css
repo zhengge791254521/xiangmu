@@ -1,0 +1,36 @@
+*{
+	font-family: "微软雅黑";
+}
+.toux{
+	border: 1px solid #dddddd;
+}
+.toux img{
+	margin-top: 45px;
+	width: 25%;
+}
+.toux p{
+	color: #333333;
+	font-weight: 800;
+}
+.yuem{
+	font-size: 15px;
+}
+.money{
+	font-size: 20px;
+}
+.yuebutton{
+	margin-top: 20px;
+}
+.yuebutton button{
+	border-radius: 5px !important;
+	width: 90%;
+}
+.chonzhi{
+	background: #cc0033;
+	color: #FFFFFF;
+}
+.tixian{
+	margin-top: 20px;
+	background: #efeff4;
+}
+

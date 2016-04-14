@@ -1,0 +1,32 @@
+/*咨询中心*/
+.container1{
+	
+	font-family:"微软雅黑";
+	/*color:#707f87;*/
+	/*margin-top:15px;*/
+	border-bottom:1px solid #ddddde;
+	padding-bottom:20px;
+	margin:15px auto;
+	}
+.word{
+	height:auto;
+	/*<!line-height:25px;*/
+	/*text-align:center;*/
+	}
+.word1{
+	font-size:16px;
+	font-weight:600;
+	font-family:"微软雅黑";	}
+.word2{
+	font-size:12px;
+	font-family:"微软雅黑";	
+	color:#333;}
+.arrow{
+	margin-top:22px;}
+a{
+	color:#000000;
+	list-style:none;
+	text-decoration:none;}
+a:hover{
+	text-decoration:none;
+	color:#000000;}

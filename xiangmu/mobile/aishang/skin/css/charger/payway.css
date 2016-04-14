@@ -1,0 +1,86 @@
+*{
+	font-family: "微软雅黑";
+	background: #FFFFFF;
+}
+.yutop{
+	background:#cc0033;
+	border: none;
+	box-shadow: none;
+}
+.yutop h1{
+	color: #FFFFFF;
+	background: #cc0033;
+}
+.fukuang{
+	margin-top: -15px;
+}
+.orange{
+	color: #ff3300;
+}
+.zffs{
+	width: 100%;
+	height: 65px;
+}
+.zfleft{
+	margin-top: 5px;
+	margin-left:10px;
+	width: 20%;
+	float: left;
+}
+.zffs .zfleft img{
+	margin-top: 5px;
+	width: 60%;
+	float: left;
+}
+.zffs .zfuright ul{
+	float: right;
+	width: 75%;
+}
+.zffs .zfuright ul li{
+	padding-left: 2px;
+	padding-bottom: 12px;
+}
+.fs input{
+	position: relative !important;
+	top:0 !important;
+	right: 1px !important;
+}
+.zfheis{
+	color: #333333;
+	font-size: 16px;
+	font-weight: 600;
+}
+.yuebutton{
+	padding-top: 25px;
+}
+.yuebutton button{
+	border-radius: 5px !important;
+	width: 90%;
+}
+.chonzhi{
+	/*background: #cc0033;
+	color: #FFFFFF;*/
+}
+.poc{
+	margin-top: -10px;
+	padding-top: 20px;
+	text-align: center;
+}
+.mui-table-view:after{
+	height: 0;
+}
+.mui-table-view-cell:after{
+	left: 68px;
+}
+.mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{
+	right: 1px;
+	top: -35px;
+}
+@media only screen and (min-width:320px ) {
+	.zfleft{
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 20%;
+	float: left;
+}
+}

@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>三思德OA管理系统</title>
+	
+	<link rel="stylesheet" href="../skin/css/public/bootstrap.css" />
+	<link rel="stylesheet" href="../skin/css/public/amazeui.min.css">
+	<link rel="stylesheet" href="../skin/Font-Awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../skin/css/public/public.css">
+	<link rel="stylesheet" href="../skin/css/public/style.css">
+	<link rel="stylesheet" href="../skin/css/product/product.css">
+    <script type="text/javascript" src="../skin/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../skin/js/product/product.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+<body ontouchstart>
+<!-- class命名 带有oa前缀的皆为自定义 其余都是 UI组件样式 -->
+<!-- 头部start -->
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top" id="head">	
+	<div class="oa-middle-div">
+  <div class="am-topbar-brand">
+    <a href="#"><img src="../skin/images/logo-dibu.png" alt=""></a>
+  </div>
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+  <div class="am-topbar-right">
+     	<a href="../user/login.html"><button class="am-btn am-btn-primary am-radius oa-login">登录</button></a>
+      <a href="../user/regist.html"><button class="am-btn am-btn-primary am-radius oa-login">注册</button></a>
+    </div>
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right">
+      <li class="am-active">
+      	<a href="../shouye.html">首页</a>
+      </li>
+      <li><a href="../product/gongneng.html">产品中心</a>
+			<ul class="am-dropdown-content oa-munu-pop">
+	          <li><a href="../product/gongneng.html">产品功能</a></li>
+	          <li><a href="../product/price.html">产品套餐</a></li>
+	        </ul>
+      </li>
+      <li><a href="../user/shiyong.html">用户试用</a></li>
+      <li><a href="../artide/chanpindongtai.html">新闻中心</a>
+      		<ul class="am-dropdown-content oa-munu-pop">
+	          <li><a href="../artide/chanpindongtai.html">产品动态</a></li>
+	          <li><a href="../artide/hangyezixun.html">行业资讯</a></li>
+	          <li><a href="../artide/yonghushequ.html">用户社区</a></li>
+	        </ul>
+      </li>
+      <li><a href="../about/about.html">关于我们</a>
+      	<ul class="am-dropdown-content oa-munu-pop">
+	          <li><a href="../about/about.html">关于V5</a></li>
+	          <li><a href="../about/changjianwenti.html">帮助中心</a></li>
+	        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</header>
+		<div class="oa-top"><img src="../skin/images/55e3c1298e6a3.jpg"></div>
+		<!--
+        	作者：785631539@qq.com
+        	时间：2015-10-20
+        	描述：功能大模块布局
+        -->
+        <div class="oa-function">
+        	<!--
+            	作者：785631539@qq.com
+            	时间：2015-10-20
+            	描述：上方块
+            -->
+        	<div class="oa-function-top">
+        		<div class="oa-function-top-num1 nav-click" data="nav1"><i class="fa fa-map-o"></i>
+                	<h3>全局管理</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+                <div class="oa-function-top-num2 nav-click" data="nav2"><i class="fa fa-file-o"></i>
+                	<h3>新闻管理</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+                <div class="oa-function-top-num3 nav-click" data="nav3"><i class="fa fa-gears"></i>
+                	<h3>企业管理</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+                <div class="oa-function-top-num4 nav-click" data="nav4"><i class="fa fa-users"></i>
+                	<h3>用户管理</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+                <div class="oa-function-top-num5 nav-click" data="nav5"><i class="fa fa-gg"></i>
+                	<h3>功能管理</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+        	</div>
+        	
+        	<!--
+            	作者：785631539@qq.com
+            	时间：2015-10-20
+            	描述：下方块
+            -->
+        	<div class="oa-function-bottom">
+        		<div class="oa-function-bottom-1 nav-click" data="nav6"><i class="fa fa-calculator"></i>
+                	<h3>财务管理</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+                <div class="oa-function-bottom-2 nav-click" data="nav7"><i class="fa fa-pencil"></i>
+                	<h3>统计管理</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+                <div class="oa-function-bottom-3 nav-click" data="nav8"><i class="fa fa-tty"></i>
+                	<h3>客服管理</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+                <div class="oa-function-bottom-4 nav-click" data="nav9"><i class="fa fa-tags"></i>
+                	<h3>产品管理</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+                <div class="oa-function-bottom-5 nav-click" data="nav10"><i class="fa fa-cubes"></i>
+                	<h3>界面设置</h3>
+                    <p>管理21世纪最贵的东东：人才</p>
+                </div>
+        	</div>
+            <!--
+            	作者：785631539@qq.com
+            	时间：2015-10-20
+            	描述：马上体验块
+            -->
+            <div class="oa-function-anniu">
+            	<p><a class="am-btn am-btn-primary p" href="../user/shiyong.html" target="_blank">马上体验</a></p>
+            </div>
+        	
+        	
+        </div>
+        
+        
+        
+        
+        
+        
+	 		<!--
+            	作者：785631539@qq.com
+            	时间：2015-10-20
+            	描述：侧边固定
+            -->
+	<div class="cebian-right">
+		<div class="cebian-box cebian-font ">
+			<a class="ce-qq" href="javascript:;"></a>
+		</div>
+		<div class="cebian-box cebian-font">
+			<a class="ce-phone" href="javascript:;"></a>
+			<p></p>
+		</div>
+		<div class="cebian-box cebian-font">
+			<a class="ce-shenqing" href="javascript:;"></a>
+		</div>
+		<div class="cebian-box">
+			<a class="ce-erweima" href="javascript:;"></a>
+			<p></p>
+		</div>
+	</div>
+<section style="height:580px;"></section>
+	<!--
+    	作者：785631539@qq.com
+        时间：2015-10-20
+        描述：底部
+    -->
+    <footer class="box-container ssd-foot">
+      <div class="oa-middle-div">
+        <div class="box-inb-ww pd-tb-10">
+          <div class="am-u-sm-6 pd-l-0">
+            <div class="ssd-wx-sao box-container">
+              <div class="wx-img">
+                <img class="img-auto" src="../skin/images/wx.png" alt="">
+              </div>
+              <div class="pd-tb-10">
+                <i class="fa fa-mobile fa-4x"></i>
+                <p class="ft-16">微信公众号</p>
+                <p class="ft-16">请用手机扫描关注</p>
+              </div>
+            </div>
+          </div>
+          <div class="am-u-sm-6">
+            <div class="box-container pd-tb-15 ssd-contact">
+              <p class="ft-16 lh-2"><i class="fa fa-map-marker"></i>Add:成都市高新区天益街38号理想中心2栋12楼1212-1215</p>
+              <p class="ft-16 lh-2"><i class="fa fa-phone"></i>Tel：028-85177375</p>
+              <p class="ft-16 lh-2"><i class="fa fa-envelope-o"></i>E-mail：service@sanside.net</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="pd-tb-15 oa-beianhao">
+      Copyright ©2013-2015 sanside.net All Rights Reserved. 蜀ICP备13015392号
+    </div>
+    </footer>
+  
+
+
+  <style type="text/css">
+  .oa-kuang{
+    position: fixed;
+    left: 25%;
+    top: 10%;
+ 
+    background: #fff;
+    margin-top: 10px;
+    display: none;
+  }
+  
+  </style>
+	
+  <div class="oa-kuang am-animation-scale-up">
+    <div class="oa-nav">
+      <div class="oa-nav-left">
+        <div class="oa-nav-left1 nav-show" data="nav1">
+        	<div class="oa-left-top">
+        		<ul>
+	        		<li class="oa-nav-left-top1"><p>全局管理</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default  am-round oa-btn " type="button">数据库管理</button></li>
+	        		<li><button class="am-btn am-btn-default  am-round oa-btn" type="button">功能设置</button></li>
+	        		<li><button class="am-btn am-btn-default  am-round oa-btn" type="button">企业号开发接口管理</button></li>
+	        		<li><button class="am-btn am-btn-default  am-round oa-btn" type="button">后台用户管理</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">系统设置</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+        <div class="oa-nav-left2 nav-show" data="nav2">
+          <div class="oa-left-top1">
+        		<ul>
+	        		<li class="oa-nav-left-top11"><p>新闻管理</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle1">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom1">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">新闻分组</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">新闻管理</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+        <div class="oa-nav-left3 nav-show" data="nav3">
+          <div class="oa-left-top2">
+        		<ul>
+	        		<li class="oa-nav-left-top12"><p>企业管理</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle2">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom2">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">企业分组</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">授权管理</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">微信企业号管理</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">企业管理员</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+        <div class="oa-nav-left4 nav-show" data="nav4">
+          <div class="oa-left-top3">
+        		<ul>
+	        		<li class="oa-nav-left-top13"><p>用户管理</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle3">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom3">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">用户管理</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+        <div class="oa-nav-left5 nav-show" data="nav5">
+          <div class="oa-left-top4">
+        		<ul>
+	        		<li class="oa-nav-left-top14"><p>功能管理</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle4">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom4">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">功能模块安装</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">功能模块列表</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+        <div class="oa-nav-left6 nav-show" data="nav6">
+         <div class="oa-left-top5">
+        		<ul>
+	        		<li class="oa-nav-left-top15"><p>财务管理</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle5">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom5">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">支付模块</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">订单管理</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+        <div class="oa-nav-left7 nav-show" data="nav7">
+          <div class="oa-left-top6">
+        		<ul>
+	        		<li class="oa-nav-left-top16"><p>统计管理</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle6">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom6">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">会员统计</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">订单统计</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">收入统计</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">访问统计</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">短信统计</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+        <div class="oa-nav-left8 nav-show" data="nav8">
+          <div class="oa-left-top7">
+        		<ul>
+	        		<li class="oa-nav-left-top17"><p>客服管理</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle7">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom7">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">投诉管理</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">在线交流</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">批量发送站内信、短信</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">留言反馈</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">建议反馈</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+        <div class="oa-nav-left9 nav-show" data="nav9">
+          <div class="oa-left-top8">
+        		<ul>
+	        		<li class="oa-nav-left-top18"><p>产品管理</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle8">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom8">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">产品列表</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">产品修改</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+        <div class="oa-nav-left10 nav-show" data="nav10">
+          <div class="oa-left-top9">
+        		<ul>
+	        		<li class="oa-nav-left-top19"><p>界面设置</p></li>
+	        		<li class="close"><i class="fa fa-close"></i></li>
+	        	</ul>
+        	</div> 
+        	<div class="oa-left-middle9">
+        		内容截图
+        	</div> 
+        	<div class="oa-left-bottom9">
+        		<ul>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">网站导航设置</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">风格设置</button></li>
+	        		<li><button class="am-btn am-btn-default am-round oa-btn" type="button">个人中心导航</button></li>
+	        	</ul>
+        	</div> 
+        </div>
+        
+      </div>
+     
+    </div>
+  </div>
+
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/amazeui.min.js"></script>
+<script src="../skin/js/public/public.js"></script>
+<script type="text/javascript">
+$(function(){
+	var c = 0;
+	var li =$('.oa-index-lunbo .lunbo-tu li');
+	var p = $('.lunbo-yuan p');
+	var li_num = li.length;
+	function autoRun(){
+		c++;
+		c = (c == li_num)?0:c;
+		li.eq(c).fadeIn(1000).siblings('li').fadeOut(1000);
+
+		p.eq(c).addClass('active').siblings('p').removeClass('active');
+	}
+	tt = setInterval(autoRun,4000);
+	$('.oa-index-lunbo').mouseover(function(){
+		// alert(1);
+		clearInterval(tt);
+	});
+	p.click(function(){
+		c = $(this).index();
+		li.eq(c).fadeIn(1000).siblings('li').fadeOut(1000);
+
+		p.eq(c).addClass('active').siblings('p').removeClass('active');
+	});
+	$('.oa-index-lunbo').mouseout(function() {
+		tt = setInterval(autoRun,4000);
+	});
+
+})
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+.others .othg li{
+	overflow: hidden;
+}
+.others .othg li .ico-box{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border:2px solid #7cc929;
+	color:#7cc929;
+	line-height: 36px;
+	font-size:20px;
+	text-align: center;
+	float: left;
+}
+.dh{
+	float: left;
+	line-height: 36px;
+	margin-left: 10px;
+}
+
+.others .othg li:last-child{
+	border-top:1px solid #ddd;
+}
+.others .othg li:last-child .ico-box{
+	color: #ff7b52;
+	border:2px solid #ff7b52;
+}
+.lh26{
+	line-height: 26px;
+}
+.others .pa{
+	position:absolute;
+	left: 15px;
+}
+.others .pr{
+	position: relative;
+	padding: 15px 0 15px 80px;
+  	border-bottom: 1px solid #f2f2f2;
+}
+.othg{
+	font-size:16px;
+}
+.others .mui-input-row{
+	border-bottom:1px solid #ddd;
+	padding:5px 0;
+}
+.others .mui-input-row:last-child{
+	border: none;
+}
+.others .shezhi .leix{
+	margin-bottom:5px;
+}
+.others .shezhi .mui-input-row{
+	border: none;
+	padding:0;
+}
+.others .shezhi .mui-input-row .mui-btn{
+	width: 100%;
+}
+.others .shezhi .mui-btn{
+	margin:0
+}
+.others select{
+	padding-left: 10px;
+	border:1px solid #cbcbcb !important;
+}
+.others .dizhi{
+	text-align: left;
+}
+.others .map{
+	height: 300px;
+	background: red;
+}
+.others .shezhi .mui-password:nth-child(5){
+	margin-top:15px;
+} 
+.others .mui-navbar{
+	background: #cc0033;
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="renderer" content="webkit">
+
+    <title>MU+ 后台主题UI框架 - 联系人</title>
+    <meta name="keywords" content="MU+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="MU+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link href="../assets/css/bootstrap.min.css?v=3.3.0" rel="stylesheet">
+    <link href="../assets/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+    <link href="../assets/css/animate.css" rel="stylesheet">
+    <link href="../assets/css/style.css?v=2.1.0" rel="stylesheet">
+    <link href="../assets/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="../assets/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+	<link href="../assets/css/plugins/iCheck/custom.css" rel="stylesheet">
+
+
+
+    <link href="../assets/css/z-style.css" rel="stylesheet">
+    <style>	
+	.note-editor .note-editable {
+		padding: 10px;
+		overflow: auto;
+		height: 100%;
+		outline: 0;
+	}
+	.note-editor {
+		overflow: hidden;
+		height:350px;
+	}	
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../assets/img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="../index.html#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">ALi-MoBan</strong>
+                             </span>  <span class="text-muted text-xs block">超级管理员 <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="form_avatar.html">修改头像</a>
+                                </li>
+                                <li><a href="profile.html">个人资料</a>
+                                </li>
+                                <li><a href="contacts.html">联系我们</a>
+                                </li>
+                                <li><a href="mailbox.html">信箱</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            MU+
+                        </div>
+
+                    </li>
+                     <li  class="active">
+                        <a href="../index.html"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span></a>
+                    </li>
+                    
+                     <li>
+                        <a href="layouts.html"><i class="fa fa-comment"></i> <span class="nav-label">通知公告</span><span style=" margin-top:0;" class="fa arrow pull-right"></span><span class="label label-danger pull-right">18</span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="tongzhilist(super).html">通知公告列表(super)</a>
+                            </li>
+                            <li><a href="tongzhiList.html">通知公告列表</a>
+                            </li>
+                            <li><a href="tongzhiDetail.html">通知公告详情</a>
+                            </li>
+                             <li><a href="tongzhiAdd.html">添加通知公告</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                     <li>
+                        <a href="../index.html#"><i class="fa fa-warning"></i> <span class="nav-label">预警机制</span><span style=" margin-top:0;" class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                             <li><a href="warningTimes.html">合同到期预警</a>
+                            </li>
+                            <li><a  href="warningBusness.html">数据业务预警</a>
+                            </li>
+                            <li><a href="warningStore.html">店铺列表预警</a>
+                            </li>
+                            <li><a href="warningNo.html">预警条目列表</a>
+                            </li>
+                            <li><a href="warningAdd.html">添加预警条目</a>
+                            </li>
+                            <li><a href="warningInputData.html">批量添加数据</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                     <li>
+                        <a href="../index.html#"><i class="fa fa-whatsapp"></i> <span class="nav-label">咨询中心</span><span style=" margin-top:0;" class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                           <li><a href="zixunCenter.html">文章管理</a>
+                            </li>
+                            <li><a href="zixunArticalAdd1.html">文章添加</a>
+                            </li>
+                            <li><a href="zixunCenterManager.html">分类管理</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    
+             </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message"><a href="../index.html" title="返回首页"><i class="fa fa-home"></i></a>欢迎使用渠道云管家</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="../index.html#">
+                                <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="../assets/img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46小时前</small>
+                                            <strong>小四</strong> 项目已处理完结
+                                            <br>
+                                            <small class="text-muted">3天前 2014.11.8</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="../assets/img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">25小时前</small>
+                                            <strong>国民岳父</strong> 这是一条测试信息
+                                            <br>
+                                            <small class="text-muted">昨天</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html">
+                                            <i class="fa fa-envelope"></i>  <strong> 查看所有消息</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="../index.html#">
+                                <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
+                                            <span class="pull-right text-muted small">4分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-qq fa-fw"></i> 3条新回复
+                                            <span class="pull-right text-muted small">12分钟钱</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>查看所有 </strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>            
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>通知公告列表</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="../index.html">主页</a>
+                        </li>
+                        <li>
+                            <a>通知公告</a>
+                        </li>
+                        <li>
+                            <strong>通知公告列表</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>          
+          	<div class="wrapper wrapper-content animated fadeInRight">
+                <div class="ibox float-e-margins">
+                   
+                     <div class="ibox-content" style="border-width:0px; padding:0;">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">筛选</div>
+                            <div class="panel-body">
+                                <form class="form-horizontal" role="form" method="get" action="#">
+                                
+ 									<div class="form-group">
+                                        <label class="col-md-2 col-lg-1 control-label">所属用户组</label>
+                                        <div class="col-md-10 col-lg-11">
+                                            <select class="form-control m-b" name="account">
+                                                <option>请选择用户组</option>
+                                                <option>移动员工</option>
+                                                <option>渠道商家</option>               
+                                            </select>
+                                        </div>
+                                    
+
+                                    <label class="col-md-2 col-lg-1 control-label">标题查找</label>
+                                    <div class="col-md-10 col-lg-11">        
+                                        <div class="input-group">
+                                            <input type="text" class="form-control"><span class="input-group-btn">
+                                            <button type="submit" class="btn btn-primary" style="width:120px;"><i class="fa fa-search"></i> 搜索</button></span>
+                                        </div>
+                                    </div> 
+                                    </div>   
+                                </form>
+                            </div>
+                        </div>
+                   
+                   
+                        
+                            <div class="panel panel-default">
+                            <div class="panel-heading shaixuan">
+                                通知公告列表
+                            </div>
+                            <div class="project-list">
+                            <form class="form-horizontal">
+   								<div class="panel-body project-list">
+                               	<table class="table table-hover manyi-table">
+                                        <tbody>
+                                        <tr id="title_box" style="background: #1AB394; color: #fff;">
+                                            <th style="width:6%;" class="text-center">选择</th>
+                                            <th style="width:40%;">标题</th>
+                                            
+                                            <th style="width:15%;">发布时间</th>
+                                            
+                                            <th style="width:15%;">操作</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="project-status">
+                                            	<div class="checkbox i-checks">
+                                                	<label id="check_left" class="check_left" style="padding-left: 0;">
+                                                    	<input type="checkbox" value="" name="mybox"><i></i>
+                                                    </label>
+                                           		</div>
+                                            </td>
+                                        
+                                             <td >关于中秋节放假通知</td>
+                                             <td>2015.4.30 14:25:50</td>
+                                             
+                                            <td>
+                                            <a class="btn btn-white btn-sm" title="查看" href="tongzhiDetail.html">
+                                            <i class="fa fa-eye"></i>查看
+                                            </a>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="project-status">
+                                            <div class="checkbox i-checks">
+                                                <label id="check_left" class="check_left" style="padding-left: 0;">
+                                                    <input type="checkbox" value="" name="mybox"><i></i>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        
+                                             <td >关于中秋节放假通知</td>
+                                             <td>2015.4.30 14:25:50</td>
+                                             
+                                            <td>
+                                            <a class="btn btn-white btn-sm" title="查看" href="tongzhiDetail.html">
+                                            <i class="fa fa-eye"></i>查看
+                                            </a>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="project-status">
+                                            <div class="checkbox i-checks">
+                                                <label id="check_left" class="check_left" style="padding-left: 0;">
+                                                    <input type="checkbox" value="" name="mybox"><i></i>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        
+                                             <td >关于中秋节放假通知</td>
+                                             <td>2015.4.30 14:25:50</td>
+                                             
+                                            <td>
+                                            <a class="btn btn-white btn-sm" title="查看" href="tongzhiDetail.html">
+                                            <i class="fa fa-eye"></i>查看
+                                            </a>
+                                            </td>
+                                    </tr>
+                                    </tbody> 
+                                </table>
+                                <div class="btn btn-white btn-sm btn_all"  xuanzhong="0">全部选中</div>
+                                     <div class="btn btn-white btn-sm btn_delete"><i class="fa fa-times"></i> 删除 </div>
+                                <div class="manyi-btn-ping text-center">
+                                    <button type="button" class="btn btn-white">
+                                        <a href="javascript:;">首页</a>
+                                    </button> 
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-white">
+                                            <a href="javascript:;">上一页</a>
+                                        </button>  
+                                        <button type="button" class="btn btn-white">
+                                            <a href="javascript:;">1</a>
+                                        </button>  <button type="button" class="btn btn-white">
+                                            <a href="javascript:;">2</a>
+                                        </button>  <button type="button" class="btn btn-white">
+                                            <a href="javascript:;">下一页</a>
+                                        </button>  
+                                    </div>
+                                    <button type="button" class="btn btn-white">
+                                        <a href="javascript:;">尾页</a>
+                                    </button> 
+                                </div>
+                                
+                            </div>
+                            </form>  
+                        </div>
+                        <div align="right" style="padding-bottom:10px; margin-right:40px;">
+                            	<a href="juese.html" class="btn btn-primary btn-md" role="button" style="width:100px;">提交</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+              </div>  
+            
+            
+            <div class="footer">
+                <div class="pull-right">
+                    By：<a href="http://www.alimoban.com" target="_blank">alimoban</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> MU+ &copy; 2014
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+   
+    <!-- Mainly scripts -->
+    <script src="../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js?v=3.3.0"></script>
+    <script src="../assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../assets/js/muplus.js?v=2.0.0"></script>
+    <script src="../assets/js/plugins/pace/pace.min.js"></script>
+
+    <!-- SUMMERNOTE -->
+    <script src="../assets/js/plugins/summernote/summernote.min.js"></script>
+    <script src="../assets/js/plugins/summernote/summernote-zh-CN.js"></script>
+	<script src="../assets/js/plugins/iCheck/icheck.min.js"></script>
+    
+    
+    
+    
+    
+
+
+    <!-- NouSlider -->
+    <script src="../assets/js/plugins/nouslider/jquery.nouislider.min.js"></script>
+
+   
+	
+	
+  	<!-- 公共JS-->
+    <script src="../assets/js/public.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+    <script>
+			var count = 0;
+		    document.getElementById("btn_all").onclick = function(){
+			count++;
+			if( count % 2 == 1){
+				document.getElementById("check_left_kuang").type = "checked";
+			}
+			else{
+
+			}
+		}
+	</script>
+	<script>
+	$(function(){
+		$('.btn_all').click(function(){
+			var xuanzhong = $(this).attr('xuanzhong');
+			var project_list = $(this).closest('.project-list');
+			if(xuanzhong == 0){
+				project_list.find('.check_left').each(function(index, element) {
+                    $(this).children('div.icheckbox_square-green').addClass('checked');
+					$(this).find('input[type="checkbox"]').prop('checked',true);
+                });
+				$(this).attr('xuanzhong',1);
+				$(this).html('全部取消');
+			}else{
+				project_list.find('.check_left').each(function(index, element) {
+                    $(this).children('div.icheckbox_square-green').removeClass('checked');
+					$(this).find('input[type="checkbox"]').prop('checked',false);
+                });
+				$(this).attr('xuanzhong',0);
+				$(this).html('全部选中');
+			}
+			
+		});
+		$('.btn_delete').click(function(){
+            var project_list = $(this).closest('.project-list');
+            if(!project_list.find('.check_left').find('input[type="checkbox"]').is(':checked')){
+                return false;
+            }
+            shanchu(1);
+            var shanchu_true = $('.shanchu_show').find('.shanchu_true');
+            shanchu_true.click(function() {
+                project_list.find('.check_left').each(function(index, element) {
+                    if($(this).find('input[type="checkbox"]').is(':checked')){
+                        $(this).closest('tr').remove();
+                    }
+                });
+                $('.shanchu_zhezhao').remove();
+                $('.shanchu_show').remove();
+            });
+        });
+
+		
+	});
+	</script>
+ 
+ 
+ 
+ 
+
+
+</body>
+
+</html>

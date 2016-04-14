@@ -1,0 +1,568 @@
+<!-- 商品添加 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>群飞商贸</title>
+	<link rel="stylesheet" href="../skin/mui/css/mui.min.css"/>
+	<link rel="stylesheet" href="../skin/fonts/style.css" />
+	<link rel="stylesheet" href="../skin/css/public.css" />
+
+	<link rel="stylesheet" href="../skin/css/style.css" />
+
+	<link rel="stylesheet" href="../skin/css/shangpin/shangpin.css" />
+	<link rel="stylesheet" type="text/css" href="../skin/mui/css/feedback-page.css" />
+
+	<link rel="stylesheet" href="../skin/mui/css/mui.picker.min.css"/>
+	<link href="../skin/mui/css/mui.picker.css" rel="stylesheet" />
+	<link href="../skin/mui/css/mui.poppicker.css" rel="stylesheet" />
+</head>
+<style type="text/css">
+.mui-table-view{
+	background-color: #eee;
+}
+</style>
+<body>
+<header id="header" class="mui-bar mui-bar-nav bsd-no">
+  <a onclick="history.go(-1);" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+  <button class="mui-btn mui-btn-warning flt-r">完成</button>
+	<div class="mui-title">添加新商品</div>
+</header>
+
+
+
+<div class="mui-content">
+<!-- 例 -->
+<!-- <form class="mui-input-group sp-addform">
+	<h5 class="sp-tit">示例</h5>
+	<div class="mui-input-row">
+		<a class="mui-navigate-right">
+			<div class="sp-label">
+				商品名称
+			</div>
+			<div class="overhid">
+				<div class="sp-body">
+					<div class="sp-cell">
+						<input type="text" class="mui-input-clear" placeholder="请输入商品名称(12字以内)">
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			售价
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell mui-navigate-right">
+					<span class="sp-span">请输入数量</span>
+				</div>
+				<div class="sp-cell">
+					<span class="sp-l">数量</span>
+					<span class="sp-r">斤</span>
+					<div class="overhid">
+						<input type="text" class="mui-input-clear" placeholder="输入数量">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form> -->
+
+<form class="mui-input-group sp-addform">
+	<h5 class="sp-tit">商品信息</h5>
+	<div class="mui-input-row">
+		<a class="mui-navigate-right">
+			<div class="sp-label">
+				商品名称
+			</div>
+			<div class="overhid">
+				<div class="sp-body">
+					<div class="sp-cell">
+						<input type="text" class="mui-input-clear" placeholder="请输入商品名称(12字以内)">
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="mui-input-row">
+		<a class="mui-navigate-right">
+			<div class="sp-label">
+				商品分组
+			</div>
+			<div class="overhid">
+			<!-- 使用table的方式 布局保证两边宽度协调 -->
+				<div class="sp-body">
+					<!-- sp-picker 配合参数表示 单选的内容 -->
+					<div class="sp-cell sp-picker" data-options='[{
+						"value": "1",
+						"text": "第一分组"
+					},{
+						"value": "2",
+						"text": "第二分组"
+					},{
+						"value": "3",
+						"text": "第三分组"
+					}]'>
+						<span class="sp-span">第一分组</span>
+						<input type="hidden" value="1">
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			平台分组
+		</div>
+		<div class="overhid">
+			<!-- sp-dbpicker 配合参数表示 双选的内容 这里要注意布局-->
+			<div class="sp-body sp-dbpicker" data-options='[{
+					"value": "001",
+					"text": "潮流男装",
+						"children": [{
+							"value": "00101",
+							"text": "手表"
+						}, {
+							"value": "00102",
+							"text": "领带"
+						}, {
+							"value": "00103",
+							"text": "皮鞋"
+						}]
+					},{
+					"value": "002",
+					"text": "潮流女装",
+						"children": [{
+							"value": "00201",
+							"text": "高跟鞋"
+						}, {
+							"value": "00202",
+							"text": "貂皮大衣"
+						}, {
+							"value": "00203",
+							"text": "裙子"
+						}]
+					}]'>
+				<div class="sp-cell mui-navigate-right">
+					<span class="sp-span">潮流男装</span>
+				</div>
+				<div class="sp-cell mui-navigate-right">
+					<span class="sp-span">羽绒服</span>
+					<input type="hidden" value="00201">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			库存
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<input type="text" class="mui-input-clear" placeholder="请输入库存">
+				</div>
+				<div class="sp-cell mui-navigate-right sp-picker" data-options='[{
+						"value": "1",
+						"text": "包"
+					},{
+						"value": "2",
+						"text": "袋"
+					},{
+						"value": "3",
+						"text": "盒"
+					}]'>
+					<span class="sp-span">包</span>
+					<input type="hidden" name="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			销售价
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<span class="sp-r">元</span>
+					<div class="overhid">
+						<input type="text" class="mui-input-clear" placeholder="请输入市场价">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			批发价
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<input type="text" class="mui-input-clear" placeholder="输入批发价">
+				</div>
+				<div class="sp-cell mui-navigate-right sp-picker" data-options='[{
+						"value": "1",
+						"text": "包"
+					},{
+						"value": "2",
+						"text": "袋"
+					},{
+						"value": "3",
+						"text": "盒"
+					}]'>
+					<span class="sp-span">包</span>
+					<input type="hidden" name="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			积分
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<span class="sp-r">分</span>
+					<div class="overhid">
+						<input type="text" class="mui-input-clear" placeholder="请输入商品积分">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row sp-ht-auto">
+		<div class="sp-label">
+			商品简介
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+						<textarea name="" id="" cols="30" rows="4" placeholder="请输入商品简介"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row sp-ht-auto">
+		<div class="sp-label">
+			商品状态
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<div class="pd-5 sp-radio">
+						<span class="mui-radio">
+							<input name="radio2" checked type="radio" id="1">
+							<label><span class="mui-btn">待上架</span></label>
+						</span>
+						<span class="mui-radio">
+							<input name="radio2" type="radio" id="2">
+							<label><span class="mui-btn">上架</span></label>
+						</span>
+						<span class="mui-radio">
+							<input name="radio2" type="radio" id="3">
+							<label><span class="mui-btn">下架</span></label>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h5 class="sp-tit">商品图</h5>
+	<div class="mui-input-row feedback sp-ht-auto">
+		<!-- <div class="mg-t-sm mg-b-xs tx-3">商品图</div> -->
+		<div class="image-list">
+			<div class="image-item space"><div class="image-close">X</div><input type="file" accept="image/*" id="image-1"></div>
+		</div>
+	</div>
+	
+	
+	<h5 class="sp-tit">高级设置</h5>
+	<div class="mui-input-row sp-ht-auto">
+		<div class="sp-label">
+			商品限购
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+						<input type="text" class="mui-input-clear" placeholder="输入限购数量，0或者不填表示不限购">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row sp-ht-auto">
+		<div class="sp-label">
+			优先级
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+						<input type="text" class="mui-input-clear" placeholder="数字越大，商品优先级越靠前">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row sp-ht-auto">
+		<div class="sp-label">
+			标签
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<div class="pd-5 sp-radio">
+						<span class="mui-radio">
+							<input name="radio3" checked type="radio" id="r1">
+							<label><span class="mui-btn">无</span></label>
+						</span>
+						<span class="mui-radio">
+							<input name="radio3" type="radio" id="r2">
+							<label><span class="mui-btn">限时</span></label>
+						</span>
+						<span class="mui-radio">
+							<input name="radio3" type="radio" id="r3">
+							<label><span class="mui-btn">热卖</span></label>
+						</span>
+						<span class="mui-radio">
+							<input name="radio3" type="radio" id="r4">
+							<label><span class="mui-btn">新品</span></label>
+						</span>
+						<span class="mui-radio">
+							<input name="radio3" type="radio" id="r5">
+							<label><span class="mui-btn">特价</span></label>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row bd-b">
+		<div class="sp-label">
+			是否推荐
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<div class="mui-switch mui-switch-blue mui-active">
+						<div class="mui-switch-handle"></div>
+						<input style="display:none;" type="checkbox" name="tuijian">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<h5 class="sp-tit">佣金设置</h5>
+	<div class="pd-10 bd-b">
+		零售佣金 <span class="tx-9">(填写 0-100 表示0% - 100%)</span>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			平台佣金
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<span class="sp-span">默认10%</span>
+				</div>
+				<div class="sp-cell">
+					<span class="sp-span">提后价格：<span class="sp-money">￥90</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			一级佣金
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<input type="text" class="mui-input-clear" placeholder="默认10%">
+				</div>
+				<div class="sp-cell">
+					<span class="sp-span">提后价格：<span class="sp-money">￥90</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			二级佣金
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<input type="text" class="mui-input-clear" placeholder="默认10%">
+				</div>
+				<div class="sp-cell">
+					<span class="sp-span">提后价格：<span class="sp-money">￥90</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			三级佣金
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<input type="text" class="mui-input-clear" placeholder="默认10%">
+				</div>
+				<div class="sp-cell">
+					<span class="sp-span">提后价格：<span class="sp-money">￥90</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mg-t-15 pd-10 bd-b">
+		批发佣金 <span class="tx-9">(填写 0-100 表示0% - 100%)</span>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			平台佣金
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<span class="sp-span">默认10%</span>
+				</div>
+				<div class="sp-cell">
+					<span class="sp-span">提后价格：<span class="sp-money">￥90</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			一级佣金
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<input type="text" class="mui-input-clear" placeholder="默认10%">
+				</div>
+				<div class="sp-cell">
+					<span class="sp-span">提后价格：<span class="sp-money">￥90</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			二级佣金
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<input type="text" class="mui-input-clear" placeholder="默认10%">
+				</div>
+				<div class="sp-cell">
+					<span class="sp-span">提后价格：<span class="sp-money">￥90</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mui-input-row">
+		<div class="sp-label">
+			三级佣金
+		</div>
+		<div class="overhid">
+			<div class="sp-body">
+				<div class="sp-cell">
+					<input type="text" class="mui-input-clear" placeholder="默认10%">
+				</div>
+				<div class="sp-cell">
+					<span class="sp-span">提后价格：<span class="sp-money">￥90</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <h5 class="sp-tit">商品展示图</h5>
+	<div class="mui-input-row feedback sp-ht-auto">
+		<div id='image-list2' class="row image-list">
+			<div class="image-item space"><div class="image-close">X</div><input type="file" accept="image/*" id="image-1"></div>
+		</div>
+	</div> -->
+</form>
+</div>
+
+</body>
+<script src="../skin/mui/js/mui.min.js"></script>
+<script src="../skin/js/jquery-2.1.1.min.js"></script>
+<script src="../skin/js/public/super.js"></script>
+
+<script src="../skin/mui/js/mui.picker.js"></script>
+<script src="../skin/mui/js/mui.poppicker.js"></script>
+<script src="../skin/mui/js/mui.picker.min.js"></script>
+<script type="text/javascript">
+;(function($){
+	$('body').on('tap','.sp-picker',function(e){
+		var self = jQuery(this),
+				opt = jQuery.parseJSON(self.attr('data-options')),
+				span = self.find('.sp-span'),
+				input = self.find('input:hidden');
+
+		
+		var suPicker = new $.PopPicker();
+		suPicker.setData(opt);
+		suPicker.show(function(items) {
+			span.text(items[0].text)
+			input.val(items[0].value)
+			suPicker.dispose();
+		},false);
+	})
+	$('body').on('tap','.sp-dbpicker',function(e){
+		var self = jQuery(this),
+				opt = jQuery.parseJSON(self.attr('data-options')),
+				span = self.find('.sp-span'),
+				input = self.find('input:hidden');
+
+		var dbPicker = new $.PopPicker({
+						layer: 2
+					});
+		dbPicker.setData(opt);
+		dbPicker.show(function(items) {
+			span.each(function(i, el) {
+				jQuery(this).text(items[i].text);
+			});
+
+			input.val(items[1].value)
+			dbPicker.dispose();
+		},false);
+	});
+
+	$('.su-time').each(function(i, el) {
+		el.addEventListener('tap', function() {
+			var self = jQuery(this);
+			var optionsJson = this.getAttribute('data-options') || '{}';
+			var options = JSON.parse(optionsJson);
+			var input = self.siblings('input:hidden');
+
+			var picker = new $.DtPicker(options);
+			picker.show(function(rs) {
+				input.val(rs.text);
+				self.text(rs.text);
+				picker.dispose();
+			});
+		}, false);
+	});
+	$('.mui-content .mui-switch').each(function() {
+		var self = jQuery(this);
+	/**
+	 * toggle 事件监听
+	 */
+		this.addEventListener('toggle', function(event) {
+			//event.detail.isActive 可直接获取当前状态
+			
+			self.find('input[type="checkbox"]').prop('checked',event.detail.isActive);
+		});
+	});
+ })(mui);
+</script>
+</html>

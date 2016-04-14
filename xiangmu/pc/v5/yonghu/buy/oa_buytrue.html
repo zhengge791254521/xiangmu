@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>三思德OA管理系统</title>
+    <link rel="stylesheet" href="../../skin/css/public/amazeui.min.css">
+    <link rel="stylesheet" href="../../skin/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../skin/icon/iconfont.css">
+    <link rel="stylesheet" href="../../skin/css/public/public.css">
+    <link rel="stylesheet" href="../../skin/css/public/style.css">
+    <link rel="stylesheet" href="../../skin/css/yonghu/yonghu_style.css">
+    <link rel="stylesheet" href="../../skin/css/yonghu/buy/oa_buy.css">
+    <style type="text/css">
+    </style>
+  </head>
+
+  <body ontouchstart>
+    <!-- class命名 带有oa前缀的皆为自定义 其余都是 UI组件样式 -->
+    <!-- 头部start -->
+    <header class="am-topbar am-topbar-inverse am-topbar-fixed-top">
+      <div class="oa-middle-div">
+        <div class="am-topbar-brand">
+          <a href="#"><img src="../../skin/images/logo-dibu.png" alt=""></a>
+        </div>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+        <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+          <div class="am-topbar-right">
+            <!-- 未登录 -->
+            <button class="am-btn am-btn-primary am-radius oa-login">登录</button>
+            <button class="am-btn am-btn-primary am-radius oa-login">注册</button>
+          </div>
+          <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right">
+            <li class="am-active">
+              <a href="#">首 页</a>
+            </li>
+            <li><a href="#">产品中心</a>
+            </li>
+            <li><a href="#">新闻中心</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">个人中心</a>
+              <ul class="oa-munu-pop">
+                <li>
+                  <div class="munu-u-box">
+                    <img src="../../skin/images/tou.png" alt="" />
+                    <div class="">
+                      <p>zhenggge791254521</p>
+                      <span class="munu-u"><a href="">个人账户</a></span>
+                      <!-- <span class="munu-m"><a href="">消息</a><b class="am-badge am-badge-warning am-round">5</b></span> -->
+                    </div>
+                  </div>
+                  <div class="am-g munu-exit">
+                    <a class="am-u-sm-6" href="#">我的订单</a>
+                    <a class='am-u-sm-6 ao-exit' href=""> 安全退出</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="user-container">
+      <div class="oa-middle-div user-cont-box am-cf">
+        <!-- 左侧侧边栏 -->
+        <div class="user-sidebar">
+          <div data-am-widget="accordion" class="am-accordion am-accordion-gapped" data-am-accordion='{  }'>
+            <dl class="am-accordion-item">
+              <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe620;</i>用户中心
+            </dt>
+              <dd class="am-accordion-bd am-collapse">
+                <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                <div class="am-accordion-content">
+                  <div class="user-sidebar-group">
+                    <a class="user-sidebar-list">功能模块安装</a>
+                    <a class="user-sidebar-list active">功能模块卸载</a>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl class="am-accordion-item">
+              <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe651;</i>绑定资料
+            </dt>
+              <dd class="am-accordion-bd am-collapse ">
+                <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                <div class="am-accordion-content">
+                  <div class="user-sidebar-group">
+                    <a class="user-sidebar-list">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl class="am-accordion-item am-active">
+              <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe657;</i>产品购买
+            </dt>
+              <dd class="am-accordion-bd am-collapse am-in">
+                <div class="am-accordion-content">
+                  <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">购买PC端权限</a>
+                    <a class="user-sidebar-list">购买企业号套餐</a>
+                    <a class="user-sidebar-list">购买短信条数</a>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl class="am-accordion-item">
+              <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe632;</i>人员管理
+            </dt>
+              <dd class="am-accordion-bd am-collapse ">
+                <div class="am-accordion-content">
+                  <div class="user-sidebar-group">
+                    <a class="user-sidebar-list">企业管理员</a>
+                    <a class="user-sidebar-list active">通讯录</a>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl class="am-accordion-item">
+              <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe63d;</i>功能模块
+            </dt>
+              <dd class="am-accordion-bd am-collapse ">
+                <div class="am-accordion-content">
+                  <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl class="am-accordion-item">
+              <dt class="am-accordion-title user-sidebar-title">
+              <i class="iconfont">&#xe656;</i>财务管理
+              </dt>
+              <dd class="am-accordion-bd am-collapse ">
+                <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                <div class="am-accordion-content">
+                  <div class="user-sidebar-group">
+                    <a class="user-sidebar-list active">功能模块安装</a>
+                    <a class="user-sidebar-list">功能模块卸载</a>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+
+        </div>
+
+        <!-- 右边内容区域 -->
+        <div class="user-content">
+          <div class="oa-panel">
+            <div class="oa-panel-hd">
+              <i class="iconfont">&#xe623;</i> 购买PC端授权
+            </div>
+            <div class="oa-buy-hint">
+              <div class="am-g">
+                <div class="am-u-sm-9">
+                  <p>请您及时付款，以便订单尽快处理！ 订单号：<span class="am-text-warning">4561234521</span></p>
+                  <p class="am-text-sm">请在<span class="am-text-warning">12小时</span>内付清款项，否则订单会被自动取消</p>
+                </div>
+                <div class="am-u-sm-3">应付金额：<span class="am-text-danger">850</span> 元</div>
+
+              </div>
+              
+            </div>
+            <div class="oa-panel-bd">
+              <div class="oa-selectbuy-box">
+                <div class="am-tabs" data-am-tabs>
+                  <ul class="am-tabs-nav am-nav am-nav-tabs">
+                    <li class="am-active"><a href="#tab1">平台支付</a></li>
+                  </ul>
+                  <div class="am-tabs-bd">
+                    <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                      <p class="oa-pay-zhuyi">平台无法同时与其他方式一起支付</p>
+                      <ul class="am-cf am-text-center">
+                        <li class="oa-payment"><img src="../../skin/images/pay/baidu.jpg" alt="" /></li>
+                        <li class="oa-payment"><img src="../../skin/images/pay/pay.gif" alt="" /></li>
+                        <li class="oa-payment"><img src="../../skin/images/pay/wx.gif" alt="" /></li>
+                     </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="oa-selectbuy-box am-text-center">
+                <button type="button" class="am-btn am-btn-secondary am-radius">确认购买</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- 右边内容区域结束 -->
+      </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="box-container oa-foot">
+      <p>Copyright ©2013-2015 sanside.net All Rights Reserved. 蜀ICP备13015392号</p>
+      <p>版权所有 <a href="">三思德科技有限公司</a></p>
+    </footer>
+    <!-- 底部结束 -->
+    <script src="../../skin/js/jquery-2.1.1.min.js"></script>
+    <script src="../../skin/js/public/amazeui.min.js"></script>
+    <script src="../../skin/js/public/public.js"></script>
+    <script type="text/javascript">
+    $('.oa-payment').click(function(event) {
+      $(this).addClass('active').siblings('.oa-payment').removeClass('active');
+    });
+    </script>
+  </body>
+
+</html>

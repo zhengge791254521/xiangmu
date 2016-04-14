@@ -1,0 +1,384 @@
+@charset "utf-8";
+/*样式重置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-size:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:;}
+abbr,acronym{border:0;}
+body{font:12px/1.5 '微软雅黑',tahoma,arial,'Hiragino Sans GB',宋体,sans-serif;}
+a,a:hover{text-decoration: none;}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:'';clear:both;height:0;}
+.clearfix{zoom:1;}
+.text-ellipsis{white-space:normal;/*设置不拆行*/text-overflow:ellipsis;/*省略号*/-o-text-overflow:ellipsis;/*兼容opera*/overflow:hidden;/*超出隐藏*/}
+
+
+.pop-box{
+	position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: 6666;/*display: none;*/
+}
+.pop-mask{
+	position: fixed;left: 0;top: 0;width: 100%;height: 100%;background-color: #000;opacity: 0.5;filter:alpha(opacity=50);z-index: 6667;
+}
+.pop-box-popup{
+	position: fixed;width: 200px; left:50%;top:50px;margin-left: -100px;z-index: 7000;background-color:#fff;border-radius: 5px 5px 0 0;
+}
+.box-container{display: inline-block;width: 100%;position: relative;
+}
+.user-select-box{
+	width: 100%;height: 100%;display: inline-block;
+}
+.user-select-box .user-select-title,.user-select-box .user-select-body{
+	padding: 20px 15px;text-align: center;position: relative;border-bottom: 1px solid #ddd;
+}
+.user-select-box .user-select-body{
+	background-color:#f8fafb; 
+}
+
+.user-select-title .pop-close{
+	position: absolute;right:5px;top:5px;background:url(../images/icon_upload.png) no-repeat 0 -160px;width: 30px;height:30px;cursor: pointer;
+}
+.user-select-title .pop-close:hover{
+	background:url(../images/icon_upload.png) no-repeat 0 -200px;
+}
+.select-box-group{
+	display: inline-block;width: 60%;position: relative;float: left;background-color: #fff;
+}
+.select-box-group .sbox-title{
+	padding: 5px 10px 0;border-bottom: 1px solid #ddd;display:block;float: left;width: 100%;
+}
+.title-type-group{
+	max-width: 100%;
+	background-color: #fff;
+}
+.title-type-list{
+	float: left;
+	display: inline-block;
+    margin-bottom: -1px;
+}
+.title-type-list>a{
+	color: #999;
+	display:block;
+    font-weight: 600;
+    padding: 10px 20px 10px 25px;
+    border-radius: 4px 4px 0 0;
+    line-height: 1.42857;
+    margin-right: 2px;
+}
+.title-type-list:hover>a{
+	background-color: #e6e6e6;
+}
+.title-type-list.active>a{
+	border: 1px solid #ddd;
+	background-color: #3497db;
+	color:#fff;
+}
+
+.user-all-btn{
+	padding: 5px 10px;
+}
+.select-box-group .sbox-body{
+	width:100%;padding:0 15px 15px;display:inline-block;max-height: 250px;overflow-y:auto; 
+}
+.sbox-body a,.gather-body a{
+	color:#82939e;
+}
+.sbox-body a:hover{
+	color:#82939e;
+}
+.sbox-item{
+	width:100%;display: none;padding-bottom:10px;position: relative;
+}
+.sbox-item.active{
+	display: inline-block;
+}
+.sel-div{
+	/*padding-left: 20px;*/
+}
+.sel-div>p{
+	padding-left: 20px;
+	line-height: 1.6em;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+}
+.sel-div>p>b{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: 0;
+	top: 0;
+	background:url(../images/ztree_ewos.png) no-repeat -13px -13px;
+}
+.sel-div.show>p>b{
+	background-position:-52px -13px;
+}
+
+.sel-ul{
+	display: none;
+}
+.sel-div.show>.sel-ul{
+	display: block;
+}
+.sbox-item .sel-li{
+	/*line-height: 1.6em;*/
+	text-align: left;
+	padding-left: 20px;
+}
+.sel-li>a{
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+	height: 24px;
+	line-height: 20px;
+	padding-left:20px; 
+}
+.sel-li>a:hover{
+	border:1px solid #3497db;
+	border-radius: 2px;
+}
+.sel-li>a>b{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: 0;
+	top: 0;
+	
+}
+.user_area .sel-li>a>b{
+	background:url(../images/ztree_ewos.png) no-repeat -93px -12px;
+}
+.user_all .sel-li>a>b{
+	background:url(../images/user_select.png) no-repeat 0 -60px;
+}
+.user_work .sel-li>a>b{
+	background:url(../images/user_select.png) no-repeat 0 -40px;
+}
+.user_work{
+	padding-top: 10px;
+}
+.user_all .sel-li,.user_work .sel-li{
+	padding-left: 5px;
+}
+.user-information{
+	float: right;
+	margin-right: 10px;
+}
+
+.select-box-gather{
+	background-color: #fff;
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 35%;
+    margin-left: 5%;
+}
+.select-box-gather .gather-title{
+	padding: 12px 10px;border-bottom: 1px solid #ddd;display:inline-block;float: left;width: 100%;text-align: left; color: #999;font-weight: 600;
+}
+.select-box-gather .gather-body{
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	max-height: 250px;
+	overflow-y:auto;
+}
+.gather-box-title{
+	background: #eee;
+	width: 100%;
+	position: relative;
+	line-height: 2em;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+.gather-ul>.gather-li{
+	position: relative;
+	line-height: 25px;
+	padding-left: 10px;
+}
+.gather-ul>.gather-li:hover{
+	background-color: #eee;
+}
+.gather-li .checkbox-box{
+	margin-top: 2px;
+}
+.gather-li .gather-user{
+	position: relative;
+	padding-left: 25px;
+	line-height: 25px;
+	display: inline-block;
+}
+.gather-user>b{
+	background:url(../images/user_select.png) no-repeat 0 -60px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 2px;
+}
+
+
+
+/*底部*/
+.user-select-footer{
+	padding: 20px;
+	display: inline-block;
+	width: 100%;
+}
+
+
+
+
+
+
+
+/*页面显示部分*/
+.userselect-box{
+	display: inline-block;
+    position: relative;
+    width: 400px;
+}
+.userselect-choices{
+	background-color: #fff;
+    border: 1px solid #dadfe6;
+    border-radius: 4px;
+    height: auto !important;
+    margin: 0;
+    min-height: 26px;
+    overflow: hidden;
+    position: relative;
+}
+.userselect-choices:hover{
+	border-color: #3497db;
+}
+.userselect-choices .userselect-operate {
+    float: right;
+    padding: 5px;
+    position: relative;
+    z-index: 10;
+}
+.userselect-choices .userselect-search-choice {
+    background-clip: padding-box;
+    background-color: #b2c0d1;
+    border: 1px solid #b2c0d1;
+    border-radius: 4px;
+    color: #fff;
+    cursor: default;
+    line-height: 24px;
+    margin: 3px 0 3px 5px;
+    padding: 3px 15px;
+    float: left;
+    list-style: outside none none;
+    position: relative;
+    transition: padding 0.15s linear 0s;
+    -ms-transition: padding 0.15s linear 0s;
+    -webkit-transition: padding 0.15s linear 0s;
+    -moz-transition: padding 0.15s linear 0s;
+    -o-transition: padding 0.15s linear 0s;
+}
+.userselect-choices .userselect-search-choice:hover {
+    background-color: #3497db;
+    border-color: #3497db;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 25px;
+}
+.userselect-search-choice-close {
+    background: rgba(0, 0, 0, 0) url(../images/select2.png) no-repeat scroll right top;
+    display: block;
+    height: 12px;
+    width: 12px;
+    outline: medium none;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    opacity: 0;
+    transition: opacity 0.25s linear 0s;
+    -ms-transition: opacity 0.25s linear 0s;
+    -webkit-transition: opacity 0.25s linear 0s;
+    -moz-transition: opacity 0.25s linear 0s;
+    -o-transition: opacity 0.25s linear 0s;
+}
+.userselect-search-choice:hover .userselect-search-choice-close {
+    opacity: 1;
+}
+
+.operate-btn{
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #ebedf0;
+    border-radius: 4px;
+    color: #82939e;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    transition: background 0.1s linear 0s;
+    -ms-transition: background 0.1s linear 0s;
+    -webkit-transition: background 0.1s linear 0s;
+    -moz-transition: background 0.1s linear 0s;
+    -o-transition: background 0.1s linear 0s;
+    white-space: nowrap;
+}
+.operate-btn:hover{
+	background-color: #3497db;
+}
+.operate-user>i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/global.png) no-repeat 0 0;
+}
+.operate-delete>i{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url(../images/global.png) no-repeat -60px 0;
+}
+.operate-user.operate-btn:hover>i{
+	background-position: -30px 0;
+}
+.operate-delete.operate-btn:hover>i{
+	background-position: -90px 0;
+}
+.userselect-choices .userselect-operate a {
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+/*90 130 130 130*/
+.checkbox-box{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.checkbox-box input[type=checkbox]{
+	visibility: hidden;
+}
+.checkbox-box label {
+	display: block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/component.png) no-repeat -50px -130px;
+}
+.checkbox-box:hover label{
+	background-position:-130px -130px;
+}
+.checkbox-box input[type=checkbox]:checked + label {
+	background-position:-90px -130px;
+}
